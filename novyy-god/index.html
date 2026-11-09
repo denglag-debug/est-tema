@@ -1,0 +1,1586 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Советский Новый год</title>
+<meta name="description" content="Бесплатный набор «Есть тема»: оливье, шуба, мандарины, игры и план вечера по часам.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+:root{--bg:#F7F1E6;--surface:#FFFDF8;--fg:#22202A;--muted:#625D6B;--line:#E2D9CA;--accent:#1D2F5C;--red:#B3262E;--note:#ECEFF6;
+--serif:"PT Serif",Georgia,"Times New Roman",serif;--sans:"PT Sans","Helvetica Neue",Arial,sans-serif;color-scheme:light}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#15171F;--surface:#1E212B;--fg:#ECE7DE;--muted:#ABA6B3;--line:#343846;--accent:#9DB2E6;--red:#F07A7F;--note:#232A3B;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#15171F;--surface:#1E212B;--fg:#ECE7DE;--muted:#ABA6B3;--line:#343846;--accent:#9DB2E6;--red:#F07A7F;--note:#232A3B;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:17px/1.6 var(--sans);margin:0;padding-inline:16px}
+html{scroll-behavior:smooth}@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+.home{display:block;margin-inline:-16px;padding:10px 16px;font:700 14px/1.2 var(--sans);color:var(--red);background:var(--surface);border-bottom:1px solid var(--line);text-decoration:none}
+h1,h2,h3,h4{font-family:var(--serif);text-wrap:balance;line-height:1.2;font-weight:700}
+h1{font-size:clamp(2.4rem,7vw,3.6rem);margin:8px 0 16px}
+h2{font-size:1.9rem;color:var(--accent);margin:0 0 20px}
+h3{font-size:1.35rem;margin:28px 0 8px}
+h4{font-family:var(--sans);font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin:22px 0 6px}
+p,li{max-width:68ch}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.top{max-width:1120px;margin-inline:auto;padding-block:32px 24px;display:grid;gap:24px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:900px){.top{grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);align-items:center}}
+.top img{width:100%;height:auto;display:block;border-radius:6px;border:1px solid var(--line)}
+.eyebrow{font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;color:var(--red);margin:0;font-weight:700}
+.lede{font-family:var(--serif);font-size:1.2rem;color:var(--muted);max-width:52ch;margin:0 0 16px}
+.dl{display:inline-block;border:1px solid var(--accent);color:var(--accent);padding:8px 16px;font-weight:700;text-decoration:none}
+.dl:hover{background:var(--accent);color:var(--surface)}
+.shell{max-width:1120px;margin-inline:auto;display:grid;grid-template-columns:220px minmax(0,1fr);gap:40px;align-items:start}
+.shell main{max-width:760px;min-width:0}
+.side{position:sticky;top:0;max-height:100vh;overflow:auto;padding-block:24px}
+.side ol{list-style:none;margin:0;padding:0}
+.side a{display:block;padding:6px 10px;border-left:3px solid transparent;color:var(--fg);text-decoration:none;font-size:.97rem}
+.side a:hover{color:var(--accent)}
+.side a[aria-current=true]{border-left-color:var(--red);color:var(--accent);font-weight:700;background:var(--surface)}
+.side .sub{display:none}.side .open .sub{display:block}
+.side .sub a{padding:3px 10px 3px 24px;font-size:.88rem;color:var(--muted)}
+.side .sub a[aria-current=true]{color:var(--accent);background:none}
+.block{padding-block:24px 48px}
+.small{font-size:.9rem;color:var(--muted)}
+.brand{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;margin:0 0 40px}
+.brand h2{font-size:1.5rem;margin:8px 0 16px}
+.intro h2{font-size:1.5rem;margin:32px 0 8px}
+.pic{margin:0 0 20px}.pic img{width:100%;height:auto;max-height:440px;object-fit:cover;display:block;border-radius:6px;border:1px solid var(--line)}
+#taiming td:first-child{white-space:nowrap}
+#igristoe .pic img,#atmosphere .pic img{max-width:420px}
+.menu{list-style:none;padding:24px;margin:0 0 12px;background:var(--surface);border:1px solid var(--line);display:grid;gap:14px}
+.menu a{display:grid;grid-template-columns:1fr auto;column-gap:12px;text-decoration:none;color:inherit}
+.menu .course{grid-column:1/-1;font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+.menu .dish{font-family:var(--serif);font-size:1.25rem;display:flex;gap:8px;min-width:0}
+.menu .dish::after{content:"";flex:1;border-bottom:2px dotted var(--line);margin-bottom:.4em}
+.menu .time{color:var(--red);align-self:end;font-size:.95rem;white-space:nowrap}
+.menu .kid{grid-column:1/-1;font-size:.82rem;color:var(--accent);font-weight:700}
+.menu .kid::before{content:"● "}
+.menu a:hover .dish{color:var(--accent)}
+.recipe{background:var(--surface);border:1px solid var(--line);padding:28px clamp(16px,4vw,36px);margin-block:16px}
+.recipe h3:first-of-type{font-size:1.6rem;margin-top:4px}
+.recipe h2{font-size:1.1rem;color:var(--accent);margin:28px 0 8px;font-family:var(--sans);text-transform:uppercase;letter-spacing:.06em}
+.recipe h3{font-size:1.15rem;margin:22px 0 6px}
+.recipe ul{padding-left:0;list-style:none}
+.facts{display:flex;flex-wrap:wrap;gap:8px 28px;margin:0 0 16px;padding:12px 0;border-block:1px solid var(--line)}
+.facts div{min-width:0}.facts dt{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}.facts dd{margin:0}
+.ing{display:flex;justify-content:space-between;gap:16px;padding:4px 0;border-bottom:1px dotted var(--line);max-width:none}
+.ing .n{min-width:0}.ing .q{white-space:nowrap;color:var(--red);font-weight:700}
+@media (max-width:480px){.ing{flex-direction:column;gap:0}.ing .q{white-space:normal}}
+.note{display:block;background:var(--note);padding:10px 14px;margin:12px 0;font-size:.95rem;border-left:3px solid var(--accent)}
+.note p{margin:4px 0}
+.didyou{display:block;border:1px solid var(--red);padding:10px 14px;margin:16px 0;font-size:.95rem}
+.dy{font-weight:700;color:var(--red);text-transform:uppercase;font-size:.75rem;letter-spacing:.1em;margin-right:6px}
+hr{border:0;border-top:1px dashed var(--line);margin:20px 0}
+.tw{overflow-x:auto;margin:12px 0}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
+.chips a{border:1px solid var(--line);background:var(--surface);color:var(--fg);padding:5px 12px;text-decoration:none;font-size:.92rem}
+.chips a[aria-current=true]{border-color:var(--accent);background:var(--accent);color:var(--surface)}
+@media (min-width:900px){.chips{display:none}}
+.builder{background:var(--surface);border:1px solid var(--line);padding:clamp(16px,4vw,32px)}
+.controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-bottom:24px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend{font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:700;margin-bottom:8px}
+.stepper{display:flex;align-items:center;gap:10px}
+.stepper button{width:44px;height:44px;border:1px solid var(--line);background:var(--bg);color:var(--fg);font-size:1.3rem;cursor:pointer}
+.stepper button:hover{border-color:var(--accent)}
+.stepper output{font-family:var(--serif);font-size:1.8rem;min-width:2ch;text-align:center}
+.opt{display:flex;flex-direction:column;gap:6px}.opt label{display:flex;gap:8px;align-items:center;cursor:pointer}
+input[type=radio],input[type=checkbox]{accent-color:var(--accent);width:18px;height:18px;flex-shrink:0}
+.listhead{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px;border-top:1px solid var(--line);padding-top:16px}
+.listhead h3{margin:0}
+.copy{border:1px solid var(--accent);background:transparent;color:var(--accent);padding:8px 14px;font:700 .9rem var(--sans);cursor:pointer}
+.copy:hover{background:var(--accent);color:var(--surface)}
+.cat{font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;color:var(--red);margin:20px 0 6px;font-weight:700}
+.shop{list-style:none;margin:0;padding:0}
+.shop li{display:flex;padding:6px 0;border-bottom:1px dotted var(--line);max-width:none}
+.shop label{display:flex;gap:10px;align-items:baseline;flex:1;min-width:0;cursor:pointer}
+.shop .q{margin-left:auto;white-space:nowrap;color:var(--muted)}
+.shop .done .nm{text-decoration:line-through;color:var(--muted)}
+.hint{font-size:.88rem;color:var(--muted);margin-top:16px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-top:32px;padding-top:16px;border-top:1px solid var(--line)}
+.pager a{color:var(--accent);font-weight:700;text-decoration:none;max-width:48%}
+.pager .next{margin-left:auto;text-align:right}
+.pager small{display:block;font-weight:400;color:var(--muted);font-size:.78rem;text-transform:uppercase;letter-spacing:.08em}
+.foot{max-width:1120px;margin-inline:auto;padding-block:32px 56px;font-size:.88rem;color:var(--muted)}
+@media (max-width:899px){
+  .shell{display:block}
+  .side{position:sticky;top:0;z-index:5;max-height:none;padding:0;margin-inline:-16px;background:var(--bg);border-bottom:1px solid var(--line)}
+  .side>ol{display:flex;overflow-x:auto;scrollbar-width:none;padding-inline:8px}
+  .side>ol::-webkit-scrollbar{display:none}
+  .side a{white-space:nowrap;border-left:0;border-bottom:3px solid transparent;padding:12px 10px}
+  .side a[aria-current=true]{border-bottom-color:var(--red);background:none}
+  .side .sub,.side .open .sub{display:none}
+}
+@media print{.side,.pager,.chips,.home{display:none}.shell{display:block}main>section[hidden],article[hidden]{display:block!important}}
+</style>
+</head>
+<body>
+<a class="home" href="../index.html">← Есть тема: на главную</a>
+<header class="top">
+<div><p class="eyebrow">Есть тема · бесплатный набор</p>
+<h1>Советский Новый год</h1>
+<p class="lede">Оливье в хрустальной салатнице, шуба, мандарины и «Ирония судьбы» по телевизору. Рецепты, план по часам, игры и истории для стола. Укажите число гостей, и список покупок соберётся сам.</p>
+<a class="dl" href="sovetskiy-novyy-god.pdf" download>Скачать PDF для печати</a></div>
+<img src="img/stol.jpg" alt="Новогодний стол в квартире: салатницы с оливье и шубой, мандарины, бокалы, ёлка и телевизор">
+</header>
+<div class="shell">
+<nav class="side" aria-label="Разделы набора"><ol><li data-sec="intro"><a href="#intro">О празднике</a></li><li data-sec="builder"><a href="#builder">Список покупок</a></li><li data-sec="menu"><a href="#menu">Меню</a></li><li data-sec="kids"><a href="#kids">Если с детьми</a></li><li data-sec="taiming"><a href="#taiming">Тайминг</a></li><li data-sec="recipes"><a href="#recipes">Рецепты</a><ol class="sub"><li><a href="#buterbrody">Праздничные бутерброды и «мухоморы»</a></li><li><a href="#olivie">Салат оливье</a></li><li><a href="#shuba">Селёдка под шубой</a></li><li><a href="#myaso-po-francuzski">Мясо по-французски</a></li><li><a href="#kartoshka">Пирожное «Картошка» и мандарины</a></li><li><a href="#napoleon">Торт «Наполеон»</a></li><li><a href="#napitki">Напитки</a></li><li><a href="#limonad-tarhun">Домашний лимонад «Тархун»</a></li></ol></li><li data-sec="igristoe"><a href="#igristoe">Игристое</a></li><li data-sec="games"><a href="#games">Игры</a></li><li data-sec="stories"><a href="#stories">Истории</a></li><li data-sec="atmosphere"><a href="#atmosphere">Атмосфера</a></li><li data-sec="allergens"><a href="#allergens">Аллергены</a></li></ol></nav>
+<main id="main">
+<section class="block intro" id="intro"><aside class="brand" aria-label="О проекте"><p class="eyebrow">О проекте</p><h3>Есть тема. Зови своих</h3>
+<p>Мы пишем друг другу каждый день, ставим лайки под фото и шлём сердечки на дни рождения. А за одним столом собираемся раз в полгода. Хочется это исправить и собрать своих: друзей, родителей, соседей по лестничной клетке. Но стоит подумать, что готовить, о чём говорить и чем занять гостей, и встреча откладывается ещё на месяц.</p>
+<p>Мы придумали «Есть тему», чтобы встречи случались чаще. В каждом наборе одна тема: страна, эпоха или мир любимой книги. Внутри всё, что нужно хозяину: рецепты с запасными вариантами, напитки к блюдам (и без алкоголя тоже), истории для разговора за столом, музыка, игра для гостей и план, что сделать за день и за час до прихода. Для детей есть свой стол.</p>
+<p>Повод подойдёт любой. Долгий ужин, завтрак в выходной или просто «заходите вечером».</p>
+<p><strong>Почему «Есть тема».</strong> Так говорят, когда появилась идея: «Есть тема, давай соберёмся». У каждого набора тема своя, в этом наборе это советский Новый год. А ещё «есть» здесь в самом прямом смысле: вкусно поесть вместе.</p>
+<p>Остальное за вами. Зовите своих.</p>
+</aside><h3>Новый год, как в детстве</h3>
+<p>Хрустальная салатница с оливье. Селёдка под шубой, которую мама собирала с вечера. Запах мандаринов и хвои, вата под ёлкой, стеклянные шары на ниточках. По телевизору «Ирония судьбы», а взрослые спорят, сколько минут осталось до курантов. Этот вечер помнят почти все, кто вырос в СССР, а их дети знают его по рассказам и фильмам.</p>
+<p>Мы соберём такой вечер у вас дома. Его можно устроить в любой декабрьский вечер с друзьями или прямо в новогоднюю ночь: для обоих случаев есть свой план.</p>
+<h3>Почему именно эти блюда</h3>
+<p>Советский новогодний стол складывался из того, что можно было достать. Колбасу, шпроты, майонез и зелёный горошек покупали заранее, иногда за месяц, и прятали до праздника. Поэтому меню у всех было похожим, и поэтому оно так узнаваемо до сих пор. Мы взяли самые известные блюда и написали их так, чтобы у вас всё получилось с первого раза, даже если вы никогда не собирали шубу.</p>
+<p>Все рецепты простые, продукты продаются в любом супермаркете. Почти всё готовится накануне, а при гостях вы только ставите противень в духовку.</p>
+<h3>Как устроен вечер</h3>
+<ol type="1">
+<li><strong>Встреча у ёлки.</strong> Гости приходят, на столе уже бутерброды со шпротами и с икрой, в бокалах морс или шампанское. Пока все собираются, играем в «Крокодила» на советские слова.</li>
+<li><strong>Салаты.</strong> Садимся за стол: оливье и селёдка под шубой. Рассказываем истории из шпаргалки.</li>
+<li><strong>Горячее.</strong> Мясо по-французски прямо на противне. Между горячим и десертом викторина «Правда или миф?» и угадывание фильмов по цитатам.</li>
+<li><strong>Чай и сладкое.</strong> Пирожное «Картошка» или торт «Наполеон», мандарины, чай с лимоном. Под конец фанты.</li>
+</ol>
+<h3>Два варианта сладкого</h3>
+<ul>
+<li><strong>Быстрый: пирожное «Картошка».</strong> Без выпечки, 30 минут работы, дети лепят вместе с вами. Подходит, если времени мало или вы впервые принимаете гостей.</li>
+<li><strong>Как у бабушки: торт «Наполеон».</strong> Восемь тонких коржей и заварной крем. Это 2,5 часа работы и ночь в холодильнике, зато это главный домашний торт советского Нового года. Коржи пекут за 2 дня, торт собирают накануне.</li>
+</ul>
+<p>Выберите один. Как меняются план по часам и покупки для «Наполеона», написано в <a href="#taiming">тайминге</a>.</p>
+</section><section class="block" id="builder"><h2>Список покупок</h2>
+<p>Укажите, сколько будет гостей и какое сладкое вы выбрали, и список пересчитается сам. Отмечайте купленное галочкой прямо в магазине.</p>
+<div class="builder">
+<div class="controls">
+<fieldset><legend>Гостей за столом, с вами</legend><div class="stepper"><button type="button" id="gminus" aria-label="Меньше гостей">−</button><output id="guests">6</output><button type="button" id="gplus" aria-label="Больше гостей">+</button></div></fieldset>
+<fieldset><legend>Из них детей</legend><div class="stepper"><button type="button" id="kminus" aria-label="Меньше детей">−</button><output id="kidsn">0</output><button type="button" id="kplus" aria-label="Больше детей">+</button></div></fieldset>
+<fieldset><legend>Из взрослых пьют игристое</legend><div class="stepper"><button type="button" id="wminus" aria-label="Меньше">−</button><output id="wine">6</output><button type="button" id="wplus" aria-label="Больше">+</button></div></fieldset>
+<fieldset class="opt"><legend>Сладкое</legend>
+<label><input type="radio" name="dessert" value="kartoshka" checked> Пирожное «Картошка»</label>
+<label><input type="radio" name="dessert" value="napoleon"> Торт «Наполеон»</label></fieldset>
+</div>
+<div class="listhead"><h3>Что купить</h3><button type="button" class="copy" id="copy">Скопировать список</button></div>
+<div id="list"></div>
+<p class="hint">Все блюда считаются на всех гостей вместе с детьми. «Наполеон» - это один большой торт на 12 человек: если гостей больше, список увеличится на второй торт. «Картошка» считается половинками рецепта. Игристое - одна бутылка на троих взрослых, для детей добавляется лимонад. Соль, перец, уксус и специи из обычного шкафчика в список не входят. Отмеченные покупки запоминаются в этом браузере.</p>
+</div></section><section class="block" id="menu"><h2>Меню</h2><ol class="menu"><li><a href="#buterbrody"><span class="course">У ёлки</span><span class="dish">Праздничные бутерброды и «мухоморы»</span><span class="time">35 мин</span><span class="kid">подходит детям, «мухоморы» дети собирают сами</span></a></li><li><a href="#olivie"><span class="course">Салаты</span><span class="dish">Салат оливье</span><span class="time">2 ч</span><span class="kid">подходит детям</span></a></li><li><a href="#shuba"><span class="course">Салаты</span><span class="dish">Селёдка под шубой</span><span class="time">1 ч 30 мин</span><span class="kid">детям можно собрать шубу без селёдки</span></a></li><li><a href="#myaso-po-francuzski"><span class="course">Горячее</span><span class="dish">Мясо по-французски</span><span class="time">1 ч 30 мин</span><span class="kid">подходит детям</span></a></li><li><a href="#kartoshka"><span class="course">Сладкое, быстрый вариант</span><span class="dish">Пирожное «Картошка» и мандарины</span><span class="time">2 ч</span><span class="kid">подходит детям, без коньяка</span></a></li><li><a href="#napoleon"><span class="course">Сладкое, вариант «как у бабушки»</span><span class="dish">Торт «Наполеон»</span><span class="time">3 ч</span><span class="kid">подходит детям</span></a></li><li><a href="#napitki"><span class="course">Напитки</span><span class="dish">Напитки</span><span class="time">1 ч 30 мин</span><span class="kid">морс и лимонад для всех</span></a></li><li><a href="#limonad-tarhun"><span class="course">Напитки</span><span class="dish">Домашний лимонад «Тархун»</span><span class="time">1 ч</span><span class="kid">подходит детям</span></a></li></ol><p class="small">Сладкое выберите одно: «Картошка» или «Наполеон». Время указано полное, вместе с остыванием и ожиданием.</p></section><section class="block" id="kids"><h2>Если за столом дети</h2>
+<p>Советский Новый год - праздник семейный, и почти всё меню подходит детям без изменений. Многие из нас сами помнят этот стол с детского роста.</p>
+<p><strong>Что подходит детям</strong></p>
+<ul>
+<li>Оливье, мясо по-французски, бутерброды со шпротами - без изменений.</li>
+<li>«Мухоморы» - лучшая детская закуска вечера. Дайте детям собрать их самим: вы чистите яйца и режете помидоры, дети ставят шляпки и рисуют майонезом точки.</li>
+<li>Селёдка под шубой - по вкусу ребёнка. Многие дети её не любят из-за селёдки: соберите им маленькую шубу в стакане без рыбы (из тех же овощей).</li>
+<li>«Картошка» - сделайте детскую часть без коньяка. Детям очень нравится катать «картофелины» и обваливать их в какао.</li>
+<li>Икра - очень солёная, маленьким детям лучше давать понемногу.</li>
+</ul>
+<p><strong>Напиток.</strong> Домашний «Тархун» (рецепт в разделе напитков) или магазинный «Буратино» и «Дюшес» в таких же бокалах, как у взрослых. Сироп для «Тархуна» дети могут помочь сделать: оборвать листья и выжать лимон. Под куранты дети чокаются вместе со всеми.</p>
+<p><strong>Чем занять детей</strong></p>
+<ul>
+<li><strong>Снежинки на окна.</strong> Как вырезать, написано в <a href="#atmosphere">атмосфере</a>. Дети вырезают, взрослые клеят.</li>
+<li><strong>Бумажная гирлянда-цепочка.</strong> Нарежьте цветную бумагу полосками 2×15 см. Первую полоску склейте в колечко, вторую проденьте в него и тоже склейте, и так дальше. За полчаса получается гирлянда на всю комнату.</li>
+<li><strong>«Крокодил».</strong> Для детей отложите простые карточки: Дед Мороз, лыжи, хоккей, мандарины, гирлянда, костюм снежинки.</li>
+<li><strong>Стишок на табуретке.</strong> Самая советская традиция: ребёнок встаёт на табуретку и читает Деду Морозу стихотворение, а взрослые хлопают и дарят мандарин или конфету.</li>
+<li><strong>Хоровод.</strong> «В лесу родилась ёлочка» вокруг ёлки, все вместе.</li>
+</ul>
+<p><strong>Безопасность.</strong> - Для детей младше 5 лет разрезайте черри пополам, а мелкие конфеты и орехи держите на верхней полке. - Вата под ёлкой и мишура горят: следите, чтобы дети не подносили их к свечам и гирлянде. - Шампанское открывают взрослые и в сторону от детей.</p>
+<p>В <a href="#taiming">списке покупок</a> внизу написано, сколько продуктов добавить на детей.</p>
+</section><section class="block" id="taiming"><h2>Тайминг и список покупок</h2>
+<p>Расчёт на 6 взрослых. Есть два плана: <strong>обычный декабрьский вечер</strong> (гости в 19:00) и <strong>новогодняя ночь</strong> (гости в 21:00, куранты в полночь). Выберите свой. Если время другое, сдвиньте всё на ту же разницу.</p>
+<p>Почти всё готовится накануне. В день праздника у вас остаётся только мясо на противне и бутерброды.</p>
+<hr />
+<h3>Накануне (одинаково для обоих планов)</h3>
+<p>Если праздник 31 декабря, «накануне» - это 30 декабря.</p>
+<div class="tw"><table>
+
+<thead>
+<tr class="header">
+<th>Когда</th>
+<th>Что делать</th>
+<th>Сколько времени</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>днём</td>
+<td>Купить продукты по списку ниже</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>17:00</td>
+<td>Поставить вариться <strong>свёклу</strong> (1-1,5 ч). Рядом в другой кастрюле <strong>картофель и морковь</strong> для оливье и шубы (25-35 мин) и <strong>яйца</strong> (10 мин, все 14 штук сразу)</td>
+<td>10 мин работы</td>
+</tr>
+<tr class="odd">
+<td>17:15</td>
+<td>Пока всё варится: <strong>«Картошка»</strong>. Смешать, скатать, убрать в холодильник</td>
+<td>30 мин</td>
+</tr>
+<tr class="even">
+<td>17:45</td>
+<td><strong>Морс</strong>: отжать сок, сварить отвар, оставить остывать</td>
+<td>20 мин</td>
+</tr>
+<tr class="odd">
+<td>18:30</td>
+<td>Слить воду, выложить овощи и яйца остывать. Яйца для бутербродов («мухоморы», 6 шт.) отложить в холодильник отдельно</td>
+<td>5 мин</td>
+</tr>
+<tr class="even">
+<td>19:30</td>
+<td><strong>Оливье</strong>: нарезать всё, кроме майонеза, накрыть, в холодильник</td>
+<td>25 мин</td>
+</tr>
+<tr class="odd">
+<td>20:00</td>
+<td><strong>Шуба</strong>: разделать селёдку, натереть овощи, собрать слои, в холодильник на ночь</td>
+<td>40 мин</td>
+</tr>
+<tr class="even">
+<td>20:40</td>
+<td>Соединить морс с соком, в холодильник. <strong>Игристое и газированную воду</strong> в холодильник</td>
+<td>5 мин</td>
+</tr>
+<tr class="odd">
+<td>20:45</td>
+<td><strong>Сироп для «Тархуна»</strong>: сварить, настоять с тархуном, процедить, в холодильник</td>
+<td>20 мин</td>
+</tr>
+<tr class="even">
+<td>вечером</td>
+<td>Нарядить ёлку, вырезать снежинки, распечатать карточки</td>
+<td>по настроению</td>
+</tr>
+</tbody>
+</table></div>
+<p>Всего накануне около 3 часов работы на кухне.</p>
+<hr />
+<h3>План А. Декабрьский вечер с друзьями (гости в 19:00)</h3>
+<div class="tw"><table>
+
+<thead>
+<tr class="header">
+<th>Когда</th>
+<th>Что делать</th>
+<th>Сколько времени</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>16:30</td>
+<td><strong>Мясо по-французски</strong>: отбить мясо, нарезать картофель и лук, собрать на противне без сыра. Накрыть фольгой, в холодильник. Натереть сыр</td>
+<td>40 мин</td>
+</tr>
+<tr class="even">
+<td>17:30</td>
+<td>Накрыть стол, разложить мандарины и конфеты, включить гирлянду</td>
+<td>30 мин</td>
+</tr>
+<tr class="odd">
+<td>18:10</td>
+<td>Подсушить хлеб. Собрать <strong>бутерброды со шпротами</strong> и <strong>«мухоморы»</strong></td>
+<td>25 мин</td>
+</tr>
+<tr class="even">
+<td>18:40</td>
+<td><strong>Бутерброды с икрой</strong>. Блюдо с закусками поставить у ёлки. Включить музыку</td>
+<td>15 мин</td>
+</tr>
+<tr class="odd">
+<td>18:55</td>
+<td><strong>«Тархун»</strong>: сироп, лёд и газированную воду в кувшин</td>
+<td>3 мин</td>
+</tr>
+<tr class="even">
+<td><strong>19:00</strong></td>
+<td><strong>Гости пришли.</strong> Морс или шампанское, бутерброды, «Крокодил»</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td>19:05</td>
+<td>Включить духовку на 190 °C</td>
+<td>1 мин</td>
+</tr>
+<tr class="even">
+<td>19:15</td>
+<td>Противень с мясом под фольгой в духовку. <strong>Заправить оливье</strong> майонезом</td>
+<td>5 мин</td>
+</tr>
+<tr class="odd">
+<td>19:30</td>
+<td><strong>За стол:</strong> оливье и шуба</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>19:45</td>
+<td>Снять фольгу, посыпать сыром</td>
+<td>3 мин</td>
+</tr>
+<tr class="odd">
+<td>20:10</td>
+<td>Вынуть мясо, дать постоять 10 минут</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>20:20</td>
+<td><strong>Горячее на стол</strong></td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td>21:00</td>
+<td>Викторина «Правда или миф?» и цитаты из фильмов</td>
+<td>25 мин</td>
+</tr>
+<tr class="even">
+<td>21:30</td>
+<td>Достать «Картошку». <strong>Чай, «Картошка», мандарины.</strong> Фанты</td>
+<td>-</td>
+</tr>
+</tbody>
+</table></div>
+<p>При гостях вы встаёте из-за стола только три раза, каждый на пару минут: поставить противень, посыпать сыром и вынуть его.</p>
+<hr />
+<h3>План Б. Новогодняя ночь (гости в 21:00)</h3>
+<div class="tw"><table>
+
+<thead>
+<tr class="header">
+<th>Когда</th>
+<th>Что делать</th>
+<th>Сколько времени</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>днём 31-го</td>
+<td>Отдохнуть. Всё главное сделано вчера</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>18:30</td>
+<td><strong>Мясо по-французски</strong>: собрать противень без сыра, в холодильник</td>
+<td>40 мин</td>
+</tr>
+<tr class="odd">
+<td>19:30</td>
+<td>Накрыть стол, мандарины, конфеты, гирлянда</td>
+<td>30 мин</td>
+</tr>
+<tr class="even">
+<td>20:15</td>
+<td><strong>Бутерброды</strong> со шпротами, «мухоморы», потом с икрой</td>
+<td>40 мин</td>
+</tr>
+<tr class="odd">
+<td>20:55</td>
+<td><strong>«Тархун»</strong>: сироп, лёд и газированную воду в кувшин</td>
+<td>3 мин</td>
+</tr>
+<tr class="even">
+<td><strong>21:00</strong></td>
+<td><strong>Гости пришли.</strong> Бутерброды у ёлки, «Крокодил»</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td>21:15</td>
+<td>Заправить оливье</td>
+<td>3 мин</td>
+</tr>
+<tr class="even">
+<td>21:30</td>
+<td><strong>За стол:</strong> салаты. Проводить старый год: каждый говорит, что хорошего было в уходящем году</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td>21:45</td>
+<td>Включить духовку на 190 °C</td>
+<td>1 мин</td>
+</tr>
+<tr class="even">
+<td>22:00</td>
+<td>Противень с мясом под фольгой в духовку</td>
+<td>2 мин</td>
+</tr>
+<tr class="odd">
+<td>22:30</td>
+<td>Снять фольгу, посыпать сыром</td>
+<td>3 мин</td>
+</tr>
+<tr class="even">
+<td>22:55</td>
+<td>Вынуть мясо, дать постоять</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td>23:05</td>
+<td><strong>Горячее на стол</strong></td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>23:30</td>
+<td>Викторина «Правда или миф?»</td>
+<td>15 мин</td>
+</tr>
+<tr class="odd">
+<td>23:50</td>
+<td>Игристое и «Тархун» на стол. Раздать бумажки и ручки, если загадываете желания письменно</td>
+<td>3 мин</td>
+</tr>
+<tr class="even">
+<td>23:55</td>
+<td>Звук телевизора громче. Открыть шампанское <strong>до</strong> курантов</td>
+<td>2 мин</td>
+</tr>
+<tr class="odd">
+<td><strong>00:00</strong></td>
+<td><strong>Куранты.</strong> Желание, бокалы, «С Новым годом!»</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>00:15</td>
+<td>Выйти во двор смотреть салют или позвонить родным</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td>00:45</td>
+<td><strong>Чай, «Картошка», мандарины.</strong> Цитаты из фильмов, фанты</td>
+<td>-</td>
+</tr>
+</tbody>
+</table></div>
+<aside class="note">
+<p>💡 <strong>Совет.</strong> Двенадцать ударов курантов длятся меньше минуты. Чтобы успеть загадать желание и чокнуться, бокалы наливают заранее, за 2-3 минуты до полуночи.</p>
+</aside>
+<hr />
+<h3>Список покупок</h3>
+<h4>Овощи, фрукты, зелень</h4>
+<ul>
+<li>Картофель - 2 кг (500 г на оливье, 350 г на шубу, 1 кг на мясо)</li>
+<li>Морковь - 5 шт. (2 на оливье, 2 на шубу, 1 для украшения)</li>
+<li>Свёкла - 2 шт. средние</li>
+<li>Лук репчатый - 4 шт. (1 на шубу, 3 на мясо)</li>
+<li>Лук зелёный - 1 пучок</li>
+<li>Огурцы солёные или маринованные - 4 шт. (около 250 г)</li>
+<li>Огурец свежий - 1 шт. (для бутербродов со шпротами)</li>
+<li>Помидоры черри крупные - 3 шт. (или 3 маленьких помидора «сливка»)</li>
+<li>Салат листовой - 1 небольшой пучок</li>
+<li>Чеснок - 1 головка (нужен 1 зубчик)</li>
+<li>Укроп - 1 пучок, петрушка - 1 пучок</li>
+<li>Лимоны - 3 шт. (к икре, к чаю и для «Тархуна»)</li>
+<li>Тархун (эстрагон) свежий - 2 пучка</li>
+<li>Мандарины - 2 кг</li>
+<li>Клюква свежая или замороженная - 400 г</li>
+</ul>
+<h4>Мясо, колбаса, рыба</h4>
+<ul>
+<li>Свинина без кости (шея или корейка) - 1 кг</li>
+<li>Колбаса докторская - 400 г</li>
+<li>Сельдь слабосолёная целиком - 1 крупная (около 400 г) или филе 300 г</li>
+<li>Шпроты в масле - 1 банка</li>
+<li>Икра лососёвая - 1 банка (100-140 г)</li>
+</ul>
+<h4>Молочное и яйца</h4>
+<ul>
+<li>Яйца С1 - 14 шт. (5 на оливье, 3 на шубу, 6 на «мухоморы»; купите 2 десятка)</li>
+<li>Масло сливочное 82,5% - 250 г (2 пачки по 180 г, останется)</li>
+<li>Сыр твёрдый - 250 г</li>
+<li>Молоко сгущённое - 1 банка (нужна половина)</li>
+<li>Майонез 67% - 800 г (2 упаковки по 400 г)</li>
+</ul>
+<h4>Бакалея</h4>
+<ul>
+<li>Горошек зелёный консервированный - 1 банка 400 г</li>
+<li>Печенье сахарное («Юбилейное» или похожее) - 500 г</li>
+<li>Какао-порошок - 1 упаковка (нужно 5 ст. л.)</li>
+<li>Сахарная пудра - 2 ст. л.</li>
+<li>Сахар - 200 г</li>
+<li>Грецкие орехи - 60 г (по желанию)</li>
+<li>Масло растительное - 2-3 ст. л.</li>
+<li>Уксус 9% - 1 ч. л. (по желанию)</li>
+<li>Соль, чёрный перец</li>
+<li>Чай чёрный листовой, варенье</li>
+<li>Шоколадные конфеты в фантиках - 300-500 г</li>
+</ul>
+<h4>Хлеб</h4>
+<ul>
+<li>Батон нарезной - 1 шт.</li>
+<li>Хлеб бородинский - 1 шт. (или второй батон)</li>
+</ul>
+<h4>Напитки</h4>
+<ul>
+<li>Игристое вино - 2-3 бутылки (брют к столу, полусладкое к десерту; как выбрать, в разделе про игристое)</li>
+<li>Газированная вода - 1,5 л (для «Тархуна»)</li>
+<li>Лимонад «Буратино» или «Дюшес» - 1 бутылка (по желанию, если дети любят магазинный)</li>
+<li>Коньяк или ром - 1-2 ст. л. для «Картошки» (по желанию)</li>
+</ul>
+<h4>Хозяйственное</h4>
+<ul>
+<li>Фольга, пищевая плёнка, пергамент</li>
+<li>Одноразовые перчатки (для свёклы и селёдки)</li>
+<li>Плотная бумага для печати карточек, белая бумага или салфетки для снежинок</li>
+</ul>
+<hr />
+<h3>Вариант с «Наполеоном»</h3>
+<p>Если вместо «Картошки» вы печёте торт «Наполеон», план меняется так.</p>
+<h4>Тайминг</h4>
+<div class="tw"><table>
+
+<thead>
+<tr class="header">
+<th>Когда</th>
+<th>Что делать</th>
+<th>Сколько времени</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>за 2 дня, вечером</td>
+<td><strong>Тесто</strong>: замесить, разделить на 8 шариков, в холодильник на 1 час. <strong>Коржи</strong>: раскатать и испечь по одному. Остывшие сложить в пакет</td>
+<td>1 ч 40 мин</td>
+</tr>
+<tr class="even">
+<td>накануне, 17:15</td>
+<td>Вместо «Картошки»: <strong>заварной крем</strong>. Сварить, остудить под плёнкой</td>
+<td>25 мин + 1 ч остывания</td>
+</tr>
+<tr class="odd">
+<td>накануне, 21:00</td>
+<td>Взбить масло, соединить с кремом, <strong>собрать торт</strong>, посыпать крошкой, в холодильник на ночь</td>
+<td>20 мин</td>
+</tr>
+<tr class="even">
+<td>в день праздника</td>
+<td>Достать торт за 30 минут до чая</td>
+<td>-</td>
+</tr>
+</tbody>
+</table></div>
+<p>Накануне получается на полчаса больше работы, чем с «Картошкой», и ещё почти 2 часа за день до этого.</p>
+<h4>Покупки</h4>
+<p>Вместо печенья, сгущёнки, какао, сахарной пудры и орехов для «Картошки» купите: - Мука пшеничная - 600 г (450 г в тесто, 60 г в крем, остальное на подпыл) - Масло сливочное 82,5% - всего около 510 г вместо 250 г (60 г на бутерброды с икрой, 250 г в тесто, 200 г в крем), то есть 3 пачки по 180 г - Молоко 3,2% - 1 л - Яйца - ещё 4 шт. (всего 18; купите 2 десятка) - Сахар - ещё 250 г - Ванильный сахар - 1 пакетик - Уксус 9% - 1 ст. л. (или лимон) - Пергамент - 8-10 листов</p>
+<h3>Если за столом дети</h3>
+<p>Добавьте на каждых 2 детей: - Яйца - ещё 2 шт. и крупные черри - ещё 1 шт. (дополнительные «мухоморы») - Лимонад - по 0,5 л на ребёнка - Мандарины - ещё 0,5 кг</p>
+<p>Шампанское и коньяк считайте только на взрослых. Подробнее в разделе <a href="#kids">Если за столом дети</a>.</p>
+</section><section class="block" id="recipes"><h2>Рецепты</h2><nav class="chips" aria-label="Рецепты"><a href="#buterbrody">Праздничные бутерброды и «мухоморы»</a><a href="#olivie">Салат оливье</a><a href="#shuba">Селёдка под шубой</a><a href="#myaso-po-francuzski">Мясо по-французски</a><a href="#kartoshka">Пирожное «Картошка» и мандарины</a><a href="#napoleon">Торт «Наполеон»</a><a href="#napitki">Напитки</a><a href="#limonad-tarhun">Домашний лимонад «Тархун»</a></nav><article class="recipe" id="buterbrody"><p class="eyebrow">У ёлки</p><h3>Праздничные бутерброды и «мухоморы»</h3><figure class="pic"><img src="img/buterbrody.jpg" alt="Праздничные бутерброды и «мухоморы»" loading="lazy"></figure><dl class="facts"><div><dt>Активно</dt><dd>35 мин</dd></div><div><dt>Всего</dt><dd>35 мин</dd></div><div><dt>Порции</dt><dd>6 (по 2 бутерброда каждого вида + «мухоморы»)</dd></div><div><dt>Духовка</dt><dd>180 °C на 5 минут, чтобы подсушить хлеб (или сковорода, или тостер)</dd></div></dl>
+<p>Шпроты и красная икра были главными «дефицитными» закусками советского праздника. Банки покупали заранее и не открывали до Нового года. Бутерброды встречают гостей у ёлки, пока все собираются, а «мухоморы» с удовольствием собирают дети.</p>
+<hr />
+<h2>История</h2>
+<p>Шпроты - это маленькая рыбка (килька или салака), которую горячим дымом коптят и консервируют в масле. Больше всего их делали в Латвии, и «рижские шпроты» в плоской золотистой банке стали символом праздничного стола. Банку с ключом-открывалкой открывали торжественно, а масло из неё не выливали: макали в него хлеб.</p>
+<p>Красная икра была дорогой и редкой, поэтому её мазали тонко, на масло, по половинке чайной ложки на кусок. Бутерброд с икрой был признаком того, что праздник настоящий.</p>
+<h2>Ингредиенты</h2>
+<p><strong>Бутерброды со шпротами (12 шт.)</strong></p>
+<ul>
+<li class="ing"><span class="n">бородинский хлеб или батон</span><span class="q">12&nbsp;ломтиков</span></li>
+<li class="ing"><span class="n">шпроты в масле (160-240 г)</span><span class="q">1&nbsp;банка</span></li>
+<li class="ing"><span class="n">чеснок</span><span class="q">1&nbsp;зубчик</span></li>
+<li class="ing"><span class="n">майонез (или 30 г мягкого сливочного масла)</span><span class="q">2&nbsp;ст. л.</span></li>
+<li class="ing"><span class="n">огурец свежий или солёный</span><span class="q">1&nbsp;шт</span></li>
+<li>несколько веточек укропа</li>
+</ul>
+<p><strong>Бутерброды с красной икрой (12 шт.)</strong></p>
+<ul>
+<li class="ing"><span class="n">батон нарезной</span><span class="q">12&nbsp;ломтиков</span></li>
+<li class="ing"><span class="n">масло сливочное 82,5%, мягкое</span><span class="q">60&nbsp;г</span></li>
+<li class="ing"><span class="n">икра лососёвая (100-140 г)</span><span class="q">1&nbsp;банка</span></li>
+<li class="ing"><span class="n">лимон (по желанию)</span><span class="q">0,5&nbsp;шт</span></li>
+<li>несколько веточек укропа или петрушки</li>
+</ul>
+<p><strong>«Мухоморы» (6 шт.)</strong></p>
+<ul>
+<li class="ing"><span class="n">яйца С1, сваренные вкрутую</span><span class="q">6&nbsp;шт</span></li>
+<li class="ing"><span class="n">помидоры черри крупные (диаметром 3-4 см) или 3 маленьких помидора «сливка»</span><span class="q">3&nbsp;шт</span></li>
+<li class="ing"><span class="n">майонез (или густая сметана)</span><span class="q">1-2&nbsp;ст. л.</span></li>
+<li class="ing"><span class="n">салат или веточки укропа</span><span class="q">6&nbsp;листьев</span></li>
+</ul>
+<h2>Шаги</h2>
+<h3>1. Подсушить хлеб · 7 мин</h3>
+<p>Нарежьте хлеб ломтиками толщиной около 1 см. Батон можно разрезать по диагонали: ломтики будут длиннее и красивее. Разложите на противне и подсушите в духовке при 180 °C 4-5 минут, пока хлеб не станет хрустким снаружи. Можно подсушить на сухой сковороде по минуте с каждой стороны или в тостере. Остудите.</p>
+<aside class="note">
+<p><strong>Почему так работает.</strong> Подсушенный хлеб не размокает от масла и майонеза, и бутерброды хорошо держат форму, даже если стоят на столе час.</p>
+</aside>
+<hr />
+<h3>2. Бутерброды со шпротами · 10 мин</h3>
+<p>Тёплые ломтики бородинского хлеба (или батона) натрите разрезанным зубчиком чеснока с одной стороны. Тонко намажьте майонезом. Огурец нарежьте тонкими кружками. На каждый ломтик положите кружок огурца, сверху 1-2 шпротины, хвостиками в одну сторону. Украсьте веточкой укропа.</p>
+<aside class="note">
+<p>💡 <strong>Совет.</strong> Банку шпрот откройте над тарелкой и выньте рыбок вилкой: они нежные и легко ломаются.</p>
+</aside>
+<hr />
+<h3>3. Бутерброды с икрой · 7 мин</h3>
+<p>Ломтики батона намажьте сливочным маслом, ровно, до краёв. Сверху положите по половине чайной ложки икры и аккуратно распределите ложкой в один слой. Украсьте маленьким треугольником лимона и веточкой зелени.</p>
+<aside class="note">
+<p>⚠️ <strong>Типичная ошибка.</strong> Мазать икру толстым слоем на холодное масло. Масло рвёт хлеб, а икринки лопаются. Масло должно быть мягким, а икру не нужно размазывать, только разложить.</p>
+</aside>
+<hr />
+<h3>4. «Мухоморы» · 10 мин</h3>
+<p>Каждый мухомор делается из <strong>целого</strong> яйца: яйцо - это «ножка», половинка помидора - «шляпка».</p>
+<ol type="1">
+<li><strong>Ножка.</strong> С тупого (широкого) конца очищенного яйца срежьте тонкий кружок, 3-4 мм, чтобы яйцо устойчиво стояло. С острого конца срежьте такой же тонкий кружок: получится ровная площадка для шляпки. Поставьте яйца на листья салата.</li>
+<li><strong>Шляпка.</strong> Помидор разрежьте пополам поперёк и чайной ложкой выньте семена с соком, иначе шляпка будет скользить и подтекать. Промокните срез салфеткой.</li>
+<li><strong>Собрать.</strong> На площадку яйца положите каплю майонеза и накройте половинкой помидора срезом вниз, слегка прижмите. Майонез работает как клей. Шляпка чуть шире площадки и свисает краями, как у настоящего гриба.</li>
+<li><strong>Точки.</strong> Майонезом из пакета с маленькой дырочкой (или зубочисткой) нарисуйте на шляпках белые точки.</li>
+</ol>
+<aside class="note">
+<p>⚠️ <strong>Типичная ошибка.</strong> Ставить половинку черри на половинку яйца, разрезанного вдоль или поперёк. Срез яйца шириной около 4 см, а маленький черри всего 2-2,5 см: шляпка выглядит как пуговица и падает. Нужны целое яйцо с узкой площадкой сверху и крупный помидор.</p>
+</aside>
+<aside class="note">
+<p>💡 <strong>Совет.</strong> Если шляпка всё равно съезжает, проткните её и яйцо коктейльной шпажкой сверху вниз. Для маленьких детей шпажку потом выньте.</p>
+</aside>
+<hr />
+<h2>Практический блок</h2>
+<p><strong>Когда собирать.</strong> Шпроты и «мухоморы» можно собрать за час до гостей и накрыть плёнкой. Бутерброды с икрой лучше собрать за 20-30 минут, иначе хлеб подсохнет.</p>
+<p><strong>Подача.</strong> На большом блюде рядами: шпроты, икра, «мухоморы» по краю. Поставьте блюдо у ёлки или на краю стола, где гости собираются.</p>
+<p><strong>Если икра не по карману.</strong> Возьмите одну банку икры на 6 бутербродов, а ещё 6 сделайте со слабосолёной красной рыбой или с икрой мойвы. Гостям будет так же празднично.</p>
+<p><strong>Аллергены.</strong> Глютен (хлеб), рыба, молочное (масло), яйца, горчица (в майонезе).</p>
+</article><article class="recipe" id="olivie"><p class="eyebrow">Салаты</p><h3>Салат оливье</h3><figure class="pic"><img src="img/olivie.jpg" alt="Салат оливье" loading="lazy"></figure><dl class="facts"><div><dt>Активно</dt><dd>40 мин</dd></div><div><dt>Всего</dt><dd>2 ч (с остыванием овощей)</dd></div><div><dt>Порции</dt><dd>6 (около 1,6 кг салата)</dd></div><div><dt>Духовка</dt><dd>не используется (или 200 °C, если запекаете овощи)</dd></div></dl>
+<p>Главный салат новогоднего стола. В СССР его называли по-разному: «Столичный», «Мясной», а дома просто оливье. Рецепт в каждой семье свой, и спор, класть ли в оливье морковь, ведут до сих пор. Мы даём самый распространённый советский вариант с докторской колбасой и морковью, а замены написаны в конце.</p>
+<hr />
+<h2>История</h2>
+<p>В 1860-х годах в Москве на Трубной площади открылся ресторан «Эрмитаж». Им управлял повар Люсьен Оливье, по происхождению француз. Его фирменный салат был совсем не похож на наш: по описаниям того времени, в нём были рябчики, раковые шейки, каперсы, оливки и соус провансаль. Точный рецепт Оливье держал в секрете и, по легенде, унёс с собой.</p>
+<p>После революции рябчиков и раковых шеек было не достать, и салат стали делать из того, что было: варёной курицы или мяса, потом из докторской колбасы, картошки, солёных огурцов и горошка. Так ресторанное блюдо стало самым народным салатом страны.</p>
+<h2>Ингредиенты</h2>
+<ul>
+<li class="ing"><span class="n">картофель среднего размера (около 500 г)</span><span class="q">4&nbsp;шт</span></li>
+<li class="ing"><span class="n">морковь (около 200 г)</span><span class="q">2&nbsp;шт</span></li>
+<li class="ing"><span class="n">яйца С1</span><span class="q">5&nbsp;шт</span></li>
+<li class="ing"><span class="n">колбаса докторская (или отварная курица, говядина, язык)</span><span class="q">400&nbsp;г</span></li>
+<li class="ing"><span class="n">огурцы солёные или маринованные (около 250 г)</span><span class="q">3-4&nbsp;шт</span></li>
+<li class="ing"><span class="n">горошек зелёный консервированный (400 г)</span><span class="q">1&nbsp;банка</span></li>
+<li class="ing"><span class="n">лук зелёный (по желанию)</span><span class="q">0,5&nbsp;пучка</span></li>
+<li class="ing"><span class="n">майонез 67% жирности («Провансаль»)</span><span class="q">250&nbsp;г</span></li>
+<li>соль и молотый чёрный перец по вкусу</li>
+</ul>
+<p><strong>Для украшения (по желанию)</strong></p>
+<ul>
+<li class="ing"><span class="n">горошек</span><span class="q">1-2&nbsp;ст. л.</span></li>
+<li class="ing"><span class="n">варёная морковь (вырезать звёздочки или «розочку»)</span><span class="q">1&nbsp;шт</span></li>
+<li>веточки укропа или петрушки</li>
+</ul>
+<h2>Шаги</h2>
+<h3>1. Сварить овощи и яйца · 10 мин работы + 35 мин варки</h3>
+<p>Картофель и морковь хорошо вымойте щёткой и, не очищая, положите в кастрюлю. Залейте холодной водой так, чтобы она покрывала овощи на 2 пальца, посолите и поставьте на огонь. После закипания убавьте огонь до среднего. Картофель варится около 20-25 минут, морковь около 30-35 минут. Проверяйте ножом: он должен входить легко, но овощ не должен разваливаться.</p>
+<p>Яйца положите в другую кастрюлю, залейте холодной водой, доведите до кипения и варите 10 минут. Сразу переложите в холодную воду.</p>
+<aside class="note">
+<p><strong>Почему так работает.</strong> Овощи варят «в мундире», то есть в кожуре: так они не набирают воду, и салат не будет водянистым.</p>
+</aside>
+<aside class="note">
+<p>💡 <strong>Совет.</strong> Ещё вкуснее, если картофель и морковь запечь. Заверните каждый овощ в фольгу и запекайте при 200 °C 40-50 минут, пока нож не войдёт легко.</p>
+</aside>
+<hr />
+<h3>2. Полностью остудить · 1 ч (без вашего участия)</h3>
+<p>Слейте воду, переложите овощи на тарелку и дайте остыть до комнатной температуры, а лучше уберите их в холодильник. Это самый важный шаг.</p>
+<aside class="note">
+<p>⚠️ <strong>Типичная ошибка.</strong> Резать и заправлять тёплые овощи. Тёплый картофель крошится и превращается в кашу, а майонез от тепла расслаивается. Салат быстрее портится.</p>
+</aside>
+<hr />
+<h3>3. Нарезать · 20 мин</h3>
+<p>Очистите картофель, морковь и яйца. Нарежьте всё одинаковыми кубиками примерно 7-8 мм, размером с горошину побольше. Колбасу и огурцы тоже режьте кубиком такого же размера. Огурцы после нарезки слегка отожмите рукой и слейте сок. С горошка слейте жидкость через дуршлаг. Зелёный лук нарежьте мелко.</p>
+<p>Сложите всё в большую миску, но не перемешивайте с майонезом.</p>
+<aside class="note">
+<p><strong>Почему одинаковые кубики.</strong> В каждой ложке салата будет всего понемногу. Именно так выглядит «правильный» оливье.</p>
+</aside>
+<hr />
+<h3>4. Хранить без майонеза · до 1 суток</h3>
+<p>Если готовите накануне, накройте миску крышкой или плёнкой и уберите в холодильник незаправленным. Нарезанные продукты спокойно простоят до следующего дня.</p>
+<hr />
+<h3>5. Заправить перед подачей · 3 мин</h3>
+<p>За 15-30 минут до того, как сесть за стол, добавьте майонез, посолите, поперчите и аккуратно перемешайте большой ложкой. Попробуйте: если суховато, добавьте ещё 1-2 ложки майонеза.</p>
+<p>Выложите в салатницу горкой, сверху разложите горошек, звёздочки из моркови и зелень.</p>
+<aside class="note">
+<p>⚠️ <strong>Безопасность.</strong> Заправленный майонезом салат держите в холодильнике и доешьте в течение суток. Если салат простоял на тёплом столе всю ночь, утром его лучше выбросить.</p>
+</aside>
+<hr />
+<h2>Практический блок</h2>
+<p><strong>Подача по-советски.</strong> Хрустальная или стеклянная салатница, горка, сверху «розочка» из варёной моркови и веточка петрушки. Если хрусталя нет, подойдёт любая прозрачная миска.</p>
+<p><strong>Замены.</strong> - <strong>Вместо колбасы:</strong> отварная куриная грудка (2 шт.) или говядина 400 г. Такой вариант ближе к «Столичному» салату из советских ресторанов. - <strong>Без моркови.</strong> Многие семьи кладут в оливье морковь, многие нет. Если сомневаетесь, сварите её отдельно и добавьте в половину салата. - <strong>Свежий огурец.</strong> Можно добавить 1 свежий огурец к солёным: салат станет свежее. - <strong>Полегче.</strong> Половину майонеза замените густой сметаной 20%.</p>
+<p><strong>Сколько нужно.</strong> На праздничном столе, где есть и другие салаты, оливье съедают около 200-250 г на человека. Наш рецепт рассчитан на 6 человек с небольшим запасом «на утро 1 января».</p>
+<p><strong>Аллергены.</strong> Яйца, горчица (в майонезе).</p>
+<aside class="didyou"><span class="dy">А вы знали?</span>Ресторан «Эрмитаж», где придумали салат Оливье, стоял на Трубной площади в Москве. Здание сохранилось, сейчас в нём театр «Школа современной пьесы».</aside></article><article class="recipe" id="shuba"><p class="eyebrow">Салаты</p><h3>Селёдка под шубой</h3><figure class="pic"><img src="img/shuba.jpg" alt="Селёдка под шубой" loading="lazy"></figure><dl class="facts"><div><dt>Активно</dt><dd>45 мин</dd></div><div><dt>Всего</dt><dd>1 ч 30 мин + минимум 4 ч в холодильнике</dd></div><div><dt>Порции</dt><dd>6-8</dd></div><div><dt>Духовка</dt><dd>не используется (или 200 °C, если запекаете свёклу)</dd></div></dl>
+<p>Слоёный салат: внизу селёдка с луком, сверху картофель, морковь и яйца, а наверху яркая «шуба» из свёклы. Её собирают накануне, за ночь слои пропитываются и салат становится нежным. Для хозяина это удобно: утром 31-го шуба уже готова.</p>
+<hr />
+<h2>История</h2>
+<p>Откуда взялась шуба, точно не знает никто. Есть красивая легенда: будто бы в 1918 году московский повар Аристарх Прокопцев придумал салат для трактира, где пролетарии постоянно дрались. Селёдка означала рабочих, овощи крестьян, свёкла красное знамя, а название расшифровывалось как лозунг: «Шовинизму и Упадку - Бойкот и Анафема», сокращённо Ш.У.Б.А. Никаких документов о поваре и трактире не найдено, так что, скорее всего, это весёлая выдумка.</p>
+<p>Надёжно известно другое: селёдка с картошкой и луком была обычной русской закуской задолго до революции, а слоёные салаты под майонезом стали массово готовить в советские годы. К 1970-м шуба уже была на каждом новогоднем столе.</p>
+<h2>Ингредиенты</h2>
+<ul>
+<li class="ing"><span class="n">сельдь слабосолёная целиком, крупная (около 400 г) или 300 г готового филе</span><span class="q">1&nbsp;шт</span></li>
+<li class="ing"><span class="n">лук репчатый небольшой (можно красный)</span><span class="q">1&nbsp;шт</span></li>
+<li class="ing"><span class="n">картофель среднего размера (около 350 г)</span><span class="q">3&nbsp;шт</span></li>
+<li class="ing"><span class="n">морковь (около 200 г)</span><span class="q">2&nbsp;шт</span></li>
+<li class="ing"><span class="n">свёкла средняя (около 400 г)</span><span class="q">2&nbsp;шт</span></li>
+<li class="ing"><span class="n">яйца С1 (по желанию)</span><span class="q">3&nbsp;шт</span></li>
+<li class="ing"><span class="n">майонез 67% жирности</span><span class="q">250&nbsp;г</span></li>
+<li class="ing"><span class="n">уксус 9% (для лука, по желанию)</span><span class="q">1&nbsp;ч. л.</span></li>
+</ul>
+<h2>Шаги</h2>
+<h3>1. Сварить овощи · 10 мин работы + до 1,5 ч варки</h3>
+<p>Картофель, морковь и свёклу вымойте, не очищая. Свёклу варите отдельно от остальных, она красит воду: залейте холодной водой, после закипания варите на среднем огне 1-1,5 часа. Картофель и морковь варите вместе 25-35 минут. Яйца варите 10 минут. Проверка овощей ножом: он должен входить легко.</p>
+<p>Всё полностью остудите, лучше в холодильнике.</p>
+<aside class="note">
+<p>💡 <strong>Совет.</strong> Свёклу удобно запечь: заверните в фольгу и запекайте при 200 °C около часа. Она будет слаще и не водянистой. Можно сварить её за день до сборки.</p>
+</aside>
+<hr />
+<h3>2. Разделать селёдку · 15 мин</h3>
+<p>Если купили целую рыбу, наденьте перчатки. Отрежьте голову и хвост, разрежьте брюшко и удалите внутренности. Снимите кожу: подцепите её ножом у головы и потяните к хвосту. Разрежьте рыбу вдоль спинки и снимите два филе с хребта. Пинцетом или пальцами выньте крупные кости. Готовое филе нарежьте кубиками около 1 см.</p>
+<aside class="note">
+<p>💡 <strong>Совет.</strong> С готовым филе в масле всё проще, но рыба целиком обычно вкуснее и дешевле. Выбирайте сельдь слабосолёную, с толстой спинкой.</p>
+</aside>
+<hr />
+<h3>3. Подготовить лук · 5 мин + 10 мин ожидания</h3>
+<p>Лук нарежьте очень мелко. Чтобы убрать горечь, залейте его кипятком на 5 минут, слейте воду, или сбрызните уксусом и оставьте на 10 минут.</p>
+<hr />
+<h3>4. Натереть овощи · 10 мин</h3>
+<p>Очистите остывшие овощи и яйца. Картофель, морковь, свёклу и яйца натрите на крупной тёрке, каждый в отдельную миску. Свёклу трите последней и в перчатках.</p>
+<aside class="note">
+<p>⚠️ <strong>Типичная ошибка.</strong> Отжимать свёклу слишком сильно или, наоборот, не отжимать совсем. Если свёкла очень сочная, слегка отожмите её рукой, иначе салат «поплывёт».</p>
+</aside>
+<hr />
+<h3>5. Собрать слои · 10 мин</h3>
+<p>Поставьте кольцо на блюдо (или собирайте просто горкой). Каждый слой слегка разровняйте вилкой и смажьте тонким слоем майонеза: удобно выдавить его сеточкой из пакета и разровнять ложкой.</p>
+<ol type="1">
+<li>Селёдка, сверху лук. Майонез.</li>
+<li>Картофель. Майонез.</li>
+<li>Яйца (если кладёте). Майонез.</li>
+<li>Морковь. Майонез.</li>
+<li>Свёкла. Сверху майонез сплошным слоем, гладко.</li>
+</ol>
+<p>Не утрамбовывайте слои сильно, просто слегка прижимайте.</p>
+<hr />
+<h3>6. Дать постоять · минимум 4 ч, лучше ночь</h3>
+<p>Накройте плёнкой (так, чтобы она не касалась верха) и уберите в холодильник. Перед подачей снимите кольцо: проведите между кольцом и салатом тонким ножом.</p>
+<aside class="note">
+<p><strong>Почему так работает.</strong> За несколько часов майонез и сок свёклы пропитывают слои, и салат становится мягким и цельным. Свежесобранная шуба вкусная, но разваливается и кажется суховатой.</p>
+</aside>
+<hr />
+<h2>Практический блок</h2>
+<p><strong>Украшение.</strong> Сверху выложите майонезом сеточку, звёздочку или цифры наступающего года. Можно посыпать тёртым желтком и рубленой зеленью.</p>
+<p><strong>Хранение.</strong> В холодильнике до 2 суток. Собрать шубу удобно утром накануне праздника или вечером, чтобы следующий день был свободным.</p>
+<p><strong>Без рыбы.</strong> Для гостей, которые не едят рыбу, отложите немного овощей и соберите маленькую шубу в стакане без селёдки. Получится «свекольный салат под шубой» с тем же вкусом.</p>
+<p><strong>Аллергены.</strong> Рыба, яйца, горчица (в майонезе).</p>
+<aside class="didyou"><span class="dy">А вы знали?</span>Свёклу для шубы не обязательно варить. Запечённая в фольге, она получается слаще и не водянистая.</aside></article><article class="recipe" id="myaso-po-francuzski"><p class="eyebrow">Горячее</p><h3>Мясо по-французски</h3><figure class="pic"><img src="img/myaso.jpg" alt="Мясо по-французски" loading="lazy"></figure><dl class="facts"><div><dt>Активно</dt><dd>35 мин</dd></div><div><dt>Всего</dt><dd>1 ч 30 мин</dd></div><div><dt>Порции</dt><dd>6</dd></div><div><dt>Духовка</dt><dd>190 °C, 50-60 минут</dd></div></dl>
+<p>Самое праздничное горячее советского стола: отбивные, лук, картофель и сырная корочка, всё на одном противне. Его удобно готовить для гостей: собрать можно за пару часов, а в духовку поставить, когда садитесь за салаты. Через час горячее готово, а вы ни разу не встали к плите.</p>
+<hr />
+<h2>История</h2>
+<p>Во Франции такого блюда нет. Говорят, что его предок - «телятина Орлов» (<em>veau Orloff</em>): телятина, запечённая с грибами, луком и сырным соусом. Её будто бы придумал французский повар для русского графа Орлова в XIX веке. Советские повара упростили рецепт: телятину заменили свининой, сложный соус майонезом, добавили картошку, а «французское» название осталось. К 1970-80-м мясо по-французски стало обязательным блюдом на свадьбах, юбилеях и в новогоднюю ночь.</p>
+<h2>Ингредиенты</h2>
+<ul>
+<li class="ing"><span class="n">свинина без кости (шея или корейка)</span><span class="q">1&nbsp;кг</span></li>
+<li class="ing"><span class="n">картофель</span><span class="q">1&nbsp;кг</span></li>
+<li class="ing"><span class="n">лук репчатый</span><span class="q">3&nbsp;шт</span></li>
+<li class="ing"><span class="n">сыр твёрдый (российский, гауда или похожий)</span><span class="q">250&nbsp;г</span></li>
+<li class="ing"><span class="n">майонез (или сметана 20%)</span><span class="q">200&nbsp;г</span></li>
+<li class="ing"><span class="n">масло растительное для формы</span><span class="q">2&nbsp;ст. л.</span></li>
+<li>соль и молотый чёрный перец по вкусу</li>
+</ul>
+<p><strong>По желанию</strong></p>
+<ul>
+<li class="ing"><span class="n">шампиньоны</span><span class="q">300&nbsp;г</span></li>
+<li class="ing"><span class="n">помидоры</span><span class="q">2&nbsp;шт</span></li>
+</ul>
+<h2>Шаги</h2>
+<h3>1. Отбить мясо · 15 мин</h3>
+<p>Нарежьте свинину поперёк волокон на куски толщиной около 1,5 см. Должно получиться 10-12 кусков. Каждый положите в пакет или накройте плёнкой и отбейте молотком до толщины примерно 7-8 мм. Посолите и поперчите с двух сторон.</p>
+<aside class="note">
+<p><strong>Почему через плёнку.</strong> Брызги не летят по кухне, а мясо не рвётся. Если молотка нет, отбейте дном тяжёлой кастрюли или ладонью: тонкая отбивная пропечётся равномерно.</p>
+</aside>
+<hr />
+<h3>2. Нарезать картофель и лук · 15 мин</h3>
+<p>Картофель очистите и нарежьте тонкими кружками, 3-4 мм. Сразу посолите и перемешайте. Лук нарежьте тонкими полукольцами. Сыр натрите на крупной тёрке. Если кладёте грибы, нарежьте их пластинками, помидоры кружками.</p>
+<hr />
+<h3>3. Собрать на противне · 10 мин</h3>
+<p>Смажьте противень маслом. Слоями:</p>
+<ol type="1">
+<li>Картофель ровным слоем, кружки чуть внахлёст.</li>
+<li>Отбивные, плотно друг к другу.</li>
+<li>Лук.</li>
+<li>Грибы и помидоры (если используете).</li>
+<li>Майонез сеточкой, потом разровнять ложкой тонким слоем.</li>
+</ol>
+<p>Сыр пока не кладите.</p>
+<aside class="note">
+<p>💡 <strong>Совет.</strong> Противень можно собрать за 2-3 часа до гостей, накрыть фольгой и убрать в холодильник. Тогда при гостях нужно только включить духовку.</p>
+</aside>
+<hr />
+<h3>4. Запечь · 50-60 мин</h3>
+<p>Разогрейте духовку до 190 °C. Накройте противень фольгой и запекайте 30 минут. Снимите фольгу, посыпьте сыром и запекайте ещё 20-30 минут, пока сыр не станет золотистым, а картофель мягким: проверьте ножом в середине противня.</p>
+<aside class="note">
+<p>⚠️ <strong>Типичная ошибка.</strong> Положить сыр сразу. За час он пересохнет и станет жёстким, как резина. Сыр кладут на последние 20-30 минут.</p>
+</aside>
+<hr />
+<h3>5. Дать постоять · 10 мин</h3>
+<p>Выньте противень и дайте постоять 10 минут: сок впитается обратно в мясо. Нарежьте на порции прямо в противне лопаткой, так чтобы в каждом куске был картофель, мясо и корочка.</p>
+<hr />
+<h2>Практический блок</h2>
+<p><strong>Подача.</strong> По-советски: прямо в противне или в большой форме на подставке посреди стола. Рядом свежие овощи или квашеная капуста.</p>
+<p><strong>Замены.</strong> - <strong>Курица.</strong> Вместо свинины 1 кг куриного филе или бёдер без кожи. Отбейте до 1 см. Время запекания то же. - <strong>Без майонеза.</strong> Сметана 20% с ложкой горчицы. - <strong>Без картофеля.</strong> Только мясо, лук и сыр. Тогда запекайте 35-40 минут, а гарнир (пюре или рис) сделайте отдельно.</p>
+<p><strong>Хранение.</strong> Остатки в холодильнике до 2 суток. Разогревайте в духовке под фольгой 15 минут.</p>
+<p><strong>Аллергены.</strong> Молочное (сыр), яйца и горчица (в майонезе).</p>
+</article><article class="recipe" id="kartoshka"><p class="eyebrow">Сладкое, быстрый вариант</p><h3>Пирожное «Картошка» и мандарины</h3><figure class="pic"><img src="img/kartoshka.jpg" alt="Пирожное «Картошка» и мандарины" loading="lazy"></figure><dl class="facts"><div><dt>Активно</dt><dd>30 мин</dd></div><div><dt>Всего</dt><dd>2 ч (с охлаждением)</dd></div><div><dt>Порции</dt><dd>18-20 пирожных</dd></div><div><dt>Духовка</dt><dd>не используется</dd></div></dl>
+<p>Пирожное без выпечки, похожее на картофелину: шоколадное, мягкое, с «ростками» из крема. В кондитерских продавались готовые «картошки», а дома делали из печенья и сгущёнки. Готовится быстро, хранится несколько дней, и дети с удовольствием катают «картошки» сами.</p>
+<hr />
+<h2>История</h2>
+<p>Происхождение «Картошки» точно неизвестно. Чаще всего рассказывают, что советские кондитерские так использовали обрезки бисквита: их перемалывали, смешивали с кремом и скатывали в шарики, чтобы ничего не пропадало. Похожие пирожные из крошек есть и в других странах, например шведские «пылесосы» (<em>dammsugare</em>) с марципаном. Дома бисквит заменили покупным печеньем, и получился самый простой праздничный десерт.</p>
+<p>Мандарины - отдельная история. Их запах для многих и есть запах Нового года. Мандарины в декабре везли в основном из Абхазии и Грузии, где они как раз созревали к зиме, и за ними выстраивались очереди.</p>
+<h2>Ингредиенты</h2>
+<ul>
+<li class="ing"><span class="n">печенье сахарное («Юбилейное» или похожее)</span><span class="q">500&nbsp;г</span></li>
+<li class="ing"><span class="n">масло сливочное 82,5%, мягкое</span><span class="q">150&nbsp;г</span></li>
+<li class="ing"><span class="n">молоко сгущённое (половина банки)</span><span class="q">200&nbsp;г</span></li>
+<li class="ing"><span class="n">какао-порошок</span><span class="q">3&nbsp;ст. л.</span></li>
+<li class="ing"><span class="n">грецкие орехи (по желанию)</span><span class="q">60&nbsp;г</span></li>
+<li class="ing"><span class="n">коньяк или ром (по желанию, только для взрослой части)</span><span class="q">1-2&nbsp;ст. л.</span></li>
+</ul>
+<p><strong>Для обсыпки и «ростков»</strong></p>
+<ul>
+<li class="ing"><span class="n">какао-порошок</span><span class="q">2&nbsp;ст. л.</span></li>
+<li class="ing"><span class="n">сахарная пудра</span><span class="q">1&nbsp;ст. л.</span></li>
+<li class="ing"><span class="n">масло сливочное, мягкое</span><span class="q">30&nbsp;г</span></li>
+<li class="ing"><span class="n">сахарная пудра (для крема)</span><span class="q">1&nbsp;ст. л.</span></li>
+</ul>
+<p><strong>К столу</strong></p>
+<ul>
+<li class="ing"><span class="n">мандарины</span><span class="q">1,5-2&nbsp;кг</span></li>
+</ul>
+<h2>Шаги</h2>
+<h3>1. Измельчить печенье · 5 мин</h3>
+<p>Измельчите печенье в блендере в мелкую крошку. Если блендера нет, сложите печенье в плотный пакет, выпустите воздух и раскатайте скалкой. Орехи, если кладёте, слегка обжарьте на сухой сковороде 3-4 минуты и мелко порубите.</p>
+<hr />
+<h3>2. Сделать массу · 10 мин</h3>
+<p>В миске взбейте мягкое масло миксером 2-3 минуты, до пышности. Добавьте сгущёнку и взбейте ещё минуту. Всыпьте какао, крошку и орехи и перемешайте руками или ложкой. Масса должна быть плотной, как пластилин, и лепиться без трещин.</p>
+<aside class="note">
+<p>💡 <strong>Совет.</strong> Если масса крошится, добавьте ложку сгущёнки. Если липнет к рукам, добавьте ложку крошки или уберите массу в холодильник на 15 минут.</p>
+</aside>
+<aside class="note">
+<p><strong>Вариант для взрослых.</strong> Отложите половину массы и добавьте в неё ложку коньяка или рома. Детям достанется часть без алкоголя.</p>
+</aside>
+<hr />
+<h3>3. Скатать «картошки» · 10 мин</h3>
+<p>Отщипывайте кусочки по 35-40 г (размером с грецкий орех или чуть больше) и скатывайте продолговатые «картофелины». Смешайте какао с сахарной пудрой и обваляйте в этой смеси каждое пирожное. Выкладывайте на пергамент.</p>
+<hr />
+<h3>4. «Ростки» · 5 мин</h3>
+<p>Мягкое масло разотрите с сахарной пудрой. Переложите в пакет, отрежьте крошечный уголок и выдавите на каждой «картошке» по 2-3 маленьких белых «ростка». Можно обойтись без них: пирожное и так узнаваемое.</p>
+<hr />
+<h3>5. Охладить · минимум 1 ч</h3>
+<p>Уберите в холодильник минимум на час, чтобы пирожные стали плотными.</p>
+<hr />
+<h2>Практический блок</h2>
+<p><strong>Хранение.</strong> В закрытом контейнере в холодильнике до 4-5 дней. Сделать «Картошку» можно за 1-2 дня до праздника.</p>
+<p><strong>Подача.</strong> На блюде рядом с вазой мандаринов. Достаньте из холодильника за 15-20 минут до подачи: так вкус будет мягче.</p>
+<p><strong>Мандарины.</strong> Купите на 6 человек около 1,5-2 кг. Красиво подать в высокой вазе горкой или прямо в сетке-авоське, повешенной на спинку стула (это шутка, понятная всем, кто помнит СССР). Кожуру не выбрасывайте: разложите её на батарее, и комната запахнет Новым годом.</p>
+<p><strong>Аллергены.</strong> Глютен (печенье), молочное (масло, сгущёнка), орехи (по желанию).</p>
+<aside class="didyou"><span class="dy">А вы знали?</span>Мандарины к Новому году в СССР везли в основном из Абхазии и Грузии: они как раз созревают в декабре.</aside></article><article class="recipe" id="napoleon"><p class="eyebrow">Сладкое, вариант «как у бабушки»</p><h3>Торт «Наполеон»</h3><dl class="facts"><div><dt>Активно</dt><dd>2 ч 30 мин</dd></div><div><dt>Всего</dt><dd>3 ч + 8-12 ч пропитки (лучше за 2 дня до праздника)</dd></div><div><dt>Порции</dt><dd>12-14 (большой торт диаметром 24 см)</dd></div><div><dt>Духовка</dt><dd>200 °C, 8-10 минут на каждый корж</dd></div></dl>
+<p>Самый праздничный домашний торт советских лет: восемь тонких хрустящих коржей, заварной крем на молоке и сливочном масле, сверху крошка. За ночь в холодильнике коржи пропитываются и торт становится мягким, слоистым, тающим. Это дольше, чем «Картошка», но в каждой семье есть человек, для которого Новый год без «Наполеона» не Новый год.</p>
+<p>Это <strong>праздничный вариант десерта</strong>: его делают вместо «Картошки». Как изменятся тайминг и покупки, написано в <a href="#taiming">тайминге</a>, в блоке «Вариант с «Наполеоном»».</p>
+<hr />
+<h2>История</h2>
+<p>Похожий торт есть во Франции: <em>мильфей</em>, «тысяча листьев», слоёное тесто с кремом. Рецепт мильфея с заварным кремом опубликовал ещё в 1876 году французский повар Урбен Дюбуа, тот самый, которому приписывают и «телятину Орлов».</p>
+<p>Почему в России торт назвали в честь Наполеона, точно неизвестно. Самая популярная версия: в 1912 году, к столетию победы над Наполеоном, московские кондитеры выпустили треугольные слоёные пирожные, похожие на его знаменитую треуголку. По другой версии, название пришло от французского слова <em>napolitain</em>, «неаполитанский», и просто исказилось. Документов, которые подтверждали бы одну из версий, нет.</p>
+<p>В советские годы «Наполеон» стал главным домашним тортом: для него нужны только мука, масло, молоко, яйца и сахар, то есть то, что было почти всегда. Коржи пекли на противне или даже на перевёрнутой сковороде, а рецепт передавали из рук в руки в тетрадках.</p>
+<h2>Ингредиенты</h2>
+<p><strong>Тесто (8 коржей по 24 см)</strong></p>
+<ul>
+<li class="ing"><span class="n">мука пшеничная (и ещё 50-80 г для подпыла)</span><span class="q">450&nbsp;г</span></li>
+<li class="ing"><span class="n">масло сливочное 82,5%, очень холодное</span><span class="q">250&nbsp;г</span></li>
+<li class="ing"><span class="n">яйцо С1</span><span class="q">1&nbsp;шт</span></li>
+<li class="ing"><span class="n">вода ледяная</span><span class="q">120&nbsp;мл</span></li>
+<li class="ing"><span class="n">уксус 9% (или 2 ст. л. лимонного сока)</span><span class="q">1&nbsp;ст. л.</span></li>
+<li class="ing"><span class="n">соль</span><span class="q">1&nbsp;щепотка</span></li>
+</ul>
+<p><strong>Заварной крем</strong></p>
+<ul>
+<li class="ing"><span class="n">молоко 3,2%</span><span class="q">1&nbsp;л</span></li>
+<li class="ing"><span class="n">яйца С1</span><span class="q">3&nbsp;шт</span></li>
+<li class="ing"><span class="n">сахар</span><span class="q">250&nbsp;г</span></li>
+<li class="ing"><span class="n">мука пшеничная (или 50 г кукурузного крахмала)</span><span class="q">60&nbsp;г</span></li>
+<li class="ing"><span class="n">ванильный сахар (или 1 ч. л. ванильного экстракта)</span><span class="q">1&nbsp;пакетик</span></li>
+<li class="ing"><span class="n">масло сливочное 82,5%, мягкое</span><span class="q">200&nbsp;г</span></li>
+</ul>
+<h2>Шаги</h2>
+<h3>1. Замесить рубленое тесто · 20 мин + 1 ч в холодильнике</h3>
+<p>Насыпьте муку горкой на стол или в большую миску. Холодное масло нарежьте кубиками прямо в муку и рубите ножом (или натирайте на крупной тёрке), пока не получится крупная крошка, как мокрый песок с кусочками масла размером с горошину.</p>
+<p>В стакане смешайте яйцо, ледяную воду, уксус и соль. Влейте в крошку и быстро соберите тесто руками в комок. Не месите долго: кусочки масла должны остаться целыми.</p>
+<p>Разделите тесто на 8 равных шариков (около 100 г каждый), слегка расплющите, заверните в плёнку и уберите в холодильник минимум на час. Можно на ночь.</p>
+<aside class="note">
+<p><strong>Почему так работает.</strong> Кусочки холодного масла в духовке тают и выпускают пар, который приподнимает слои теста. Поэтому корж получается слоистым и хрустящим. Если масло растает в руках раньше времени, корж выйдет плотным, как печенье. Отсюда правило: всё холодное, руками работать быстро.</p>
+</aside>
+<aside class="note">
+<p>💡 <strong>Быстрый путь.</strong> Вместо своего теста возьмите 1 кг готового бездрожжевого слоёного теста. Разморозьте, разделите на 8 частей и дальше делайте так же, как в шаге 2. Вкус будет немного другой, но торт получится.</p>
+</aside>
+<hr />
+<h3>2. Раскатать и испечь коржи · 1 ч 20 мин</h3>
+<p>Разогрейте духовку до 200 °C. Достаньте из холодильника один шарик (остальные пусть ждут в холоде). Положите на лист пергамента, подсыпьте мукой и раскатайте очень тонко, 2-3 мм, чуть больше 24 см в диаметре.</p>
+<p>Положите сверху тарелку и обрежьте ножом по кругу, но обрезки <strong>не убирайте</strong>: пусть пекутся рядом, из них будет крошка для посыпки. Часто наколите корж вилкой, чтобы он не вздувался пузырями.</p>
+<p>Перенесите пергамент с коржом на противень и выпекайте 8-10 минут, пока корж не станет светло-золотистым. Снимите на решётку вместе с пергаментом. Пока печётся один корж, раскатывайте следующий.</p>
+<aside class="note">
+<p>⚠️ <strong>Типичная ошибка.</strong> Перекладывать раскатанное тесто на противень руками. Тонкий корж рвётся и теряет форму. Раскатывайте сразу на пергаменте и переносите вместе с ним.</p>
+</aside>
+<aside class="note">
+<p>💡 <strong>Совет.</strong> Коржи очень хрупкие, пока тёплые. Остывшими их можно сложить стопкой и хранить в сухом месте в пакете до 3 дней. Поэтому коржи удобно испечь заранее.</p>
+</aside>
+<hr />
+<h3>3. Сварить заварной крем · 20 мин + 1 ч остывания</h3>
+<p>В кастрюле с толстым дном нагрейте 800 мл молока почти до кипения. В миске венчиком смешайте яйца, сахар, муку, ваниль и оставшиеся 200 мл холодного молока до гладкости, без комочков.</p>
+<p>Тонкой струйкой, не переставая мешать венчиком, влейте в яичную смесь половину горячего молока. Потом перелейте всё обратно в кастрюлю. Варите на среднем огне, постоянно помешивая и проводя венчиком по дну, 4-6 минут, пока крем не загустеет, как густая сметана, и на поверхности не появятся первые крупные пузыри. Снимите с огня.</p>
+<p>Накройте крем плёнкой «в контакт», то есть так, чтобы плёнка лежала прямо на поверхности, и остудите до комнатной температуры.</p>
+<aside class="note">
+<p><strong>Почему горячее молоко вливают постепенно.</strong> Если вылить яйца сразу в кипящее молоко, они свернутся хлопьями. Постепенно вливая молоко в яйца, мы аккуратно их прогреваем.</p>
+</aside>
+<aside class="note">
+<p>⚠️ <strong>Типичная ошибка.</strong> Отойти от плиты. Заварной крем пригорает за минуту, а горелые хлопья со дна испортят весь вкус. Мешайте всё время.</p>
+</aside>
+<hr />
+<h3>4. Добавить масло · 5 мин</h3>
+<p>Мягкое масло взбейте миксером 2-3 минуты до пышности и светлого цвета. Продолжая взбивать, добавляйте остывший крем по 2-3 ложки. Крем станет гладким и блестящим.</p>
+<aside class="note">
+<p>⚠️ <strong>Важно.</strong> Крем и масло должны быть одной температуры, комнатной. Если крем тёплый, масло растает и всё станет жидким. Если холодный, масса свернётся крупинками. Если это случилось, подогрейте миску снаружи феном 20-30 секунд и взбейте снова.</p>
+</aside>
+<hr />
+<h3>5. Собрать торт · 15 мин</h3>
+<p>Выберите самый некрасивый корж и раскрошите его вместе с запечёнными обрезками скалкой в пакете: это посыпка.</p>
+<p>На блюдо положите первый корж, намажьте 3-4 большими ложками крема до самых краёв. Накройте следующим коржом, слегка прижмите ладонью, снова крем. Так соберите все 7 коржей. Остатком крема обмажьте верх и бока. Посыпьте торт крошкой со всех сторон.</p>
+<p>Коржи будут ломаться: это не страшно. Сломанный корж собирают на креме, как пазл, после пропитки трещин не видно.</p>
+<hr />
+<h3>6. Пропитать · 8-12 ч, лучше ночь</h3>
+<p>Уберите торт в холодильник минимум на 8 часов. За это время хрустящие коржи впитают крем и станут мягкими. Если резать торт сразу, он будет сухим и будет крошиться.</p>
+<hr />
+<h2>Практический блок</h2>
+<p><strong>Когда делать.</strong> Удобнее всего за 2 дня до праздника испечь коржи, а накануне сварить крем и собрать торт. Он простоит ночь, а к вечеру праздника будет идеальным.</p>
+<p><strong>Подача.</strong> Достаньте торт из холодильника за 30 минут до чая. Режьте длинным острым ножом, вытирая его после каждого куска.</p>
+<p><strong>Сколько.</strong> Торт большой, примерно на 12-14 кусков. Для 6 гостей останется на 1 января, и это тоже традиция. Если хотите торт поменьше, возьмите половину всех продуктов и коржи диаметром 18-20 см.</p>
+<p><strong>Хранение.</strong> В холодильнике до 3 суток, под колпаком или в коробке, чтобы торт не впитал запахи.</p>
+<p><strong>Аллергены.</strong> Глютен (мука), яйца, молочное (масло, молоко).</p>
+</article><article class="recipe" id="napitki"><p class="eyebrow">Напитки</p><h3>Напитки</h3><figure class="pic"><img src="img/napitki.jpg" alt="Напитки - морс, шампанское, лимонад и чай" loading="lazy"></figure><dl class="facts"><div><dt>Активно</dt><dd>20 мин</dd></div><div><dt>Всего</dt><dd>1 ч 30 мин (с остыванием)</dd></div><div><dt>Порции</dt><dd>6 (морс около 2,2 л)</dd></div><div><dt>Духовка</dt><dd>не используется</dd></div></dl>
+<p>Под бой курантов пьют шампанское, за столом морс, а после еды чай с лимоном. Для детей «шампанское» из лимонада. Здесь всё, что нужно для напитков вечера.</p>
+<hr />
+<h2>История</h2>
+<p><strong>Морс.</strong> Ягодный напиток из клюквы или брусники пили на Руси задолго до чая: о нём упоминают ещё старинные книги о хозяйстве. Клюкву собирали осенью, она хранилась всю зиму, поэтому морс был зимним напитком.</p>
+<p><strong>Советское шампанское.</strong> В царской России игристое вино делал князь Лев Голицын, сначала в Крыму, в Новом Свете, а потом в Абрау-Дюрсо под Новороссийском. Его ученик, винодел Антон Фролов-Багреев, в советские годы придумал, как делать игристое вино быстро и дёшево: не в каждой бутылке, как во Франции, а в больших закрытых резервуарах. В 1930-е годы государство запустило массовое производство, и «Советское шампанское» стало главным напитком новогодней ночи. Самым популярным было полусладкое.</p>
+<h2>Ингредиенты</h2>
+<p><strong>Клюквенный морс (около 2,2 л)</strong></p>
+<ul>
+<li class="ing"><span class="n">клюква (свежая или замороженная)</span><span class="q">400&nbsp;г</span></li>
+<li class="ing"><span class="n">сахар (или мёд, по вкусу)</span><span class="q">150-200&nbsp;г</span></li>
+<li class="ing"><span class="n">вода</span><span class="q">2&nbsp;л</span></li>
+</ul>
+<p><strong>Шампанское</strong></p>
+<ul>
+<li class="ing"><span class="n">игристое вино полусладкое или брют (на 6 взрослых: бокал под куранты и на тосты; как выбрать, написано в разделе «Игристое к новогоднему столу»)</span><span class="q">2&nbsp;бутылки</span></li>
+</ul>
+<p><strong>Для детей и для тех, кто не пьёт</strong></p>
+<ul>
+<li class="ing"><span class="n">лимонад «Буратино», «Дюшес» или «Тархун» (по 1-1,5 л), или домашний «Тархун» по рецепту в отдельном файле</span><span class="q">2&nbsp;бутылки</span></li>
+</ul>
+<p><strong>Чай</strong></p>
+<ul>
+<li>чёрный чай листовой</li>
+<li class="ing"><span class="n">лимон</span><span class="q">1&nbsp;шт</span></li>
+<li>сахар, варенье</li>
+</ul>
+<h2>Шаги</h2>
+<h3>1. Отжать сок из клюквы · 5 мин</h3>
+<p>Замороженную клюкву разморозьте (можно в миске с тёплой водой 10 минут). Разомните ягоды толкушкой или ложкой прямо в сите над миской и отожмите сок. Сок уберите в холодильник, жмых (остатки ягод) переложите в кастрюлю.</p>
+<hr />
+<h3>2. Сварить основу · 10 мин</h3>
+<p>Залейте жмых 2 литрами воды, доведите до кипения и прокипятите 5 минут. Процедите через сито, жмых выбросьте. В горячий отвар добавьте сахар и размешайте до растворения.</p>
+<hr />
+<h3>3. Соединить · 1 ч ожидания</h3>
+<p>Остудите отвар до комнатной температуры, влейте отжатый сок и перемешайте. Попробуйте и добавьте сахар, если морс слишком кислый. Уберите в холодильник.</p>
+<aside class="note">
+<p><strong>Почему сок не варят.</strong> Если вскипятить сок, морс потеряет яркий свежий вкус и большую часть витамина C. Поэтому его вливают в уже остывший отвар.</p>
+</aside>
+<hr />
+<h3>4. Шампанское: охладить и открыть · 5 мин</h3>
+<p>Положите бутылки в холодильник за 4-5 часов до курантов. В морозилку можно, но не дольше чем на 30-40 минут, иначе вино замёрзнет и бутылка может лопнуть.</p>
+<p>Как открыть без хлопка и брызг: 1. Снимите фольгу и, придерживая пробку большим пальцем, раскрутите проволоку. 2. Наклоните бутылку под углом 45° от себя и от гостей. 3. Крепко держите пробку через салфетку и медленно поворачивайте <strong>бутылку</strong>, а не пробку. 4. Пробка выйдет с тихим шипением. Наливайте в два приёма: сначала немного, пока пена не осядет, потом доливайте.</p>
+<aside class="note">
+<p>⚠️ <strong>Безопасность.</strong> Никогда не направляйте бутылку на людей и на люстру. Пробка вылетает со скоростью, которой хватает, чтобы травмировать глаз.</p>
+</aside>
+<hr />
+<h3>5. Детское шампанское · 1 мин</h3>
+<p>Налейте детям лимонад в такие же бокалы, как у взрослых, и чокайтесь вместе. Для детей это важнее самого напитка.</p>
+<hr />
+<h3>6. Чай · 5 мин</h3>
+<p>Заварите чёрный чай в заварочном чайнике: 1 чайная ложка на чашку плюс одна «на чайник». Залейте кипятком, накройте полотенцем и дайте настояться 5 минут. Подавайте с дольками лимона, сахаром и вареньем в розетках.</p>
+<hr />
+<h2>Практический блок</h2>
+<p><strong>Подача морса.</strong> В графине или кувшине, в гранёных стаканах или бокалах. Добавьте несколько целых ягод и веточку мяты.</p>
+<p><strong>Тёплый морс.</strong> Если гости пришли с мороза, подогрейте морс с палочкой корицы и долькой апельсина, но не кипятите.</p>
+<p><strong>Сколько чего.</strong> Морс: около 2 л на 6 человек. Шампанское: одной бутылки хватает на 5-6 бокалов. Лимонад: около 0,5 л на ребёнка.</p>
+<p><strong>Аллергены.</strong> Нет. Алкоголь только в шампанском.</p>
+<aside class="didyou"><span class="dy">А вы знали?</span>Под бой курантов загадывают желание. Двенадцать ударов длятся меньше минуты, так что открыть бутылку нужно заранее.</aside></article><article class="recipe" id="limonad-tarhun"><p class="eyebrow">Напитки</p><h3>Домашний лимонад «Тархун»</h3><dl class="facts"><div><dt>Активно</dt><dd>20 мин</dd></div><div><dt>Всего</dt><dd>1 ч (с остыванием сиропа)</dd></div><div><dt>Порции</dt><dd>6 (около 2 л)</dd></div><div><dt>Духовка</dt><dd>не используется</dd></div></dl>
+<p>Зелёная газировка с травяным, чуть анисовым вкусом. Её любят и дети, и взрослые, а в новогоднюю ночь она хорошо заменяет шампанское тем, кто не пьёт: наливайте в те же бокалы. Готовится из сиропа, который можно сварить за день.</p>
+<hr />
+<h2>История</h2>
+<p>Тархун, он же эстрагон, - пряная трава со вкусом, похожим на анис и мяту. Лимонад на его основе придумал в 1887 году в Кутаиси грузинский аптекарь Митрофан Лагидзе. Его «воды Лагидзе» на натуральных сиропах прославились на всю страну, а в советские годы «Тархун» стали выпускать заводы по всему СССР, рядом с «Буратино» и «Дюшесом».</p>
+<p>Яркий изумрудный цвет магазинного «Тархуна» - от красителя. Домашний лимонад получается светло-зелёным, цвета молодой травы. Если хотите ярче, используйте второй способ ниже.</p>
+<h2>Ингредиенты</h2>
+<p><strong>Сироп</strong></p>
+<ul>
+<li class="ing"><span class="n">тархун (эстрагон) свежий (около 60 г)</span><span class="q">2&nbsp;пучка</span></li>
+<li class="ing"><span class="n">сахар</span><span class="q">150&nbsp;г</span></li>
+<li class="ing"><span class="n">вода</span><span class="q">200&nbsp;мл</span></li>
+<li class="ing"><span class="n">лимон (или 2 лайма)</span><span class="q">1&nbsp;шт</span></li>
+</ul>
+<p><strong>Лимонад</strong></p>
+<ul>
+<li class="ing"><span class="n">газированная вода, хорошо охлаждённая</span><span class="q">1,5&nbsp;л</span></li>
+<li>лёд</li>
+<li>несколько веточек тархуна и кружков лимона для подачи</li>
+</ul>
+<h2>Шаги</h2>
+<h3>1. Подготовить тархун · 5 мин</h3>
+<p>Промойте тархун и обсушите полотенцем. Оборвите листья с толстых стеблей: стебли горчат. Несколько красивых веточек отложите для подачи. Листьев должно получиться около 40 г, это примерно полный стакан без утрамбовки.</p>
+<hr />
+<h3>2. Сварить сахарный сироп · 5 мин</h3>
+<p>В кастрюле смешайте сахар и воду, доведите до кипения и мешайте, пока сахар полностью не растворится. Снимите с огня.</p>
+<hr />
+<h3>Способ А. Мягкий вкус, светлый цвет · 30 мин настаивания</h3>
+<p>Положите листья тархуна в горячий сироп, слегка помните их ложкой, накройте крышкой и оставьте на 30 минут. Процедите через сито, отжимая листья ложкой. Добавьте сок лимона.</p>
+<h3>Способ Б. Яркий цвет и сильный вкус · 10 мин</h3>
+<p>Остудите сироп до комнатной температуры (это важно: горячий сироп в блендере «варит» листья и они темнеют). Сложите в блендер листья тархуна, холодный сироп и сок лимона. Пробейте 1-2 минуты до однородного зелёного пюре. Процедите через мелкое сито, а потом ещё раз через марлю, чтобы не было мелких травинок.</p>
+<aside class="note">
+<p><strong>Почему лимон.</strong> Кислота делает вкус свежим и помогает сохранить зелёный цвет: без неё сироп за несколько часов буреет.</p>
+</aside>
+<hr />
+<h3>3. Собрать лимонад · 3 мин</h3>
+<p>Перед подачей вылейте сироп в кувшин, добавьте лёд и медленно долейте холодную газированную воду. Аккуратно перемешайте ложкой снизу вверх. Попробуйте: если сладковато, добавьте ещё сока лимона; если пресно, ещё немного сиропа. Украсьте веточками тархуна и кружками лимона.</p>
+<aside class="note">
+<p>⚠️ <strong>Типичная ошибка.</strong> Смешать лимонад заранее. Газ уходит за час, и получается сладкая травяная вода. Сироп готовьте заранее, а газировку доливайте прямо перед подачей.</p>
+</aside>
+<hr />
+<h2>Практический блок</h2>
+<p><strong>Где купить тархун.</strong> В больших супермаркетах в отделе свежей зелени (часто подписан как «эстрагон»), на рынках у продавцов кавказской зелени. Сушёный тархун для лимонада не подходит: вкус будет сенным.</p>
+<p><strong>Заранее.</strong> Сироп хранится в закрытой банке в холодильнике до 3 дней. Цвет со временем станет чуть темнее, на вкус это не влияет.</p>
+<p><strong>Для взрослых.</strong> В бокал с лимонадом можно добавить 30-40 мл водки или джина: получится травяной коктейль. Или долейте сироп не газировкой, а охлаждённым брютом.</p>
+<p><strong>Другие домашние лимонады в том же духе.</strong> - <strong>«Дюшес».</strong> 1 л грушевого сока или нектара, сок половины лимона, 1 л газированной воды. - <strong>«Буратино».</strong> Сироп из 150 г сахара и 150 мл воды, сок 2 лимонов и 1 апельсина, 1,5 л газированной воды. Для «карамельного» цвета сахар можно сначала растопить в кастрюле до светло-золотого цвета и только потом влить воду. Осторожно: горячая карамель сильно шипит и брызгает, лейте воду тонкой струйкой и держите руку подальше.</p>
+<p><strong>Аллергены.</strong> Нет.</p>
+</article></section><section class="block" id="igristoe"><h2>Игристое к новогоднему столу</h2><figure class="pic"><img src="img/igristoe.jpg" alt="Игристое наливают в бокалы, на часах почти полночь" loading="lazy"></figure>
+<p>Бокал под бой курантов - главный момент ночи. В СССР в бокале было одно и то же: «Советское шампанское», чаще всего полусладкое. Сейчас выбор намного больше, и хорошее игристое делают в России: на Кубани, в Крыму, на Дону и в Дагестане. Здесь всё, что нужно, чтобы выбрать бутылку без консультанта.</p>
+<h3>Шампанское или игристое?</h3>
+<p>Настоящее шампанское во всём мире - это вино из французской провинции Шампань. Поэтому в этом наборе мы чаще пишем «игристое».</p>
+<p>Но в России с июля 2021 года действует обратное правило. По закону слово «шампанское» на этикетке могут писать только российские производители, а французские бутылки из Шампани продаются как «игристое вино». Поэтому «Российское шампанское» на полке магазина - это законное название российского игристого, а не подделка.</p>
+<h3>Как читать этикетку</h3>
+<h4>Сладость</h4>
+<p>Это самое важное для новогоднего стола. Слова идут от самого сухого к самому сладкому. Сахар указан примерно, по европейским правилам, на литр вина.</p>
+<div class="tw"><table>
+<thead>
+<tr class="header">
+<th>На этикетке</th>
+<th>Сахар</th>
+<th>Какое на вкус</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Брют натюр, без добавления сахара</td>
+<td>до 3 г</td>
+<td>очень сухое, кислотное</td>
+</tr>
+<tr class="even">
+<td>Экстра брют</td>
+<td>до 6 г</td>
+<td>сухое, свежее</td>
+</tr>
+<tr class="odd">
+<td>Брют</td>
+<td>до 12 г</td>
+<td>сухое, самый универсальный вариант</td>
+</tr>
+<tr class="even">
+<td>Сухое</td>
+<td>12-17 г</td>
+<td>чуть мягче брюта</td>
+</tr>
+<tr class="odd">
+<td>Полусухое</td>
+<td>17-32 г</td>
+<td>заметно сладковатое</td>
+</tr>
+<tr class="even">
+<td>Полусладкое</td>
+<td>32-50 г</td>
+<td>сладкое, «советский» вкус</td>
+</tr>
+<tr class="odd">
+<td>Сладкое</td>
+<td>больше 50 г</td>
+<td>десертное</td>
+</tr>
+</tbody>
+</table></div>
+<h4>Как сделано</h4>
+<p>Пузырьки в вине появляются от второго брожения: в вино добавляют немного сахара и дрожжей, и они выделяют углекислый газ. Где идёт это брожение, так вино и называют.</p>
+<ul>
+<li><strong>Классический (традиционный) метод.</strong> Второе брожение идёт прямо в бутылке, потом вино долго выдерживают на дрожжевом осадке. Так делают шампанское во Франции. Вкус сложный, с нотами хлебной корочки и печенья, пузырьки мелкие и долго играют. Ищите на этикетке слова «классический метод», «традиционный метод», «выдержанное в бутылке». Обычно в 2-3 раза дороже.</li>
+<li><strong>Резервуарный метод (шарма).</strong> Второе брожение идёт в больших закрытых чанах. Это и есть «советский» способ, который придумал Антон Фролов-Багреев (смотрите <a href="#stories">шпаргалку</a>). Вкус фруктовый, свежий, цена доступная. Так сделано большинство массовых игристых.</li>
+<li><strong>Петнат (пет-нат).</strong> Вино разливают в бутылку, пока оно ещё бродит, и не очищают от осадка. Получается чуть мутное, живое, «деревенское» игристое. Модный стиль у небольших российских виноделен.</li>
+<li><strong>Газированное вино.</strong> Обычное вино, насыщенное углекислым газом, как газировка. Пузыри крупные и быстро уходят. Если на этикетке написано «газированное» или «винный напиток», это не игристое вино: такую бутылку лучше не брать.</li>
+</ul>
+<h3>Российские винодельни</h3>
+<p>Ниже винодельни, игристое которых легко найти в магазинах или в рейтингах последних лет. Это не реклама и не полный список, а ориентир для первой покупки.</p>
+<h4>Кубань (Краснодарский край)</h4>
+<ul>
+<li><strong>«Абрау-Дюрсо»</strong> под Новороссийском. Игристое здесь делают с конца XIX века, когда винодельней руководил князь Лев Голицын. Массовая линия «Российское шампанское Абрау-Дюрсо» - самая узнаваемая бутылка новогоднего стола. Для особого случая есть линии классического метода «Империал» и Brut d’Or: в дегустации RatingTelling в декабре 2024 года Imperial White Brut 2020 стал первым среди российских игристых.</li>
+<li><strong>«Фанагория»</strong> на Таманском полуострове. Премиальная линия Primum Alveus выдерживается годами, есть и доступные игристые.</li>
+<li><strong>«Шато Тамань»</strong> («Кубань-Вино»), тоже Тамань. Один из крупнейших производителей, хороший выбор в недорогом сегменте.</li>
+<li><strong>«Усадьба Дивноморское»</strong> под Геленджиком. Их «Блан де Блан» классического метода назван лучшим белым игристым в рейтинге Simple Wine News 2025-2026.</li>
+<li><strong>«Мысхако»</strong> под Новороссийском. Свежие игристые резервуарного метода, в том числе с ароматными сортами.</li>
+</ul>
+<h4>Крым</h4>
+<ul>
+<li><strong>«Новый Свет»</strong> под Судаком. Здесь Лев Голицын начинал делать игристое ещё в 1870-х годах, задолго до Абрау-Дюрсо. Говорят, что игристое Голицына подавали на коронации Николая II в 1896 году и с тех пор одно из вин называют «Коронационным». Линия «Коллекционное» сделана классическим методом.</li>
+<li><strong>«Золотая Балка»</strong> в Балаклаве. Специализируется на игристом, премиальная линия Cuvée de Witmer.</li>
+<li><strong>«Солнечная долина»</strong> под Судаком. Игристые из местного сорта кокур.</li>
+<li><strong>«Инкерман»</strong> под Севастополем. Среди прочего, необычное красное игристое из сорта бастардо.</li>
+</ul>
+<h4>Дон (Ростовская область)</h4>
+<ul>
+<li><strong>«Ведерниковъ».</strong> Игристые из донских сортов, которых нет больше нигде: цимлянский чёрный и сибирьковый.</li>
+<li><strong>«Цимлянские вина».</strong> Красное «Цимлянское игристое» было знаменитым ещё в советское время. А «цимлянское» пьют уже в «Евгении Онегине», на именинах Татьяны: «Цимлянское несут».</li>
+</ul>
+<h4>Дагестан</h4>
+<ul>
+<li><strong>«Эндемы»</strong> Дербентской винодельческой компании. Недорогая линейка игристых из одного сорта винограда, сделанных резервуарным методом: например, «Ркацители брют», а также рислинг и шардоне. Название линейки - от животных Кавказа, которых больше нигде не встретишь: на каждой этикетке свой зверь, на «Ркацители» - кавказский лесной кот. Хороший вариант, если нужно несколько бутылок на большую компанию за разумные деньги.</li>
+</ul>
+<h3>Игристое из местных сортов</h3>
+<p>У России есть свои сорта винограда, которые почти не растут в других странах: на Дону это цимлянский чёрный, сибирьковый и красностоп, в Крыму кокур, кефесия и сары пандас. Виноделы называют их автохтонными, то есть «местными». Игристое из таких сортов - хороший выбор для этого вечера: тема «наше», и почти никто из гостей такого не пробовал. Ищите название сорта на этикетке, особенно у «Ведерникова», «Солнечной долины» и «Инкермана».</p>
+<h3>Чем заменить</h3>
+<p><strong>Другое игристое.</strong> - <strong>Просекко</strong> (Италия). Лёгкое, фруктовое, резервуарного метода: по стилю ближе всего к «советскому». - <strong>Кава</strong> (Испания). Классический метод за небольшие деньги. - <strong>Креман</strong> (Франция). Классический метод, как у шампанского, но заметно дешевле. - <strong>Ламбруско</strong> (Италия). Красное игристое, похоже на «Цимлянское». - <strong>Асти</strong> (Италия). Сладкое, ароматное. Подойдёт тем, кто скучает по полусладкому «Советскому».</p>
+<p><strong>Без алкоголя.</strong> - Безалкогольное игристое: настоящее вино, из которого убрали алкоголь. Продаётся в больших супермаркетах. - Белый виноградный сок пополам с холодной газированной водой, в бокале для шампанского. - Домашний <a href="#limonad-tarhun">«Тархун»</a> или «Буратино» и «Дюшес» из магазина.</p>
+<h3>Что к чему</h3>
+<div class="tw"><table>
+
+<thead>
+<tr class="header">
+<th>Блюдо</th>
+<th>Что налить</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Бутерброды со шпротами и икрой, селёдка под шубой</td>
+<td>Брют или экстра брют: кислотность и пузырьки освежают после соли и рыбы</td>
+</tr>
+<tr class="even">
+<td>Оливье</td>
+<td>Брют: он «разрезает» жирность майонеза</td>
+</tr>
+<tr class="odd">
+<td>Мясо по-французски</td>
+<td>Розовое брют или красное игристое</td>
+</tr>
+<tr class="even">
+<td>«Картошка», «Наполеон», мандарины</td>
+<td>Полусладкое или сладкое. Брют рядом со сладким десертом кажется кислым</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Сколько брать и как подавать</h3>
+<ul>
+<li><strong>Сколько.</strong> Из одной бутылки выходит 5-6 бокалов. На 6 взрослых минимум 2 бутылки (под куранты и на тосты). Если пьёте игристое весь вечер, возьмите 3: две брют к столу и одну полусладкую к десерту.</li>
+<li><strong>Температура.</strong> 6-8 °C. Это 4-5 часов в холодильнике или 20 минут в ведёрке со льдом и водой.</li>
+<li><strong>Бокалы.</strong> Узкие высокие бокалы-флейты, как в СССР, держат пузырьки дольше. Сомелье сейчас часто наливают игристое в обычный бокал для белого вина: так лучше раскрывается аромат. Подойдёт и то, и другое.</li>
+<li><strong>Как открыть без хлопка</strong> - в рецепте <a href="#napitki">напитков</a>.</li>
+</ul>
+</section><section class="block" id="games"><h2>Игры вечера</h2>
+<p>Четыре простые игры, в которые можно играть без подготовки и без реквизита, кроме карточек из PDF. Они идут по ходу вечера: «Крокодил», пока гости собираются, викторина и цитаты между горячим и сладким, фанты в конце. Если гостей мало или вечер получается разговорным, оставьте две любые.</p>
+<p>Ведущий вечера, скорее всего, вы. Очки считать не обязательно, но если хочется соревнования, разделите гостей на две команды и записывайте счёт на листе бумаги на холодильнике.</p>
+<hr />
+<h3>1. «Крокодил»: советский быт (у ёлки, 15-20 минут)</h3>
+<p><strong>Что нужно.</strong> Карточки со словами (16 штук в PDF), шапка или миска, чтобы их тянуть.</p>
+<p><strong>Как играть.</strong> 1. Гость тянет карточку и, не показывая её никому, изображает слово жестами. Говорить и показывать буквы нельзя. 2. Остальные угадывают. Кто угадал, показывает следующее слово. 3. На одно слово даётся около минуты. Если никто не угадал, слово откладывается.</p>
+<p><strong>Слова на карточках:</strong> авоська, очередь за дефицитом, ковёр на стене, сервант с хрусталём, телефон-автомат, ёлочная гирлянда, Дед Мороз с ватной бородой, бой курантов, шуба (салат), костюм снежинки, проигрыватель с пластинкой, лыжи с палками, хоккей во дворе, мандарины в сетке, «Голубой огонёк», загадать желание.</p>
+<aside class="note">
+<p>💡 <strong>Совет.</strong> Для детей отложите самые простые карточки: Дед Мороз, лыжи, хоккей, мандарины, гирлянда, костюм снежинки.</p>
+</aside>
+<hr />
+<h3>2. Викторина «Правда или миф?» (после горячего, 10-15 минут)</h3>
+<p><strong>Что нужно.</strong> Только этот лист. Ведущий читает утверждение, гости по очереди или командами говорят «правда» или «миф». Потом ведущий читает ответ.</p>
+<ol type="1">
+<li><strong>В СССР одно время запрещали новогоднюю ёлку.</strong> <em>Правда.</em> В конце 1920-х её считали религиозным обычаем. Вернули ёлку в конце 1935 года после статьи в «Правде».</li>
+<li><strong>1 января в СССР всегда было выходным.</strong> <em>Миф.</em> С 1930 по 1947 год 1 января было рабочим днём.</li>
+<li><strong>Салат оливье придумал повар с французской фамилией.</strong> <em>Правда.</em> Люсьен Оливье держал ресторан «Эрмитаж» в Москве в 1860-х. Но его салат был с рябчиками и раковыми шейками.</li>
+<li><strong>Название «шуба» - сокращение революционного лозунга.</strong> <em>Миф, точнее, неподтверждённая легенда.</em> История про «Шовинизму и Упадку - Бойкот и Анафема» красивая, но документов нет.</li>
+<li><strong>Снегурочка всегда была внучкой Деда Мороза.</strong> <em>Миф.</em> У Островского она дочь Мороза и Весны. Рядом с Дедом Морозом как внучка она появилась на советских ёлках в 1937 году.</li>
+<li><strong>«Ирония судьбы» впервые показали по телевизору 1 января.</strong> <em>Правда.</em> 1 января 1976 года, в 18:00.</li>
+<li><strong>«Советское шампанское» делали так же, как во Франции, бродившим в каждой бутылке.</strong> <em>Миф.</em> Его делали в больших резервуарах, так получалось быстрее и дешевле.</li>
+<li><strong>Песню «Пять минут» Людмила Гурченко поёт в фильме «Карнавальная ночь».</strong> <em>Правда.</em> Фильм Эльдара Рязанова вышел в 1956 году, это его первая большая игровая картина.</li>
+</ol>
+<hr />
+<h3>3. Угадай фильм по цитате (после викторины, 10-15 минут)</h3>
+<p><strong>Что нужно.</strong> Карточки с цитатами (12 штук в PDF). На обороте написан ответ.</p>
+<p><strong>Как играть.</strong> Ведущий читает цитату (можно с выражением и голосом героя), гости называют фильм. Кто первым назвал, забирает карточку. В конце у кого больше карточек, тот победил. Бонус: кто назовёт и героя, получает вторую карточку из стопки.</p>
+<div class="tw"><table>
+
+<thead>
+<tr class="header">
+<th>Цитата</th>
+<th>Фильм</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>«Какая гадость эта ваша заливная рыба!»</td>
+<td>«Ирония судьбы, или С лёгким паром!» (1975)</td>
+</tr>
+<tr class="even">
+<td>«Пить надо меньше!»</td>
+<td>«Ирония судьбы, или С лёгким паром!»</td>
+</tr>
+<tr class="odd">
+<td>«Есть ли жизнь на Марсе, нет ли жизни на Марсе - это науке неизвестно»</td>
+<td>«Карнавальная ночь» (1956)</td>
+</tr>
+<tr class="even">
+<td>«Цигель, цигель, ай-лю-лю!»</td>
+<td>«Бриллиантовая рука» (1968)</td>
+</tr>
+<tr class="odd">
+<td>«Птичку жалко!»</td>
+<td>«Кавказская пленница» (1967)</td>
+</tr>
+<tr class="even">
+<td>«Чтоб ты жил на одну зарплату!»</td>
+<td>«Бриллиантовая рука»</td>
+</tr>
+<tr class="odd">
+<td>«Икра заморская, баклажанная»</td>
+<td>«Иван Васильевич меняет профессию» (1973)</td>
+</tr>
+<tr class="even">
+<td>«Тепло ли тебе, девица?»</td>
+<td>«Морозко» (1964)</td>
+</tr>
+<tr class="odd">
+<td>«Кто ж его посадит? Он же памятник!»</td>
+<td>«Джентльмены удачи» (1971)</td>
+</tr>
+<tr class="even">
+<td>«Огласите весь список, пожалуйста»</td>
+<td>«Операция “Ы” и другие приключения Шурика» (1965)</td>
+</tr>
+<tr class="odd">
+<td>«Надо, Федя. Надо»</td>
+<td>«Операция “Ы” и другие приключения Шурика»</td>
+</tr>
+<tr class="even">
+<td>«Видеть цель, верить в себя, не замечать препятствий» (так проходят сквозь стену)</td>
+<td>«Чародеи» (1982)</td>
+</tr>
+</tbody>
+</table></div>
+<aside class="note">
+<p>💡 <strong>Совет.</strong> Если гости моложе 30, добавьте подсказку: назовите год или актёра. Если старше 50, усложните: пусть называют и героя, и актёра.</p>
+</aside>
+<hr />
+<h3>4. Фанты (в конце вечера, 15-20 минут)</h3>
+<p>Самая старая домашняя игра. В советских семьях в неё играли на каждом празднике.</p>
+<p><strong>Что нужно.</strong> Шапка или миска, по одной личной вещи от каждого гостя (кольцо, часы, ключи, заколка), карточки с заданиями (16 штук в PDF).</p>
+<p><strong>Как играть.</strong> 1. Каждый гость кладёт в шапку свою вещь. Ведущий встаёт спиной к шапке. 2. Помощник достаёт одну вещь и спрашивает: «Что этому фанту сделать?» 3. Ведущий, не видя вещи, тянет карточку с заданием и читает её. Хозяин вещи выполняет задание и забирает свою вещь.</p>
+<p><strong>Задания на карточках:</strong> 1. Встать на табуретку и прочитать стихотворение Деду Морозу. 2. Изобразить бой курантов: 12 ударов голосом и всем телом. 3. Спеть «В лесу родилась ёлочка» как оперная певица. 4. Сказать тост в стиле диктора центрального телевидения. 5. Рассказать, кем вы были на новогоднем утреннике в детстве. 6. Изобразить, как вы открываете банку шпрот ключом. 7. Станцевать вальс с любым гостем под «Пять минут». 8. Показать без слов, как стоять в очереди за мандаринами. 9. Назвать пять советских мультфильмов за 30 секунд. 10. Поздравить всех с Новым годом от имени Деда Мороза. 11. Нарисовать снежинку с закрытыми глазами. 12. Пройти по комнате походкой Снегурочки. 13. Спеть припев любой песни из «Иронии судьбы». 14. Рассказать, какой подарок вы больше всего ждали в детстве. 15. Придумать новую расшифровку слова ШУБА. 16. Повесить на ёлку игрушку и загадать желание вслух.</p>
+</section><section class="block" id="stories"><h2>Шпаргалка ведущего</h2><figure class="pic"><img src="img/chay.jpg" alt="Чай в подстаканнике и конфеты на кружевной салфетке" loading="lazy"></figure>
+<p>Семь коротких историй для рассказа за столом. Их удобно рассказывать по ходу вечера, когда на столе появляется нужное блюдо или подходит время. Читать с листа не обязательно: перескажите своими словами.</p>
+<hr />
+<h4>1. Ёлка, которую запретили (в начале вечера, у ёлки)</h4>
+<p>В первые годы советской власти рождественскую ёлку считали «поповским обычаем», и к концу 1920-х её фактически запретили: ёлки не продавали, праздники с ёлкой в школах не устраивали. Вернул её один газетный текст. 28 декабря 1935 года партийный руководитель Павел Постышев написал в «Правде»: давайте устроим детям хорошую ёлку к Новому году. Через несколько дней ёлки уже стояли в школах и клубах, только теперь она была новогодней, а вместо Вифлеемской звезды на верхушке появилась красная пятиконечная.</p>
+<h4>2. Когда 1 января было рабочим днём (к первому тосту)</h4>
+<p>Сейчас трудно поверить, но с 1930 года 1 января в СССР было обычным рабочим днём. Новый год встречали ночью, а утром шли на работу. Выходным 1 января снова сделали только в декабре 1947 года. Длинные новогодние каникулы, как сейчас, появились уже в России, в 2000-е годы.</p>
+<h4>3. Повар Оливье и его секрет (к оливье)</h4>
+<p>В 1860-х годах в Москве на Трубной площади открылся ресторан «Эрмитаж», им управлял повар Люсьен Оливье. Его фирменный салат был с рябчиками, раковыми шейками и каперсами, а соус он делал по своему рецепту и, говорят, держал его в секрете. После революции рябчиков не стало, их заменили курицей, а потом докторской колбасой. Можно спросить гостей: как оливье делали в их семье? С морковью или без? С колбасой или с курицей? Обычно на этом вопросе начинается самый жаркий спор вечера.</p>
+<h4>4. Ш.У.Б.А. (к селёдке под шубой)</h4>
+<p>Есть легенда, что в 1918 году московский повар придумал этот салат для трактира, где постоянно дрались. Селёдка означала пролетариат, овощи крестьян, свёкла красное знамя, а название было сокращением лозунга «Шовинизму и Упадку - Бойкот и Анафема». Никаких документов об этом поваре не нашли, так что подайте историю как шутку: «говорят, что…». А потом попросите гостей придумать свою расшифровку слова ШУБА.</p>
+<h4>5. Снегурочка появилась не сразу (в середине вечера)</h4>
+<p>В старых сказках Снегурочка - девочка из снега, а в пьесе Островского 1873 года - дочь Мороза и Весны. Внучкой Деда Мороза её сделали советские ёлки. Вместе они впервые вышли к детям на главной ёлке страны, в московском Доме союзов, в начале 1937 года. С тех пор Дед Мороз без Снегурочки почти не встречается. Нигде в мире у новогоднего деда нет такой спутницы.</p>
+<h4>6. Шампанское без бутылки (к шампанскому или перед курантами)</h4>
+<p>Французское шампанское вторично бродит прямо в бутылке, и на это уходят годы. Советскому государству нужно было много игристого вина быстро и недорого. Винодел Антон Фролов-Багреев, ученик князя Льва Голицына из Абрау-Дюрсо, придумал делать его в больших закрытых резервуарах. В 1930-е годы запустили массовое производство, и «Советское шампанское» стало напитком новогодней ночи. Без бокала под бой курантов праздник был не праздник.</p>
+<h4>7. Фильм, который смотрят каждый год (к горячему или к чаю)</h4>
+<p>«Ирония судьбы, или С лёгким паром!» Эльдара Рязанова впервые показали по Центральному телевидению 1 января 1976 года, в 18:00. По оценкам, её увидели около 100 миллионов человек. Песни для фильма написал композитор Микаэл Таривердиев на стихи Цветаевой, Пастернака, Евтушенко и Ахмадулиной. За актёров поют Сергей Никитин и Алла Пугачёва, а героиня Барбары Брыльской говорит голосом Валентины Талызиной. С тех пор фильм показывают почти каждый Новый год.</p>
+<hr />
+<h4>Запасные истории</h4>
+<ul>
+<li><strong>К бутербродам со шпротами.</strong> Шпроты больше всего делали в Латвии, и «рижские шпроты» в плоской золотой банке были главным дефицитом праздника. Банку покупали заранее и прятали до Нового года.</li>
+<li><strong>К телевизору.</strong> Первый новогодний «Голубой огонёк» показали 31 декабря 1962 года. В студии за столиками сидели известные люди, пили чай и шампанское, пели и шутили. Почему огонёк «голубой», точно неизвестно: по одной версии, из-за голубоватого света экранов телевизоров того времени.</li>
+<li><strong>К мандаринам.</strong> Мандарины к Новому году везли в основном из Абхазии и Грузии, они созревают как раз в декабре. Поэтому для целого поколения запах мандаринов и есть запах праздника.</li>
+</ul>
+<hr />
+<h4>Вопрос для всех</h4>
+<p>В конце вечера, когда все за чаем, спросите каждого гостя: какой Новый год из детства вы помните лучше всего? Кто-то вспомнит костюм снежинки из марли, кто-то подарок, кто-то, как всей семьёй ждали папу с работы. Это самая тёплая часть вечера.</p>
+</section><section class="block" id="atmosphere"><h2>Атмосфера вечера</h2><figure class="pic"><img src="img/yolka.jpg" alt="Ветка ёлки со стеклянными игрушками: ракета, шишка, сосулька, кукуруза" loading="lazy"></figure>
+<p>Советский Новый год узнают по нескольким вещам: стеклянные игрушки на ёлке, мандарины, хрусталь на столе, бумажные снежинки на окнах и знакомые песни. Почти всё это есть дома или у родителей на антресолях. Покупать специально почти ничего не нужно.</p>
+<h3>Приглашения: новогодняя открытка</h3>
+<p>За неделю-две разошлите гостям приглашения в виде советской новогодней открытки. Шаблон с Дедом Морозом, ёлкой и надписью «С Новым годом!» есть в PDF.</p>
+<ul>
+<li><strong>Бумажное.</strong> Распечатайте открытку на плотной бумаге, подпишите от руки на обороте, как раньше: «Дорогие Оля и Серёжа! Ждём вас…». Можно отправить настоящей почтой, это сейчас большая редкость и всем нравится.</li>
+<li><strong>Онлайн.</strong> Сфотографируйте подписанную открытку и пришлите в мессенджер.</li>
+</ul>
+<p>В приглашении напишите дату, время, адрес и дресс-код (если хотите).</p>
+<h3>Дресс-код</h3>
+<p>Не обязательно, но весело. Предложите гостям одно из: - что-то блестящее: мишура на шее, бусы «как у мамы», ободок с дождиком; - свитер с оленями или снежинками; - детский утренник для взрослых: ушки зайчика, корона снежинки, маска; - «как на фото из семейного альбома»: водолазка, пиджак с плечами, начёс.</p>
+<p>Если гостей больше шести, можно устроить конкурс на лучший образ и вручить приз: банку шпрот с бантом.</p>
+<h3>Ёлка</h3>
+<ul>
+<li><strong>Игрушки.</strong> Если у родителей сохранились стеклянные игрушки на прищепках (шишки, сосульки, космонавты, кукуруза), повесьте хотя бы несколько. Они есть и на сайтах объявлений, и в новых «ретро» коллекциях.</li>
+<li><strong>Дождик и мишура.</strong> Серебряный дождик - обязательно.</li>
+<li><strong>Вата под ёлкой.</strong> Вместо снега под ёлку кладут вату, а сверху ставят Деда Мороза и Снегурочку, пластмассовых или из папье-маше.</li>
+<li><strong>Звезда.</strong> Красная звезда на верхушке, как на советских ёлках.</li>
+<li><strong>Гирлянда.</strong> Подойдёт любая, но лучше разноцветная, с простыми мигающими режимами, а не холодная белая.</li>
+</ul>
+<aside class="note">
+<p>⚠️ <strong>Безопасность.</strong> Вата горит. Не кладите её вплотную к лампочкам гирлянды и к свечам.</p>
+</aside>
+<h3>Окна: снежинки из бумаги</h3>
+<p>Бумажные снежинки на окнах были в каждой квартире. Их можно вырезать вместе с гостями или детьми прямо во время вечера.</p>
+<ol type="1">
+<li>Возьмите квадрат из тонкой белой бумаги или салфетки.</li>
+<li>Сложите пополам по диагонали, потом ещё раз пополам и ещё раз: получится узкий треугольник.</li>
+<li>Вырежьте ножницами зубчики, дуги и треугольники по краям, не разрезая полностью.</li>
+<li>Разверните и приклейте на стекло: смочите снежинку водой с мылом или прилепите на кусочек скотча.</li>
+</ol>
+<h3>Стол</h3>
+<ul>
+<li><strong>Скатерть.</strong> Белая, лучше накрахмаленная, или с новогодним рисунком.</li>
+<li><strong>Хрусталь.</strong> Салатницы, рюмки, вазочки для конфет. Если у вас нет хрусталя, поищите у родителей или возьмите простое прозрачное стекло: на свету оно тоже блестит.</li>
+<li><strong>Салаты.</strong> Поставьте все салатницы в центр стола в один ряд, тесно: советский стол был щедрым и плотным, так, чтобы скатерти почти не было видно.</li>
+<li><strong>Мандарины.</strong> В высокой вазе горкой. Шутка для своих: повесьте рядом авоську с мандаринами.</li>
+<li><strong>Конфеты.</strong> Вазочка с шоколадными конфетами в фантиках («Мишка на Севере», «Красная Шапочка», «Белочка», «Грильяж»). Их продают в обычных магазинах.</li>
+<li><strong>Свечи.</strong> Пара красных свечей в подсвечниках, но без открытого огня рядом с ватой и мишурой.</li>
+<li><strong>Карточки.</strong> Меню и именные карточки есть в PDF.</li>
+</ul>
+<h3>Телевизор</h3>
+<p>В советской квартире в новогоднюю ночь телевизор не выключали. Включите без звука или тихо фоном «Иронию судьбы», «Карнавальную ночь» или «Чародеев». Если отмечаете 31 декабря, за пять минут до полуночи сделайте звук громче: обращение и куранты слушают все вместе.</p>
+<h3>Музыка</h3>
+<p>Найдите песни по названию в любом музыкальном сервисе и соберите плейлист заранее. Пока гости собираются, музыку можно сделать погромче, за столом потише.</p>
+<h4>Встреча гостей: из новогодних фильмов</h4>
+<ul>
+<li><strong>Людмила Гурченко, «Пять минут»</strong> из фильма «Карнавальная ночь» (1956). Главная новогодняя песня страны.</li>
+<li><strong>Людмила Гурченко, «Песенка о хорошем настроении»</strong> из того же фильма.</li>
+<li><strong>Лариса Долина, «Три белых коня»</strong> из фильма «Чародеи» (1982), музыка Евгения Крылатова.</li>
+<li><strong>«Снежинка»</strong> из фильма «Чародеи».</li>
+<li><strong>«Кабы не было зимы»</strong> из мультфильма «Зима в Простоквашино» (1984), музыка Евгения Крылатова.</li>
+<li><strong>Нина Бродская, «Звенит январская вьюга»</strong> из фильма «Иван Васильевич меняет профессию» (1973).</li>
+</ul>
+<h4>За столом: песни из «Иронии судьбы»</h4>
+<p>Музыка Микаэла Таривердиева, поют Сергей Никитин и Алла Пугачёва.</p>
+<ul>
+<li><strong>«Я спросил у ясеня»</strong> (стихи Владимира Киршона).</li>
+<li><strong>«Мне нравится, что вы больны не мной»</strong> (стихи Марины Цветаевой).</li>
+<li><strong>«По улице моей который год»</strong> (стихи Беллы Ахмадулиной).</li>
+<li><strong>«Никого не будет в доме»</strong> (стихи Бориса Пастернака).</li>
+</ul>
+<h4>После полуночи или к сладкому: танцы</h4>
+<ul>
+<li><strong>«В лесу родилась ёлочка»</strong>: стихи Раисы Кудашевой (1903). Её поют хором вокруг ёлки, особенно если есть дети.</li>
+<li><strong>«Маленькой ёлочке холодно зимой»</strong>: детская песня, которую пели на каждом утреннике.</li>
+<li><strong>Земляне, «Трава у дома»</strong> (1983) и любые хиты дискотек 1980-х, если гости захотят потанцевать.</li>
+</ul>
+<h3>План вечера в одном списке</h3>
+<ol type="1">
+<li><strong>За неделю:</strong> разослать открытки-приглашения.</li>
+<li><strong>Накануне:</strong> нарядить ёлку, вырезать снежинки, распечатать карточки.</li>
+<li><strong>За час до гостей:</strong> накрыть стол, разложить мандарины и конфеты, включить гирлянду и плейлист.</li>
+<li><strong>Гости пришли:</strong> бутерброды и морс у ёлки, «Крокодил».</li>
+<li><strong>За столом:</strong> салаты, истории из шпаргалки, музыка тише.</li>
+<li><strong>После горячего:</strong> викторина «Правда или миф?» и цитаты.</li>
+<li><strong>За чаем:</strong> фанты и вопрос всем: «Какой Новый год из детства вы помните лучше всего?»</li>
+</ol>
+</section><section class="block" id="allergens"><h2>Аллергены</h2>
+<p>● - есть в блюде. ○ - только в одном из вариантов или по желанию.</p>
+<div class="tw"><table>
+
+<thead>
+<tr class="header">
+<th>Блюдо</th>
+<th>Глютен</th>
+<th>Яйца</th>
+<th>Молочное</th>
+<th>Рыба</th>
+<th>Орехи</th>
+<th>Горчица</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Оливье</td>
+<td></td>
+<td>●</td>
+<td>○ (если сметана вместо части майонеза)</td>
+<td></td>
+<td></td>
+<td>● (майонез)</td>
+</tr>
+<tr class="even">
+<td>Селёдка под шубой</td>
+<td></td>
+<td>●</td>
+<td></td>
+<td>●</td>
+<td></td>
+<td>● (майонез)</td>
+</tr>
+<tr class="odd">
+<td>Бутерброды со шпротами</td>
+<td>● (хлеб)</td>
+<td>● (майонез)</td>
+<td>○ (если масло вместо майонеза)</td>
+<td>●</td>
+<td></td>
+<td>● (майонез)</td>
+</tr>
+<tr class="even">
+<td>Бутерброды с икрой</td>
+<td>● (хлеб)</td>
+<td></td>
+<td>● (масло)</td>
+<td>● (икра)</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>«Мухоморы»</td>
+<td></td>
+<td>●</td>
+<td>○ (если сметана)</td>
+<td></td>
+<td></td>
+<td>● (майонез)</td>
+</tr>
+<tr class="even">
+<td>Мясо по-французски</td>
+<td></td>
+<td>● (майонез)</td>
+<td>● (сыр)</td>
+<td></td>
+<td></td>
+<td>● (майонез)</td>
+</tr>
+<tr class="odd">
+<td>Пирожное «Картошка»</td>
+<td>● (печенье)</td>
+<td>○ (смотрите состав печенья)</td>
+<td>● (масло, сгущёнка)</td>
+<td></td>
+<td>○ (грецкие орехи; следы в печенье)</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Торт «Наполеон»</td>
+<td>● (мука)</td>
+<td>●</td>
+<td>● (масло, молоко)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Клюквенный морс</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Домашний «Тархун»</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Лимонады из магазина</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Майонез.</strong> В обычном майонезе есть яйца и горчица. Если среди гостей есть аллергия на них, замените майонез сметаной 20% или греческим йогуртом во всех блюдах. В оливье и шубе это заметно меняет вкус, но салаты получаются хорошими.</p>
+<p><strong>Колбаса.</strong> В докторской колбасе могут быть молочный белок и соя. Смотрите состав на упаковке или замените колбасу отварной курицей.</p>
+<p><strong>Алкоголь.</strong> Есть только в игристом и по желанию в «Картошке» (ложка коньяка или рома). Детскую и «трезвую» часть «Картошки» делайте отдельно.</p>
+</section>
+</main>
+</div>
+<footer class="foot">Есть тема · Советский Новый год · бесплатный набор, ноябрь 2026</footer>
+<script>
+const D={"cats": ["Овощи, фрукты, зелень", "Мясо, колбаса, рыба", "Молочное и яйца", "Бакалея", "Хлеб", "Напитки", "Хозяйственное"], "dishes": {"buterbrody": [["Хлеб бородинский", "шт", 1, 4], ["Батон нарезной", "шт", 1, 4], ["Шпроты в масле", "банка", 1, 1], ["Икра лососёвая, банка 100-140 г", "банка", 1, 1], ["Огурец свежий", "шт", 1, 0], ["Укроп", "пучок", 1, 0, 1], ["Петрушка", "пучок", 1, 0, 1], ["Чеснок", "головка", 1, 0, 1], ["Масло сливочное 82,5%", "г", 60, 2], ["Майонез 67%", "г", 30, 3], ["Яйца С1", "шт", 6, 2], ["Помидоры черри крупные", "шт", 3, 0], ["Салат листовой", "пучок", 1, 0, 1]], "olivie": [["Картофель", "г", 500, 0], ["Морковь", "шт", 2, 0], ["Яйца С1", "шт", 5, 2], ["Колбаса докторская", "г", 400, 1], ["Огурцы солёные или маринованные", "г", 250, 0], ["Горошек зелёный, банка 400 г", "банка", 1, 3], ["Лук зелёный", "пучок", 1, 0], ["Майонез 67%", "г", 250, 3]], "shuba": [["Сельдь слабосолёная целиком, крупная", "шт", 1, 1], ["Лук репчатый", "шт", 1, 0], ["Картофель", "г", 350, 0], ["Морковь", "шт", 2, 0], ["Свёкла средняя", "шт", 2, 0], ["Яйца С1", "шт", 3, 2], ["Майонез 67%", "г", 250, 3]], "myaso": [["Свинина без кости (шея или корейка)", "г", 1000, 1], ["Картофель", "г", 1000, 0], ["Лук репчатый", "шт", 3, 0], ["Сыр твёрдый", "г", 250, 2], ["Майонез 67%", "г", 200, 3], ["Масло растительное", "мл", 30, 3]], "kartoshka": [["Печенье сахарное («Юбилейное» или похожее)", "г", 500, 3], ["Масло сливочное 82,5%", "г", 180, 2], ["Молоко сгущённое", "банка", 0.5, 2], ["Какао-порошок", "упаковка", 1, 3, 1], ["Сахарная пудра", "г", 30, 3], ["Грецкие орехи, по желанию", "г", 60, 3]], "napoleon": [["Мука пшеничная", "г", 600, 3], ["Масло сливочное 82,5%", "г", 450, 2], ["Молоко 3,2%", "мл", 1000, 2], ["Яйца С1", "шт", 4, 2], ["Сахар", "г", 250, 3], ["Ванильный сахар", "пакетик", 1, 3], ["Пергамент", "лист", 10, 6]], "obshchee": [["Клюква свежая или замороженная", "г", 400, 0], ["Сахар", "г", 200, 3], ["Тархун (эстрагон) свежий", "пучок", 2, 0], ["Лимон", "шт", 2, 0], ["Газированная вода", "л", 1.5, 5], ["Мандарины", "г", 2000, 0], ["Шоколадные конфеты в фантиках", "г", 400, 3], ["Чай чёрный листовой", "упаковка", 1, 3, 1], ["Масло растительное", "мл", 0, 3], ["Фольга", "рулон", 1, 6, 1], ["Пищевая плёнка", "рулон", 1, 6, 1], ["Одноразовые перчатки (для свёклы и селёдки)", "пара", 2, 6, 1]]}};
+const forms={"пучок":["пучок","пучка","пучков"],"лист":["лист","листа","листов"],"бутылка":["бутылка","бутылки","бутылок"],"банка":["банка","банки","банок"],"головка":["головка","головки","головок"],"упаковка":["упаковка","упаковки","упаковок"],"рулон":["рулон","рулона","рулонов"],"пакетик":["пакетик","пакетика","пакетиков"],"пара":["пара","пары","пар"]};
+function pl(n,u){const f=forms[u];if(!f)return u;const a=n%10,b=n%100;if(a==1&&b!=11)return f[0];if(a>=2&&a<=4&&(b<10||b>=20))return f[1];return f[2];}
+const st={g:6,w:6,k:0};
+function load(){try{return JSON.parse(localStorage.getItem('sng-done')||'{}')}catch(e){return{}}}
+function save(o){try{localStorage.setItem('sng-done',JSON.stringify(o))}catch(e){}}
+let done=load();
+function round(q,u){if(u=='г'||u=='мл'){return q>=100?Math.ceil(q/50)*50:Math.ceil(q/5)*5}if(u=='л'){return Math.ceil(q*2-1e-9)/2}if(u=='шт'||u=='банка'||u=='пучок')return Math.max(1,Math.ceil(q-0.2));return Math.ceil(q-1e-9)}
+function fmt(q,u){if(u=='г'&&q>=1000)return (q/1000).toLocaleString('ru-RU',{maximumFractionDigits:2})+' кг';if(u=='мл'&&q>=1000)return (q/1000).toLocaleString('ru-RU',{maximumFractionDigits:2})+' л';if(u=='л')return q.toLocaleString('ru-RU')+' л';return q+' '+pl(q,u)}
+function build(){
+  const g=st.g,w=st.w,k=st.k,des=document.querySelector('input[name=dessert]:checked').value;
+  const acc={};
+  function add(key,f){D.dishes[key].forEach(([n,u,q,c,fix])=>{if(!q)return;const id=n+'|'+u;acc[id]=acc[id]||{n,u,q:0,c};acc[id].q+=fix?Math.max(acc[id].q?0:q,0):q*f;});}
+  ['buterbrody','olivie','shuba','myaso','obshchee'].forEach(x=>add(x,g/6));
+  if(des=='napoleon')add('napoleon',Math.max(1,Math.ceil(g/12)));else add('kartoshka',Math.max(1,Math.ceil(g/6*2)/2));
+  if(w>0)acc['spark']={n:'Игристое вино (брют к столу, полусладкое к десерту)',u:'бутылка',q:Math.max(1,Math.ceil(w/3)),c:5};
+  if(k>0)acc['lim']={n:'Лимонад «Буратино» или «Дюшес»',u:'л',q:k*0.5,c:5};
+  const el=document.getElementById('list');el.textContent='';
+  D.cats.forEach((cat,ci)=>{
+    const items=Object.values(acc).filter(x=>x.c==ci);if(!items.length)return;
+    const h=document.createElement('p');h.className='cat';h.textContent=cat;el.appendChild(h);
+    const ul=document.createElement('ul');ul.className='shop';
+    items.forEach(x=>{const q=round(x.q,x.u);x.txt=fmt(q,x.u);const li=document.createElement('li');const id='i'+btoa(unescape(encodeURIComponent(x.n))).replace(/[^a-z0-9]/gi,'').slice(0,24);
+      li.innerHTML='<label for="'+id+'"><input type="checkbox" id="'+id+'"><span class="nm"></span><span class="q"></span></label>';
+      li.querySelector('.nm').textContent=x.n;li.querySelector('.q').textContent=x.txt;
+      const cb=li.querySelector('input');cb.checked=!!done[x.n];li.classList.toggle('done',cb.checked);
+      cb.addEventListener('change',()=>{done[x.n]=cb.checked;save(done);li.classList.toggle('done',cb.checked)});
+      ul.appendChild(li);});
+    el.appendChild(ul);
+  });
+  build.text='Советский Новый год, '+g+' гостей'+(k?' (из них детей: '+k+')':'')+'\n'+D.cats.map((cat,ci)=>{const it=Object.values(acc).filter(x=>x.c==ci);return it.length?('\n'+cat+':\n'+it.map(x=>'- '+x.n+' - '+x.txt).join('\n')):''}).join('\n');
+}
+function sync(){st.k=Math.min(st.k,st.g-1);st.w=Math.min(st.w,st.g-st.k);document.getElementById("kidsn").textContent=st.k;document.getElementById('guests').textContent=st.g;document.getElementById('wine').textContent=st.w;build()}
+document.getElementById('gminus').onclick=()=>{st.g=Math.max(2,st.g-1);st.w=Math.min(st.w,st.g);sync()};
+document.getElementById('gplus').onclick=()=>{const full=st.w==st.g-st.k;st.g=Math.min(24,st.g+1);if(full)st.w=st.g-st.k;sync()};
+document.getElementById('wminus').onclick=()=>{st.w=Math.max(0,st.w-1);sync()};
+document.getElementById('wplus').onclick=()=>{st.w=Math.min(st.g-st.k,st.w+1);sync()};
+document.getElementById('kminus').onclick=()=>{st.k=Math.max(0,st.k-1);sync()};
+document.getElementById('kplus').onclick=()=>{const full=st.w==st.g-st.k;st.k=Math.min(st.g-1,st.k+1);if(full)st.w=st.g-st.k;sync()};
+document.querySelectorAll('input[type=radio]').forEach(r=>r.addEventListener('change',build));
+document.getElementById('copy').onclick=async(e)=>{const b=e.currentTarget;try{await navigator.clipboard.writeText(build.text);b.textContent='Скопировано'}catch(err){const t=document.createElement('textarea');t.value=build.text;document.body.appendChild(t);t.select();try{document.execCommand('copy');b.textContent='Скопировано'}catch(x){b.textContent='Выделите список вручную'}t.remove()}setTimeout(()=>b.textContent='Скопировать список',2000)};
+sync();
+
+// ---- Навигация: на экране один раздел, внутри «Рецептов» - один рецепт ----
+const SECS=[...document.querySelectorAll('main>section')];
+const RECS=[...document.querySelectorAll('#recipes article.recipe')];
+const TITLES={"intro": "О празднике", "builder": "Список покупок", "menu": "Меню", "kids": "Если с детьми", "taiming": "Тайминг", "recipes": "Рецепты", "igristoe": "Игристое", "games": "Игры", "stories": "Истории", "atmosphere": "Атмосфера", "allergens": "Аллергены"};
+const PAGES=[];SECS.forEach(s=>{if(s.id=='recipes')RECS.forEach(r=>PAGES.push(r.id));else PAGES.push(s.id)});
+function pname(id){const r=RECS.find(x=>x.id==id);return r?r.querySelector('h3').textContent.split(' - ')[0]:TITLES[id]}
+function show(scroll){
+  let id=decodeURIComponent(location.hash.slice(1))||'intro';
+  if(id=='recipes')id=RECS[0].id;
+  if(!PAGES.includes(id)){const el=document.getElementById(id);const host=el&&el.closest('main>section');id=host?(host.id=='recipes'?el.closest('article').id:host.id):'intro'}
+  const isRec=RECS.some(r=>r.id==id);const sec=isRec?'recipes':id;
+  SECS.forEach(s=>s.hidden=s.id!=sec);
+  RECS.forEach(r=>r.hidden=r.id!=id);
+  document.querySelectorAll('.side a, .chips a').forEach(a=>{const h=a.getAttribute('href').slice(1);a.setAttribute('aria-current',String(h==id||(h==sec&&!a.closest('.chips')&&!a.closest('.sub'))))});
+  document.querySelectorAll('.side li[data-sec]').forEach(li=>li.classList.toggle('open',li.dataset.sec==sec));
+  const cur=document.querySelector('.side>ol>li>a[aria-current=true]');if(cur)cur.scrollIntoView({block:'nearest',inline:'center'});
+  document.querySelectorAll('.pager').forEach(p=>p.remove());
+  const i=PAGES.indexOf(id),pg=document.createElement('nav');pg.className='pager';pg.setAttribute('aria-label','Соседние разделы');
+  if(i>0)pg.innerHTML+='<a class="prev" href="#'+PAGES[i-1]+'"><small>Назад</small>'+pname(PAGES[i-1])+'</a>';
+  if(i<PAGES.length-1)pg.innerHTML+='<a class="next" href="#'+PAGES[i+1]+'"><small>Дальше</small>'+pname(PAGES[i+1])+'</a>';
+  document.getElementById(sec).appendChild(pg);
+  if(scroll)window.scrollTo({top:document.querySelector('.shell').offsetTop,behavior:'auto'});
+}
+addEventListener('hashchange',()=>show(true));
+show(false);
+</script>
+</body>
+</html>

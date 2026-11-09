@@ -1,0 +1,1495 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Пушкинская вечеринка</title>
+<meta name="description" content="Набор «Есть тема»: ужин по «Евгению Онегину», от ресторана Talon до именин Татьяны. Рецепты, игры и план вечера по часам.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+:root{--bg:#F5EEDF;--surface:#FFFCF5;--fg:#231F1C;--muted:#635B52;--line:#E0D5C2;--accent:#1F2A44;--red:#7A1F2B;--note:#EEE8DC;
+--serif:"PT Serif",Georgia,"Times New Roman",serif;--sans:"PT Sans","Helvetica Neue",Arial,sans-serif;color-scheme:light}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#17161A;--surface:#211F24;--fg:#EDE6DA;--muted:#ADA59A;--line:#38343A;--accent:#AFC0E6;--red:#E58A93;--note:#2A2730;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#17161A;--surface:#211F24;--fg:#EDE6DA;--muted:#ADA59A;--line:#38343A;--accent:#AFC0E6;--red:#E58A93;--note:#2A2730;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:17px/1.6 var(--sans);margin:0;padding-inline:16px}
+html{scroll-behavior:smooth}@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+.home{display:block;margin-inline:-16px;padding:10px 16px;font:700 14px/1.2 var(--sans);color:var(--red);background:var(--surface);border-bottom:1px solid var(--line);text-decoration:none}
+h1,h2,h3,h4{font-family:var(--serif);text-wrap:balance;line-height:1.2;font-weight:700}
+h1{font-size:clamp(2.4rem,7vw,3.6rem);margin:8px 0 16px}
+h2{font-size:1.9rem;color:var(--accent);margin:0 0 20px}
+h3{font-size:1.35rem;margin:28px 0 8px}
+h4{font-family:var(--sans);font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin:22px 0 6px}
+p,li{max-width:68ch}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.top{max-width:1120px;margin-inline:auto;padding-block:32px 24px;display:grid;gap:24px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:900px){.top{grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);align-items:center}}
+.nocover{aspect-ratio:16/9;border-radius:6px;border:1px solid var(--line);background:radial-gradient(ellipse at 30% 0%,#33405f 0%,#1f2a44 55%,#10151f 100%)}
+.top img{width:100%;height:auto;display:block;border-radius:6px;border:1px solid var(--line)}
+.eyebrow{font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;color:var(--red);margin:0;font-weight:700}
+.lede{font-family:var(--serif);font-size:1.2rem;color:var(--muted);max-width:52ch;margin:0 0 16px}
+.dl{display:inline-block;border:1px solid var(--accent);color:var(--accent);padding:8px 16px;font-weight:700;text-decoration:none}
+.dl:hover{background:var(--accent);color:var(--surface)}
+.shell{max-width:1120px;margin-inline:auto;display:grid;grid-template-columns:220px minmax(0,1fr);gap:40px;align-items:start}
+.shell main{max-width:760px;min-width:0}
+.side{position:sticky;top:0;max-height:100vh;overflow:auto;padding-block:24px}
+.side ol{list-style:none;margin:0;padding:0}
+.side a{display:block;padding:6px 10px;border-left:3px solid transparent;color:var(--fg);text-decoration:none;font-size:.97rem}
+.side a:hover{color:var(--accent)}
+.side a[aria-current=true]{border-left-color:var(--red);color:var(--accent);font-weight:700;background:var(--surface)}
+.side .sub{display:none}.side .open .sub{display:block}
+.side .sub a{padding:3px 10px 3px 24px;font-size:.88rem;color:var(--muted)}
+.side .sub a[aria-current=true]{color:var(--accent);background:none}
+.block{padding-block:24px 48px}
+.small{font-size:.9rem;color:var(--muted)}
+.brand{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;margin:0 0 40px}
+.brand h2{font-size:1.5rem;margin:8px 0 16px}
+.intro h2{font-size:1.5rem;margin:32px 0 8px}
+.pic{margin:0 0 20px}.pic img{width:100%;height:auto;max-height:440px;object-fit:cover;display:block;border-radius:6px;border:1px solid var(--line)}
+#taiming td:first-child{white-space:nowrap}
+#vino .pic img,#atmosphere .pic img,#games .pic img{max-width:420px}
+.menu{list-style:none;padding:24px;margin:0 0 12px;background:var(--surface);border:1px solid var(--line);display:grid;gap:14px}
+.menu a{display:grid;grid-template-columns:1fr auto;column-gap:12px;text-decoration:none;color:inherit}
+.menu .course{grid-column:1/-1;font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+.menu .dish{font-family:var(--serif);font-size:1.25rem;display:flex;gap:8px;min-width:0}
+.menu .dish::after{content:"";flex:1;border-bottom:2px dotted var(--line);margin-bottom:.4em}
+.menu .time{color:var(--red);align-self:end;font-size:.95rem;white-space:nowrap}
+.menu .kid{grid-column:1/-1;font-size:.82rem;color:var(--accent);font-weight:700}
+.menu .kid::before{content:"● "}
+.menu a:hover .dish{color:var(--accent)}
+.recipe{background:var(--surface);border:1px solid var(--line);padding:28px clamp(16px,4vw,36px);margin-block:16px}
+.recipe h3:first-of-type{font-size:1.6rem;margin-top:4px}
+.recipe h2{font-size:1.1rem;color:var(--accent);margin:28px 0 8px;font-family:var(--sans);text-transform:uppercase;letter-spacing:.06em}
+.recipe h3{font-size:1.15rem;margin:22px 0 6px}
+.recipe ul{padding-left:0;list-style:none}
+.facts{display:flex;flex-wrap:wrap;gap:8px 28px;margin:0 0 16px;padding:12px 0;border-block:1px solid var(--line)}
+.facts div{min-width:0}.facts dt{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}.facts dd{margin:0}
+.ing{display:flex;justify-content:space-between;gap:16px;padding:4px 0;border-bottom:1px dotted var(--line);max-width:none}
+.ing .n{min-width:0}.ing .q{white-space:nowrap;color:var(--red);font-weight:700}
+@media (max-width:480px){.ing{flex-direction:column;gap:0}.ing .q{white-space:normal}}
+.note{display:block;background:var(--note);padding:10px 14px;margin:12px 0;font-size:.95rem;border-left:3px solid var(--accent)}
+.note p{margin:4px 0}
+.didyou{display:block;border:1px solid var(--red);padding:10px 14px;margin:16px 0;font-size:.95rem}
+.dy{font-weight:700;color:var(--red);text-transform:uppercase;font-size:.75rem;letter-spacing:.1em;margin-right:6px}
+hr{border:0;border-top:1px dashed var(--line);margin:20px 0}
+.tw{overflow-x:auto;margin:12px 0}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
+.chips a{border:1px solid var(--line);background:var(--surface);color:var(--fg);padding:5px 12px;text-decoration:none;font-size:.92rem}
+.chips a[aria-current=true]{border-color:var(--accent);background:var(--accent);color:var(--surface)}
+@media (min-width:900px){.chips{display:none}}
+.builder{background:var(--surface);border:1px solid var(--line);padding:clamp(16px,4vw,32px)}
+.controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-bottom:24px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend{font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:700;margin-bottom:8px}
+.stepper{display:flex;align-items:center;gap:10px}
+.stepper button{width:44px;height:44px;border:1px solid var(--line);background:var(--bg);color:var(--fg);font-size:1.3rem;cursor:pointer}
+.stepper button:hover{border-color:var(--accent)}
+.stepper output{font-family:var(--serif);font-size:1.8rem;min-width:2ch;text-align:center}
+.opt{display:flex;flex-direction:column;gap:6px}.opt label{display:flex;gap:8px;align-items:center;cursor:pointer}
+input[type=radio],input[type=checkbox]{accent-color:var(--accent);width:18px;height:18px;flex-shrink:0}
+.listhead{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px;border-top:1px solid var(--line);padding-top:16px}
+.listhead h3{margin:0}
+.copy{border:1px solid var(--accent);background:transparent;color:var(--accent);padding:8px 14px;font:700 .9rem var(--sans);cursor:pointer}
+.copy:hover{background:var(--accent);color:var(--surface)}
+.cat{font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;color:var(--red);margin:20px 0 6px;font-weight:700}
+.shop{list-style:none;margin:0;padding:0}
+.shop li{display:flex;padding:6px 0;border-bottom:1px dotted var(--line);max-width:none}
+.shop label{display:flex;gap:10px;align-items:baseline;flex:1;min-width:0;cursor:pointer}
+.shop .q{margin-left:auto;white-space:nowrap;color:var(--muted)}
+.shop .done .nm{text-decoration:line-through;color:var(--muted)}
+.hint{font-size:.88rem;color:var(--muted);margin-top:16px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-top:32px;padding-top:16px;border-top:1px solid var(--line)}
+.pager a{color:var(--accent);font-weight:700;text-decoration:none;max-width:48%}
+.pager .next{margin-left:auto;text-align:right}
+.pager small{display:block;font-weight:400;color:var(--muted);font-size:.78rem;text-transform:uppercase;letter-spacing:.08em}
+.foot{max-width:1120px;margin-inline:auto;padding-block:32px 56px;font-size:.88rem;color:var(--muted)}
+@media (max-width:899px){
+  .shell{display:block}
+  .side{position:sticky;top:0;z-index:5;max-height:none;padding:0;margin-inline:-16px;background:var(--bg);border-bottom:1px solid var(--line)}
+  .side>ol{display:flex;overflow-x:auto;scrollbar-width:none;padding-inline:8px}
+  .side>ol::-webkit-scrollbar{display:none}
+  .side a{white-space:nowrap;border-left:0;border-bottom:3px solid transparent;padding:12px 10px}
+  .side a[aria-current=true]{border-bottom-color:var(--red);background:none}
+  .side .sub,.side .open .sub{display:none}
+}
+@media print{.side,.pager,.chips,.home{display:none}.shell{display:block}main>section[hidden],article[hidden]{display:block!important}}
+</style>
+</head>
+<body>
+<a class="home" href="../index.html">← Есть тема: на главную</a>
+<header class="top">
+<div><p class="eyebrow">Есть тема · набор</p>
+<h1>Пушкинская вечеринка</h1>
+<p class="lede">Ужин по «Евгению Онегину»: ростбиф и «вино кометы», как у Talon, пирог и брусничная вода, как у Лариных. Рецепты, план по часам, игры и истории для стола. Укажите число гостей, и список покупок соберётся сам.</p>
+<a class="dl" href="pushkinskaya-vecherinka.pdf" download>Скачать PDF для печати</a></div>
+<img src="img/stol.jpg" alt="Стол при свечах: с одной стороны ростбиф, ананас и бокалы, с другой пирог, варенье и кувшин брусничной воды">
+</header>
+<div class="shell">
+<nav class="side" aria-label="Разделы набора"><ol><li data-sec="intro"><a href="#intro">О вечере</a></li><li data-sec="builder"><a href="#builder">Список покупок</a></li><li data-sec="menu"><a href="#menu">Меню</a></li><li data-sec="kids"><a href="#kids">Если с детьми</a></li><li data-sec="taiming"><a href="#taiming">Тайминг</a></li><li data-sec="recipes"><a href="#recipes">Рецепты</a><ol class="sub"><li><a href="#pashtet">Паштет «Страсбургский пирог»</a></li><li><a href="#syr-i-ananas">Сыр и ананас</a></li><li><a href="#rostbif">Ростбиф с печёным картофелем</a></li><li><a href="#pozharskie-kotlety">Пожарские котлеты</a></li><li><a href="#pirog-s-kapustoy">Пирог с капустой и яйцом</a></li><li><a href="#blanmanzhe">Бланманже с вареньем</a></li><li><a href="#brusnichnaya-voda">Брусничная вода</a></li></ol></li><li data-sec="vino"><a href="#vino">Вино</a></li><li data-sec="games"><a href="#games">Игры</a></li><li data-sec="stories"><a href="#stories">Истории</a></li><li data-sec="atmosphere"><a href="#atmosphere">Атмосфера</a></li><li data-sec="allergens"><a href="#allergens">Аллергены</a></li><li data-sec="sources"><a href="#sources">Источники</a></li></ol></nav>
+<main id="main">
+<section class="block intro" id="intro"><aside class="brand" aria-label="О проекте"><p class="eyebrow">О проекте</p><h3>Есть тема. Зови своих</h3>
+<p>Мы пишем друг другу каждый день, ставим лайки под фото и шлём сердечки на дни рождения. А за одним столом собираемся раз в полгода. Хочется это исправить и собрать своих: друзей, родителей, соседей по лестничной клетке. Но стоит подумать, что готовить, о чём говорить и чем занять гостей, и встреча откладывается ещё на месяц.</p>
+<p>Мы придумали «Есть тему», чтобы встречи случались чаще. В каждом наборе одна тема: страна, эпоха или мир любимой книги. Внутри всё, что нужно хозяину: рецепты с запасными вариантами, напитки к блюдам (и без алкоголя тоже), истории для разговора за столом, музыка, игра для гостей и план, что сделать за день и за час до прихода. Для детей есть свой стол.</p>
+<p>Повод подойдёт любой. Долгий ужин, завтрак в выходной или просто «заходите вечером».</p>
+<p><strong>Почему «Есть тема».</strong> Так говорят, когда появилась идея: «Есть тема, давай соберёмся». У каждого набора тема своя, в этом наборе это Петербург пушкинской эпохи. А ещё «есть» здесь в самом прямом смысле: вкусно поесть вместе.</p>
+<p>Остальное за вами. Зовите своих.</p>
+</aside><h3>Два стола из одного романа</h3>
+<p>«Евгений Онегин» читали в школе почти все. Но мало кто замечает, сколько в нём еды. В первой главе Онегин мчится в санях на Невский, в модный французский ресторан Talon: там «пробка в потолок», ростбиф, трюфели, страсбургский пирог, сыр и ананас. А в пятой главе мы попадаем на именины Татьяны в деревне Лариных: жирный пирог, жаркое, бланманже, цимлянское и чай.</p>
+<p>Это две разные России одного времени. Петербург ест по-французски и по-английски, пьёт шампанское и говорит на смеси языков. Деревня держится «привычек милой старины»: квас, блины на Масленицу, пироги и варенье. Мы соберём оба стола за один вечер. Гости начнут у Talon, а закончат у Лариных за чаем.</p>
+<h3>Когда устроить</h3>
+<ul>
+<li><strong>25 января, Татьянин день.</strong> Именины Татьяны Лариной из пятой главы. Лучший повод: можно поздравить всех знакомых Татьян и пригласить их почётными гостями.</li>
+<li><strong>6 июня, день рождения Пушкина.</strong> Летний вариант: чай на веранде или на даче, как в усадьбе.</li>
+<li><strong>Любой зимний вечер.</strong> Роман зимний: сани, мороз, святки, гадания. Зимой всё это особенно к месту.</li>
+</ul>
+<h3>Почему именно эти блюда</h3>
+<p>Мы взяли блюда, которые прямо названы в романе, и приготовили их так, чтобы всё получилось на обычной кухне. Там, где оригинал дома не повторить, мы честно пишем: в книге так, у нас так, и вот почему. Например, настоящий страсбургский пирог делали из гусиной печени и везли из Франции, а мы делаем нежный паштет из куриной печени. Он готовится за 40 минут и стоит в десять раз дешевле.</p>
+<p>Почти всё готовится накануне. В день праздника вы ставите в духовку только горячее.</p>
+<h3>Как устроен вечер</h3>
+<ol type="1">
+<li><strong>У Talon.</strong> Гости приходят «с мороза». В бокалах игристое, «вино кометы», для непьющих брусничная вода. На столе паштет «Страсбургский пирог», сыр и ананас. Пока все собираются, играем в шарады.</li>
+<li><strong>Горячее.</strong> Садимся за стол. Ростбиф «окровавленный», как у Онегина, или пожарские котлеты, которые Пушкин советовал другу. Рассказываем истории из шпаргалки.</li>
+<li><strong>Именины у Лариных.</strong> Пирог с капустой, цимлянское. Между пирогом и десертом игра «Продолжи строку».</li>
+<li><strong>Чай и бланманже.</strong> Бланманже с вареньем, чай. Под конец святочные гадания, как в пятой главе.</li>
+</ol>
+<h3>Два варианта горячего</h3>
+<ul>
+<li><strong>Как у Talon: ростбиф.</strong> Кусок говядины, запечённый целиком, розовый внутри. Работы 20 минут, остальное делает духовка. Нужен термометр для мяса (стоит около 500 рублей), без него легко пережарить. Мясо дорогое, но это главное блюдо первой главы.</li>
+<li><strong>Как в Торжке: пожарские котлеты.</strong> Нежные куриные котлеты в хрустящей панировке из белого хлеба. Дешевле ростбифа, нравятся детям и тем, кто не любит мясо с кровью. Работы больше, около часа, но котлеты можно обжарить заранее и прогреть в духовке.</li>
+</ul>
+<p>Выберите один. Как меняются план по часам и покупки, написано в <a href="#taiming">тайминге</a>.</p>
+</section><section class="block" id="builder"><h2>Список покупок</h2>
+<p>Укажите, сколько будет гостей и какое горячее вы выбрали, и список пересчитается сам. Отмечайте купленное галочкой прямо в магазине.</p>
+<div class="builder">
+<div class="controls">
+<fieldset><legend>Гостей за столом, с вами</legend><div class="stepper"><button type="button" id="gminus" aria-label="Меньше гостей">−</button><output id="guests">6</output><button type="button" id="gplus" aria-label="Больше гостей">+</button></div></fieldset>
+<fieldset><legend>Из них детей</legend><div class="stepper"><button type="button" id="kminus" aria-label="Меньше детей">−</button><output id="kidsn">0</output><button type="button" id="kplus" aria-label="Больше детей">+</button></div></fieldset>
+<fieldset><legend>Из взрослых пьют вино</legend><div class="stepper"><button type="button" id="wminus" aria-label="Меньше">−</button><output id="wine">6</output><button type="button" id="wplus" aria-label="Больше">+</button></div></fieldset>
+<fieldset class="opt"><legend>Горячее</legend>
+<label><input type="radio" name="dessert" value="rostbif" checked> Ростбиф</label>
+<label><input type="radio" name="dessert" value="kotlety"> Пожарские котлеты</label></fieldset>
+</div>
+<div class="listhead"><h3>Что купить</h3><button type="button" class="copy" id="copy">Скопировать список</button></div>
+<div id="list"></div>
+<p class="hint">Все блюда считаются на всех гостей вместе с детьми. Пирог и паштет считаются целыми рецептами: один на каждые 6-8 гостей. Вино: одна бутылка игристого и одна бутылка красного на троих взрослых, плюс одна бутылка цимлянского на стол. Соль, перец, уксус и специи из обычного шкафчика в список не входят. Отмеченные покупки запоминаются в этом браузере.</p>
+</div></section><section class="block" id="menu"><h2>Меню</h2><ol class="menu"><li><a href="#pashtet"><span class="course">У Talon</span><span class="dish">Паштет «Страсбургский пирог»</span><span class="time">5 ч</span><span class="kid">детям баночку без коньяка</span></a></li><li><a href="#syr-i-ananas"><span class="course">У Talon</span><span class="dish">Сыр и ананас</span><span class="time">1 ч</span><span class="kid">ананас дети съедят первым</span></a></li><li><a href="#rostbif"><span class="course">Горячее, вариант «как у Talon»</span><span class="dish">Ростбиф с печёным картофелем</span><span class="time">2 ч 30 мин</span><span class="kid">детям ломтики с краёв</span></a></li><li><a href="#pozharskie-kotlety"><span class="course">Горячее, вариант «как в Торжке»</span><span class="dish">Пожарские котлеты</span><span class="time">1 ч 40 мин</span><span class="kid">лучшее горячее для детей</span></a></li><li><a href="#pirog-s-kapustoy"><span class="course">У Лариных</span><span class="dish">Пирог с капустой и яйцом</span><span class="time">3 ч</span><span class="kid">подходит детям</span></a></li><li><a href="#blanmanzhe"><span class="course">Сладкое</span><span class="dish">Бланманже с вареньем</span><span class="time">7 ч</span><span class="kid">главный детский десерт</span></a></li><li><a href="#brusnichnaya-voda"><span class="course">Напитки</span><span class="dish">Брусничная вода</span><span class="time">12 ч</span><span class="kid">для всех, кто не пьёт вино</span></a></li></ol><p class="small">Горячее выберите одно: ростбиф или пожарские котлеты. Время указано полное, вместе с остыванием и ожиданием.</p></section><section class="block" id="kids"><h2>Если за столом дети</h2>
+<p>Пушкинский вечер детям интересен, если дать им дело: перо, сургуч, шарады и гадания. А почти всё меню им подходит, если выбрать пожарские котлеты.</p>
+<p><strong>Что подходит детям</strong></p>
+<ul>
+<li><strong>Пожарские котлеты</strong> - лучшее горячее для детей. Если среди гостей много детей, выбирайте этот вариант, а не ростбиф.</li>
+<li><strong>Ростбиф</strong> - детям отрежьте ломтики с краёв куска, они прожарены сильнее.</li>
+<li><strong>Пирог с капустой</strong> - без изменений.</li>
+<li><strong>Паштет</strong> - сделайте детям отдельную баночку без коньяка (смотрите замены в рецепте). Многие дети его любят на гренках.</li>
+<li><strong>Сыр и ананас</strong> - ананас дети съедят первым. Мягкий сыр с сильным запахом им обычно не нравится: положите рядом кусочек простого твёрдого сыра.</li>
+<li><strong>Бланманже с вареньем</strong> - главный детский десерт вечера. Дайте детям самим положить варенье в бокалы.</li>
+</ul>
+<p><strong>Напиток.</strong> Брусничная вода в бокалах для шампанского, с газированной водой, чтобы были пузырьки, как у взрослых. Можно чокаться со всеми под первый тост.</p>
+<p><strong>Чем занять детей</strong></p>
+<ul>
+<li><strong>Письмо гусиным пером.</strong> Купите в магазине для творчества перо для каллиграфии и тушь или просто обмакивайте настоящее перо в разведённую гуашь. Пусть дети напишут письмо, как Татьяна, и запечатают его каплей воска (воск капает взрослый).</li>
+<li><strong>Силуэты.</strong> В пушкинское время модно было вырезать профиль человека из чёрной бумаги. Посадите ребёнка боком к лампе, приколите на стену белый лист, обведите карандашом тень профиля и вырежьте из чёрной бумаги. Получится портрет «как у Пушкина», его можно подарить родителям.</li>
+<li><strong>Шарады.</strong> Для детей отложите простые карточки: бал, сани, няня, качели, гусиное перо, театр.</li>
+<li><strong>Жмурки и горелки.</strong> Игры, в которые играли дети в усадьбах. В жмурках водящему завязывают глаза, и он ловит остальных. В горелки играют парами: водящий («горящий») стоит впереди, по сигналу последняя пара бежит вперёд с двух сторон и старается снова взяться за руки, а водящий ловит одного из них. Для горелок нужен двор или большая комната.</li>
+<li><strong>Гадания.</strong> Детям очень нравятся предсказания из миски. Задания на карточках им тоже по силам.</li>
+</ul>
+<p><strong>Безопасность.</strong> - Свечи на столе ставьте подальше от края, где сидят дети. Воск для печатей капает только взрослый. - Для детей младше 5 лет уберите орехи с сырной доски и нарежьте ананас мелко. - Мёд в брусничной воде нельзя детям до года: сделайте им порцию на сахаре. - Игристое открывают взрослые и в сторону от детей.</p>
+<p>В <a href="#taiming">списке покупок</a> внизу написано, сколько продуктов добавить на детей.</p>
+</section><section class="block" id="taiming"><h2>Тайминг и список покупок</h2>
+<p>Расчёт на 6 взрослых, гости в 19:00. Основной план написан для ростбифа, а ниже есть вариант с пожарскими котлетами. Если время другое, сдвиньте всё на ту же разницу.</p>
+<p>Половина работы делается накануне: паштет, бланманже и брусничная вода должны постоять ночь. В день праздника вы печёте пирог и готовите горячее.</p>
+<hr />
+<h3>Накануне</h3>
+<div class="tw"><table>
+
+<thead>
+<tr class="header">
+<th>Когда</th>
+<th>Что делать</th>
+<th>Сколько времени</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>днём</td>
+<td>Купить продукты по списку ниже. Сыр, мясо и печень кладите в холодильник сразу</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>18:00</td>
+<td><strong>Бланманже</strong>: замочить желатин, сделать миндальное молоко, оставить настаиваться на 30 минут</td>
+<td>20 мин</td>
+</tr>
+<tr class="odd">
+<td>18:20</td>
+<td>Пока настаивается молоко: <strong>брусничная вода</strong>. Размять ягоды, залить тёплой водой с мёдом, накрыть</td>
+<td>15 мин</td>
+</tr>
+<tr class="even">
+<td>18:40</td>
+<td><strong>Бланманже</strong>: процедить, соединить, разлить по бокалам, остудить и в холодильник</td>
+<td>15 мин</td>
+</tr>
+<tr class="odd">
+<td>19:00</td>
+<td><strong>Паштет</strong>: почистить печень, обжарить лук и печень, взбить, разложить по баночкам, залить маслом</td>
+<td>40 мин</td>
+</tr>
+<tr class="even">
+<td>19:45</td>
+<td><strong>Начинка для пирога</strong>: нашинковать и потушить капусту, сварить яйца. Остудить, смешать, в холодильник</td>
+<td>45 мин</td>
+</tr>
+<tr class="odd">
+<td>20:30</td>
+<td><strong>Соус из хрена</strong>. Игристое и белое вино в холодильник</td>
+<td>5 мин</td>
+</tr>
+<tr class="even">
+<td>вечером</td>
+<td>Распечатать карточки, найти свечи и подсвечники, собрать плейлист</td>
+<td>по настроению</td>
+</tr>
+</tbody>
+</table></div>
+<p>Всего накануне около 2 часов 20 минут работы на кухне. Брусничную воду перед сном или утром переставьте в холодильник.</p>
+<hr />
+<h3>В день праздника (гости в 19:00)</h3>
+<div class="tw"><table>
+
+<thead>
+<tr class="header">
+<th>Когда</th>
+<th>Что делать</th>
+<th>Сколько времени</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>14:00</td>
+<td><strong>Тесто для пирога</strong>: замесить и поставить подниматься</td>
+<td>15 мин</td>
+</tr>
+<tr class="even">
+<td>15:30</td>
+<td><strong>Пирог</strong>: раскатать, собрать с начинкой, дать постоять 20 минут</td>
+<td>20 мин</td>
+</tr>
+<tr class="odd">
+<td>15:50</td>
+<td>Включить духовку на 190 °C. Смазать пирог желтком</td>
+<td>5 мин</td>
+</tr>
+<tr class="even">
+<td>16:00</td>
+<td>Пирог в духовку на 35-40 минут</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td>16:40</td>
+<td>Вынуть пирог, смазать маслом, накрыть полотенцем</td>
+<td>2 мин</td>
+</tr>
+<tr class="even">
+<td>17:00</td>
+<td>Достать <strong>мясо</strong> из холодильника, обсушить, посолить, поперчить. Процедить <strong>брусничную воду</strong></td>
+<td>10 мин</td>
+</tr>
+<tr class="odd">
+<td>17:15</td>
+<td>Накрыть стол, расставить свечи, разложить варенье по блюдечкам</td>
+<td>30 мин</td>
+</tr>
+<tr class="even">
+<td>17:45</td>
+<td>Включить духовку на 160 °C. Подготовить <strong>картофель</strong> на противне</td>
+<td>10 мин</td>
+</tr>
+<tr class="odd">
+<td>18:00</td>
+<td>Достать <strong>сыр</strong> и <strong>паштет</strong>. Обжарить <strong>мясо</strong> на сковороде</td>
+<td>10 мин</td>
+</tr>
+<tr class="even">
+<td>18:10</td>
+<td>Мясо с термометром на решётку над картофелем, в духовку</td>
+<td>2 мин</td>
+</tr>
+<tr class="odd">
+<td>18:20</td>
+<td>Нарезать <strong>ананас</strong>, собрать сырную доску. Подсушить <strong>гренки</strong> в духовке рядом с мясом (на нижнем уровне, 12-15 минут при 160 °C)</td>
+<td>20 мин</td>
+</tr>
+<tr class="even">
+<td>18:50</td>
+<td>Зажечь свечи, включить музыку. Брусничная вода в кувшин со льдом</td>
+<td>5 мин</td>
+</tr>
+<tr class="odd">
+<td><strong>19:00</strong></td>
+<td><strong>Гости пришли.</strong> Игристое и брусничная вода, паштет, сыр и ананас. Шарады</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>19:00-19:10</td>
+<td>Термометр показал 52-54 °C: вынуть <strong>мясо</strong>, накрыть фольгой. Духовку на 220 °C, картофель допекается 15-20 минут</td>
+<td>3 мин</td>
+</tr>
+<tr class="odd">
+<td>19:30</td>
+<td><strong>За стол.</strong> Нарезать ростбиф, подать с картофелем и соусом из хрена. Истории из шпаргалки</td>
+<td>5 мин</td>
+</tr>
+<tr class="even">
+<td>20:15</td>
+<td>Викторина «Правда или миф?». Духовку выключить, <strong>пирог</strong> под фольгой прогреть в остывающей духовке 15 минут</td>
+<td>2 мин</td>
+</tr>
+<tr class="odd">
+<td>20:30</td>
+<td><strong>Пирог</strong> на стол, цимлянское. «Продолжи строку»</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>21:15</td>
+<td>Достать <strong>бланманже</strong>, заварить <strong>чай</strong>. Святочные гадания</td>
+<td>5 мин</td>
+</tr>
+</tbody>
+</table></div>
+<p>При гостях вы встаёте из-за стола только три раза, каждый на пару минут: вынуть мясо, нарезать его и поставить пирог греться.</p>
+<aside class="note">
+<p>💡 <strong>Совет.</strong> Мясо - единственное, что нельзя точно рассчитать по часам: кусок может быть толще или тоньше. Если оно готово раньше, ничего страшного: под фольгой ростбиф спокойно ждёт 30-40 минут и остаётся тёплым.</p>
+</aside>
+<hr />
+<h3>Вариант с пожарскими котлетами</h3>
+<p>Если вместо ростбифа вы готовите пожарские котлеты, меняется только вечер в день праздника.</p>
+<div class="tw"><table>
+
+<thead>
+<tr class="header">
+<th>Когда</th>
+<th>Что делать</th>
+<th>Сколько времени</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>накануне, 20:30</td>
+<td>Нарезать мякиш для панировки кубиками, оставить сохнуть на противне на ночь</td>
+<td>15 мин</td>
+</tr>
+<tr class="even">
+<td>16:45</td>
+<td><strong>Фарш</strong>: прокрутить курицу с размоченным хлебом, натереть масло, в холодильник на 30 минут</td>
+<td>20 мин</td>
+</tr>
+<tr class="odd">
+<td>17:15</td>
+<td>Накрыть стол, свечи, варенье</td>
+<td>30 мин</td>
+</tr>
+<tr class="even">
+<td>17:45</td>
+<td><strong>Котлеты</strong>: слепить, запанировать, обжарить партиями. Сложить на противень</td>
+<td>45 мин</td>
+</tr>
+<tr class="odd">
+<td>18:30</td>
+<td>Включить духовку на 200 °C, <strong>картофель</strong> в духовку на 40 минут. Собрать сырную доску, гренки</td>
+<td>20 мин</td>
+</tr>
+<tr class="even">
+<td><strong>19:00</strong></td>
+<td><strong>Гости пришли</strong></td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td>19:10</td>
+<td>Картофель готов, накрыть фольгой. Духовку на 180 °C, <strong>котлеты</strong> в духовку на 15 минут</td>
+<td>2 мин</td>
+</tr>
+<tr class="even">
+<td>19:30</td>
+<td><strong>За стол</strong>: котлеты с картофелем и брусничным вареньем</td>
+<td>-</td>
+</tr>
+</tbody>
+</table></div>
+<p>Дальше всё так же, как в основном плане.</p>
+<hr />
+<h3>Список покупок (вариант с ростбифом)</h3>
+<h4>Овощи, фрукты, зелень</h4>
+<ul>
+<li>Картофель мелкий или средний - 1,2 кг</li>
+<li>Капуста белокочанная - 1,2 кг (половина среднего кочана)</li>
+<li>Лук репчатый - 2 шт. (1 в паштет, 1 в пирог)</li>
+<li>Чеснок - 1 головка (нужно 3 зубчика)</li>
+<li>Тимьян свежий - 1 упаковка (в паштет и к мясу; можно розмарин к мясу)</li>
+<li>Укроп - 1 пучок (по желанию, в пирог)</li>
+<li>Мята - 1 пучок (по желанию, к бланманже)</li>
+<li>Ананас - 1 шт. (или 1 банка кольцами)</li>
+<li>Лимон - 1 шт.</li>
+<li>Брусника свежая или замороженная - 500 г</li>
+</ul>
+<h4>Мясо и печень</h4>
+<ul>
+<li>Говядина: толстый или тонкий край без кости - 1,3-1,5 кг одним куском</li>
+<li>Печень куриная охлаждённая - 500 г</li>
+</ul>
+<h4>Молочное и яйца</h4>
+<ul>
+<li>Масло сливочное 82,5% - 310 г (2 пачки по 180 г)</li>
+<li>Молоко 3,2% - 750 мл (1 пакет 1 л; 250 мл в тесто, 500 мл в бланманже)</li>
+<li>Сливки 20% - 100 мл (в паштет)</li>
+<li>Сливки 33% - 300 мл (в бланманже)</li>
+<li>Сметана 20% - 350 г (150 г в соус к мясу, остальное к пирогу)</li>
+<li>Яйца С1 - 6 шт. (1 в тесто, 4 в начинку, 1 для смазки; купите десяток)</li>
+<li>Сыр мягкий с мытой корочкой - 200 г</li>
+<li>Сыр мягкий с белой корочкой (камамбер или бри) - 200 г</li>
+<li>Сыр твёрдый выдержанный - 150 г (по желанию)</li>
+</ul>
+<h4>Бакалея</h4>
+<ul>
+<li>Мука пшеничная - 550 г (пачка 1 кг)</li>
+<li>Дрожжи сухие быстродействующие - 1 пакетик 7 г</li>
+<li>Сахар - 150 г</li>
+<li>Миндаль очищенный или миндальные лепестки - 100 г</li>
+<li>Желатин - 15 г</li>
+<li>Мёд - 5 ст. л. (около 130 г) и ещё 2 ст. л. к сыру</li>
+<li>Варенье: вишнёвое, малиновое или брусничное - 2-3 банки (на бланманже, к паштету и на блюдечки)</li>
+<li>Хрен столовый - 1 банка</li>
+<li>Горчица зернистая - 1 банка (по желанию)</li>
+<li>Грецкие орехи - 50 г (по желанию)</li>
+<li>Масло растительное без запаха</li>
+<li>Мускатный орех, палочка корицы, гвоздика</li>
+<li>Соль крупная, чёрный перец горошком</li>
+<li>Чай чёрный листовой</li>
+</ul>
+<h4>Хлеб</h4>
+<ul>
+<li>Багет - 1 шт.</li>
+</ul>
+<h4>Напитки</h4>
+<ul>
+<li>Игристое брют - 2 бутылки (1 на 3 взрослых; как выбрать, в разделе про вино)</li>
+<li>Красное вино к мясу (бордо или российский купаж) - 2 бутылки</li>
+<li>Цимлянское или другое красное игристое - 1 бутылка (к пирогу и десерту)</li>
+<li>Коньяк - 2 ст. л. в паштет (по желанию)</li>
+<li>Газированная вода - 1 л (для брусничной воды с пузырьками)</li>
+<li>Квас или яблочный сок прямого отжима - по желанию</li>
+</ul>
+<h4>Хозяйственное</h4>
+<ul>
+<li>Термометр для мяса со щупом (если нет)</li>
+<li>Фольга, пищевая плёнка, пергамент</li>
+<li>Хлопковая нитка для перевязки мяса</li>
+<li>Марля (для бланманже)</li>
+<li>Свечи - 6-10 шт.</li>
+<li>Плотная бумага кремового цвета для печати приглашений и карточек</li>
+</ul>
+<hr />
+<h3>Вариант с пожарскими котлетами: что поменять в покупках</h3>
+<p>Не нужно: говядина, хрен, термометр, нитка. Сметаны хватит 200 г.</p>
+<p>Купите дополнительно: - Куриное филе грудки - 600 г - Куриное филе бедра без кожи - 400 г - Батон белый - 2 шт. (450 г мякиша без корок: 150 г в фарш, 300 г на панировку) - Сливки 10-20% - 150 мл (или молоко) - Масло сливочное - ещё 140 г (80 г в фарш, 60 г на жарку), то есть всего 3 пачки по 180 г - Яйца - ещё 2 шт. (всего 8, десятка хватит)</p>
+<h3>Если за столом дети</h3>
+<p>Добавьте на каждых 2 детей: - Брусника - ещё 250 г и мёд или сахар (ещё полрецепта брусничной воды) - Котлеты: по 1 на ребёнка (в варианте с котлетами добавьте 200 г филе на двоих) - Бланманже: ещё 2 порции (плюс треть рецепта)</p>
+<p>Игристое, вино и коньяк считайте только на взрослых. Подробнее в разделе <a href="#kids">Если за столом дети</a>.</p>
+</section><section class="block" id="recipes"><h2>Рецепты</h2><nav class="chips" aria-label="Рецепты"><a href="#pashtet">Паштет «Страсбургский пирог»</a><a href="#syr-i-ananas">Сыр и ананас</a><a href="#rostbif">Ростбиф с печёным картофелем</a><a href="#pozharskie-kotlety">Пожарские котлеты</a><a href="#pirog-s-kapustoy">Пирог с капустой и яйцом</a><a href="#blanmanzhe">Бланманже с вареньем</a><a href="#brusnichnaya-voda">Брусничная вода</a></nav><article class="recipe" id="pashtet"><p class="eyebrow">У Talon</p><h3>Паштет «Страсбургский пирог»</h3><figure class="pic"><img src="img/pashtet.jpg" alt="Паштет «Страсбургский пирог»" loading="lazy"></figure><dl class="facts"><div><dt>Активно</dt><dd>40 мин</dd></div><div><dt>Всего</dt><dd>5 ч (с застыванием)</dd></div><div><dt>Порции</dt><dd>6-8 (около 650 г паштета)</dd></div><div><dt>Духовка</dt><dd>180 °C (только для гренок)</dd></div></dl>
+<aside class="note">
+<p>И Страсбурга пирог нетленный<br />
+Меж сыром лимбургским живым<br />
+И ананасом золотым.</p>
+<p><em>«Евгений Онегин», глава первая, строфа XVI</em></p>
+</aside>
+<p>Закуска из ресторана Talon. В книге это паштет из гусиной печени, запечённый в тесте и привезённый из Франции. Дома такой не повторить: гусиная печень (фуа-гра) стоит дорого, а запекать паштет в тесте долго и сложно. Мы делаем нежный паштет из куриной печени со сливками и коньяком, а «нетленным» его делает слой масла сверху, как в старых кухнях.</p>
+<hr />
+<h2>История</h2>
+<p>Страсбург, город на востоке Франции, в XVIII веке прославился паштетами из гусиной печени. Паштет запекали в толстой корке из теста: тесто защищало начинку в дороге, как коробка. Потом паштеты научились запаивать в банки, и их стали возить по всей Европе, в том числе в Петербург. Поэтому у Пушкина пирог «нетленный»: он не портился в долгом пути и мог ждать на полке ресторана.</p>
+<p>Слово «пирог» здесь не ошибка. Французское <em>pâté</em> значит и «паштет», и «пирог», и в русском языке пушкинского времени страсбургский паштет часто называли пирогом.</p>
+<h2>Ингредиенты</h2>
+<ul>
+<li class="ing"><span class="n">печень куриная (охлаждённая, не замороженная)</span><span class="q">500&nbsp;г</span></li>
+<li class="ing"><span class="n">лук репчатый (около 100 г)</span><span class="q">1&nbsp;шт</span></li>
+<li class="ing"><span class="n">масло сливочное 82,5% (20 г для жарки, 90 г в паштет, 40 г для заливки сверху)</span><span class="q">150&nbsp;г</span></li>
+<li class="ing"><span class="n">сливки 20%</span><span class="q">100&nbsp;мл</span></li>
+<li class="ing"><span class="n">коньяк (по желанию, можно заменить 1 ст. л. сока лимона)</span><span class="q">2&nbsp;ст. л.</span></li>
+<li class="ing"><span class="n">соль (без горки, дальше по вкусу)</span><span class="q">1&nbsp;ч. л.</span></li>
+<li class="ing"><span class="n">перец чёрный молотый</span><span class="q">0,5&nbsp;ч. л.</span></li>
+<li class="ing"><span class="n">мускатный орех молотый</span><span class="q">1&nbsp;щепотка</span></li>
+<li class="ing"><span class="n">тимьян свежий (или 0,5 ч. л. сушёного)</span><span class="q">2-3&nbsp;веточки</span></li>
+</ul>
+<p><strong>К подаче</strong></p>
+<ul>
+<li class="ing"><span class="n">багет</span><span class="q">1&nbsp;шт</span></li>
+<li class="ing"><span class="n">брусничное или клюквенное варенье (по желанию)</span><span class="q">3-4&nbsp;ст. л.</span></li>
+</ul>
+<h2>Шаги</h2>
+<h3>1. Подготовить печень · 10 мин</h3>
+<p>Промойте печень холодной водой и обсушите бумажным полотенцем. Осмотрите каждый кусочек: отрежьте белые плёнки и жилки, жир и зеленоватые пятна, если они есть. Крупные доли разрежьте пополам, чтобы все кусочки были примерно одного размера.</p>
+<aside class="note">
+<p>⚠️ <strong>Типичная ошибка.</strong> Пропустить зелёное пятнышко. Это след желчи, и даже маленький кусочек делает весь паштет горьким. Отрезайте его с запасом.</p>
+</aside>
+<hr />
+<h3>2. Обжарить лук · 7 мин</h3>
+<p>Лук очистите и мелко нарежьте. Растопите на сковороде 20 г масла на среднем огне, выложите лук и жарьте, помешивая, 6-7 минут, пока он не станет мягким и прозрачным. Он не должен подгореть: тёмный лук даст горечь.</p>
+<hr />
+<h3>3. Обжарить печень · 6 мин</h3>
+<p>Прибавьте огонь чуть выше среднего. Выложите к луку печень одним слоем и листья тимьяна. Жарьте 2-3 минуты с одной стороны и 2-3 минуты с другой, не перемешивая всё время.</p>
+<p>Разрежьте самый крупный кусочек. Внутри он должен быть бежево-розовым, но без красного сока. Если сок красный, жарьте ещё минуту.</p>
+<aside class="note">
+<p><strong>Почему так работает.</strong> Пережаренная печень становится сухой и зернистой, и паштет получится как песок. Чуть розовая внутри печень даёт гладкий, шелковистый паштет.</p>
+</aside>
+<hr />
+<h3>4. Добавить коньяк и сливки · 3 мин</h3>
+<p>Влейте коньяк и дайте ему выкипеть 1 минуту. Потом влейте сливки, доведите до лёгкого кипения и снимите сковороду с огня.</p>
+<aside class="note">
+<p>⚠️ <strong>Безопасность.</strong> Коньяк на горячей сковороде может вспыхнуть. Вливайте его, сняв сковороду с огня, и держите лицо подальше. Если вспыхнул, не пугайтесь: накройте сковороду крышкой, пламя погаснет.</p>
+</aside>
+<hr />
+<h3>5. Взбить · 5 мин</h3>
+<p>Переложите горячую печень вместе со всем соком в блендер или высокую кружку для погружного блендера. Добавьте 90 г мягкого масла кусочками, соль, перец и мускатный орех. Взбивайте 2-3 минуты, пока масса не станет совсем гладкой.</p>
+<p>Попробуйте и досолите. Холодный паштет кажется менее солёным, чем тёплый, поэтому он должен быть чуть-чуть пересолен на вкус сейчас.</p>
+<p>Для ресторанной гладкости протрите паштет через мелкое сито ложкой. Это необязательно, но так он получается как у Talon.</p>
+<hr />
+<h3>6. Разложить и «запечатать» · 5 мин + 4 ч в холодильнике</h3>
+<p>Разложите паштет по баночкам, разровняйте ложкой и постучите баночкой по столу, чтобы вышли пузырьки воздуха. Растопите оставшиеся 40 г масла и залейте сверху тонким слоем. Положите сверху листик тимьяна для красоты.</p>
+<p>Остудите и уберите в холодильник минимум на 4 часа, лучше на ночь.</p>
+<aside class="note">
+<p><strong>Почему так работает.</strong> Слой масла закрывает паштет от воздуха: он не темнеет и не сохнет. Так в старых кухнях и хранили паштеты. Под маслом паштет хранится в холодильнике до 3 дней.</p>
+</aside>
+<hr />
+<h3>7. Гренки · 10 мин</h3>
+<p>В день праздника нарежьте багет ломтиками толщиной 1 см. Разложите на противне и подсушите в духовке при 180 °C 8-10 минут, до лёгкой золотистой корочки.</p>
+<hr />
+<h2>Практический блок</h2>
+<p><strong>Подача.</strong> Достаньте паштет из холодильника за 20-30 минут до прихода гостей: так он станет мягче и лучше намазывается. Поставьте баночки прямо на доску, рядом гренки и маленькую ложку варенья. Сладкая брусника с паштетом соединяет оба стола вечера: петербургский и деревенский.</p>
+<p><strong>Замены.</strong> - <strong>Без алкоголя.</strong> Вместо коньяка 1 ст. л. сока лимона или 2 ст. л. яблочного сока. - <strong>Гусиная или утиная печень.</strong> Если найдёте, сделайте так же. Получится ближе к Страсбургу и дороже. - <strong>В тесте, как в книге.</strong> Купите 500 г слоёного теста, нарежьте квадратами 8×8 см, положите в центр ложку застывшего паштета, защипните конвертом и запекайте 20 минут при 200 °C. Подавайте тёплыми.</p>
+<p><strong>Сколько нужно.</strong> На закуску по 60-80 г паштета на человека. Рецепт рассчитан на 6-8 гостей.</p>
+<p><strong>Аллергены.</strong> Молочное (масло, сливки), глютен (гренки).</p>
+<aside class="didyou"><span class="dy">А вы знали?</span>Страсбургский пирог привозили в Петербург из Франции уже готовым, в запаянном виде. Поэтому Пушкин и назвал его «нетленным»: он не портился в дороге.</aside></article><article class="recipe" id="syr-i-ananas"><p class="eyebrow">У Talon</p><h3>Сыр и ананас</h3><figure class="pic"><img src="img/syr-i-ananas.jpg" alt="Сыр и ананас" loading="lazy"></figure><dl class="facts"><div><dt>Активно</dt><dd>20 мин</dd></div><div><dt>Всего</dt><dd>1 ч (сыр греется до комнатной температуры)</dd></div><div><dt>Порции</dt><dd>6</dd></div><div><dt>Духовка</dt><dd>не используется</dd></div></dl>
+<p>Последние две строчки ужина Онегина у Talon. Это не рецепт, а красивая сборка: за 20 минут у вас будет доска, которую гости сфотографируют первой.</p>
+<hr />
+<h2>История</h2>
+<p><strong>Лимбургский сыр</strong> родом из Лимбурга, области на границе нынешних Бельгии, Нидерландов и Германии. Это мягкий сыр с мытой корочкой: во время созревания его корку протирают рассолом. От этого у сыра очень сильный запах и нежная, почти текучая середина. Почему Пушкин назвал его «живым», комментаторы объясняют по-разному: зрелый сыр будто «течёт» и шевелится на тарелке, а ещё он продолжает зреть и меняться прямо на столе.</p>
+<p><strong>Ананас</strong> в пушкинское время был знаком роскоши. Его везли издалека или выращивали в оранжереях богатых усадеб: в холодной России это стоило огромных денег. Золотой ананас на столе ресторана означал, что здесь ужинают самые модные люди города.</p>
+<h2>Ингредиенты</h2>
+<ul>
+<li class="ing"><span class="n">ананас спелый (или 1 банка ананаса кольцами, 580 г)</span><span class="q">1&nbsp;шт</span></li>
+<li class="ing"><span class="n">мягкий сыр с мытой корочкой (лимбургский, мюнстер, эпуас или российский аналог)</span><span class="q">200&nbsp;г</span></li>
+<li class="ing"><span class="n">мягкий сыр с белой корочкой (камамбер или бри)</span><span class="q">200&nbsp;г</span></li>
+<li class="ing"><span class="n">твёрдый выдержанный сыр (по желанию, для тех, кто боится сильного запаха)</span><span class="q">150&nbsp;г</span></li>
+<li class="ing"><span class="n">мёд жидкий</span><span class="q">2&nbsp;ст. л.</span></li>
+<li class="ing"><span class="n">грецкие орехи (по желанию)</span><span class="q">50&nbsp;г</span></li>
+</ul>
+<h2>Шаги</h2>
+<h3>1. Достать сыр заранее · 1 ч (без вашего участия)</h3>
+<p>Выньте сыры из холодильника за час до подачи и не снимайте упаковку. Холодный сыр почти не пахнет и не имеет вкуса, а при комнатной температуре раскрывается.</p>
+<hr />
+<h3>2. Как выбрать спелый ананас · в магазине</h3>
+<p>Понюхайте основание: спелый ананас сладко пахнет. Потяните за листик в середине хохолка: у спелого он выдёргивается легко. Ананас должен быть тяжёлым для своего размера и чуть пружинить, если нажать пальцем. Зелёный, без запаха ананас дома не дозреет.</p>
+<hr />
+<h3>3. Разрезать ананас · 10 мин</h3>
+<ol type="1">
+<li>Положите ананас на бок и отрежьте хохолок вместе с верхушкой, потом донышко.</li>
+<li>Поставьте ананас стоя и срезайте кожуру сверху вниз полосами, по форме плода.</li>
+<li>Острым концом ножа выковырните оставшиеся коричневые «глазки».</li>
+<li>Разрежьте ананас вдоль на 4 части и срежьте с каждой твёрдую сердцевину.</li>
+<li>Нарежьте мякоть ломтиками толщиной 1 см.</li>
+</ol>
+<aside class="note">
+<p>💡 <strong>Совет.</strong> Для красоты сохраните хохолок и положите его на доску рядом с ломтиками: сразу видно, что ананас настоящий, «золотой».</p>
+</aside>
+<hr />
+<h3>4. Собрать доску · 10 мин</h3>
+<p>Положите сыры целыми кусками на доску, «лимбургский» в центр. В каждый сыр воткните отдельный нож: так запах мягкого сыра не перейдёт на остальные. Вокруг разложите ломтики ананаса, орехи и маленькую мисочку мёда.</p>
+<hr />
+<h2>Практический блок</h2>
+<p><strong>Подача.</strong> Ставьте доску на стол вместе с паштетом, когда приходят гости. Расскажите, что так и выглядел ужин Онегина: строчка «меж сыром лимбургским живым и ананасом золотым».</p>
+<p><strong>Где купить сыр.</strong> Настоящий лимбургский бывает в сырных лавках, но редко. Подойдёт любой мягкий сыр с оранжевой липкой корочкой и сильным запахом. Его делают и российские сыроварни: спросите в сырном магазине «сыр с мытой коркой».</p>
+<p><strong>Замены.</strong> - <strong>Если никто не любит сильный запах.</strong> Возьмите только камамбер и твёрдый сыр. - <strong>Консервированный ананас.</strong> Подходит, если свежий не найти. Слейте сироп и обсушите кольца полотенцем.</p>
+<p><strong>Аллергены.</strong> Молочное, орехи (если добавите).</p>
+</article><article class="recipe" id="rostbif"><p class="eyebrow">Горячее, вариант «как у Talon»</p><h3>Ростбиф с печёным картофелем</h3><figure class="pic"><img src="img/rostbif.jpg" alt="Ростбиф с печёным картофелем" loading="lazy"></figure><dl class="facts"><div><dt>Активно</dt><dd>25 мин</dd></div><div><dt>Всего</dt><dd>2 ч 30 мин (с отдыхом мяса)</dd></div><div><dt>Порции</dt><dd>6</dd></div><div><dt>Духовка</dt><dd>160 °C для мяса, потом 220 °C для картофеля</dd></div></dl>
+<aside class="note">
+<p>Пред ним roast-beef окровавленный,<br />
+И трюфли, роскошь юных лет,<br />
+Французской кухни лучший цвет…</p>
+<p><em>«Евгений Онегин», глава первая, строфа XVI</em></p>
+</aside>
+<p>Главное блюдо ужина Онегина у Talon. Кусок говядины целиком обжаривают на сковороде, а потом медленно доводят в духовке. Снаружи корочка, внутри розовое, сочное мясо. «Окровавленный» у Пушкина значит именно это: мясо с кровью, как его любили англичане.</p>
+<hr />
+<h2>История</h2>
+<p>Ростбиф (<em>roast beef</em>, «жареная говядина») - главное блюдо английской кухни. В начале XIX века всё английское было в Петербурге в моде: денди, фраки, скачки, сплин. Пушкин даже написал слово «roast-beef» английскими буквами, прямо посреди русских стихов, как модное иностранное словечко. А в другой строфе первой главы он шутит: «Но панталоны, фрак, жилет, / Всех этих слов на русском нет».</p>
+<h2>Ингредиенты</h2>
+<ul>
+<li class="ing"><span class="n">говядина: толстый или тонкий край без кости одним куском (или вырезка 1,2 кг)</span><span class="q">1,3-1,5&nbsp;кг</span></li>
+<li class="ing"><span class="n">соль крупная</span><span class="q">2&nbsp;ч. л.</span></li>
+<li class="ing"><span class="n">перец чёрный, крупно смолотый</span><span class="q">1&nbsp;ч. л.</span></li>
+<li class="ing"><span class="n">масло растительное без запаха</span><span class="q">2&nbsp;ст. л.</span></li>
+<li class="ing"><span class="n">масло сливочное</span><span class="q">30&nbsp;г</span></li>
+<li class="ing"><span class="n">чеснок</span><span class="q">3&nbsp;зубчика</span></li>
+<li class="ing"><span class="n">тимьян или розмарин</span><span class="q">3-4&nbsp;веточки</span></li>
+</ul>
+<p><strong>Печёный картофель</strong></p>
+<ul>
+<li class="ing"><span class="n">картофель мелкий или средний</span><span class="q">1,2&nbsp;кг</span></li>
+<li class="ing"><span class="n">масло растительное</span><span class="q">3&nbsp;ст. л.</span></li>
+<li class="ing"><span class="n">соль</span><span class="q">1&nbsp;ч. л.</span></li>
+</ul>
+<p><strong>Соус из хрена</strong></p>
+<ul>
+<li class="ing"><span class="n">хрен столовый из банки</span><span class="q">3&nbsp;ст. л.</span></li>
+<li class="ing"><span class="n">сметана 20%</span><span class="q">150&nbsp;г</span></li>
+<li class="ing"><span class="n">сахар</span><span class="q">1&nbsp;щепотка</span></li>
+<li>горчица зернистая к столу (по желанию)</li>
+</ul>
+<h2>Шаги</h2>
+<h3>1. Достать мясо · 1 ч (без вашего участия)</h3>
+<p>За час до готовки достаньте мясо из холодильника. Срежьте сверху лишнюю плёнку, но жир оставьте. Обсушите мясо бумажным полотенцем со всех сторон и натрите солью и перцем.</p>
+<aside class="note">
+<p><strong>Почему так работает.</strong> Холодное мясо прямо из холодильника жарится неравномерно: снаружи уже серое, а в центре ещё ледяное. Мясо комнатной температуры прожаривается ровно.</p>
+</aside>
+<aside class="note">
+<p>💡 <strong>Совет.</strong> Если кусок длинный и тонкий с одного края, перевяжите его ниткой (обычной хлопковой) поперёк через каждые 3 см. Так он будет одной толщины и приготовится ровно.</p>
+</aside>
+<hr />
+<h3>2. Подготовить картофель · 10 мин</h3>
+<p>Включите духовку на 160 °C. Картофель хорошо вымойте щёткой, кожуру не снимайте. Мелкий оставьте целым, средний разрежьте пополам. Перемешайте на противне с маслом и солью.</p>
+<hr />
+<h3>3. Обжарить мясо · 10 мин</h3>
+<p>Разогрейте сковороду на сильном огне с растительным маслом, пока над ней не появится лёгкий дымок. Положите мясо и обжаривайте по 2 минуты с каждой стороны, включая торцы, до тёмно-коричневой корочки. В конце добавьте сливочное масло, раздавленный ножом чеснок и тимьян, и полейте мясо пенящимся маслом ложкой 1 минуту.</p>
+<aside class="note">
+<p>⚠️ <strong>Безопасность.</strong> Будет много брызг и дыма. Включите вытяжку и откройте окно. Не переворачивайте мясо руками: используйте две лопатки или щипцы.</p>
+</aside>
+<hr />
+<h3>4. Довести в духовке · 40-60 мин</h3>
+<p>Переложите мясо на решётку над противнем с картофелем (или прямо на картофель). Воткните щуп термометра в самую толстую часть куска, чтобы кончик был в центре. Запекайте при 160 °C до нужной температуры внутри:</p>
+<div class="tw"><table>
+<thead>
+<tr class="header">
+<th>Как хотите</th>
+<th>Температура в центре</th>
+<th>Когда вынуть</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>С кровью, «окровавленный»</td>
+<td>50-52 °C</td>
+<td>через 35-45 мин</td>
+</tr>
+<tr class="even">
+<td>Розовый (так любят чаще всего)</td>
+<td>54-56 °C</td>
+<td>через 45-55 мин</td>
+</tr>
+<tr class="odd">
+<td>Средний, без розового</td>
+<td>60-62 °C</td>
+<td>через 55-65 мин</td>
+</tr>
+</tbody>
+</table></div>
+<p>Время зависит от толщины куска, поэтому ориентируйтесь на термометр, а не на часы.</p>
+<aside class="note">
+<p>⚠️ <strong>Типичная ошибка.</strong> Готовить ростбиф «на глаз». Разница между розовым и серым сухим мясом всего 8-10 градусов. Термометр стоит около 500 рублей и спасает кусок мяса за 3000.</p>
+</aside>
+<hr />
+<h3>5. Дать мясу отдохнуть · 15-20 мин</h3>
+<p>Выньте мясо, переложите на доску и неплотно накройте фольгой. Пока мясо отдыхает, температура внутри поднимется ещё на 3-4 градуса, а сок распределится по куску.</p>
+<p>Тем временем увеличьте духовку до 220 °C и допеките картофель 15-20 минут, до румяной корочки.</p>
+<aside class="note">
+<p><strong>Почему так работает.</strong> Если разрезать мясо сразу, весь сок вытечет на доску. Через 15 минут он остаётся внутри.</p>
+</aside>
+<hr />
+<h3>6. Соус из хрена · 3 мин</h3>
+<p>Смешайте хрен со сметаной и щепоткой сахара. Соус можно сделать накануне.</p>
+<hr />
+<h3>7. Нарезать · 5 мин</h3>
+<p>Разрежьте нитки, если перевязывали. Нарежьте мясо острым ножом тонкими ломтиками, 5-7 мм, <strong>поперёк волокон</strong> (волокна видно на срезе как тонкие полоски: режьте не вдоль них, а поперёк).</p>
+<hr />
+<h2>Практический блок</h2>
+<p><strong>Подача.</strong> Выложите ломтики на большое блюдо внахлёст, розовой серединой вверх, вокруг картофель, рядом соус из хрена и горчица. Подавайте с красным вином, бордо или каберне (смотрите <a href="#vino">вино к столу</a>).</p>
+<p><strong>Замены.</strong> - <strong>Если гости не едят мясо с кровью.</strong> Доведите до 60-62 °C. Кто любит розовое, возьмёт ломтики из середины. - <strong>Дешевле.</strong> Возьмите «огузок» или «оковалок» (части задней ноги). Они жёстче, поэтому готовьте только до 54-56 °C и режьте как можно тоньше. - <strong>Не хочется возиться с говядиной.</strong> Выберите второй вариант горячего: <a href="#pozharskie-kotlety">пожарские котлеты</a>.</p>
+<p><strong>Сколько нужно.</strong> 200-250 г сырого мяса на человека. Остатки ростбифа отлично идут на бутерброды на следующий день.</p>
+<p><strong>Аллергены.</strong> Молочное (масло, сметана в соусе), горчица (если подаёте).</p>
+<aside class="didyou"><span class="dy">А вы знали?</span>Пушкин написал слова «Talon» и «roast-beef» латиницей, прямо в русском тексте. Так модный петербуржец и говорил: половина слов из французского и английского.</aside></article><article class="recipe" id="pozharskie-kotlety"><p class="eyebrow">Горячее, вариант «как в Торжке»</p><h3>Пожарские котлеты</h3><figure class="pic"><img src="img/kotlety.jpg" alt="Пожарские котлеты" loading="lazy"></figure><dl class="facts"><div><dt>Активно</dt><dd>1 ч</dd></div><div><dt>Всего</dt><dd>1 ч 40 мин (с охлаждением фарша)</dd></div><div><dt>Порции</dt><dd>6 (12 котлет)</dd></div><div><dt>Духовка</dt><dd>180 °C</dd></div></dl>
+<aside class="note">
+<p>На досуге отобедай<br />
+У Пожарского в Торжке,<br />
+Жареных котлет отведай (именно котлет)<br />
+И отправься налегке.</p>
+<p><em>Пушкин, письмо другу Сергею Соболевскому, ноябрь 1826 года</em></p>
+</aside>
+<p>Второй вариант горячего, и самое «пушкинское» блюдо набора: его Пушкин сам советовал другу. Это нежные котлеты из куриного фарша со сливочным маслом внутри, обжаренные в хрустящей корочке из белого хлеба. Детям и тем, кто не ест мясо с кровью, они нравятся больше ростбифа.</p>
+<hr />
+<h2>История</h2>
+<p>Город Торжок стоял на главной дороге между Петербургом и Москвой. Путешественники меняли там лошадей и обедали. Самым известным был трактир семьи Пожарских, и его котлеты знала вся дорога. Название к князю Пожарскому из учебника истории отношения не имеет: оно просто по фамилии трактирщиков.</p>
+<p>Рецепт обычно связывают с Дарьей Пожарской, дочерью хозяина. Есть красивая легенда, что котлеты понравились самому императору Николаю I. Подтверждённых документов про царя нет, так что рассказывайте её со словом «говорят».</p>
+<p>И честная оговорка. Исследователи считают, что в 1826 году, когда Пушкин писал письмо, котлеты в Торжке были ещё из телятины или говядины, а куриные появились позже, в 1830-1840-е годы. Мы делаем ту куриную версию, которая и стала знаменитой.</p>
+<h2>Ингредиенты</h2>
+<p><strong>Фарш</strong></p>
+<ul>
+<li class="ing"><span class="n">куриное филе грудки</span><span class="q">600&nbsp;г</span></li>
+<li class="ing"><span class="n">куриное филе бедра без кожи</span><span class="q">400&nbsp;г</span></li>
+<li class="ing"><span class="n">батон белый (без корок, для фарша)</span><span class="q">150&nbsp;г</span></li>
+<li class="ing"><span class="n">сливки 10-20% или молоко</span><span class="q">150&nbsp;мл</span></li>
+<li class="ing"><span class="n">масло сливочное 82,5%, замороженное</span><span class="q">80&nbsp;г</span></li>
+<li class="ing"><span class="n">соль</span><span class="q">1,5&nbsp;ч. л.</span></li>
+<li class="ing"><span class="n">перец белый или чёрный молотый</span><span class="q">0,5&nbsp;ч. л.</span></li>
+<li class="ing"><span class="n">мускатный орех</span><span class="q">1&nbsp;щепотка</span></li>
+</ul>
+<p><strong>Панировка и жарка</strong></p>
+<ul>
+<li class="ing"><span class="n">батон белый вчерашний (без корок, для панировки)</span><span class="q">300&nbsp;г</span></li>
+<li class="ing"><span class="n">яйца С1</span><span class="q">2&nbsp;шт</span></li>
+<li class="ing"><span class="n">масло сливочное или топлёное (для жарки)</span><span class="q">60&nbsp;г</span></li>
+<li class="ing"><span class="n">масло растительное (для жарки)</span><span class="q">3&nbsp;ст. л.</span></li>
+</ul>
+<h2>Шаги</h2>
+<h3>1. Подготовить хлеб · 10 мин (можно накануне)</h3>
+<p>Для панировки срежьте корки с 300 г батона и нарежьте мякиш как можно мельче, кубиками 3-4 мм. Разложите на противне и подсушите на воздухе 2-3 часа или в духовке при 100 °C 15 минут. Кубики должны стать сухими, но не румяными.</p>
+<p>Для фарша оставшиеся 150 г мякиша без корок залейте сливками и оставьте на 10 минут.</p>
+<aside class="note">
+<p><strong>Почему так работает.</strong> Именно эти мелкие сухие кубики дают «пожарским» их знаменитую корочку, похожую на ёжика. Обычные молотые сухари дают плоскую корку, она тоже вкусная, но это уже не то.</p>
+</aside>
+<aside class="note">
+<p>💡 <strong>Совет.</strong> Если резать некогда, возьмите японские сухари панко. Они продаются в больших супермаркетах и дают похожую хрустящую корку.</p>
+</aside>
+<hr />
+<h3>2. Сделать фарш · 15 мин</h3>
+<p>Нарежьте курицу кусками и прокрутите через мясорубку вместе с размокшим хлебом (или измельчите в комбайне короткими нажатиями, чтобы не превратить в пасту). Добавьте соль, перец и мускатный орех.</p>
+<p>Замороженное сливочное масло натрите на крупной тёрке прямо в фарш и быстро перемешайте ложкой.</p>
+<aside class="note">
+<p><strong>Почему так работает.</strong> Кусочки холодного масла тают при жарке внутри котлеты и делают её сочной. Если масло тёплое, оно растворится в фарше ещё до сковороды.</p>
+</aside>
+<hr />
+<h3>3. Охладить фарш · 30 мин (без вашего участия)</h3>
+<p>Накройте миску плёнкой и уберите в холодильник на 30 минут. Холодный фарш легко лепить, он не липнет к рукам.</p>
+<hr />
+<h3>4. Слепить и запанировать · 15 мин</h3>
+<p>Взбейте яйца в глубокой тарелке. Кубики хлеба высыпьте в другую тарелку. Смочите руки холодной водой, возьмите фарш размером с крупное яйцо (около 100 г) и сформуйте овальную котлету толщиной 2 см. Обмакните в яйцо и обваляйте в кубиках, слегка прижимая их ладонями. Выложите на доску. Должно получиться 12 котлет.</p>
+<hr />
+<h3>5. Обжарить · 15 мин</h3>
+<p>Включите духовку на 180 °C. В сковороде разогрейте на среднем огне растительное и сливочное масло. Жарьте котлеты партиями по 4-5 штук, 3-4 минуты с каждой стороны, до золотистой корочки. Не делайте огонь сильным: кубики хлеба подгорят раньше, чем котлета прогреется.</p>
+<aside class="note">
+<p>⚠️ <strong>Типичная ошибка.</strong> Класть все котлеты сразу. Сковорода остывает, котлеты не жарятся, а тушатся, и корочка размокает.</p>
+</aside>
+<hr />
+<h3>6. Довести в духовке · 10-12 мин</h3>
+<p>Переложите котлеты на противень с пергаментом и запекайте при 180 °C 10-12 минут. Внутри котлета должна быть белой, без розового, а сок прозрачным. Если есть термометр, в центре должно быть 75 °C.</p>
+<aside class="note">
+<p>⚠️ <strong>Безопасность.</strong> Курицу нельзя есть недожаренной. Разрежьте одну котлету для проверки.</p>
+</aside>
+<hr />
+<h2>Практический блок</h2>
+<p><strong>Подача.</strong> По 2 котлеты на человека, сверху кусочек сливочного масла. Гарнир: печёный картофель (как к ростбифу) или картофельное пюре, рядом брусничное варенье, как подавали к дичи и котлетам в старых трактирах.</p>
+<p><strong>Заранее.</strong> Котлеты можно обжарить за 2-3 часа до гостей (шаг 5) и держать на противне. Перед подачей прогрейте их в духовке при 180 °C 15 минут.</p>
+<p><strong>Замены.</strong> - <strong>Только грудка.</strong> Можно, но котлеты будут суше. Тогда увеличьте масло в фарше до 100 г. - <strong>Из телятины, как в 1826 году.</strong> Возьмите 1 кг телятины и сделайте всё так же.</p>
+<p><strong>Сколько нужно.</strong> 2 котлеты на взрослого, 1 на ребёнка.</p>
+<p><strong>Аллергены.</strong> Глютен (хлеб), молочное (масло, сливки), яйца.</p>
+<aside class="didyou"><span class="dy">А вы знали?</span>Пожарские котлеты названы не в честь князя Пожарского, а по фамилии семьи, которая держала трактир в Торжке.</aside></article><article class="recipe" id="pirog-s-kapustoy"><p class="eyebrow">У Лариных</p><h3>Пирог с капустой и яйцом</h3><figure class="pic"><img src="img/pirog.jpg" alt="Пирог с капустой и яйцом" loading="lazy"></figure><dl class="facts"><div><dt>Активно</dt><dd>1 ч</dd></div><div><dt>Всего</dt><dd>3 ч (с подъёмом теста)</dd></div><div><dt>Порции</dt><dd>8-10 кусков</dd></div><div><dt>Духовка</dt><dd>190 °C</dd></div></dl>
+<aside class="note">
+<p>Но целью взоров и суждений<br />
+В то время жирный был пирог<br />
+(К несчастию, пересоленный)…</p>
+<p><em>«Евгений Онегин», глава пятая, строфа XXXII</em></p>
+</aside>
+<p>Главное блюдо деревенского стола. На именинах Татьяны все смотрят на большой «жирный пирог», то есть сытный и щедро смазанный маслом. Какая в нём была начинка, Пушкин не пишет. Мы взяли самую русскую и деревенскую: капусту с яйцом. Тесто дрожжевое, но простое, оно получится даже у тех, кто никогда не пёк.</p>
+<hr />
+<h2>История</h2>
+<p>Пирог был главным блюдом любого праздника в русском доме. Само слово, по одной из версий, связано со словом «пир». На именины пекли самый большой пирог, и хозяйка дома гордилась им больше, чем всеми остальными блюдами. Поэтому пересоленный пирог для старушки Лариной - настоящая неприятность, и Пушкин специально об этом упоминает с улыбкой.</p>
+<h2>Ингредиенты</h2>
+<p><strong>Тесто</strong></p>
+<ul>
+<li class="ing"><span class="n">мука пшеничная (и ещё 50 г на подпыл)</span><span class="q">500&nbsp;г</span></li>
+<li class="ing"><span class="n">молоко 3,2%, тёплое</span><span class="q">250&nbsp;мл</span></li>
+<li class="ing"><span class="n">дрожжи сухие быстродействующие (7 г)</span><span class="q">1&nbsp;пакетик</span></li>
+<li class="ing"><span class="n">сахар</span><span class="q">1&nbsp;ст. л.</span></li>
+<li class="ing"><span class="n">соль</span><span class="q">1&nbsp;ч. л.</span></li>
+<li class="ing"><span class="n">яйцо С1</span><span class="q">1&nbsp;шт</span></li>
+<li class="ing"><span class="n">масло сливочное, растопленное</span><span class="q">60&nbsp;г</span></li>
+</ul>
+<p><strong>Начинка</strong></p>
+<ul>
+<li class="ing"><span class="n">капуста белокочанная (половина среднего кочана)</span><span class="q">1,2&nbsp;кг</span></li>
+<li class="ing"><span class="n">лук репчатый</span><span class="q">1&nbsp;шт</span></li>
+<li class="ing"><span class="n">масло сливочное</span><span class="q">40&nbsp;г</span></li>
+<li class="ing"><span class="n">масло растительное</span><span class="q">2&nbsp;ст. л.</span></li>
+<li class="ing"><span class="n">яйца С1, варёные</span><span class="q">4&nbsp;шт</span></li>
+<li class="ing"><span class="n">укроп (по желанию)</span><span class="q">0,5&nbsp;пучка</span></li>
+<li>соль и чёрный перец по вкусу</li>
+</ul>
+<p><strong>Сверху</strong></p>
+<ul>
+<li class="ing"><span class="n">желток для смазки</span><span class="q">1&nbsp;шт</span></li>
+<li class="ing"><span class="n">масло сливочное для «жирной» корочки</span><span class="q">30&nbsp;г</span></li>
+</ul>
+<h2>Шаги</h2>
+<h3>1. Замесить тесто · 15 мин</h3>
+<p>Молоко подогрейте до тёплого, как парное молоко (около 37 °C: палец в нём не чувствует ни жара, ни холода). В большой миске смешайте муку, дрожжи, сахар и соль. Влейте молоко, добавьте яйцо и растопленное (не горячее) масло. Перемешайте ложкой, потом вымешивайте руками 8-10 минут, пока тесто не станет гладким и не перестанет липнуть к рукам. Если липнет сильно, подсыпайте муку по столовой ложке.</p>
+<aside class="note">
+<p>⚠️ <strong>Типичная ошибка.</strong> Горячее молоко. Если оно горячее, чем 45 °C, дрожжи погибнут и тесто не поднимется.</p>
+</aside>
+<hr />
+<h3>2. Дать тесту подняться · 1-1,5 ч (без вашего участия)</h3>
+<p>Скатайте тесто в шар, положите в миску, накройте плёнкой или полотенцем и поставьте в тёплое место без сквозняка. Тесто должно увеличиться примерно в 2 раза.</p>
+<hr />
+<h3>3. Начинка · 35 мин (пока поднимается тесто)</h3>
+<p>Снимите с капусты верхние листья, нарежьте её тонкой соломкой. Лук нарежьте мелко. В большой сковороде разогрейте оба масла, обжарьте лук 5 минут. Добавьте капусту (она уляжется, когда начнёт жариться), посолите 1 чайной ложкой соли, накройте крышкой и тушите на среднем огне 20 минут, иногда перемешивая. Потом снимите крышку и жарьте ещё 10 минут, чтобы ушла жидкость и капуста слегка зарумянилась.</p>
+<p>Остудите начинку. Добавьте нарезанные кубиками варёные яйца, укроп и перец.</p>
+<aside class="note">
+<p>💡 <strong>Совет из романа.</strong> Попробуйте начинку на соль, когда она остынет. Помните пирог Лариных, «к несчастию, пересоленный»: досолить можно, а убрать соль уже нельзя.</p>
+</aside>
+<aside class="note">
+<p>💡 <strong>Совет.</strong> Начинку можно приготовить накануне и хранить в холодильнике.</p>
+</aside>
+<hr />
+<h3>4. Собрать пирог · 15 мин</h3>
+<p>Застелите противень пергаментом. Разделите тесто на две части: одну чуть больше (для низа), другую чуть меньше. Большую часть раскатайте в пласт по размеру противня толщиной около 5 мм и переложите на пергамент, чтобы края немного поднимались по бокам. Выложите остывшую начинку ровным слоем.</p>
+<p>Вторую часть раскатайте и накройте начинку. Края защипните пальцами, загибая нижний край на верхний, как косичку. В центре сделайте вилкой несколько проколов, чтобы выходил пар. Из обрезков теста можно вырезать листики или буквы «Т» в честь Татьяны и положить сверху.</p>
+<hr />
+<h3>5. Расстойка и выпечка · 20 мин + 35-40 мин</h3>
+<p>Оставьте пирог на 20 минут подняться ещё немного. Включите духовку на 190 °C. Смажьте пирог желтком, взбитым с ложкой воды. Выпекайте 35-40 минут до золотисто-коричневого цвета.</p>
+<hr />
+<h3>6. Сделать пирог «жирным» · 2 мин</h3>
+<p>Сразу после духовки смажьте горячий пирог кусочком сливочного масла и накройте чистым полотенцем на 15 минут. Корочка станет мягкой и блестящей.</p>
+<aside class="note">
+<p><strong>Почему так работает.</strong> Под полотенцем пар из пирога смягчает корку, а масло впитывается. Так русские пироги и делали «жирными».</p>
+</aside>
+<hr />
+<h2>Практический блок</h2>
+<p><strong>Подача.</strong> Пирог подают тёплым, целым на доске, и режут прямо за столом. Так он выглядит как на именинах. Рядом поставьте сметану.</p>
+<p><strong>Заранее.</strong> Пирог лучше всего в день выпечки. Его можно испечь утром, а перед гостями прогреть в духовке при 160 °C 10-15 минут под фольгой.</p>
+<p><strong>Замены.</strong> - <strong>Купить тесто.</strong> 1 кг готового дрожжевого теста из магазина. Шаги 1 и 2 пропускаются, тесто только разморозить. - <strong>Другая начинка.</strong> Курица с грибами, рис с яйцом и зелёным луком или картофель с луком. Начинки должно быть около 1,2 кг.</p>
+<p><strong>Сколько нужно.</strong> Пирог на противне - 8-10 больших кусков. Это много, но на именинах пирог должен остаться и на завтра.</p>
+<p><strong>Аллергены.</strong> Глютен, молочное, яйца.</p>
+<aside class="didyou"><span class="dy">А вы знали?</span>На именинах Татьяны пирог был «к несчастию, пересоленный». Попробуйте начинку на соль до того, как закроете пирог.</aside></article><article class="recipe" id="blanmanzhe"><p class="eyebrow">Сладкое</p><h3>Бланманже с вареньем</h3><figure class="pic"><img src="img/blanmanzhe.jpg" alt="Бланманже с вареньем" loading="lazy"></figure><dl class="facts"><div><dt>Активно</dt><dd>30 мин</dd></div><div><dt>Всего</dt><dd>7 ч (с застыванием, лучше на ночь)</dd></div><div><dt>Порции</dt><dd>6</dd></div><div><dt>Духовка</dt><dd>не используется</dd></div></dl>
+<aside class="note">
+<p>Да вот в бутылке засмоленной,<br />
+Между жарким и блан-манже,<br />
+Цимлянское несут уже…</p>
+<p><em>«Евгений Онегин», глава пятая, строфа XXXII</em></p>
+</aside>
+<p>Десерт с именин Татьяны. Белое, нежное, дрожащее желе из миндального молока и сливок. Во французском названии <em>blanc-manger</em> - «белая еда». Готовится за полчаса, дальше всё сделает холодильник. А сверху ложка варенья: того самого, которое у Лариных «несут на блюдечках».</p>
+<hr />
+<h2>История</h2>
+<p>Бланманже знали в Европе ещё в Средние века, но тогда это было совсем другое блюдо: курица с рисом и миндальным молоком, белое по цвету. К XVIII веку оно стало десертом: миндальное молоко, сахар и то, что делает его плотным. Желатина в нынешнем виде ещё не было, его заменял клей из рыбы или «оленьего рога». В пушкинское время бланманже подавали в богатых домах в конце обеда, и оно было знаком «французского» стола даже в деревне.</p>
+<h2>Ингредиенты</h2>
+<ul>
+<li class="ing"><span class="n">миндаль очищенный (бланшированный) или миндальные лепестки</span><span class="q">100&nbsp;г</span></li>
+<li class="ing"><span class="n">молоко 3,2%</span><span class="q">500&nbsp;мл</span></li>
+<li class="ing"><span class="n">сливки 33%</span><span class="q">300&nbsp;мл</span></li>
+<li class="ing"><span class="n">сахар</span><span class="q">100&nbsp;г</span></li>
+<li class="ing"><span class="n">желатин (листовой или порошок)</span><span class="q">15&nbsp;г</span></li>
+<li class="ing"><span class="n">соль</span><span class="q">1&nbsp;щепотка</span></li>
+<li class="ing"><span class="n">миндальный экстракт (по желанию, для яркого вкуса)</span><span class="q">2-3&nbsp;капли</span></li>
+</ul>
+<p><strong>К подаче</strong></p>
+<ul>
+<li class="ing"><span class="n">варенье вишнёвое, малиновое или брусничное</span><span class="q">200&nbsp;г</span></li>
+<li class="ing"><span class="n">мята (по желанию)</span><span class="q">6&nbsp;веточек</span></li>
+</ul>
+<h2>Шаги</h2>
+<h3>1. Замочить желатин · 10 мин</h3>
+<p>Листовой желатин замочите в миске с холодной водой на 10 минут. Порошковый смешайте с 5 столовыми ложками холодной воды и оставьте набухать.</p>
+<hr />
+<h3>2. Сделать миндальное молоко · 10 мин + 30 мин настаивания</h3>
+<p>Если миндаль неочищенный, залейте его кипятком на 5 минут, потом снимите кожицу пальцами: она легко соскальзывает.</p>
+<p>Сложите миндаль в блендер, влейте молоко и взбивайте 1-2 минуты, пока миндаль не превратится в мелкую крошку. Перелейте в кастрюлю, нагрейте почти до кипения (появятся пузырьки по краю), снимите с огня, накройте крышкой и оставьте на 30 минут.</p>
+<hr />
+<h3>3. Процедить · 5 мин</h3>
+<p>Процедите молоко через марлю, сложенную в 2 слоя, или очень мелкое сито. Миндальную кашицу хорошо отожмите руками (дайте ей чуть остыть). Должно получиться около 450 мл ароматного молока.</p>
+<aside class="note">
+<p>💡 <strong>Совет.</strong> Отжатый миндаль не выбрасывайте: добавьте его в утреннюю овсянку или в тесто для печенья.</p>
+</aside>
+<hr />
+<h3>4. Соединить · 5 мин</h3>
+<p>Верните молоко в кастрюлю, добавьте сахар и соль, подогрейте до горячего (около 70-80 °C), но не кипятите. Снимите с огня. Отожмите листовой желатин (или возьмите набухший порошок) и вмешайте в горячее молоко до полного растворения. Влейте холодные сливки и миндальный экстракт, перемешайте.</p>
+<aside class="note">
+<p>⚠️ <strong>Типичная ошибка.</strong> Кипятить молоко с желатином. От кипения желатин теряет силу, и бланманже не застынет.</p>
+</aside>
+<hr />
+<h3>5. Разлить и охладить · 6 ч или ночь</h3>
+<p>Разлейте по формочкам, креманкам или бокалам. Остудите до комнатной температуры и уберите в холодильник минимум на 6 часов, лучше на ночь.</p>
+<hr />
+<h3>6. Подать</h3>
+<p><strong>В бокалах.</strong> Просто положите сверху ложку варенья и листик мяты.</p>
+<p><strong>На тарелке, как в старину.</strong> Опустите формочку в горячую воду на 5-7 секунд, проведите ножом по краю, накройте тарелкой и переверните. Бланманже выскользнет и будет дрожать. Полейте вареньем.</p>
+<hr />
+<h2>Практический блок</h2>
+<p><strong>Подача.</strong> Бланманже подают к чаю в конце вечера. Варенье поставьте в вазочке, пусть каждый положит себе сам: у Лариных варенье было отдельным угощением.</p>
+<p><strong>Замены.</strong> - <strong>Без миндаля (если аллергия на орехи).</strong> Пропустите шаг 2 и 3: нагрейте 500 мл молока с ванильным стручком или 1 пакетиком ванильного сахара. - <strong>Покупное миндальное молоко.</strong> Вместо 500 мл обычного молока и 100 г миндаля возьмите 500 мл готового миндального молока и пропустите шаги 2 и 3. Берите несладкое, без пометки «бариста» (в нём загустители). Миндального вкуса в покупном молоке мало, поэтому обязательно добавьте 2-3 капли миндального экстракта. Если молоко сладкое, уменьшите сахар до 60 г. - <strong>Полегче.</strong> Вместо 33% сливок возьмите 20%. - <strong>Агар вместо желатина.</strong> 4 г агар-агара на всё количество. Его нужно прокипятить с молоком 1 минуту. Бланманже будет плотнее и застынет быстрее, за 1-2 часа.</p>
+<p><strong>Сколько нужно.</strong> 1 порция на человека, около 130 мл.</p>
+<p><strong>Аллергены.</strong> Молочное, орехи (миндаль).</p>
+<aside class="didyou"><span class="dy">А вы знали?</span>«Бланманже» по-французски значит «белая еда». В романе его подают на именинах Татьяны вместе с цимлянским.</aside></article><article class="recipe" id="brusnichnaya-voda"><p class="eyebrow">Напитки</p><h3>Брусничная вода</h3><figure class="pic"><img src="img/brusnichnaya-voda.jpg" alt="Брусничная вода" loading="lazy"></figure><dl class="facts"><div><dt>Активно</dt><dd>15 мин</dd></div><div><dt>Всего</dt><dd>12 ч (настаивание на ночь)</dd></div><div><dt>Порции</dt><dd>6 (около 2 л)</dd></div><div><dt>Духовка</dt><dd>не используется</dd></div></dl>
+<aside class="note">
+<p>Обряд известный угощенья:<br />
+Несут на блюдечках варенья,<br />
+На столик ставят вощаной<br />
+Кувшин с брусничною водой.</p>
+<p><em>«Евгений Онегин», глава третья, строфа III</em></p>
+</aside>
+<p>Главный безалкогольный напиток вечера. Им угощают Онегина, когда он впервые приезжает к Лариным, а потом он шутит по дороге домой: «Боюсь: брусничная вода / Мне не наделала б вреда». Кисло-сладкий, освежающий напиток, похожий на морс, но мягче и без варки ягод.</p>
+<hr />
+<h2>История</h2>
+<p>В старых усадьбах бруснику собирали осенью и на зиму заливали водой в кадках и бочках. Ягоды хранились в воде до весны и не портились: в бруснике есть природная бензойная кислота, которая защищает её от плесени. Вода за это время становилась розовой, кисловатой и слегка игристой, потому что понемногу бродила. Её и пили как «брусничную воду».</p>
+<p>Онегин, столичный франт, привык к шампанскому и бордо. Деревенский напиток со странным кисловатым вкусом кажется ему опасным для желудка, отсюда и шутка.</p>
+<p>Настоящую брусничную воду готовят несколько недель. Мы делаем быструю версию за одну ночь: вкус очень похожий, а пить её можно и детям.</p>
+<h2>Ингредиенты</h2>
+<ul>
+<li class="ing"><span class="n">брусника свежая или замороженная</span><span class="q">500&nbsp;г</span></li>
+<li class="ing"><span class="n">вода питьевая</span><span class="q">2&nbsp;л</span></li>
+<li class="ing"><span class="n">мёд (или 100 г сахара)</span><span class="q">4-5&nbsp;ст. л.</span></li>
+<li class="ing"><span class="n">палочка корицы (по желанию)</span><span class="q">1&nbsp;шт</span></li>
+<li class="ing"><span class="n">гвоздика (по желанию)</span><span class="q">2&nbsp;шт</span></li>
+<li class="ing"><span class="n">лимон (по желанию)</span><span class="q">0,5&nbsp;шт</span></li>
+</ul>
+<h2>Шаги</h2>
+<h3>1. Подготовить ягоды · 5 мин</h3>
+<p>Замороженную бруснику разморозьте (можно в миске при комнатной температуре за 1-2 часа). Свежую переберите и промойте. Отложите горсть целых ягод для подачи.</p>
+<p>Остальную бруснику переложите в большую банку и разомните толкушкой или вилкой, чтобы лопнула примерно половина ягод.</p>
+<hr />
+<h3>2. Залить водой · 10 мин</h3>
+<p>Вскипятите воду с корицей и гвоздикой и остудите до тёплой, около 40 °C (вода тёплая, но рука терпит). Растворите в ней мёд. Залейте ягоды.</p>
+<aside class="note">
+<p><strong>Почему так работает.</strong> Горячая вода 100 °C сделала бы вкус «варёным», как у компота. Тёплая вода вытягивает из ягод сок и цвет, а свежий вкус остаётся.</p>
+</aside>
+<aside class="note">
+<p>⚠️ <strong>Типичная ошибка.</strong> Класть мёд в кипяток. Мёд теряет аромат при сильном нагреве, а в тёплой воде раскрывается.</p>
+</aside>
+<hr />
+<h3>3. Настоять · 12 ч (без вашего участия)</h3>
+<p>Накройте банку крышкой и оставьте на ночь при комнатной температуре, а утром уберите в холодильник. Если в доме жарко (больше 25 °C), сразу ставьте в холодильник и настаивайте сутки.</p>
+<hr />
+<h3>4. Процедить · 3 мин</h3>
+<p>Процедите через сито, ягоды слегка отожмите ложкой. Попробуйте: если кисло, добавьте ещё мёда, если слишком сладко, долейте холодной воды или выжмите половинку лимона.</p>
+<hr />
+<h2>Практический блок</h2>
+<p><strong>Подача.</strong> В стеклянном кувшине, как у Лариных, с горстью целых ягод и льдом. Подавайте с самого начала вечера тем, кто не пьёт алкоголь, а детям в таких же бокалах, как у взрослых.</p>
+<p><strong>С пузырьками, как в старину.</strong> Перед подачей долейте в кувшин 0,5 л холодной газированной воды.</p>
+<p><strong>Хранение.</strong> В холодильнике до 3 дней.</p>
+<p><strong>Замены.</strong> - <strong>Клюква.</strong> Если брусники нет, сделайте так же с клюквой, мёда понадобится больше. - <strong>Брусничный морс из магазина.</strong> На крайний случай, разбавьте его наполовину водой.</p>
+<p><strong>Сколько нужно.</strong> 300-400 мл на человека за вечер. Рецепт на 6 гостей, если брусничную воду пьют все. Если пьют только дети и пара взрослых, хватит половины.</p>
+<p><strong>Аллергены.</strong> Нет. Мёд не давайте детям до года.</p>
+</article></section><section class="block" id="vino"><h2>Вино к столу</h2><figure class="pic"><img src="img/vino.jpg" alt="Пробка вылетает из бутылки игристого, за окном комета" loading="lazy"></figure>
+<p>В «Онегине» пьют много и со вкусом. В Петербурге шампанское, «вино кометы», в деревне цимлянское, донское игристое. А сам автор в четвёртой главе признаётся, что с возрастом шампанскому стал предпочитать бордо. Здесь всё, что нужно, чтобы выбрать бутылки без консультанта, и чем их заменить, если за столом не пьют.</p>
+<aside class="note">
+<p><strong>Сколько брать.</strong> 1 бутылка игристого на 3 взрослых и 1 бутылка красного на 3 взрослых, которые его пьют. Конструктор покупок в онлайн-версии посчитает сам.</p>
+</aside>
+<hr />
+<h3>Игристое: «вино кометы»</h3>
+<aside class="note">
+<p>Вошёл: и пробка в потолок,<br />
+Вина кометы брызнул ток…</p>
+<p><em>Глава первая, строфа XVI</em></p>
+</aside>
+<p>В 1811 году над Европой несколько месяцев светила огромная комета, её было видно даже без телескопа. Урожай винограда в том году во Франции выдался отличным, и шампанское 1811 года прозвали «вином кометы». По рассказам, на пробках этого вина ставили изображение кометы. Действие первой главы происходит около 1819 года, так что у Онегина в бокале вино уже выдержанное и очень дорогое.</p>
+<p>В четвёртой главе Пушкин называет и марки: «Вдовы Клико или Моэта / Благословенное вино». Оба дома шампанского работают до сих пор.</p>
+<p><strong>Что купить сейчас.</strong> - <strong>Если хочется именно Францию.</strong> Настоящее шампанское из провинции Шампань, брют. Помните, что в России с 2021 года французские бутылки по закону подписаны «игристое вино», а слово «шампанское» на этикетке пишут только российские производители. - <strong>Российское игристое, брют.</strong> Хорошее и в 3-5 раз дешевле. Ищите на этикетке «классический метод» или «традиционный метод»: такое вино бродит в бутылке, как настоящее шампанское, и у него тонкие пузырьки. Подойдут бутылки кубанских и крымских виноделен из рейтингов последних лет (смотрите раздел про игристое в нашем наборе «Советский Новый год»).</p>
+<p><strong>Как открыть «в потолок» и никого не ранить.</strong> Эффектный выстрел пробкой в потолок делайте только понарошку. Настоящая пробка летит со скоростью больше 40 км/ч и может попасть в глаз. Правильно: держите бутылку под углом 45°, пробку накройте полотенцем, поворачивайте не пробку, а бутылку, и выпускайте газ медленно, с тихим шипением.</p>
+<hr />
+<h3>Цимлянское: игристое с Дона</h3>
+<aside class="note">
+<p>Да вот в бутылке засмоленной,<br />
+Между жарким и блан-манже,<br />
+Цимлянское несут уже…</p>
+<p><em>Глава пятая, строфа XXXII</em></p>
+</aside>
+<p>Цимлянское делали казаки в станицах на Дону из местного винограда. В пушкинское время это было самое известное русское игристое: дешевле французского, но всё равно праздничное. Его подавали в провинции и в небогатых домах «за шампанское». У Пушкина оно стоит на именинах Татьяны, а бутылка «засмоленная», то есть горлышко залито смолой, чтобы не выходил газ.</p>
+<p><strong>Что купить сейчас.</strong> Ищите в магазине игристое из Ростовской области, с Дона. Там до сих пор выращивают местный сорт цимлянский чёрный и делают из него красное игристое, обычно полусладкое. Это редкий и очень «пушкинский» вариант: тёмно-рубиновое вино с пузырьками. Подавайте его к пирогу и к десерту.</p>
+<p>Если не нашли, возьмите любое российское розовое или красное игристое.</p>
+<hr />
+<h3>Бордо: «благоразумный»</h3>
+<aside class="note">
+<p>И я Бордо благоразумный<br />
+Уж нынче предпочёл ему.</p>
+<p><em>Глава четвёртая, строфа XLVI</em></p>
+</aside>
+<p>Пушкин пишет, что шампанское в молодости «пленяло» его, а теперь пена «изменяет желудку», и он выбирает бордо, красное вино из области вокруг французского города Бордо. Это вино к мясу: к ростбифу оно подходит лучше всего.</p>
+<p><strong>Что купить сейчас.</strong> - <strong>Французское бордо.</strong> Красное, из недорогих: на этикетке <em>Bordeaux</em> или <em>Bordeaux Supérieur</em>. Это смесь сортов каберне совиньон и мерло. - <strong>Российский аналог.</strong> Красное сухое вино из каберне совиньон и мерло, купаж («купаж» значит смесь сортов). Хорошие делают в Краснодарском крае и в Крыму.</p>
+<hr />
+<h3>Без алкоголя</h3>
+<p>В романе пьют не только вино. Вот три напитка, которые там названы и которые легко сделать или купить.</p>
+<ul>
+<li><strong>Брусничная вода.</strong> Главный безалкогольный напиток вечера, <a href="#brusnichnaya-voda">рецепт</a> в наборе. С газированной водой получается «деревенское игристое».</li>
+<li><strong>Яблочная вода.</strong> В доме дяди Онегина в шкафу стоят «наливок целый строй, / Кувшины с яблочной водой» (глава вторая). Купите хороший прозрачный яблочный сок прямого отжима и разбавьте наполовину холодной водой, добавьте ломтики яблока и лёд.</li>
+<li><strong>Квас.</strong> У Лариных «квас как воздух был потребен». Подойдёт хороший магазинный квас живого брожения (смотрите, чтобы в составе не было ароматизаторов).</li>
+</ul>
+<hr />
+<h3>Что к чему</h3>
+<div class="tw"><table>
+
+<thead>
+<tr class="header">
+<th>Блюдо</th>
+<th>Вино</th>
+<th>Без алкоголя</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Паштет, сыр и ананас</td>
+<td>Игристое брют</td>
+<td>Брусничная вода с газированной водой</td>
+</tr>
+<tr class="even">
+<td>Ростбиф</td>
+<td>Бордо или российский купаж каберне и мерло</td>
+<td>Брусничная вода, квас</td>
+</tr>
+<tr class="odd">
+<td>Пожарские котлеты</td>
+<td>Игристое брют или лёгкое белое</td>
+<td>Яблочная вода</td>
+</tr>
+<tr class="even">
+<td>Пирог с капустой</td>
+<td>Цимлянское или игристое</td>
+<td>Квас</td>
+</tr>
+<tr class="odd">
+<td>Бланманже с вареньем</td>
+<td>Красное полусладкое игристое</td>
+<td>Чай</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h3>Если за столом не пьют</h3>
+<p>Сделайте брусничную воду главным напитком вечера, а для первого тоста подайте её в бокалах для шампанского, долив газированной водой. Пузырьки и «пробка в потолок» нужны для настроения, а не для градуса.</p>
+</section><section class="block" id="games"><h2>Игры вечера</h2><figure class="pic"><img src="img/gadanie.jpg" alt="Миска с водой под платком, кольца и зеркальце со свечой" loading="lazy"></figure>
+<p>Четыре игры, в которые играли или могли играть гости Лариных, и все они без подготовки и реквизита, кроме карточек из PDF. Шарады, пока гости собираются, викторина после горячего, «Продолжи строку» между пирогом и десертом, гадания за чаем. Если гостей мало или вечер получается разговорным, оставьте две любые.</p>
+<p>Ведущий вечера, скорее всего, вы. Очки считать не обязательно, но если хочется соревнования, разделите гостей на две команды: «Петербург» и «Деревня».</p>
+<hr />
+<h3>1. Живые шарады (пока гости собираются, 15-20 минут)</h3>
+<p>В пушкинское время шарады были любимой салонной игрой: гости загадывали слово и разыгрывали его в лицах. Мы играем в простой вариант, похожий на «Крокодила».</p>
+<p><strong>Что нужно.</strong> Карточки со словами (16 штук в PDF), шляпа или миска, чтобы их тянуть.</p>
+<p><strong>Как играть.</strong> 1. Гость тянет карточку и, не показывая её никому, изображает слово жестами. Говорить и показывать буквы нельзя. 2. Остальные угадывают. Кто угадал, показывает следующее слово. 3. На одно слово даётся около минуты. Если никто не угадал, слово откладывается.</p>
+<p><strong>Слова на карточках:</strong> дуэль, бал, мазурка, письмо Татьяны, сани с бубенцами, «Пади, пади!», бобровый воротник, пробка в потолок, гадание с зеркалом, медведь из сна Татьяны, няня, качели, гусиное перо, лорнет, театр, деревенская скука.</p>
+<aside class="note">
+<p>💡 <strong>Совет.</strong> Для детей отложите самые простые карточки: бал, сани, няня, качели, гусиное перо, театр.</p>
+</aside>
+<hr />
+<h3>2. Викторина «Правда или миф?» (после горячего, 10-15 минут)</h3>
+<p><strong>Что нужно.</strong> Только этот лист. Ведущий читает утверждение, гости по очереди или командами говорят «правда» или «миф». Потом ведущий читает ответ.</p>
+<ol type="1">
+<li><strong>Пушкин писал «Евгения Онегина» больше семи лет.</strong> <em>Правда.</em> С 1823 по 1830 год. Пушкин сам подсчитал: 7 лет 4 месяца и 17 дней.</li>
+<li><strong>Слово «ростбиф» в романе написано по-русски.</strong> <em>Миф.</em> Пушкин написал «roast-beef» английскими буквами, как и название ресторана Talon.</li>
+<li><strong>Каверин, который ждёт Онегина у Talon, - выдуманный персонаж.</strong> <em>Миф.</em> Пётр Каверин - реальный гусар, приятель Пушкина. Поэт посвятил ему стихи.</li>
+<li><strong>«Вином кометы» называли вино, которое пили, глядя на комету.</strong> <em>Миф.</em> Это шампанское урожая 1811 года, когда над Европой светила большая комета. Урожай был прекрасным, вино считали лучшим.</li>
+<li><strong>Именины Татьяны Лариной празднуют в январе.</strong> <em>Правда.</em> Татьянин день - 12 января по старому стилю, сейчас это 25 января. Именины Татьяны в пятой главе приходятся как раз на это время.</li>
+<li><strong>Пожарские котлеты названы в честь князя Пожарского.</strong> <em>Миф.</em> В честь семьи Пожарских, которая держала трактир в Торжке. Пушкин советовал другу там пообедать.</li>
+<li><strong>Бланманже - это шоколадный десерт.</strong> <em>Миф.</em> Наоборот: <em>blanc-manger</em> по-французски «белая еда». Это белое желе из миндального молока.</li>
+<li><strong>Пушкин в романе специально предупреждает, что Онегин - это не он сам.</strong> <em>Правда.</em> В первой главе: «Всегда я рад заметить разность / Между Онегиным и мной».</li>
+<li><strong>Ленский учился в Германии.</strong> <em>Правда.</em> Он приехал «из Германии туманной», с «душою прямо геттингенской»: из университета в Гёттингене.</li>
+<li><strong>Онегинская строфа состоит из 12 строк.</strong> <em>Миф.</em> Из 14 строк. Пушкин придумал её специально для романа, и её узнают по особому порядку рифм.</li>
+</ol>
+<hr />
+<h3>3. Продолжи строку (между пирогом и десертом, 10-15 минут)</h3>
+<p><strong>Что нужно.</strong> Карточки со строчками (12 штук в PDF). На обороте ответ.</p>
+<p><strong>Как играть.</strong> Ведущий читает начало строки, гости продолжают. Кто первым сказал правильно, забирает карточку. В конце у кого больше карточек, тот победил. Если никто не помнит, ведущий читает подсказку: из какой это главы.</p>
+<div class="tw"><table>
+
+<thead>
+<tr class="header">
+<th>Начало</th>
+<th>Продолжение</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>«Мой дядя самых честных правил, когда не в шутку занемог…» (глава первая)</td>
+<td>«Он уважать себя заставил и лучше выдумать не мог»</td>
+</tr>
+<tr class="even">
+<td>«Мы все учились понемногу…» (глава первая)</td>
+<td>«Чему-нибудь и как-нибудь»</td>
+</tr>
+<tr class="odd">
+<td>«Быть можно дельным человеком…» (глава первая)</td>
+<td>«И думать о красе ногтей»</td>
+</tr>
+<tr class="even">
+<td>«Вошёл: и пробка в потолок…» (глава первая)</td>
+<td>«Вина кометы брызнул ток»</td>
+</tr>
+<tr class="odd">
+<td>«Они сошлись. Волна и камень…» (глава вторая)</td>
+<td>«Стихи и проза, лёд и пламень»</td>
+</tr>
+<tr class="even">
+<td>«Привычка свыше нам дана…» (глава вторая)</td>
+<td>«Замена счастию она»</td>
+</tr>
+<tr class="odd">
+<td>«Я к вам пишу - чего же боле?» (глава третья, письмо Татьяны)</td>
+<td>«Что я могу ещё сказать?»</td>
+</tr>
+<tr class="even">
+<td>«Чем меньше женщину мы любим…» (глава четвёртая)</td>
+<td>«Тем легче нравимся мы ей»</td>
+</tr>
+<tr class="odd">
+<td>«Уж небо осенью дышало…» (глава четвёртая)</td>
+<td>«Уж реже солнышко блистало»</td>
+</tr>
+<tr class="even">
+<td>«Зима!.. Крестьянин, торжествуя…» (глава пятая)</td>
+<td>«На дровнях обновляет путь»</td>
+</tr>
+<tr class="odd">
+<td>«Москва… как много в этом звуке…» (глава седьмая)</td>
+<td>«Для сердца русского слилось!»</td>
+</tr>
+<tr class="even">
+<td>«Но я другому отдана…» (глава восьмая)</td>
+<td>«Я буду век ему верна»</td>
+</tr>
+</tbody>
+</table></div>
+<aside class="note">
+<p>💡 <strong>Совет.</strong> Если гости хорошо знают роман, читайте продолжение до конца строфы: кто вспомнит следующую строку, получает бонусную карточку.</p>
+</aside>
+<hr />
+<h3>4. Святочные гадания (за чаем, 15-20 минут)</h3>
+<p>В пятой главе Татьяна с девушками гадает на святках. Одно из гаданий - подблюдные песни:</p>
+<aside class="note">
+<p>Из блюда, полного водою,<br />
+Выходят кольцы чередою;<br />
+И вынулось колечко ей<br />
+Под песенку старинных дней…</p>
+<p><em>Глава пятая, строфа VIII</em></p>
+</aside>
+<p>Каждая девушка клала в блюдо своё колечко, блюдо накрывали платком, пели песни и вынимали кольца по одному. Какая песня пелась, когда вынималось кольцо, такая и судьба. Мы играем так же, только вместо песен короткие предсказания на карточках, а к ним шуточное задание.</p>
+<p><strong>Что нужно.</strong> Глубокая миска или супница, салфетка или платок, по одной маленькой вещи от каждого гостя (кольцо, ключ, заколка, монета), карточки с предсказаниями (16 штук в PDF).</p>
+<p><strong>Как играть.</strong> 1. Каждый гость кладёт в миску свою вещь. Миску накрывают платком. 2. Ведущий читает строчку «Кому поём, тому добро!», не глядя достаёт вещь и тянет карточку. 3. Ведущий читает предсказание вслух. Хозяин вещи забирает её и, если хочет, выполняет задание с карточки.</p>
+<p><strong>Предсказания на карточках:</strong> 1. Гребёшь лопатой серебро: к богатству. Скажите тост за щедрость хозяев. 2. Скоро вам придёт письмо, как Онегину от Татьяны. Признайтесь в любви к любому блюду на столе. 3. Ждёт вас дальняя дорога в санях. Покажите, как мчитесь на Невский, крича «Пади, пади!». 4. Будете в этом году на балу. Пригласите кого-нибудь на один круг вальса. 5. Ваше сердце покорит человек с книгой. Прочитайте четыре любые строчки Пушкина, какие помните. 6. Вас ждёт удача за карточным столом. Расскажите, во что вы любили играть в детстве. 7. В этом году вас ждёт отличный ужин. Опишите его, как Пушкин описал ужин у Talon. 8. Вы встретите старого друга. Скажите комплимент соседу справа в стиле XIX века. 9. Вас ждёт неожиданное наследство, как у Онегина. Объясните, что вы с ним сделаете. 10. Ваши стихи прославятся. Придумайте двустишие с рифмой «пирог - порог». 11. Будет у вас тихий год в деревне, с книгами и вареньем. Назовите своё любимое варенье и почему. 12. Вас ждёт счастливая встреча в театре. Изобразите, как смотрите в лорнет на сцену. 13. Вы станете душой общества. Расскажите самую смешную историю этого года. 14. Вам приснится вещий сон. Расскажите, какой самый странный сон вы видели. 15. Будет у вас дом, полный гостей. Пригласите всех на следующий вечер и назовите тему. 16. Всё у вас сложится, как в романе, только с хорошим концом. Загадайте желание вслух.</p>
+<aside class="note">
+<p>💡 <strong>Совет.</strong> Задания необязательные. Если гость стесняется, достаточно прочитать предсказание.</p>
+</aside>
+</section><section class="block" id="stories"><h2>Шпаргалка ведущего</h2><figure class="pic"><img src="img/sani.jpg" alt="Сани мчатся по зимнему Невскому, денди в бобровом воротнике" loading="lazy"></figure>
+<p>Семь коротких историй для рассказа за столом. Их удобно рассказывать по ходу вечера, когда на столе появляется нужное блюдо или подходит время. Читать с листа не обязательно: перескажите своими словами. Стихи в рамках можно прочитать вслух, это всегда производит впечатление.</p>
+<hr />
+<h4>1. Онегин едет ужинать (в начале вечера, когда все собрались)</h4>
+<p>Прочитайте гостям строфу, с которой начинается наш вечер:</p>
+<aside class="note">
+<p>Уж тёмно: в санки он садится.<br />
+«Пади, пади!» - раздался крик;<br />
+Морозной пылью серебрится<br />
+Его бобровый воротник.<br />
+К Talon помчался: он уверен,<br />
+Что там уж ждёт его Каверин.</p>
+</aside>
+<p>«Пади!» кричал кучер прохожим: «посторонись!». Talon - модный французский ресторан на Невском проспекте, его держал француз Пьер Талон, и там ужинали петербургские денди. А Каверин - не выдумка: Пётр Каверин был настоящим гусаром, весельчаком и приятелем молодого Пушкина. Поэт вставил живого друга в роман, как будто сейчас отметил бы его на фото.</p>
+<h4>2. Вино кометы (к первому бокалу)</h4>
+<p>В 1811 году над Европой несколько месяцев висела огромная комета с длинным хвостом. Её боялись: считали, что она предвещает войну, и через год Наполеон действительно пошёл на Россию. Эту комету видит в небе Пьер Безухов в «Войне и мире». А у виноделов во Франции в тот год был прекрасный урожай, и шампанское 1811 года прозвали «вином кометы». По рассказам, на пробках этого вина изображали комету. Поднимите первый бокал за «вино кометы».</p>
+<h4>3. Пирог, который не портится (к паштету)</h4>
+<p>Страсбургский пирог - это паштет из гусиной печени, запечённый в тесте. Его делали во Франции и везли в Петербург. Тогда как раз научились консервировать еду в запаянной посуде, и паштет спокойно переносил долгую дорогу. Отсюда пушкинское «нетленный». Можно спросить гостей: какие «нетленные» продукты из детства они помнят? Обычно вспоминают сгущёнку, шпроты и тушёнку.</p>
+<h4>4. Английские буквы (к ростбифу)</h4>
+<p>Откройте роман на первой главе, и вы увидите странное: посреди русских стихов стоят слова латиницей, «Talon» и «roast-beef». Пушкин так показывал, как говорил модный петербуржец: половина слов французские и английские. А чуть дальше он сам шутит над этим: «Но панталоны, фрак, жилет, / Всех этих слов на русском нет». Предложите гостям вспомнить иностранные словечки, без которых не обходится наш разговор сегодня. Список выйдет длинный.</p>
+<h4>5. Котлеты, которые советовал Пушкин (к пожарским котлетам или к горячему)</h4>
+<p>В ноябре 1826 года Пушкин написал другу Соболевскому шуточное письмо в стихах: где поесть по дороге из Москвы в Петербург. Про Торжок там сказано: «На досуге отобедай / У Пожарского в Торжке, / Жареных котлет отведай (именно котлет) / И отправься налегке». Это, по сути, первый в России ресторанный путеводитель, и написал его Пушкин. Котлеты Пожарских из Торжка с тех пор знает вся страна.</p>
+<h4>6. Именины и пересоленный пирог (к пирогу)</h4>
+<p>Именины Татьяны - это пятая глава, Татьянин день, январь. В дом Лариных съезжаются все соседи: толстый Пустяков с супругой, Скотинины, «уездный франтик» Петушков, мсье Трике с куплетом. Фамилии Пушкин придумал смешные нарочно. Все смотрят на главное блюдо, «жирный пирог», а он оказался «к несчастию, пересоленный». За столом сидит и Онегин, который злится, что его сюда затащил Ленский. Именно на этих именинах он танцует с Ольгой, чтобы позлить друга, и всё заканчивается дуэлью. Самый мрачный поворот романа начинается со скучного деревенского праздника.</p>
+<h4>7. Семь лет, четыре месяца и семнадцать дней (к чаю)</h4>
+<p>Пушкин начал писать «Онегина» в 1823 году в Кишинёве, а закончил осенью 1830 года в Болдине. Он сам подсчитал, сколько ушло времени: 7 лет 4 месяца 17 дней. Роман выходил по главам, отдельными книжками, и читатели ждали каждую, как мы ждём новый сезон сериала. Критик Виссарион Белинский позже назвал роман «энциклопедией русской жизни». И правда: из него можно узнать, что ели, пили, читали и как одевались люди того времени, вот как сегодня за нашим столом.</p>
+<hr />
+<h4>Запасные истории</h4>
+<ul>
+<li><strong>К брусничной воде.</strong> Когда Онегин впервые приезжает к Лариным, ему подают «кувшин с брусничною водой». По дороге домой он шутит: «Боюсь: брусничная вода / Мне не наделала б вреда». Столичному франту, привыкшему к шампанскому, деревенский кисловатый напиток кажется подозрительным.</li>
+<li><strong>К бланманже.</strong> В романе его подают «между жарким и блан-манже», вместе с цимлянским. Слово французское, «белая еда». В Средние века так называли совсем другое блюдо: курицу с рисом и миндальным молоком. Белой она была только по цвету.</li>
+<li><strong>К игристому.</strong> В четвёртой главе Пушкин признаётся: в молодости он отдавал «последний бедный лепт» за шампанское, а теперь от его «пены шумной» болит желудок, и он предпочитает «Бордо благоразумный». Можно спросить гостей: какой напиток они любили в 20 лет, а какой выбирают сейчас?</li>
+<li><strong>К гаданиям.</strong> В святочную ночь Татьяна наводит зеркальце на месяц, выходит за ворота и спрашивает имя у прохожего. Он отвечает: «Агафон». Так она узнаёт, что имя суженого будет совсем не романтическим.</li>
+</ul>
+<hr />
+<h4>Вопрос для всех</h4>
+<p>В конце вечера, за чаем, спросите каждого гостя: кто вы из героев «Онегина»? Онегин, которому всё наскучило? Ленский, который всё принимает близко к сердцу? Ольга, весёлая и лёгкая? Татьяна, которая пишет письма первой? Или сам автор, который смотрит на всех с улыбкой? Обычно гости спорят и переназначают друг друга, и это самая весёлая часть вечера.</p>
+</section><section class="block" id="atmosphere"><h2>Атмосфера вечера</h2><figure class="pic"><img src="img/pismo.jpg" alt="Гусиное перо, чернильница и письмо с сургучной печатью при свече" loading="lazy"></figure>
+<p>Пушкинский вечер узнают по нескольким вещам: свечи, письма от руки, музыка фортепиано и стол, на котором соседствуют «французская» и «деревенская» еда. Почти всё это есть дома. Покупать специально почти ничего не нужно.</p>
+<h3>Приглашения: записка с печатью</h3>
+<p>В пушкинское время гостей звали записками: от руки, сложенными конвертом и запечатанными сургучом. Шаблон записки есть в PDF.</p>
+<ul>
+<li><strong>Бумажное.</strong> Распечатайте записку на плотной бумаге кремового цвета, подпишите от руки, сложите втрое и запечатайте. Вместо сургуча подойдёт капля воска от свечи с оттиском монеты или наклейка-печать (их продают в магазинах для творчества).</li>
+<li><strong>Онлайн.</strong> Сфотографируйте подписанную записку и пришлите в мессенджер. Можно начать в стиле эпохи: «Милостивые государи, честь имеем пригласить…».</li>
+</ul>
+<p>В записке напишите дату, время, адрес и дресс-код.</p>
+<h3>Дресс-код</h3>
+<p>Не обязательно, но весело. Предложите гостям выбрать, кем они придут: <strong>из Петербурга</strong> или <strong>из деревни</strong>.</p>
+<ul>
+<li><strong>Петербург, денди.</strong> Белая рубашка, шейный платок или шарф, завязанный бантом, жилет, тёмный пиджак. Для дам: платье с высокой талией, длинные перчатки, шаль на плечи, лента в волосах.</li>
+<li><strong>Деревня, усадьба.</strong> Платье в цветочек или в клетку, шаль, коса с лентой. Для мужчин: свитер или жилет, клетчатый шарф, можно трость.</li>
+<li><strong>Минимум.</strong> Любая шаль, бант, перо в причёске или монокль из картона.</li>
+</ul>
+<p>Если гостей больше шести, устройте конкурс на лучший образ и вручите приз: баночку варенья, перевязанную лентой.</p>
+<h3>Стол</h3>
+<ul>
+<li><strong>Два края стола.</strong> Если стол длинный, разделите его: с одной стороны «Talon» (паштет, сыр, ананас, бокалы для игристого), с другой «у Лариных» (пирог, варенье на блюдечках, кувшин с брусничной водой). Горячее ставьте в середину.</li>
+<li><strong>Скатерть.</strong> Белая или кремовая, лучше льняная.</li>
+<li><strong>Свечи.</strong> Это главное. Поставьте 6-10 свечей разной высоты в подсвечниках или стеклянных стаканах, а верхний свет выключите или приглушите. При свечах любой стол выглядит как в XIX веке.</li>
+<li><strong>Варенье на блюдечках.</strong> Разложите 2-3 вида варенья по маленьким блюдцам или розеткам, как у Лариных.</li>
+<li><strong>Книга.</strong> Положите на стол томик «Евгения Онегина». Он пригодится для игр и для того, чтобы проверить спорную строчку.</li>
+<li><strong>Цветы и ветки.</strong> Зимой еловые ветки или веточки брусники, летом полевые цветы в кувшине.</li>
+<li><strong>Карточки.</strong> Меню и именные карточки есть в PDF.</li>
+</ul>
+<aside class="note">
+<p>⚠️ <strong>Безопасность.</strong> Свечи ставьте устойчиво, подальше от шалей, занавесок и детских рук. Не оставляйте горящие свечи без присмотра.</p>
+</aside>
+<h3>Альбом уездной барышни</h3>
+<p>В пушкинское время у каждой девушки в усадьбе был альбом. Гости писали в него стихи, пожелания и рисовали виньетки. Пушкин подробно смеётся над такими альбомами в четвёртой главе.</p>
+<p>Положите на столик у входа красивую тетрадь, перо или ручку с тонким стержнем. Попросите каждого гостя за вечер написать в альбом пару строк для хозяев: пожелание, стишок, рисунок. Через год это будет лучшая память о вечере.</p>
+<h3>Музыка</h3>
+<p>Найдите произведения по названию в любом музыкальном сервисе и соберите плейлист заранее. Пока гости собираются, музыку можно сделать погромче, за столом потише.</p>
+<h4>Встреча гостей: опера «Евгений Онегин»</h4>
+<p>Петр Чайковский написал оперу по роману в 1878 году. Это самая узнаваемая музыка к нашей теме.</p>
+<ul>
+<li><strong>Полонез</strong> из третьего действия. Торжественный, бальный, идеален для встречи гостей.</li>
+<li><strong>Вальс</strong> из второго действия, с именин Татьяны.</li>
+<li><strong>Сцена письма Татьяны</strong> («Пускай погибну я, но прежде…»).</li>
+<li><strong>Ария Ленского</strong> («Куда, куда вы удалились, весны моей златые дни?»).</li>
+</ul>
+<h4>За столом: музыка пушкинского времени</h4>
+<ul>
+<li><strong>Михаил Глинка, романс «Я помню чудное мгновенье»</strong> на стихи Пушкина.</li>
+<li><strong>Александр Алябьев, романс «Соловей»</strong>. Его пели во всех гостиных 1820-х годов.</li>
+<li><strong>Джон Филд, ноктюрны для фортепиано.</strong> Ирландский композитор жил в Москве и Петербурге, его играли в каждом доме, где было фортепиано.</li>
+<li><strong>Джоаккино Россини, увертюры</strong> («Севильский цирюльник»). Пушкин любил Россини и пишет о нём в «Путешествии Онегина»: «Там упоительный Россини».</li>
+</ul>
+<h4>К чаю и гаданиям</h4>
+<ul>
+<li><strong>Александр Варламов, «Красный сарафан»</strong> и другие русские романсы.</li>
+<li><strong>Пётр Чайковский, «Времена года»</strong>: «Январь. У камелька» и «Декабрь. Святки». Домашняя, тёплая музыка для конца вечера.</li>
+</ul>
+<h3>План вечера в одном списке</h3>
+<ol type="1">
+<li><strong>За неделю:</strong> разослать записки-приглашения.</li>
+<li><strong>Накануне:</strong> приготовить паштет, бланманже и брусничную воду, распечатать карточки.</li>
+<li><strong>За час до гостей:</strong> накрыть стол, зажечь свечи, разложить варенье, включить плейлист.</li>
+<li><strong>Гости пришли:</strong> игристое и брусничная вода, паштет, сыр и ананас, шарады.</li>
+<li><strong>За столом:</strong> горячее, истории из шпаргалки, музыка тише.</li>
+<li><strong>После горячего:</strong> викторина «Правда или миф?».</li>
+<li><strong>Пирог:</strong> «Продолжи строку».</li>
+<li><strong>За чаем:</strong> бланманже, святочные гадания и вопрос всем: «Кто вы из героев „Онегина“?»</li>
+</ol>
+</section><section class="block" id="sources"><h2>Источники</h2>
+<p>Откуда взяты факты для историй, викторины и врезок. Где данные расходятся или подтверждения нет, в тексте набора это сказано прямо («говорят», «по рассказам», «по одной из версий»).</p>
+<h3>Текст романа</h3>
+<ul>
+<li><strong>Все цитаты из «Евгения Онегина»</strong> приводятся по тексту романа (глава и строфа указаны рядом с цитатой) и сверены с полным текстом на ilibrary.ru в ноябре 2026 года. Старая форма «кольцы» в пятой главе оставлена, как у Пушкина. Пушкин умер в 1837 году, текст давно в общественном достоянии. Полный текст: Фундаментальная электронная библиотека «Русская литература и фольклор» (ФЭБ), Русская виртуальная библиотека.
+<ul>
+<li>https://feb-web.ru/feb/pushkin/</li>
+<li>https://rvb.ru/pushkin/</li>
+<li>https://ilibrary.ru/text/436/index.html</li>
+</ul></li>
+<li><strong>Комментарии к роману.</strong> Юрий Лотман, «Роман А. С. Пушкина „Евгений Онегин“. Комментарий» (1980); Владимир Набоков, комментарий к английскому переводу «Eugene Onegin» (1964). Это основные справочники по реалиям романа: Talon, Каверин, «вино кометы», страсбургский пирог.</li>
+</ul>
+<h3>Петербург и ресторан Talon</h3>
+<ul>
+<li><strong>Пьер Талон, ресторан на Невском проспекте (дом 15), до 1825 года; страсбургский паштет в тесте, привозной и консервированный, отсюда «нетленный»; шампанское 1811 года и пробки с кометой.</strong> Рамблер «Субботний», «Что ели русские аристократы начала XIX века» (2017).
+<ul>
+<li>https://weekend.rambler.ru/read/38907922-chto-eli-russkie-aristokraty-nachala-xix-veka</li>
+</ul></li>
+<li><strong>«Вино кометы» - вино урожая 1811 года; паштет и пирог, <em>pâté</em>.</strong> АиФ, «Супчик, только что из Парижа. Что ел Онегин на обед» (2015).
+<ul>
+<li>https://aif.ru/food/pro/supchik_tolko_chto_iz_parizha_chto_el_onegin_na_obed</li>
+</ul></li>
+<li><strong>Вдова Клико и комета 1811 года, цимлянское как «русское шампанское» пушкинского времени.</strong> Gateway to Russia, «What wines did the heroes of Russian literature drink?» (2025).
+<ul>
+<li>https://www.gw2ru.com/arts/235909-what-wines-did-the-heroes-of-russian-literature-drink</li>
+</ul></li>
+<li><strong>Пётр Каверин - гусар, приятель Пушкина</strong>, стихотворение Пушкина «К портрету Каверина» (1817). Комментарий Лотмана.</li>
+</ul>
+<h3>Пожарские котлеты</h3>
+<ul>
+<li><strong>Трактир Пожарских в Торжке, Дарья Пожарская, легенда о Николае I, куриная версия котлет в 1830-1840-е годы, письмо Пушкина Соболевскому 9 ноября 1826 года.</strong> Википедия (Pozharsky cutlet), «Российская газета» (24 июня 2026 года).
+<ul>
+<li>https://en.wikipedia.org/wiki/Pozharsky_cutlet</li>
+<li>https://rg.ru/2026/06/24/pushkin-otdelno-kotlety-otdelno.html</li>
+</ul></li>
+</ul>
+<h3>Еда и напитки</h3>
+<ul>
+<li><strong>Брусничная вода: брусника, залитая водой на зиму, природная бензойная кислота.</strong> Общеизвестные кулинарные сведения; подробное описание напитка в пушкинское время в проверенных нами источниках не нашлось, поэтому в рецепте мы описываем общий старинный способ, а не «точный рецепт Лариных».</li>
+<li><strong>Бланманже: история от средневекового блюда с курицей и миндальным молоком до десерта.</strong> Общеизвестные кулинарно-исторические сведения.</li>
+<li><strong>Лимбургский сыр, сыр с мытой корочкой.</strong> Общеизвестные сведения; объяснение слова «живой» у комментаторов расходится, это сказано в тексте.</li>
+</ul>
+<h3>Пушкин и роман</h3>
+<ul>
+<li><strong>Сроки работы над романом (1823-1830) и подсчёт Пушкина «7 лет 4 месяца 17 дней».</strong> Черновые записи Пушкина в Болдине, комментарий Лотмана.</li>
+<li><strong>«Энциклопедия русской жизни»</strong> - Виссарион Белинский, статья девятая из цикла «Сочинения Александра Пушкина» (1845).</li>
+<li><strong>Опера Петра Чайковского «Евгений Онегин» (1878), романсы Глинки и Алябьева, ноктюрны Джона Филда.</strong> Общеизвестные музыкально-исторические сведения.</li>
+</ul>
+<h3>Что проверить перед публикацией на сайте</h3>
+<ul>
+<li>Цимлянское игристое из сорта цимлянский чёрный: перед выходом набора проверить, какие бутылки сейчас есть в продаже (мы не называем конкретного производителя).</li>
+<li>Легенду о Николае I и пожарских котлетах мы подаём как легенду: документального подтверждения нет.</li>
+</ul>
+</section><section class="block" id="allergens"><h2>Аллергены</h2>
+<p>● - есть в блюде. ○ - только в одном из вариантов или по желанию.</p>
+<div class="tw"><table>
+
+<thead>
+<tr class="header">
+<th>Блюдо</th>
+<th>Глютен</th>
+<th>Яйца</th>
+<th>Молочное</th>
+<th>Орехи</th>
+<th>Горчица</th>
+<th>Алкоголь</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Паштет «Страсбургский пирог»</td>
+<td>● (гренки)</td>
+<td></td>
+<td>● (масло, сливки)</td>
+<td></td>
+<td></td>
+<td>○ (коньяк, выпаривается не полностью)</td>
+</tr>
+<tr class="even">
+<td>Сыр и ананас</td>
+<td></td>
+<td></td>
+<td>●</td>
+<td>○ (грецкие орехи)</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Ростбиф с печёным картофелем</td>
+<td></td>
+<td></td>
+<td>○ (сливочное масло, сметана в соусе)</td>
+<td></td>
+<td>○ (горчица к столу)</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Пожарские котлеты</td>
+<td>● (хлеб)</td>
+<td>●</td>
+<td>● (масло, сливки)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Пирог с капустой и яйцом</td>
+<td>● (мука)</td>
+<td>●</td>
+<td>● (молоко, масло)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Бланманже с вареньем</td>
+<td></td>
+<td></td>
+<td>● (молоко, сливки)</td>
+<td>● (миндаль)</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Брусничная вода</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Миндаль в бланманже.</strong> При аллергии на орехи делайте ванильное бланманже без миндаля, вариант есть в рецепте. Миндальный экстракт тоже не добавляйте.</p>
+<p><strong>Хрен.</strong> В столовом хрене из банки бывает горчица и сахар: смотрите состав.</p>
+<p><strong>Сыр.</strong> В мягких сырах с плесенью и мытой корочкой могут быть бактерии листерии. Беременным такие сыры обычно не советуют: положите для них твёрдый выдержанный сыр.</p>
+<p><strong>Мёд.</strong> В брусничной воде мёд: если у кого-то аллергия на мёд и детям до года, замените его сахаром.</p>
+<p><strong>Алкоголь.</strong> Есть в игристом, вине и по желанию в паштете (2 ложки коньяка на весь паштет). Детскую и «трезвую» баночку паштета делайте без коньяка.</p>
+</section>
+</main>
+</div>
+<footer class="foot">Есть тема · Пушкинская вечеринка · ноябрь 2026</footer>
+<script>
+const D={"cats": ["Овощи, фрукты, зелень", "Мясо и печень", "Молочное и яйца", "Бакалея", "Хлеб", "Напитки", "Хозяйственное"], "dishes": {"pashtet": [["Печень куриная охлаждённая", "г", 500, 1], ["Лук репчатый", "шт", 1, 0], ["Масло сливочное 82,5%", "г", 150, 2], ["Сливки 20%", "мл", 100, 2], ["Тимьян свежий", "упаковка", 1, 0, 1], ["Багет", "шт", 1, 4], ["Мускатный орех", "упаковка", 1, 3, 1]], "syr": [["Ананас", "шт", 1, 0], ["Сыр мягкий с мытой корочкой", "г", 200, 2], ["Сыр с белой корочкой (камамбер или бри)", "г", 200, 2], ["Сыр твёрдый выдержанный", "г", 150, 2], ["Мёд", "г", 160, 3], ["Грецкие орехи, по желанию", "г", 50, 3]], "rostbif": [["Говядина: толстый или тонкий край одним куском", "г", 1400, 1], ["Картофель мелкий", "г", 1200, 0], ["Чеснок", "головка", 1, 0, 1], ["Масло сливочное 82,5%", "г", 30, 2], ["Сметана 20%", "г", 150, 2], ["Хрен столовый", "банка", 1, 3, 1], ["Горчица зернистая, по желанию", "банка", 1, 3, 1], ["Термометр для мяса со щупом, если нет", "шт", 1, 6, 1], ["Нитка хлопковая", "моток", 1, 6, 1]], "kotlety": [["Куриное филе грудки", "г", 600, 1], ["Куриное филе бедра без кожи", "г", 400, 1], ["Батон белый", "шт", 2, 4], ["Сливки 10-20%", "мл", 150, 2], ["Масло сливочное 82,5%", "г", 140, 2], ["Яйца С1", "шт", 2, 2], ["Картофель мелкий", "г", 1200, 0], ["Сметана 20%", "г", 0, 2]], "pirog": [["Мука пшеничная", "г", 550, 3], ["Молоко 3,2%", "мл", 250, 2], ["Дрожжи сухие, пакетик 7 г", "пакетик", 1, 3], ["Яйца С1", "шт", 6, 2], ["Масло сливочное 82,5%", "г", 130, 2], ["Капуста белокочанная", "г", 1200, 0], ["Лук репчатый", "шт", 1, 0], ["Укроп", "пучок", 1, 0, 1], ["Сметана 20%", "г", 200, 2], ["Сахар", "г", 15, 3]], "blanmanzhe": [["Миндаль очищенный или лепестки", "г", 100, 3], ["Молоко 3,2%", "мл", 500, 2], ["Сливки 33%", "мл", 300, 2], ["Сахар", "г", 100, 3], ["Желатин", "г", 15, 3], ["Варенье (вишнёвое, малиновое или брусничное)", "банка", 2, 3], ["Мята, по желанию", "пучок", 1, 0, 1]], "voda": [["Брусника свежая или замороженная", "г", 500, 0], ["Мёд", "г", 130, 3], ["Лимон", "шт", 1, 0], ["Газированная вода", "л", 1, 5], ["Корица в палочках и гвоздика", "упаковка", 1, 3, 1]], "obshchee": [["Чай чёрный листовой", "упаковка", 1, 3, 1], ["Масло растительное без запаха", "бутылка", 1, 3, 1], ["Фольга", "рулон", 1, 6, 1], ["Пищевая плёнка", "рулон", 1, 6, 1], ["Пергамент", "рулон", 1, 6, 1], ["Марля", "упаковка", 1, 6, 1], ["Свечи", "шт", 8, 6, 1]]}};
+const forms={"пучок":["пучок","пучка","пучков"],"лист":["лист","листа","листов"],"бутылка":["бутылка","бутылки","бутылок"],"банка":["банка","банки","банок"],"головка":["головка","головки","головок"],"упаковка":["упаковка","упаковки","упаковок"],"рулон":["рулон","рулона","рулонов"],"пакетик":["пакетик","пакетика","пакетиков"],"пара":["пара","пары","пар"],"моток":["моток","мотка","мотков"]};
+function pl(n,u){const f=forms[u];if(!f)return u;const a=n%10,b=n%100;if(a==1&&b!=11)return f[0];if(a>=2&&a<=4&&(b<10||b>=20))return f[1];return f[2];}
+const st={g:6,w:6,k:0};
+function load(){try{return JSON.parse(localStorage.getItem('push-done')||'{}')}catch(e){return{}}}
+function save(o){try{localStorage.setItem('push-done',JSON.stringify(o))}catch(e){}}
+let done=load();
+function round(q,u){if(u=='г'||u=='мл'){return q>=100?Math.ceil(q/50)*50:Math.ceil(q/5)*5}if(u=='л'){return Math.ceil(q*2-1e-9)/2}if(u=='шт'||u=='банка'||u=='пучок')return Math.max(1,Math.ceil(q-0.2));return Math.ceil(q-1e-9)}
+function fmt(q,u){if(u=='г'&&q>=1000)return (q/1000).toLocaleString('ru-RU',{maximumFractionDigits:2})+' кг';if(u=='мл'&&q>=1000)return (q/1000).toLocaleString('ru-RU',{maximumFractionDigits:2})+' л';if(u=='л')return q.toLocaleString('ru-RU')+' л';return q+' '+pl(q,u)}
+function build(){
+  const g=st.g,w=st.w,k=st.k,des=document.querySelector('input[name=dessert]:checked').value;
+  const acc={};
+  function add(key,f){D.dishes[key].forEach(([n,u,q,c,fix])=>{if(!q)return;const id=n+'|'+u;acc[id]=acc[id]||{n,u,q:0,c};acc[id].q+=fix?Math.max(acc[id].q?0:q,0):q*f;});}
+  ['syr','blanmanzhe','voda','obshchee'].forEach(x=>add(x,g/6));
+  ['pashtet','pirog'].forEach(x=>add(x,Math.max(1,Math.ceil(g/8*2)/2)));
+  add(des,g/6);
+  if(w>0){acc['spark']={n:'Игристое брют («вино кометы»)',u:'бутылка',q:Math.max(1,Math.ceil(w/3)),c:5};
+    acc['red']={n:'Красное вино к горячему (бордо или российский купаж)',u:'бутылка',q:Math.max(1,Math.ceil(w/3)),c:5};
+    acc['tsim']={n:'Цимлянское или другое красное игристое',u:'бутылка',q:1,c:5};
+    acc['cognac']={n:'Коньяк в паштет, по желанию',u:'ст. л.',q:2,c:5};}
+  const el=document.getElementById('list');el.textContent='';
+  D.cats.forEach((cat,ci)=>{
+    const items=Object.values(acc).filter(x=>x.c==ci);if(!items.length)return;
+    const h=document.createElement('p');h.className='cat';h.textContent=cat;el.appendChild(h);
+    const ul=document.createElement('ul');ul.className='shop';
+    items.forEach(x=>{const q=round(x.q,x.u);x.txt=fmt(q,x.u);const li=document.createElement('li');const id='i'+btoa(unescape(encodeURIComponent(x.n))).replace(/[^a-z0-9]/gi,'').slice(0,24);
+      li.innerHTML='<label for="'+id+'"><input type="checkbox" id="'+id+'"><span class="nm"></span><span class="q"></span></label>';
+      li.querySelector('.nm').textContent=x.n;li.querySelector('.q').textContent=x.txt;
+      const cb=li.querySelector('input');cb.checked=!!done[x.n];li.classList.toggle('done',cb.checked);
+      cb.addEventListener('change',()=>{done[x.n]=cb.checked;save(done);li.classList.toggle('done',cb.checked)});
+      ul.appendChild(li);});
+    el.appendChild(ul);
+  });
+  build.text='Пушкинская вечеринка, '+g+' гостей'+(k?' (из них детей: '+k+')':'')+'\n'+D.cats.map((cat,ci)=>{const it=Object.values(acc).filter(x=>x.c==ci);return it.length?('\n'+cat+':\n'+it.map(x=>'- '+x.n+' - '+x.txt).join('\n')):''}).join('\n');
+}
+function sync(){st.k=Math.min(st.k,st.g-1);st.w=Math.min(st.w,st.g-st.k);document.getElementById("kidsn").textContent=st.k;document.getElementById('guests').textContent=st.g;document.getElementById('wine').textContent=st.w;build()}
+document.getElementById('gminus').onclick=()=>{st.g=Math.max(2,st.g-1);st.w=Math.min(st.w,st.g);sync()};
+document.getElementById('gplus').onclick=()=>{const full=st.w==st.g-st.k;st.g=Math.min(24,st.g+1);if(full)st.w=st.g-st.k;sync()};
+document.getElementById('wminus').onclick=()=>{st.w=Math.max(0,st.w-1);sync()};
+document.getElementById('wplus').onclick=()=>{st.w=Math.min(st.g-st.k,st.w+1);sync()};
+document.getElementById('kminus').onclick=()=>{st.k=Math.max(0,st.k-1);sync()};
+document.getElementById('kplus').onclick=()=>{const full=st.w==st.g-st.k;st.k=Math.min(st.g-1,st.k+1);if(full)st.w=st.g-st.k;sync()};
+document.querySelectorAll('input[type=radio]').forEach(r=>r.addEventListener('change',build));
+document.getElementById('copy').onclick=async(e)=>{const b=e.currentTarget;try{await navigator.clipboard.writeText(build.text);b.textContent='Скопировано'}catch(err){const t=document.createElement('textarea');t.value=build.text;document.body.appendChild(t);t.select();try{document.execCommand('copy');b.textContent='Скопировано'}catch(x){b.textContent='Выделите список вручную'}t.remove()}setTimeout(()=>b.textContent='Скопировать список',2000)};
+sync();
+
+// ---- Навигация: на экране один раздел, внутри «Рецептов» - один рецепт ----
+const SECS=[...document.querySelectorAll('main>section')];
+const RECS=[...document.querySelectorAll('#recipes article.recipe')];
+const TITLES={"intro": "О вечере", "builder": "Список покупок", "menu": "Меню", "kids": "Если с детьми", "taiming": "Тайминг", "recipes": "Рецепты", "vino": "Вино", "games": "Игры", "stories": "Истории", "atmosphere": "Атмосфера", "allergens": "Аллергены", "sources": "Источники"};
+const PAGES=[];SECS.forEach(s=>{if(s.id=='recipes')RECS.forEach(r=>PAGES.push(r.id));else PAGES.push(s.id)});
+function pname(id){const r=RECS.find(x=>x.id==id);return r?r.querySelector('h3').textContent.split(' - ')[0]:TITLES[id]}
+function show(scroll){
+  let id=decodeURIComponent(location.hash.slice(1))||'intro';
+  if(id=='recipes')id=RECS[0].id;
+  if(!PAGES.includes(id)){const el=document.getElementById(id);const host=el&&el.closest('main>section');id=host?(host.id=='recipes'?el.closest('article').id:host.id):'intro'}
+  const isRec=RECS.some(r=>r.id==id);const sec=isRec?'recipes':id;
+  SECS.forEach(s=>s.hidden=s.id!=sec);
+  RECS.forEach(r=>r.hidden=r.id!=id);
+  document.querySelectorAll('.side a, .chips a').forEach(a=>{const h=a.getAttribute('href').slice(1);a.setAttribute('aria-current',String(h==id||(h==sec&&!a.closest('.chips')&&!a.closest('.sub'))))});
+  document.querySelectorAll('.side li[data-sec]').forEach(li=>li.classList.toggle('open',li.dataset.sec==sec));
+  const cur=document.querySelector('.side>ol>li>a[aria-current=true]');if(cur)cur.scrollIntoView({block:'nearest',inline:'center'});
+  document.querySelectorAll('.pager').forEach(p=>p.remove());
+  const i=PAGES.indexOf(id),pg=document.createElement('nav');pg.className='pager';pg.setAttribute('aria-label','Соседние разделы');
+  if(i>0)pg.innerHTML+='<a class="prev" href="#'+PAGES[i-1]+'"><small>Назад</small>'+pname(PAGES[i-1])+'</a>';
+  if(i<PAGES.length-1)pg.innerHTML+='<a class="next" href="#'+PAGES[i+1]+'"><small>Дальше</small>'+pname(PAGES[i+1])+'</a>';
+  document.getElementById(sec).appendChild(pg);
+  if(scroll)window.scrollTo({top:document.querySelector('.shell').offsetTop,behavior:'auto'});
+}
+addEventListener('hashchange',()=>show(true));
+show(false);
+</script>
+</body>
+</html>
