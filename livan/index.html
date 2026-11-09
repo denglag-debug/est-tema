@@ -1,0 +1,1536 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ливанская вечеринка</title>
+<meta name="description" content="Набор «Есть тема»: ливанский вечер меззе. Хумус, табуле, фалафель, шиш-таук, арак, игры и план вечера по часам.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+:root{--bg:#F8F2E7;--surface:#FFFCF6;--fg:#26231F;--muted:#625B51;--line:#E3D8C4;--accent:#2F5D3A;--red:#A63A2B;--note:#EDF1E8;
+--serif:"PT Serif",Georgia,"Times New Roman",serif;--sans:"PT Sans","Helvetica Neue",Arial,sans-serif;color-scheme:light}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#161A16;--surface:#1F241F;--fg:#ECE7DC;--muted:#ADA697;--line:#343B33;--accent:#9CCB9F;--red:#F08A7A;--note:#232C24;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#161A16;--surface:#1F241F;--fg:#ECE7DC;--muted:#ADA697;--line:#343B33;--accent:#9CCB9F;--red:#F08A7A;--note:#232C24;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:17px/1.6 var(--sans);margin:0;padding-inline:16px}
+html{scroll-behavior:smooth}@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+.home{display:block;margin-inline:-16px;padding:10px 16px;font:700 14px/1.2 var(--sans);color:var(--red);background:var(--surface);border-bottom:1px solid var(--line);text-decoration:none}
+h1,h2,h3,h4{font-family:var(--serif);text-wrap:balance;line-height:1.2;font-weight:700}
+h1{font-size:clamp(2.4rem,7vw,3.6rem);margin:8px 0 16px}
+h2{font-size:1.9rem;color:var(--accent);margin:0 0 20px}
+h3{font-size:1.35rem;margin:28px 0 8px}
+h4{font-family:var(--sans);font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin:22px 0 6px}
+p,li{max-width:68ch}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.top{max-width:1120px;margin-inline:auto;padding-block:32px 24px;display:grid;gap:24px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:900px){.top{grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);align-items:center}}
+.top img{width:100%;height:auto;display:block;border-radius:6px;border:1px solid var(--line)}
+.eyebrow{font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;color:var(--red);margin:0;font-weight:700}
+.lede{font-family:var(--serif);font-size:1.2rem;color:var(--muted);max-width:52ch;margin:0 0 16px}
+.dl{display:inline-block;border:1px solid var(--accent);color:var(--accent);padding:8px 16px;font-weight:700;text-decoration:none}
+.dl:hover{background:var(--accent);color:var(--surface)}
+.shell{max-width:1120px;margin-inline:auto;display:grid;grid-template-columns:220px minmax(0,1fr);gap:40px;align-items:start}
+.shell main{max-width:760px;min-width:0}
+.side{position:sticky;top:0;max-height:100vh;overflow:auto;padding-block:24px}
+.side ol{list-style:none;margin:0;padding:0}
+.side a{display:block;padding:6px 10px;border-left:3px solid transparent;color:var(--fg);text-decoration:none;font-size:.97rem}
+.side a:hover{color:var(--accent)}
+.side a[aria-current=true]{border-left-color:var(--red);color:var(--accent);font-weight:700;background:var(--surface)}
+.side .sub{display:none}.side .open .sub{display:block}
+.side .sub a{padding:3px 10px 3px 24px;font-size:.88rem;color:var(--muted)}
+.side .sub a[aria-current=true]{color:var(--accent);background:none}
+.block{padding-block:24px 48px}
+.small{font-size:.9rem;color:var(--muted)}
+.brand{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;margin:0 0 40px}
+.brand h2{font-size:1.5rem;margin:8px 0 16px}
+.intro h2{font-size:1.5rem;margin:32px 0 8px}
+.pic{margin:0 0 20px}.pic img{width:100%;height:auto;max-height:440px;object-fit:cover;display:block;border-radius:6px;border:1px solid var(--line)}
+#taiming td:first-child{white-space:nowrap}
+#vino .pic img,#stories .pic img,#atmosphere .pic img{max-width:420px}
+.menu{list-style:none;padding:24px;margin:0 0 12px;background:var(--surface);border:1px solid var(--line);display:grid;gap:14px}
+.menu a{display:grid;grid-template-columns:1fr auto;column-gap:12px;text-decoration:none;color:inherit}
+.menu .course{grid-column:1/-1;font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+.menu .dish{font-family:var(--serif);font-size:1.25rem;display:flex;gap:8px;min-width:0}
+.menu .dish::after{content:"";flex:1;border-bottom:2px dotted var(--line);margin-bottom:.4em}
+.menu .time{color:var(--red);align-self:end;font-size:.95rem;white-space:nowrap}
+.menu .kid{grid-column:1/-1;font-size:.82rem;color:var(--accent);font-weight:700}
+.menu .kid::before{content:"● "}
+.menu a:hover .dish{color:var(--accent)}
+.recipe{background:var(--surface);border:1px solid var(--line);padding:28px clamp(16px,4vw,36px);margin-block:16px}
+.recipe h3:first-of-type{font-size:1.6rem;margin-top:4px}
+.recipe h2{font-size:1.1rem;color:var(--accent);margin:28px 0 8px;font-family:var(--sans);text-transform:uppercase;letter-spacing:.06em}
+.recipe h3{font-size:1.15rem;margin:22px 0 6px}
+.recipe ul{padding-left:0;list-style:none}
+.facts{display:flex;flex-wrap:wrap;gap:8px 28px;margin:0 0 16px;padding:12px 0;border-block:1px solid var(--line)}
+.facts div{min-width:0}.facts dt{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}.facts dd{margin:0}
+.ing{display:flex;justify-content:space-between;gap:16px;padding:4px 0;border-bottom:1px dotted var(--line);max-width:none}
+.ing .n{min-width:0}.ing .q{white-space:nowrap;color:var(--red);font-weight:700}
+@media (max-width:480px){.ing{flex-direction:column;gap:0}.ing .q{white-space:normal}}
+.note{display:block;background:var(--note);padding:10px 14px;margin:12px 0;font-size:.95rem;border-left:3px solid var(--accent)}
+.note p{margin:4px 0}
+.didyou{display:block;border:1px solid var(--red);padding:10px 14px;margin:16px 0;font-size:.95rem}
+.dy{font-weight:700;color:var(--red);text-transform:uppercase;font-size:.75rem;letter-spacing:.1em;margin-right:6px}
+hr{border:0;border-top:1px dashed var(--line);margin:20px 0}
+.tw{overflow-x:auto;margin:12px 0}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
+.chips a{border:1px solid var(--line);background:var(--surface);color:var(--fg);padding:5px 12px;text-decoration:none;font-size:.92rem}
+.chips a[aria-current=true]{border-color:var(--accent);background:var(--accent);color:var(--surface)}
+@media (min-width:900px){.chips{display:none}}
+.builder{background:var(--surface);border:1px solid var(--line);padding:clamp(16px,4vw,32px)}
+.controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-bottom:24px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend{font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:700;margin-bottom:8px}
+.stepper{display:flex;align-items:center;gap:10px}
+.stepper button{width:44px;height:44px;border:1px solid var(--line);background:var(--bg);color:var(--fg);font-size:1.3rem;cursor:pointer}
+.stepper button:hover{border-color:var(--accent)}
+.stepper output{font-family:var(--serif);font-size:1.8rem;min-width:2ch;text-align:center}
+.opt{display:flex;flex-direction:column;gap:6px}.opt label{display:flex;gap:8px;align-items:center;cursor:pointer}
+input[type=radio],input[type=checkbox]{accent-color:var(--accent);width:18px;height:18px;flex-shrink:0}
+.listhead{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px;border-top:1px solid var(--line);padding-top:16px}
+.listhead h3{margin:0}
+.copy{border:1px solid var(--accent);background:transparent;color:var(--accent);padding:8px 14px;font:700 .9rem var(--sans);cursor:pointer}
+.copy:hover{background:var(--accent);color:var(--surface)}
+.cat{font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;color:var(--red);margin:20px 0 6px;font-weight:700}
+.shop{list-style:none;margin:0;padding:0}
+.shop li{display:flex;padding:6px 0;border-bottom:1px dotted var(--line);max-width:none}
+.shop label{display:flex;gap:10px;align-items:baseline;flex:1;min-width:0;cursor:pointer}
+.shop .q{margin-left:auto;white-space:nowrap;color:var(--muted)}
+.shop .done .nm{text-decoration:line-through;color:var(--muted)}
+.hint{font-size:.88rem;color:var(--muted);margin-top:16px}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-top:32px;padding-top:16px;border-top:1px solid var(--line)}
+.pager a{color:var(--accent);font-weight:700;text-decoration:none;max-width:48%}
+.pager .next{margin-left:auto;text-align:right}
+.pager small{display:block;font-weight:400;color:var(--muted);font-size:.78rem;text-transform:uppercase;letter-spacing:.08em}
+.foot{max-width:1120px;margin-inline:auto;padding-block:32px 56px;font-size:.88rem;color:var(--muted)}
+@media (max-width:899px){
+  .shell{display:block}
+  .side{position:sticky;top:0;z-index:5;max-height:none;padding:0;margin-inline:-16px;background:var(--bg);border-bottom:1px solid var(--line)}
+  .side>ol{display:flex;overflow-x:auto;scrollbar-width:none;padding-inline:8px}
+  .side>ol::-webkit-scrollbar{display:none}
+  .side a{white-space:nowrap;border-left:0;border-bottom:3px solid transparent;padding:12px 10px}
+  .side a[aria-current=true]{border-bottom-color:var(--red);background:none}
+  .side .sub,.side .open .sub{display:none}
+}
+@media print{.side,.pager,.chips,.home{display:none}.shell{display:block}main>section[hidden],article[hidden]{display:block!important}}
+</style>
+</head>
+<body>
+<a class="home" href="../index.html">← Есть тема: на главную</a>
+<header class="top">
+<div><p class="eyebrow">Есть тема · набор для вечеринки</p>
+<h1>Ливанская вечеринка</h1>
+<p class="lede">Хумус, табуле, горячий фалафель и курица на шпажках, анисовая водка, которая белеет от воды, и песни Фейруз. Рецепты, план по часам, игры и истории для стола. Укажите число гостей, и список покупок соберётся сам.</p>
+<a class="dl" href="livanskaya-vecherinka.pdf" download>Скачать PDF для печати</a></div>
+<img src="img/stol.jpg" alt="Стол меззе на террасе вечером: хумус, табуле, фалафель, лепёшки, лимоны и гранат">
+</header>
+<div class="shell">
+<nav class="side" aria-label="Разделы набора"><ol><li data-sec="intro"><a href="#intro">О празднике</a></li><li data-sec="builder"><a href="#builder">Список покупок</a></li><li data-sec="menu"><a href="#menu">Меню</a></li><li data-sec="kids"><a href="#kids">Если с детьми</a></li><li data-sec="taiming"><a href="#taiming">Тайминг</a></li><li data-sec="recipes"><a href="#recipes">Рецепты</a><ol class="sub"><li><a href="#humus">Хумус</a></li><li><a href="#baba-ganush">Баба гануш</a></li><li><a href="#tabule">Табуле</a></li><li><a href="#falafel">Фалафель с соусом тахини</a></li><li><a href="#manakish">Манакиш с заатаром и с сыром</a></li><li><a href="#shish-tauk">Шиш-таук с чесночным соусом</a></li><li><a href="#fattush">Фаттуш</a></li><li><a href="#muhallabiya">Мухаллабия</a></li><li><a href="#napitki">Напитки</a></li></ol></li><li data-sec="vino"><a href="#vino">Вино и арак</a></li><li data-sec="games"><a href="#games">Игры</a></li><li data-sec="stories"><a href="#stories">Истории</a></li><li data-sec="atmosphere"><a href="#atmosphere">Атмосфера</a></li><li data-sec="allergens"><a href="#allergens">Аллергены</a></li></ol></nav>
+<main id="main">
+<section class="block intro" id="intro"><aside class="brand" aria-label="О проекте"><p class="eyebrow">О проекте</p><h3>Есть тема. Зови своих</h3>
+<p>Мы пишем друг другу каждый день, ставим лайки под фото и шлём сердечки на дни рождения. А за одним столом собираемся раз в полгода. Хочется это исправить и собрать своих: друзей, родителей, соседей по лестничной клетке. Но стоит подумать, что готовить, о чём говорить и чем занять гостей, и встреча откладывается ещё на месяц.</p>
+<p>Мы придумали «Есть тему», чтобы встречи случались чаще. В каждом наборе одна тема: страна, эпоха или мир любимой книги. Внутри всё, что нужно хозяину: рецепты с запасными вариантами, напитки к блюдам (и без алкоголя тоже), истории для разговора за столом, музыка, игра для гостей и план, что сделать за день и за час до прихода. Для детей есть свой стол.</p>
+<p>Повод подойдёт любой. Долгий ужин, завтрак в выходной или просто «заходите вечером».</p>
+<p><strong>Почему «Есть тема».</strong> Так говорят, когда появилась идея: «Есть тема, давай соберёмся». У каждого набора тема своя, в этом наборе это Ливан и его вечер меззе. А ещё «есть» здесь в самом прямом смысле: вкусно поесть вместе.</p>
+<p>Остальное за вами. Зовите своих.</p>
+</aside><h3>Вечер в Бейруте</h3>
+<p>Представьте летний вечер на террасе в горах над Бейрутом. Внизу огни города и тёмное море. Стол заставлен маленькими тарелками: белый хумус с золотой лужицей масла, ярко-зелёный табуле, дымный баба гануш, горка горячего фалафеля. Никто не ждёт, пока ему положат: все тянутся к общим тарелкам, отрывают кусочки лепёшки и зачерпывают то одно, то другое. В стаканах арак белеет от воды, из колонки поёт Фейруз. Ужин длится четыре часа, и никто не смотрит на часы.</p>
+<p>Такой вечер мы и устроим у вас дома.</p>
+<h3>Что такое меззе</h3>
+<p>Меззе - это не закуски перед «настоящей» едой, а и есть главная еда. Много маленьких блюд, которые ставят на стол все сразу. Слово пришло через турецкий из персидского, где «мазе» значит «вкус». Ливанцы считают, что хороший стол меззе должен быть таким плотным, чтобы не было видно скатерти.</p>
+<p>Для хозяина это лучший формат на свете. Почти всё готовится накануне и подаётся холодным или чуть тёплым. При гостях вы только жарите фалафель, печёте лепёшки и ставите курицу в духовку. А половина меню вегетарианская сама по себе, так что гости, которые не едят мясо, не останутся голодными.</p>
+<h3>Маленькая страна на берегу</h3>
+<p>Ливан в четыре раза меньше Московской области: его площадь всего 10 452 квадратных километра. Но в этой маленькой стране есть море и горы со снегом, древние финикийские города, римские храмы и 18 официально признанных религиозных общин. Ливанская кухня собрала понемногу от всех, кто здесь жил и торговал: финикийцев, римлян, арабов, турок и французов.</p>
+<h3>Как устроен вечер</h3>
+<ol type="1">
+<li><strong>Меззе.</strong> Гости приходят, на столе уже хумус, баба гануш, табуле, маслины, овощи и лепёшки, в кувшинах лимонад и айран. Пока все собираются, играем в «Угадай специю».</li>
+<li><strong>Горячее меззе.</strong> Вы выносите фалафель с соусом тахини и горячие манакиш из духовки. Рассказываем истории из шпаргалки, наливаем анисовую водку.</li>
+<li><strong>Горячее.</strong> Шиш-таук с чесночным соусом и свежий фаттуш. Между горячим и сладким игра «Арабское слово или нет?» и викторина.</li>
+<li><strong>Сладкое и кофе.</strong> Мухаллабия с фисташками, кофе с кардамоном. Под конец гадаем на кофейной гуще и, если есть силы, танцуем дабке.</li>
+</ol>
+<h3>Меню</h3>
+<p><strong>Меззе:</strong> хумус, баба гануш, табуле, фалафель с соусом тахини, манакиш с заатаром и с сыром. <strong>Горячее:</strong> шиш-таук с чесночным соусом, салат фаттуш. <strong>Сладкое:</strong> мухаллабия с фисташками и мёдом. <strong>Напитки:</strong> ливанское (или грузинское и армянское) белое и красное вино, узо или ракы вместо ливанского арака, лимонад с мятой, айран, кофе с кардамоном.</p>
+</section><section class="block" id="builder"><h2>Список покупок</h2>
+<p>Укажите, сколько будет гостей, и список пересчитается сам. Отмечайте купленное галочкой прямо в магазине.</p>
+<div class="builder">
+<div class="controls">
+<fieldset><legend>Гостей за столом, с вами</legend><div class="stepper"><button type="button" id="gminus" aria-label="Меньше гостей">−</button><output id="guests">6</output><button type="button" id="gplus" aria-label="Больше гостей">+</button></div></fieldset>
+<fieldset><legend>Из них детей</legend><div class="stepper"><button type="button" id="kminus" aria-label="Меньше детей">−</button><output id="kidsn">0</output><button type="button" id="kplus" aria-label="Больше детей">+</button></div></fieldset>
+<fieldset><legend>Из взрослых пьют вино</legend><div class="stepper"><button type="button" id="wminus" aria-label="Меньше">−</button><output id="wine">6</output><button type="button" id="wplus" aria-label="Больше">+</button></div></fieldset>
+<fieldset class="opt"><legend>Узо или ракы к меззе</legend><p class="small" style="margin:0 0 6px">ливанского арака в России нет</p>
+<label><input type="radio" name="arak" value="yes" checked> Да, одна бутылка</label>
+<label><input type="radio" name="arak" value="no"> Не нужно</label></fieldset>
+<fieldset class="opt"><legend>Тесто для манакиша</legend>
+<label><input type="radio" name="dough" value="ready" checked> Готовое из магазина</label>
+<label><input type="radio" name="dough" value="own"> Замешу сам</label></fieldset>
+</div>
+<div class="listhead"><h3>Что купить</h3><button type="button" class="copy" id="copy">Скопировать список</button></div>
+<div id="list"></div>
+<p class="hint">Все блюда считаются на всех гостей вместе с детьми, специи (зира, кориандр, паприка, душистый перец, корица) и соль из обычного шкафчика в список не входят. Вино: одна бутылка белого на троих пьющих и одна красного на четверых. Если тесто своё, вместо готового теста в списке появятся мука и дрожжи. Если кто-то из взрослых не пьёт, добавится гранатовый сок. Для детей добавляются лимоны на лимонад. Отмеченные покупки запоминаются в этом браузере.</p>
+</div></section><section class="block" id="menu"><h2>Меню</h2><ol class="menu"><li><a href="#humus"><span class="course">Меззе</span><span class="dish">Хумус</span><span class="time">30 мин</span><span class="kid">подходит детям</span></a></li><li><a href="#baba-ganush"><span class="course">Меззе</span><span class="dish">Баба гануш</span><span class="time">1 ч 30 мин</span><span class="kid">детям обычно не нравится дымный вкус</span></a></li><li><a href="#tabule"><span class="course">Меззе</span><span class="dish">Табуле</span><span class="time">1 ч</span><span class="kid">по вкусу ребёнка</span></a></li><li><a href="#falafel"><span class="course">Меззе</span><span class="dish">Фалафель с соусом тахини</span><span class="time">13 ч</span><span class="kid">подходит детям, сделайте шарики поменьше</span></a></li><li><a href="#manakish"><span class="course">Меззе</span><span class="dish">Манакиш с заатаром и с сыром</span><span class="time">40 мин</span><span class="kid">главное детское блюдо, дети пекут сами</span></a></li><li><a href="#shish-tauk"><span class="course">Горячее</span><span class="dish">Шиш-таук с чесночным соусом</span><span class="time">5 ч</span><span class="kid">подходит детям, без чесночного соуса</span></a></li><li><a href="#fattush"><span class="course">Салат к горячему</span><span class="dish">Фаттуш</span><span class="time">40 мин</span><span class="kid">детям - хрустящие лепёшки и овощи отдельно</span></a></li><li><a href="#muhallabiya"><span class="course">Сладкое</span><span class="dish">Мухаллабия</span><span class="time">4 ч 30 мин</span><span class="kid">подходит детям, с вареньем вместо мёда</span></a></li><li><a href="#napitki"><span class="course">Напитки</span><span class="dish">Напитки</span><span class="time">1 ч 30 мин</span><span class="kid">лимонад для всех</span></a></li></ol><p class="small">Время указано полное, вместе с замачиванием, маринованием и охлаждением. Почти всё делается накануне.</p></section><section class="block" id="kids"><h2>Если за столом дети</h2>
+<p>Ливанский стол очень семейный: в Ливане дети сидят за общим столом до самого конца вечера. Почти всё меню им подходит, нужно только сделать пару вещей помягче.</p>
+<p><strong>Что подходит детям</strong></p>
+<ul>
+<li><strong>Хумус с лепёшкой</strong> - почти все дети любят его с первого раза. Отложите детям отдельную тарелку без паприки и сумаха.</li>
+<li><strong>Фалафель</strong> - для детей сделайте шарики поменьше, размером с черешню, и подавайте с кетчупом или йогуртом вместо соуса тахини.</li>
+<li><strong>Манакиш с сыром</strong> - главное детское блюдо вечера. Пусть дети сами раскатают тесто, сделают пальцами ямки и посыплют сыром.</li>
+<li><strong>Шиш-таук</strong> - подходит без изменений, только снимите курицу со шпажек для маленьких детей. Чесночный соус детям лучше заменить обычным йогуртом.</li>
+<li><strong>Табуле и фаттуш</strong> - по вкусу ребёнка. Многие дети не любят много зелени: дайте им огурцы, помидоры и хрустящие кусочки лепёшки из фаттуша отдельно.</li>
+<li><strong>Мухаллабия</strong> - вместо мёда и цветочной воды положите сверху ложку варенья. Фисташки маленьким детям не давайте.</li>
+<li><strong>Баба гануш</strong> обычно детям не нравится из-за дымного вкуса, не настаивайте.</li>
+</ul>
+<p><strong>Напиток.</strong> Лимонад с мятой в таких же высоких стаканах, как у взрослых. Айран многие дети тоже любят, если сделать его без соли и добавить ложку мёда.</p>
+<p><strong>Чем занять детей</strong></p>
+<ul>
+<li><strong>Повара манакиша.</strong> Раскатать тесто, сделать ямки, посыпать сыром. Лучше всего за час до гостей.</li>
+<li><strong>«Угадай специю».</strong> Детям очень нравится нюхать баночки с закрытыми глазами. Для них оставьте самые понятные: корицу, мяту, цветочную воду и заатар.</li>
+<li><strong>Раскраска «Ливанский кедр».</strong> Нарисуйте на листе контур большого дерева (или распечатайте флаг Ливана без цвета) и дайте раскрасить. Расскажите, что это дерево нарисовано на флаге целой страны.</li>
+<li><strong>Финикийский алфавит.</strong> Покажите детям, что буква «А» у финикийцев была похожа на голову быка, а «О» - на глаз. Пусть нарисуют свои имена «по-финикийски»: придумают для каждой буквы картинку.</li>
+<li><strong>Дабке.</strong> Дети с удовольствием топают в линию, держась за руки. Включите музыку в конце вечера и позовите их первыми.</li>
+</ul>
+<p><strong>Безопасность.</strong> - Масло для фалафеля очень горячее. Детей во время жарки на кухню не пускайте, а сотейник ставьте на дальнюю конфорку. - Деревянные шпажки острые: для маленьких детей снимите курицу заранее. - Орехи (фисташки) и целые маслины с косточками держите подальше от детей младше 5 лет. - Духовка при 250 °C: противни с манакишем вынимает только взрослый.</p>
+<p>В <a href="#taiming">списке покупок</a> внизу написано, сколько продуктов добавить на детей.</p>
+</section><section class="block" id="taiming"><h2>Тайминг и список покупок</h2>
+<p>Расчёт на 6 взрослых, гости приходят в 19:00. Если время другое, сдвиньте всё на ту же разницу.</p>
+<p>Стол меззе почти целиком готовится накануне: хумус, баба гануш, соусы, маринад и десерт ждут в холодильнике. В день вечеринки вы режете зелень, жарите фалафель и печёте лепёшки, а при гостях только ставите курицу в духовку и варите кофе.</p>
+<hr />
+<h3>Накануне</h3>
+<div class="tw"><table>
+
+<thead>
+<tr class="header">
+<th>Когда</th>
+<th>Что делать</th>
+<th>Сколько времени</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>утром</td>
+<td><strong>Замочить сухой нут</strong> для фалафеля в большой миске холодной воды. Если дома жарко, в холодильник</td>
+<td>5 мин</td>
+</tr>
+<tr class="even">
+<td>днём</td>
+<td>Купить продукты по списку ниже. Тесто для манакиша, если замороженное, переложить в холодильник</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td>17:00</td>
+<td>Духовку на 230 °C. <strong>Баклажаны</strong> в духовку на 50 минут, переворачивать каждые 15 минут</td>
+<td>5 мин</td>
+</tr>
+<tr class="even">
+<td>17:05</td>
+<td><strong>Мухаллабия</strong>: сварить, разлить по стаканчикам, накрыть плёнкой</td>
+<td>20 мин</td>
+</tr>
+<tr class="odd">
+<td>17:30</td>
+<td><strong>Хумус</strong>: проварить нут из банки, взбить с тахини, в контейнер и в холодильник</td>
+<td>25 мин</td>
+</tr>
+<tr class="even">
+<td>17:55</td>
+<td>Мухаллабию убрать в холодильник. Баклажаны вынуть, накрыть тарелкой, остывать</td>
+<td>5 мин</td>
+</tr>
+<tr class="odd">
+<td>18:00</td>
+<td><strong>Маринад</strong>, курицу нарезать и замариновать, в холодильник на ночь</td>
+<td>15 мин</td>
+</tr>
+<tr class="even">
+<td>18:15</td>
+<td><strong>Баба гануш</strong>: выбрать мякоть, слить сок, размять с тахини, в холодильник</td>
+<td>20 мин</td>
+</tr>
+<tr class="odd">
+<td>18:35</td>
+<td><strong>Соусы</strong>: тахини для фалафеля и чесночный для курицы. <strong>Заправка для фаттуша</strong> в банке</td>
+<td>15 мин</td>
+</tr>
+<tr class="even">
+<td>18:50</td>
+<td><strong>Сироп для лимонада</strong>: сварить с цедрой, бросить мяту, остудить, в холодильник</td>
+<td>10 мин</td>
+</tr>
+<tr class="odd">
+<td>20:00</td>
+<td><strong>Фарш для фалафеля</strong>: обсушить нут, измельчить с зеленью, специи, в холодильник (без соды)</td>
+<td>20 мин</td>
+</tr>
+<tr class="even">
+<td>вечером</td>
+<td>Распечатать карточки, насыпать специи для игры в баночки, белое вино и воду в холодильник</td>
+<td>по настроению</td>
+</tr>
+</tbody>
+</table></div>
+<p>Всего накануне около 2,5 часа работы на кухне. Почти всё время вы заняты чем-то одним, пока другое запекается или остывает.</p>
+<hr />
+<h3>День вечеринки (гости в 19:00)</h3>
+<div class="tw"><table>
+
+<thead>
+<tr class="header">
+<th>Когда</th>
+<th>Что делать</th>
+<th>Сколько времени</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>14:00</td>
+<td>Замочить деревянные шпажки на 30 минут. <strong>Нанизать курицу</strong>, накрыть плёнкой, в холодильник</td>
+<td>25 мин</td>
+</tr>
+<tr class="even">
+<td>15:00</td>
+<td><strong>Зелень</strong>: вымыть и высушить петрушку и мяту для табуле и фаттуша</td>
+<td>20 мин</td>
+</tr>
+<tr class="odd">
+<td>15:30</td>
+<td><strong>Табуле</strong>: нарезать зелень и помидоры, хранить отдельно под влажным полотенцем в холодильнике</td>
+<td>25 мин</td>
+</tr>
+<tr class="even">
+<td>16:00</td>
+<td>Духовку на 200 °C. <strong>Лепёшки для фаттуша</strong> подсушить (10 мин). Нарезать <strong>овощи для фаттуша</strong>, в холодильник</td>
+<td>25 мин</td>
+</tr>
+<tr class="odd">
+<td>16:30</td>
+<td><strong>Фалафель</strong>: вмешать соду, сформовать шарики, обжарить партиями (или запечь в духовке)</td>
+<td>40 мин</td>
+</tr>
+<tr class="even">
+<td>17:15</td>
+<td>Накрыть стол. <strong>Достать хумус и баба гануш</strong> из холодильника. Поставить маслины, огурцы, редис</td>
+<td>30 мин</td>
+</tr>
+<tr class="odd">
+<td>17:45</td>
+<td><strong>Лимонад</strong> собрать в кувшине (лёд потом). Замочить булгур в лимонном соке</td>
+<td>10 мин</td>
+</tr>
+<tr class="even">
+<td>18:00</td>
+<td>Духовку на 250 °C с противнем внутри. <strong>Тесто для манакиша</strong> разделить, раскатать, смазать заатаром и посыпать сыром</td>
+<td>25 мин</td>
+</tr>
+<tr class="odd">
+<td>18:25</td>
+<td><strong>Табуле</strong> смешать и заправить. <strong>Хумус и баба гануш</strong> украсить маслом и гранатом. <strong>Айран</strong> взбить</td>
+<td>10 мин</td>
+</tr>
+<tr class="even">
+<td>18:35</td>
+<td><strong>Манакиш</strong>: первый противень (8 мин), потом второй</td>
+<td>20 мин</td>
+</tr>
+<tr class="odd">
+<td>18:55</td>
+<td>Лёд и мята в лимонад. Включить музыку</td>
+<td>3 мин</td>
+</tr>
+<tr class="even">
+<td><strong>19:00</strong></td>
+<td><strong>Гости пришли.</strong> Холодное меззе на столе, лимонад и айран, «Угадай специю»</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td>19:20</td>
+<td>Духовку на 180 °C, прогреть <strong>фалафель</strong> 8 минут</td>
+<td>3 мин</td>
+</tr>
+<tr class="even">
+<td>19:30</td>
+<td><strong>Фалафель с соусом тахини на стол</strong>, нарезанные манакиш. Налить узо или ракы или белое</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td>19:45</td>
+<td>Духовку на 230 °C</td>
+<td>1 мин</td>
+</tr>
+<tr class="even">
+<td>20:00</td>
+<td><strong>Шиш-таук</strong> в духовку</td>
+<td>2 мин</td>
+</tr>
+<tr class="odd">
+<td>20:10</td>
+<td>Перевернуть шпажки, смазать маринадом</td>
+<td>2 мин</td>
+</tr>
+<tr class="even">
+<td>20:20</td>
+<td>Вынуть курицу. <strong>Фаттуш</strong>: заправить, высыпать лепёшки, перемешать</td>
+<td>5 мин</td>
+</tr>
+<tr class="odd">
+<td><strong>20:25</strong></td>
+<td><strong>Горячее на стол</strong>: шиш-таук на лепёшках, чесночный соус, фаттуш. Красное вино</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>21:15</td>
+<td>Игры «Арабское слово или нет?» и «Правда или миф?»</td>
+<td>30 мин</td>
+</tr>
+<tr class="odd">
+<td>21:45</td>
+<td>Украсить <strong>мухаллабию</strong>. Сварить <strong>кофе с кардамоном</strong> в два захода</td>
+<td>15 мин</td>
+</tr>
+<tr class="even">
+<td><strong>22:00</strong></td>
+<td><strong>Мухаллабия и кофе.</strong> Гадание на кофейной гуще, дабке</td>
+<td>-</td>
+</tr>
+</tbody>
+</table></div>
+<p>При гостях вы встаёте из-за стола четыре раза, каждый на пару минут: прогреть фалафель, поставить курицу, перевернуть её и вынуть, а в конце сварить кофе.</p>
+<aside class="note">
+<p>💡 <strong>Совет.</strong> Если духовка одна и маленькая, испеките манакиш заранее, в 17:00, а перед подачей прогрейте их вместе с фалафелем 3-4 минуты. Свежими из духовки они вкуснее, но тёплыми тоже хороши.</p>
+</aside>
+<hr />
+<h3>Список покупок</h3>
+<h4>Овощи, фрукты, зелень</h4>
+<ul>
+<li>Баклажаны - 3 крупных (около 1,2 кг)</li>
+<li>Петрушка листовая - 6 пучков (4 на табуле, 1 на фалафель, 1 на фаттуш и украшение)</li>
+<li>Мята свежая - 3 пучка (табуле, фаттуш, лимонад)</li>
+<li>Кинза - 1 пучок (для фалафеля)</li>
+<li>Лук зелёный - 1 пучок</li>
+<li>Лук репчатый - 2 шт. (фалафель и шпажки)</li>
+<li>Чеснок - 2 головки (нужно около 16 зубчиков; для настоящего тума ещё 1 головка)</li>
+<li>Помидоры крепкие - 8-9 шт. (около 1 кг: 4 на табуле, 3 на фаттуш, 1-2 к манакишу)</li>
+<li>Огурцы - 3 шт.</li>
+<li>Редис - 1 пучок</li>
+<li>Перец сладкий - 2 шт.</li>
+<li>Салат ромэн - 2 кочана (1 на фаттуш, 1 к табуле)</li>
+<li>Лимоны - 13 шт. (хумус 2, баба гануш 1, табуле 2, фаттуш 1, соус тахини 1, курица 1, лимонад 4, к столу 1)</li>
+<li>Гранат - 1 шт. (по желанию, для украшения)</li>
+<li>Морковь - 2 шт. (по желанию, палочками к хумусу)</li>
+</ul>
+<h4>Мясо</h4>
+<ul>
+<li>Куриное филе бедра без кожи - 1,2 кг (или филе грудки)</li>
+</ul>
+<h4>Молочное</h4>
+<ul>
+<li>Йогурт густой или греческий - 400 г (150 г в маринад, 250 г в соус)</li>
+<li>Йогурт натуральный без добавок - 500 г (для айрана, или 1 л готового айрана)</li>
+<li>Молоко 3,2% - 1 л</li>
+<li>Сулугуни или моцарелла - 150 г</li>
+<li>Брынза или фета - 100 г</li>
+<li>Майонез - небольшая упаковка (нужно 3 ст. л.)</li>
+</ul>
+<h4>Бакалея</h4>
+<ul>
+<li>Нут консервированный - 2 банки по 400 г</li>
+<li>Нут сухой - 250 г</li>
+<li>Тахини - 1 банка 300-400 г (нужно около 280 г)</li>
+<li>Булгур мелкий - 1 пачка (нужно 50 г)</li>
+<li>Оливковое масло Extra Virgin - 0,5 л</li>
+<li>Масло подсолнечное без запаха - 1 л (для жарки фалафеля)</li>
+<li>Заатар - 1 упаковка (нужно 4 ст. л.)</li>
+<li>Сумах - 1 упаковка</li>
+<li>Гранатовый соус (наршараб) - 1 бутылка</li>
+<li>Апельсиновая цветочная вода (или розовая) - 1 флакон</li>
+<li>Крахмал кукурузный - 70 г</li>
+<li>Сахар - 300 г</li>
+<li>Фисташки очищенные несолёные - 40 г</li>
+<li>Мёд жидкий - 2 ст. л.</li>
+<li>Томатная паста - 1 ст. л.</li>
+<li>Кунжут - 2 ст. л. (по желанию)</li>
+<li>Маслины - 1 банка</li>
+<li>Огурцы маринованные - 1 банка (около 200 г)</li>
+<li>Кофе молотый для турки - 1 пачка</li>
+<li>Кардамон в коробочках - 1 пакетик</li>
+<li>Специи: зира (кумин) молотая, кориандр молотый, паприка сладкая, душистый перец молотый, корица, пищевая сода, соль, чёрный перец</li>
+</ul>
+<h4>Хлеб и тесто</h4>
+<ul>
+<li>Пита или ливанские лепёшки - 12 шт. (2 на фаттуш, 4 под курицу, остальные к меззе)</li>
+<li>Тесто дрожжевое готовое - 500 г (или для своего теста: мука 300 г и пакетик сухих быстрых дрожжей; оливковое масло, сахар и соль уже в списке)</li>
+</ul>
+<h4>Напитки</h4>
+<ul>
+<li>Белое сухое вино - 2 бутылки (ливанское Domaine des Tourelles White или замена; подробно в разделе «Вино и арак»)</li>
+<li>Красное сухое вино - 1-2 бутылки (ливанское сенсо Domaine des Tourelles или Château Ksara, или замена)</li>
+<li>Узо или ракы - 1 бутылка 0,5 л (по желанию; ливанского арака в России, похоже, не продают)</li>
+<li>Гранатовый сок - 1 л, газированная вода - 1 л (для тех, кто не пьёт)</li>
+<li>Вода питьевая - 2 л (для лимонада и айрана)</li>
+</ul>
+<h4>Хозяйственное</h4>
+<ul>
+<li>Деревянные шпажки - 20 шт.</li>
+<li>Фольга, пергамент, пищевая плёнка, бумажные полотенца</li>
+<li>Одноразовые перчатки (для курицы)</li>
+<li>6-8 одинаковых маленьких баночек или пиал для игры «Угадай специю»</li>
+<li>Плотная бумага для печати карточек</li>
+</ul>
+<hr />
+<h3>Если за столом дети</h3>
+<p>Добавьте на каждых 2 детей: - Тесто - ещё 125 г и сулугуни - ещё 60 г (2 дополнительных манакиша с сыром) - Куриное филе - ещё 200 г - Лимоны - ещё 2 шт. и мята - ещё 0,5 пучка (на 1 л лимонада)</p>
+<p>Вино и арак считайте только на взрослых. Подробнее в разделе <a href="#kids">Если за столом дети</a>.</p>
+</section><section class="block" id="recipes"><h2>Рецепты</h2><nav class="chips" aria-label="Рецепты"><a href="#humus">Хумус</a><a href="#baba-ganush">Баба гануш</a><a href="#tabule">Табуле</a><a href="#falafel">Фалафель с соусом тахини</a><a href="#manakish">Манакиш с заатаром и с сыром</a><a href="#shish-tauk">Шиш-таук с чесночным соусом</a><a href="#fattush">Фаттуш</a><a href="#muhallabiya">Мухаллабия</a><a href="#napitki">Напитки</a></nav><article class="recipe" id="humus"><p class="eyebrow">Меззе</p><h3>Хумус</h3><figure class="pic"><img src="img/humus.jpg" alt="Хумус" loading="lazy"></figure><dl class="facts"><div><dt>Активно</dt><dd>20 мин</dd></div><div><dt>Всего</dt><dd>30 мин (из нута в банке) или 14 ч (из сухого нута с замачиванием)</dd></div><div><dt>Порции</dt><dd>6 (около 700 г)</dd></div><div><dt>Духовка</dt><dd>не используется</dd></div></dl>
+<p>Главная тарелка ливанского стола и первое, к чему тянутся гости. Нежное пюре из нута с кунжутной пастой тахини, лимоном и чесноком. Едят его не ложкой, а кусочком лепёшки: отрывают, зачерпывают и сразу в рот. Наш рецепт рассчитан на нут из банки, так быстрее, а вариант из сухого нута написан в конце.</p>
+<hr />
+<h2>История</h2>
+<p>Слово «хумус» по-арабски значит просто «нут». Полное название блюда - «хуммус би тахина», то есть «нут с тахини». Самый старый известный рецепт похожего пюре записан в XIII веке в кулинарной книге из Алеппо (сейчас это Сирия): там нут растирали с лимоном, кунжутом и оливковым маслом, но ещё без чеснока.</p>
+<p>Чьё это блюдо, ливанское, сирийское, палестинское или израильское, спорят до сих пор. В 2010 году спор дошёл до Книги рекордов Гиннесса: около 300 ливанских поваров приготовили под Бейрутом 10 452 кг хумуса, больше десяти тонн. Это до сих пор считается рекордом.</p>
+<h2>Ингредиенты</h2>
+<ul>
+<li class="ing"><span class="n">нут консервированный (по 400 г, около 480 г нута без жидкости)</span><span class="q">2&nbsp;банки</span></li>
+<li class="ing"><span class="n">тахини (кунжутная паста, около 6 ст. л.)</span><span class="q">120&nbsp;г</span></li>
+<li class="ing"><span class="n">лимон (нужно 60-70 мл сока)</span><span class="q">1-2&nbsp;шт</span></li>
+<li class="ing"><span class="n">чеснок</span><span class="q">1-2&nbsp;зубчика</span></li>
+<li class="ing"><span class="n">вода со льдом (или жидкость из банки с нутом)</span><span class="q">80-100&nbsp;мл</span></li>
+<li class="ing"><span class="n">соль (без горки, по вкусу)</span><span class="q">1&nbsp;ч. л.</span></li>
+<li class="ing"><span class="n">зира (кумин) молотая (по желанию)</span><span class="q">0,5&nbsp;ч. л.</span></li>
+</ul>
+<p><strong>Для подачи</strong></p>
+<ul>
+<li class="ing"><span class="n">оливковое масло Extra Virgin</span><span class="q">2-3&nbsp;ст. л.</span></li>
+<li class="ing"><span class="n">паприка сладкая или сумах</span><span class="q">1&nbsp;щепотка</span></li>
+<li>несколько горошин нута, отложенных из банки</li>
+<li class="ing"><span class="n">петрушка</span><span class="q">2-3&nbsp;веточки</span></li>
+</ul>
+<h2>Шаги</h2>
+<h3>1. Прогреть нут · 10 мин</h3>
+<p>Слейте жидкость из банок через дуршлаг, но 100 мл отлейте в чашку: она пригодится. Нут промойте холодной водой. Отложите 1 столовую ложку целых горошин для украшения.</p>
+<p>Переложите нут в кастрюлю, залейте свежей водой и варите 8-10 минут после закипания, пока горошины не станут совсем мягкими и не начнут лопаться.</p>
+<aside class="note">
+<p><strong>Почему так работает.</strong> Нут из банки уже готов, но он плотный. Если его ещё немного поварить, кожица размягчится, и хумус получится гладким, как в ресторане, а не зернистым.</p>
+</aside>
+<hr />
+<h3>2. Взбить тахини с лимоном · 3 мин</h3>
+<p>Пока варится нут, выжмите сок из лимона и процедите от косточек. Чеснок очистите. В чашу блендера положите тахини, лимонный сок, чеснок и соль. Взбейте 1 минуту: паста сначала загустеет и станет похожа на мокрый песок, потом посветлеет. Добавьте 2 столовые ложки ледяной воды и взбейте ещё, пока не станет кремовой.</p>
+<aside class="note">
+<p>💡 <strong>Совет.</strong> Перед тем как набрать тахини, хорошо перемешайте её ложкой прямо в банке. Масло в тахини всегда отстаивается сверху, а снизу остаётся густая паста.</p>
+</aside>
+<hr />
+<h3>3. Взбить нут · 5 мин</h3>
+<p>Слейте горячий нут, дайте ему постоять в дуршлаге пару минут и добавьте в блендер к тахини. Взбивайте 3-4 минуты, понемногу подливая ледяную воду, пока хумус не станет гладким и пышным, как густая сметана. Добавьте зиру, если любите.</p>
+<p>Попробуйте. Если не хватает кислоты, добавьте лимонного сока, если пресно - соли. Помните, что остывший хумус загустеет.</p>
+<aside class="note">
+<p>⚠️ <strong>Типичная ошибка.</strong> Взбивать 30 секунд и останавливаться. Хумусу нужно время: чем дольше взбиваете, тем он нежнее. Если блендер греется, делайте паузы.</p>
+</aside>
+<hr />
+<h3>4. Выложить красиво · 3 мин</h3>
+<p>Выложите хумус на широкую плоскую тарелку. Тыльной стороной ложки сделайте по кругу углубление-бороздку. Налейте в бороздку оливковое масло, в центр положите целые горошины нута, посыпьте паприкой или сумахом и положите веточку петрушки.</p>
+<hr />
+<h2>Практический блок</h2>
+<p><strong>Заранее.</strong> Хумус можно сделать накануне. Храните в контейнере с крышкой в холодильнике до 3 дней. Перед подачей достаньте за 30-40 минут: холодный хумус кажется пресным. Если загустел, вмешайте ложку тёплой воды. Масло и украшения добавляйте только перед подачей.</p>
+<p><strong>С чем подавать.</strong> Ливанские лепёшки (в магазинах их обычно продают как «пита» или «арабский хлеб»), свежие огурцы, морковь и редис брусочками, маслины.</p>
+<p><strong>Из сухого нута.</strong> Возьмите 200 г сухого нута. Залейте холодной водой (в 3 раза больше нута) с 1 ч. л. пищевой соды и оставьте на ночь, 12 часов. Слейте воду, промойте, залейте свежей и варите 1-1,5 часа до очень мягкого состояния. Дальше как в рецепте, с шага 2. Вкус получается чуть ярче, чем у нута из банки.</p>
+<p><strong>Замены.</strong> - <strong>Нет тахини.</strong> Замените её на 100 г очищенного кунжута: обжарьте на сухой сковороде до золотистого цвета, остудите и смелите в блендере с 3 ст. л. растительного масла до пасты. Получится похоже, но менее гладко. - <strong>Острый хумус.</strong> Добавьте щепотку молотого перца чили или чайную ложку пасты харисса.</p>
+<p><strong>Сколько нужно.</strong> На столе меззе много блюд, хумуса уходит около 100-120 г на человека.</p>
+<p><strong>Аллергены.</strong> Кунжут (тахини), нут (бобовые).</p>
+<aside class="didyou"><span class="dy">А вы знали?</span>В 2010 году около 300 ливанских поваров приготовили под Бейрутом 10 452 кг хумуса. Это рекорд Книги Гиннесса, больше десяти тонн в одной тарелке.</aside></article><article class="recipe" id="baba-ganush"><p class="eyebrow">Меззе</p><h3>Баба гануш</h3><figure class="pic"><img src="img/baba-ganush.jpg" alt="Баба гануш" loading="lazy"></figure><dl class="facts"><div><dt>Активно</dt><dd>20 мин</dd></div><div><dt>Всего</dt><dd>1 ч 30 мин (с запеканием и остыванием)</dd></div><div><dt>Порции</dt><dd>6 (около 600 г)</dd></div><div><dt>Духовка</dt><dd>230 °C</dd></div></dl>
+<p>Вторая «паста» ливанского стола, младшая сестра хумуса. Баклажаны запекают до тех пор, пока кожица не почернеет, а мякоть не станет совсем мягкой. Потом мякоть разминают вилкой с тахини, лимоном и чесноком. Главное в этом блюде - лёгкий дымный вкус: в Ливане баклажаны обжигают на углях, а мы добиваемся похожего вкуса в жаркой духовке.</p>
+<hr />
+<h2>История</h2>
+<p>Название по-арабски звучит как «баба гануш» и обычно переводится как «избалованный папа». Откуда оно взялось, никто точно не знает. Самая известная легенда рассказывает, что дочь приготовила это нежное пюре для своего беззубого старого отца. Документов об этом, конечно, нет, но легенда живёт в каждом ливанском доме.</p>
+<p>В Ливане это блюдо иногда называют «мутаббаль», а в соседних странах «мутаббаль» и «баба гануш» - это два разных блюда: с тахини и с овощами без тахини. У нас вариант с тахини, как его чаще всего подают в Бейруте.</p>
+<h2>Ингредиенты</h2>
+<ul>
+<li class="ing"><span class="n">баклажаны крупные (около 1,2 кг)</span><span class="q">3&nbsp;шт</span></li>
+<li class="ing"><span class="n">тахини (около 60 г)</span><span class="q">3&nbsp;ст. л.</span></li>
+<li class="ing"><span class="n">лимон (нужно 3-4 ст. л. сока)</span><span class="q">1&nbsp;шт</span></li>
+<li class="ing"><span class="n">чеснок</span><span class="q">1&nbsp;зубчик</span></li>
+<li class="ing"><span class="n">соль (по вкусу)</span><span class="q">0,5&nbsp;ч. л.</span></li>
+</ul>
+<p><strong>Для подачи</strong></p>
+<ul>
+<li class="ing"><span class="n">оливковое масло Extra Virgin</span><span class="q">2&nbsp;ст. л.</span></li>
+<li class="ing"><span class="n">зёрна граната (по желанию)</span><span class="q">2&nbsp;ст. л.</span></li>
+<li class="ing"><span class="n">петрушка или мята</span><span class="q">2-3&nbsp;веточки</span></li>
+</ul>
+<h2>Шаги</h2>
+<h3>1. Запечь баклажаны · 50 мин (без вашего участия)</h3>
+<p>Разогрейте духовку до 230 °C. Баклажаны вымойте и наколите вилкой в нескольких местах, чтобы они не лопнули. Положите целиком на противень с фольгой и запекайте 45-50 минут, переворачивая каждые 15 минут. Готовые баклажаны сморщиваются, кожица темнеет, а мякоть при нажатии ложкой проминается до самого дна.</p>
+<aside class="note">
+<p>💡 <strong>Совет.</strong> Хочется вкуса «как с костра»? Добавьте в готовую пасту щепотку копчёной паприки.</p>
+</aside>
+<aside class="note">
+<p>⚠️ <strong>Типичная ошибка.</strong> Вынимать баклажаны рано. Если мякоть внутри ещё упругая и белая, паста получится горькой и «резиновой». Лучше передержать, чем недодержать.</p>
+</aside>
+<hr />
+<h3>2. Остудить и стечь · 20 мин</h3>
+<p>Переложите горячие баклажаны в миску и накройте тарелкой на 10 минут: от пара кожица легче отойдёт. Разрежьте вдоль и ложкой выберите мякоть, кожицу выбросьте. Мякоть положите в сито или дуршлаг над миской и оставьте на 10 минут, чтобы ушла горьковатая жидкость.</p>
+<aside class="note">
+<p><strong>Почему так работает.</strong> В печёном баклажане много сока. Если его не слить, паста получится водянистой и не будет держать форму на тарелке.</p>
+</aside>
+<hr />
+<h3>3. Размять и заправить · 5 мин</h3>
+<p>Переложите мякоть на доску и порубите ножом, а потом разомните вилкой в миске. Блендер здесь не нужен: в настоящем баба гануше чувствуются волокна баклажана. Чеснок натрите на мелкой тёрке или выдавите через пресс. Добавьте к баклажанам тахини, лимонный сок, чеснок и соль, перемешайте. Попробуйте и доведите лимоном и солью до вкуса.</p>
+<hr />
+<h3>4. Подать · 2 мин</h3>
+<p>Выложите на тарелку, сделайте ложкой волны, полейте оливковым маслом и посыпьте зёрнами граната и рубленой зеленью.</p>
+<hr />
+<h2>Практический блок</h2>
+<p><strong>Заранее.</strong> Баба гануш можно сделать накануне, в холодильнике под крышкой он хранится 2 дня. Достаньте за 30 минут до подачи. Масло и гранат добавляйте перед тем, как ставить на стол.</p>
+<p><strong>Как выбрать баклажаны.</strong> Тяжёлые для своего размера, с гладкой блестящей кожицей и зелёным, а не сухим хвостиком. Мягкие и морщинистые в магазине уже не годятся.</p>
+<p><strong>Замены.</strong> - <strong>Нет тахини.</strong> Замените 3 ложками густого греческого йогурта. Получится другой, но тоже очень вкусный вариант.</p>
+<p><strong>Аллергены.</strong> Кунжут (тахини). Если вместо тахини взять йогурт - молочное.</p>
+</article><article class="recipe" id="tabule"><p class="eyebrow">Меззе</p><h3>Табуле</h3><figure class="pic"><img src="img/tabule.jpg" alt="Табуле" loading="lazy"></figure><dl class="facts"><div><dt>Активно</dt><dd>40 мин</dd></div><div><dt>Всего</dt><dd>1 ч (с замачиванием булгура)</dd></div><div><dt>Порции</dt><dd>6 (около 800 г)</dd></div><div><dt>Духовка</dt><dd>не используется</dd></div></dl>
+<p>Самый ливанский салат и проверка на честность: в настоящем табуле много зелени и совсем немного крупы. Ярко-зелёная горка петрушки с мятой, помидорами, булгуром и лимоном. Если в вашем табуле больше крупы, чем зелени, ливанец вежливо скажет, что это «европейский вариант».</p>
+<hr />
+<h2>История</h2>
+<p>Табуле пришёл с гор Ливана и Сирии. Весной, когда в горах поднималась свежая зелень, его ели почти каждый день. Считается, что слово происходит от арабского «таабил», «приправы».</p>
+<p>В Ливане у табуле есть свой праздник. С 2001 года в первую субботу июля отмечают Национальный день табуле: в городах и деревнях вместе режут зелень и готовят огромные миски салата.</p>
+<h2>Ингредиенты</h2>
+<ul>
+<li class="ing"><span class="n">петрушка листовая (около 200 г, лучше плоская, не кудрявая)</span><span class="q">4&nbsp;пучка</span></li>
+<li class="ing"><span class="n">мята свежая (около 30 г)</span><span class="q">1&nbsp;пучок</span></li>
+<li class="ing"><span class="n">помидоры крепкие (около 400 г)</span><span class="q">4&nbsp;шт</span></li>
+<li class="ing"><span class="n">лук зелёный (перья)</span><span class="q">3-4&nbsp;шт</span></li>
+<li class="ing"><span class="n">булгур мелкий (около 3 ст. л.)</span><span class="q">50&nbsp;г</span></li>
+<li class="ing"><span class="n">лимон (нужно 80-100 мл сока)</span><span class="q">2&nbsp;шт</span></li>
+<li class="ing"><span class="n">оливковое масло Extra Virgin</span><span class="q">80&nbsp;мл</span></li>
+<li class="ing"><span class="n">соль (по вкусу)</span><span class="q">1&nbsp;ч. л.</span></li>
+<li class="ing"><span class="n">душистый перец молотый (или чёрный)</span><span class="q">0,5&nbsp;ч. л.</span></li>
+</ul>
+<p><strong>Для подачи (по-ливански)</strong></p>
+<ul>
+<li>листья салата ромэн или молодой белокочанной капусты, чтобы зачерпывать ими табуле</li>
+</ul>
+<h2>Шаги</h2>
+<h3>1. Вымыть и высушить зелень · 15 мин</h3>
+<p>Отрежьте у петрушки толстые нижние стебли (верхние тонкие оставьте). Опустите зелень в большую миску с холодной водой, поболтайте и выньте руками: песок останется на дне. Повторите 2 раза со свежей водой. Так же вымойте мяту.</p>
+<p>Высушите зелень полностью: в сушилке для зелени или раскатайте на чистом полотенце, сверните рулетом и оставьте на 15-20 минут.</p>
+<aside class="note">
+<p>⚠️ <strong>Типичная ошибка.</strong> Резать мокрую зелень. Она превращается в кашу под ножом, а салат пускает воду и становится тёмным.</p>
+</aside>
+<hr />
+<h3>2. Замочить булгур · 15 мин (без вашего участия)</h3>
+<p>Промойте булгур в сите, переложите в маленькую миску и залейте соком 1 лимона. Он впитает сок и станет мягким, варить его не надо. Если используете крупный булгур, залейте его на 15 минут кипятком, а потом откиньте на сито и отожмите.</p>
+<hr />
+<h3>3. Нарезать · 20 мин</h3>
+<p>Это главный шаг. Соберите петрушку в плотный пучок и режьте острым ножом очень тонко, как можно мельче, но одним движением, не «рубите» туда-сюда. Мяту нарежьте так же, только листья, без стеблей. Зелёный лук нарежьте тонкими колечками.</p>
+<p>Помидоры разрежьте пополам, ложкой выньте семена с соком (они разбавят салат) и нарежьте мякоть мелким кубиком, 5 мм.</p>
+<aside class="note">
+<p><strong>Почему не блендер.</strong> Блендер мнёт и «отжимает» зелень, она темнеет за полчаса. Острый нож режет чисто, и табуле остаётся ярким и хрустящим.</p>
+</aside>
+<hr />
+<h3>4. Смешать перед подачей · 3 мин</h3>
+<p>В большой миске соедините зелень, помидоры, лук и булгур. Добавьте сок второго лимона, оливковое масло, соль и перец. Перемешайте руками или двумя ложками. Попробуйте: табуле должен быть заметно кислым и свежим. Добавьте лимон, если нужно.</p>
+<hr />
+<h2>Практический блок</h2>
+<p><strong>Заранее.</strong> Зелень можно вымыть, высушить и нарезать за 2-3 часа до гостей и держать в холодильнике в миске под влажным полотенцем, отдельно от помидоров. Смешивать и заправлять - не раньше чем за 30 минут до подачи.</p>
+<p><strong>Подача по-ливански.</strong> Выложите табуле горкой на блюдо, а по краям воткните листья ромэна или молодой капусты. Ими зачерпывают салат вместо вилки.</p>
+<p><strong>Замены.</strong> - <strong>Без глютена.</strong> Вместо булгура возьмите 50 г киноа: сварите 12 минут, остудите. - <strong>Нет мяты.</strong> Без неё можно, но вкус будет проще. Добавьте немного сушёной мяты, 0,5 ч. л.</p>
+<p><strong>Аллергены.</strong> Глютен (булгур - это пшеница).</p>
+<aside class="didyou"><span class="dy">А вы знали?</span>В Ливане есть Национальный день табуле. С 2001 года его отмечают в первую субботу июля.</aside></article><article class="recipe" id="falafel"><p class="eyebrow">Меззе</p><h3>Фалафель с соусом тахини</h3><figure class="pic"><img src="img/falafel.jpg" alt="Фалафель с соусом тахини" loading="lazy"></figure><dl class="facts"><div><dt>Активно</dt><dd>50 мин</dd></div><div><dt>Всего</dt><dd>13 ч (с замачиванием нута на ночь)</dd></div><div><dt>Порции</dt><dd>6 (около 30 шариков)</dd></div><div><dt>Духовка</dt><dd>100 °C, чтобы держать горячими (или 210 °C, если запекаете)</dd></div></dl>
+<p>Хрустящие снаружи и ярко-зелёные внутри шарики из нута с зеленью и специями. В Бейруте их продают на каждом углу, завёрнутыми в лепёшку. У нас они стоят на столе горкой рядом с миской соуса тахини: каждый берёт шарик, макает и ест. Самое важное в этом рецепте: нут берут <strong>сухой</strong>, замоченный, а не варёный и не из банки.</p>
+<hr />
+<h2>История</h2>
+<p>Откуда фалафель родом, точно не знает никто. Чаще всего говорят, что его придумали в Египте христиане-копты: во время долгих постов им нельзя было есть мясо, и они делали сытные шарики из бобов. В Египте фалафель до сих пор делают из бобов фава, а в Ливане и Сирии из нута.</p>
+<p>В Ливане фалафель - уличная еда, быстрый обед. Его заворачивают в тонкую лепёшку с помидорами, солёными огурцами, редисом, мятой и обильно поливают соусом тахини.</p>
+<h2>Ингредиенты</h2>
+<ul>
+<li class="ing"><span class="n">нут сухой (не консервированный!)</span><span class="q">250&nbsp;г</span></li>
+<li class="ing"><span class="n">лук репчатый небольшой</span><span class="q">1&nbsp;шт</span></li>
+<li class="ing"><span class="n">чеснок</span><span class="q">4&nbsp;зубчика</span></li>
+<li class="ing"><span class="n">петрушка (около 50 г)</span><span class="q">1&nbsp;пучок</span></li>
+<li class="ing"><span class="n">кинза (около 50 г)</span><span class="q">1&nbsp;пучок</span></li>
+<li class="ing"><span class="n">зира (кумин) молотая</span><span class="q">2&nbsp;ч. л.</span></li>
+<li class="ing"><span class="n">кориандр молотый</span><span class="q">2&nbsp;ч. л.</span></li>
+<li class="ing"><span class="n">соль</span><span class="q">1,5&nbsp;ч. л.</span></li>
+<li class="ing"><span class="n">чёрный перец молотый</span><span class="q">0,5&nbsp;ч. л.</span></li>
+<li class="ing"><span class="n">пищевая сода</span><span class="q">0,5&nbsp;ч. л.</span></li>
+<li class="ing"><span class="n">кунжут (по желанию)</span><span class="q">2&nbsp;ст. л.</span></li>
+<li class="ing"><span class="n">масло растительное без запаха для жарки (подсолнечное)</span><span class="q">700&nbsp;мл</span></li>
+</ul>
+<p><strong>Соус тахини (таратор)</strong></p>
+<ul>
+<li class="ing"><span class="n">тахини</span><span class="q">100&nbsp;г</span></li>
+<li class="ing"><span class="n">лимон (нужно 50 мл сока)</span><span class="q">1&nbsp;шт</span></li>
+<li class="ing"><span class="n">чеснок</span><span class="q">1&nbsp;зубчик</span></li>
+<li class="ing"><span class="n">холодная вода</span><span class="q">80-100&nbsp;мл</span></li>
+<li class="ing"><span class="n">соль</span><span class="q">0,5&nbsp;ч. л.</span></li>
+</ul>
+<h2>Шаги</h2>
+<h3>1. Замочить нут · 12 ч (без вашего участия)</h3>
+<p>Накануне утром или вечером промойте нут, переложите в большую миску и залейте холодной водой, в 3-4 раза больше нута: он увеличится в 2,5 раза. Оставьте на 12-24 часа. Если в квартире жарко, уберите миску в холодильник.</p>
+<aside class="note">
+<p>⚠️ <strong>Типичная ошибка.</strong> Брать варёный или консервированный нут. Из него фалафель разваливается прямо в масле. Сухой замоченный нут сырой и крахмалистый, поэтому шарики держат форму.</p>
+</aside>
+<hr />
+<h3>2. Сделать фарш · 10 мин</h3>
+<p>Слейте воду и хорошо обсушите нут на полотенце. Лук и чеснок очистите и порежьте крупно, у зелени отрежьте толстые стебли.</p>
+<p>Положите в чашу измельчителя нут, лук, чеснок и зелень. Измельчайте импульсами, останавливаясь и счищая массу со стенок лопаткой, пока не получится зелёная крупинчатая масса, похожая на влажный песок. Она не должна превратиться в гладкое пюре. Если чаша маленькая, делайте в два захода. Можно прокрутить всё дважды через мясорубку с мелкой решёткой.</p>
+<p>Переложите в миску, добавьте зиру, кориандр, соль и перец. Перемешайте, накройте и уберите в холодильник минимум на 30 минут, можно до следующего дня.</p>
+<aside class="note">
+<p><strong>Почему так работает.</strong> В холоде крахмал из нута «схватывается», и масса становится плотнее. Холодные шарики меньше впитывают масло.</p>
+</aside>
+<hr />
+<h3>3. Сделать соус тахини · 5 мин</h3>
+<p>Перемешайте тахини в банке. В миске смешайте тахини, лимонный сок, натёртый чеснок и соль. Сначала паста резко загустеет, это нормально. Подливайте холодную воду по ложке, всё время размешивая вилкой или венчиком, пока соус не станет гладким и густым, как жидкая сметана. Уберите в холодильник.</p>
+<hr />
+<h3>4. Сформовать шарики · 15 мин</h3>
+<p>Прямо перед жаркой вмешайте в фарш соду и кунжут. Мокрыми руками или двумя столовыми ложками сформуйте шарики размером с грецкий орех (около 3 см) и чуть приплюсните. Выкладывайте на доску или тарелку.</p>
+<aside class="note">
+<p>💡 <strong>Совет.</strong> Если масса крошится и не лепится, добавьте 1-2 ст. л. муки или холодной воды и снова уберите в холодильник на 15 минут.</p>
+</aside>
+<hr />
+<h3>5. Обжарить · 20 мин</h3>
+<p>Налейте масло в сотейник слоем 4-5 см и разогрейте до 175-180 °C. Без термометра проверьте так: бросьте в масло крошку фарша, она должна сразу зашипеть и всплыть, но не чернеть.</p>
+<p>Опускайте шарики по 6-8 штук, чтобы не было тесно. Жарьте 3-4 минуты, переворачивая шумовкой, до тёмно-золотистого цвета. Выкладывайте на бумажное полотенце.</p>
+<aside class="note">
+<p>⚠️ <strong>Безопасность.</strong> Не оставляйте масло без присмотра, держите рядом крышку от сотейника. Если масло начинает дымить, снимите с огня. Никогда не заливайте горящее масло водой: накройте крышкой.</p>
+</aside>
+<hr />
+<h2>Практический блок</h2>
+<p><strong>Заранее.</strong> Фарш без соды держится в холодильнике 1 сутки. Готовые шарики можно пожарить за час-два до гостей и перед подачей прогреть в духовке 7-8 минут при 180 °C: они снова станут хрустящими. Соус тахини хранится 3 дня.</p>
+<p><strong>Без фритюра, в духовке.</strong> Разогрейте духовку до 210 °C. Противень застелите пергаментом и смажьте 3 ст. л. масла. Выложите шарики, сверху сбрызните маслом. Запекайте 12 минут, переверните и ещё 10-12 минут. Корочка будет не такой хрустящей, но получится вкусно и гораздо проще.</p>
+<p><strong>Подача.</strong> Горкой на блюде, рядом миска соуса тахини, солёные огурцы, редис и листья мяты.</p>
+<p><strong>Аллергены.</strong> Кунжут (тахини, посыпка), нут (бобовые).</p>
+<aside class="didyou"><span class="dy">А вы знали?</span>Площадь Ливана - 10 452 квадратных километра. А рекорд хумуса 2010 года - 10 452 килограмма. Нарочно так сделали или это совпадение, нам выяснить не удалось, но цифры одинаковые.</aside></article><article class="recipe" id="manakish"><p class="eyebrow">Меззе</p><h3>Манакиш с заатаром и с сыром</h3><figure class="pic"><img src="img/manakish.jpg" alt="Манакиш с заатаром и с сыром" loading="lazy"></figure><dl class="facts"><div><dt>Активно</dt><dd>25 мин (с домашним тестом 40 мин)</dd></div><div><dt>Всего</dt><dd>40 мин (с домашним тестом 2 ч 10 мин)</dd></div><div><dt>Порции</dt><dd>8 лепёшек диаметром 15 см</dd></div><div><dt>Духовка</dt><dd>250 °C (самая высокая температура вашей духовки)</dd></div></dl>
+<p>Ливанский завтрак и любимая еда детей. Тонкие лепёшки, смазанные смесью трав заатар с оливковым маслом или посыпанные сыром, из очень горячей духовки. Проще всего взять готовое дрожжевое тесто: тогда это самое быстрое блюдо вечера. Если хочется, тесто легко замесить и самому, рецепт ниже. Половину лепёшек можно сделать с заатаром для взрослых, половину с сыром для детей.</p>
+<hr />
+<h2>История</h2>
+<p>В ливанских деревнях хлеб пекли раз в несколько дней в общей печи. Пока печь была горячей, хозяйки делали из остатков теста тонкие лепёшки, смазывали их маслом с травами и ели прямо горячими. Утренний манакиш с заатаром и стакан чая до сих пор считаются самым ливанским завтраком, а пекарни, где их пекут, есть в каждом квартале Бейрута.</p>
+<p>Заатар - это и название дикого горного растения, похожего на душицу и тимьян, и смесь специй на его основе: сушёные травы, кисловатый сумах, обжаренный кунжут и соль.</p>
+<h2>Ингредиенты</h2>
+<ul>
+<li class="ing"><span class="n">тесто дрожжевое готовое (не слоёное), или своё тесто по рецепту ниже</span><span class="q">500&nbsp;г</span></li>
+<li class="ing"><span class="n">мука (для подпыла)</span><span class="q">2&nbsp;ст. л.</span></li>
+</ul>
+<p><strong>Своё тесто (вместо готового, около 500 г)</strong></p>
+<ul>
+<li class="ing"><span class="n">мука пшеничная</span><span class="q">300&nbsp;г</span></li>
+<li class="ing"><span class="n">сухие быстрые дрожжи (около 5 г)</span><span class="q">1,5&nbsp;ч. л.</span></li>
+<li class="ing"><span class="n">сахар</span><span class="q">0,5&nbsp;ч. л.</span></li>
+<li class="ing"><span class="n">соль</span><span class="q">0,5&nbsp;ч. л.</span></li>
+<li class="ing"><span class="n">вода тёплая (около 38 °C, чуть теплее руки)</span><span class="q">180&nbsp;мл</span></li>
+<li class="ing"><span class="n">оливковое масло</span><span class="q">2&nbsp;ст. л.</span></li>
+</ul>
+<p><strong>С заатаром (4 лепёшки)</strong></p>
+<ul>
+<li class="ing"><span class="n">заатар (смесь специй)</span><span class="q">4&nbsp;ст. л.</span></li>
+<li class="ing"><span class="n">оливковое масло</span><span class="q">80&nbsp;мл</span></li>
+</ul>
+<p><strong>С сыром (4 лепёшки)</strong></p>
+<ul>
+<li class="ing"><span class="n">сулугуни или моцарелла для пиццы</span><span class="q">150&nbsp;г</span></li>
+<li class="ing"><span class="n">брынза или фета</span><span class="q">100&nbsp;г</span></li>
+<li class="ing"><span class="n">сушёная мята или кунжут (по желанию)</span><span class="q">1&nbsp;ч. л.</span></li>
+</ul>
+<p><strong>К подаче</strong></p>
+<ul>
+<li>помидоры, огурцы, маслины, листья мяты</li>
+</ul>
+<h2>Шаги</h2>
+<h3>0. Если тесто своё: замесить · 15 мин + 1-1,5 ч подъёма</h3>
+<p>В большой миске смешайте муку, дрожжи, сахар и соль. Влейте тёплую воду и масло и перемешайте ложкой, потом руками. Выложите на стол, присыпанный мукой, и месите 8-10 минут: складывайте тесто пополам и придавливайте ладонью от себя. Готовое тесто гладкое, мягкое и почти не липнет к рукам. Если липнет сильно, добавьте 1-2 ложки муки.</p>
+<p>Смажьте миску каплей масла, положите тесто, накройте полотенцем или плёнкой и оставьте в тёплом месте на 1-1,5 часа. Тесто должно увеличиться примерно в 2 раза. Дальше всё как с готовым тестом, с шага 1, только размораживать ничего не нужно.</p>
+<aside class="note">
+<p><strong>Почему вода тёплая, а не горячая.</strong> Дрожжи живые. В горячей воде (выше 45 °C) они погибнут, и тесто не поднимется. Проверьте пальцем: вода должна быть приятно тёплой, но не обжигать.</p>
+</aside>
+<aside class="note">
+<p>💡 <strong>Совет.</strong> Тесто можно замесить накануне вечером и сразу убрать в холодильник в пакете. За ночь оно медленно поднимется. Достаньте за час до раскатки.</p>
+</aside>
+<hr />
+<h3>1. Подготовить тесто · 10 мин</h3>
+<p>Если тесто замороженное, переложите его накануне в холодильник или разморозьте при комнатной температуре 2-3 часа. Разогрейте духовку до 250 °C, вместе с одним противнем внутри: горячий противень снизу подпекает лепёшки, как каменный под печи.</p>
+<p>Разделите тесто на 8 частей и скатайте шарики. Накройте полотенцем на 10 минут, тесто «отдохнёт» и будет легче раскатываться.</p>
+<hr />
+<h3>2. Приготовить начинки · 5 мин</h3>
+<p>Смешайте заатар с оливковым маслом в пасту. Для сырной начинки натрите сулугуни на крупной тёрке и раскрошите брынзу, перемешайте.</p>
+<aside class="note">
+<p>💡 <strong>Совет.</strong> Готовый заатар продаётся в отделе специй больших супермаркетов и на маркетплейсах. Если не нашли, смешайте сами: 2 ст. л. сушёного тимьяна, 1 ст. л. сушёной душицы, 1 ст. л. сумаха, 1 ст. л. обжаренного кунжута и 0,5 ч. л. соли.</p>
+</aside>
+<hr />
+<h3>3. Раскатать и смазать · 10 мин</h3>
+<p>На посыпанном мукой пергаменте раскатайте каждый шарик в тонкую лепёшку диаметром 15 см, толщиной 3-4 мм. Пальцами сделайте по всей поверхности ямки: так начинка не стечёт, а тесто не вздуется пузырём.</p>
+<p>Четыре лепёшки щедро смажьте пастой из заатара, оставив край 1 см. Четыре посыпьте сыром.</p>
+<hr />
+<h3>4. Испечь · 7-9 мин на каждый противень</h3>
+<p>Достаньте горячий противень и аккуратно перетащите на него пергамент с лепёшками. Выпекайте 7-9 минут, пока края не станут золотистыми, а сыр не расплавится и не начнёт румяниться.</p>
+<aside class="note">
+<p>⚠️ <strong>Типичная ошибка.</strong> Печь при 180-200 °C. Лепёшки получатся бледными и сухими, как сухари. Манакиш любит самый сильный жар, который даёт ваша духовка.</p>
+</aside>
+<hr />
+<h2>Практический блок</h2>
+<p><strong>Подача.</strong> Нарежьте каждую лепёшку на 4 части, как пиццу, и подавайте тёплыми. К манакишу с заатаром в Ливане кладут ломтики помидора, огурца и листья мяты: их заворачивают прямо в лепёшку.</p>
+<p><strong>Заранее.</strong> Лучше всего прямо из духовки. Можно испечь за час до гостей и прогреть 3 минуты в духовке при 200 °C. Тесто раскатайте и накройте плёнкой за 1-2 часа до выпечки.</p>
+<p><strong>Готовим с детьми.</strong> Дети с удовольствием раскатывают тесто, делают пальцами ямки и сыплют сыр. Это лучшее задание для них на кухне.</p>
+<p><strong>Замены.</strong> - <strong>Нет теста совсем и нет времени месить.</strong> Купите тонкие лепёшки (питу или тортильи), смажьте начинкой и запекайте 5 минут. Подойдёт и готовое тесто для пиццы. - <strong>Акауи.</strong> Если найдёте ливанский сыр акауи, он и есть оригинал. Сулугуни с брынзой его хорошо заменяют.</p>
+<p><strong>Аллергены.</strong> Глютен (тесто), кунжут (в заатаре), молочное (сыр).</p>
+</article><article class="recipe" id="shish-tauk"><p class="eyebrow">Горячее</p><h3>Шиш-таук с чесночным соусом</h3><figure class="pic"><img src="img/shish-tauk.jpg" alt="Шиш-таук с чесночным соусом" loading="lazy"></figure><dl class="facts"><div><dt>Активно</dt><dd>40 мин</dd></div><div><dt>Всего</dt><dd>5 ч (с маринованием) или ночь</dd></div><div><dt>Порции</dt><dd>6 (около 18 шпажек)</dd></div><div><dt>Духовка</dt><dd>230 °C, режим «верх-низ» или «гриль»</dd></div></dl>
+<p>Главное горячее вечера. Кусочки курицы в маринаде из йогурта, лимона, чеснока и томатной пасты, запечённые на шпажках до золотистой корочки. В Ливане его жарят на углях, мы делаем в духовке. Подают с белым чесночным соусом, лепёшкой, солёными огурцами и салатом фаттуш.</p>
+<hr />
+<h2>История</h2>
+<p>«Шиш» по-турецки значит «шампур», «тавук» - «курица». Блюдо пришло в Ливан из Османской империи, частью которой Ливан был почти 400 лет, до 1918 года. Ливанцы добавили к турецкому рецепту свой соус тум: густую белую эмульсию из чеснока, лимона и масла, похожую на очень чесночный майонез. Тум настолько острый, что его едят по капле, но без него шиш-таук в Бейруте не подают.</p>
+<h2>Ингредиенты</h2>
+<ul>
+<li class="ing"><span class="n">куриное филе бедра без кожи (или филе грудки)</span><span class="q">1,2&nbsp;кг</span></li>
+<li class="ing"><span class="n">лук репчатый (по желанию, для шпажек)</span><span class="q">1&nbsp;шт</span></li>
+<li class="ing"><span class="n">перец сладкий (по желанию, для шпажек)</span><span class="q">1&nbsp;шт</span></li>
+</ul>
+<p><strong>Маринад</strong></p>
+<ul>
+<li class="ing"><span class="n">йогурт натуральный густой (или греческий)</span><span class="q">150&nbsp;г</span></li>
+<li class="ing"><span class="n">лимон (нужно 3 ст. л. сока)</span><span class="q">1&nbsp;шт</span></li>
+<li class="ing"><span class="n">оливковое масло</span><span class="q">3&nbsp;ст. л.</span></li>
+<li class="ing"><span class="n">чеснок</span><span class="q">4&nbsp;зубчика</span></li>
+<li class="ing"><span class="n">томатная паста</span><span class="q">1&nbsp;ст. л.</span></li>
+<li class="ing"><span class="n">паприка сладкая</span><span class="q">2&nbsp;ч. л.</span></li>
+<li class="ing"><span class="n">душистый перец молотый</span><span class="q">0,5&nbsp;ч. л.</span></li>
+<li class="ing"><span class="n">корица молотая</span><span class="q">0,25&nbsp;ч. л.</span></li>
+<li class="ing"><span class="n">соль</span><span class="q">1,5&nbsp;ч. л.</span></li>
+<li class="ing"><span class="n">чёрный перец молотый</span><span class="q">0,5&nbsp;ч. л.</span></li>
+</ul>
+<p><strong>Быстрый чесночный соус</strong></p>
+<ul>
+<li class="ing"><span class="n">йогурт греческий</span><span class="q">250&nbsp;г</span></li>
+<li class="ing"><span class="n">майонез</span><span class="q">3&nbsp;ст. л.</span></li>
+<li class="ing"><span class="n">чеснок</span><span class="q">3&nbsp;зубчика</span></li>
+<li class="ing"><span class="n">лимонный сок</span><span class="q">1&nbsp;ст. л.</span></li>
+<li class="ing"><span class="n">соль</span><span class="q">0,25&nbsp;ч. л.</span></li>
+</ul>
+<p><strong>К подаче</strong></p>
+<ul>
+<li class="ing"><span class="n">пита или ливанская лепёшка</span><span class="q">4&nbsp;шт</span></li>
+<li class="ing"><span class="n">огурцы маринованные</span><span class="q">200&nbsp;г</span></li>
+<li class="ing"><span class="n">сумах (по желанию)</span><span class="q">1&nbsp;ч. л.</span></li>
+</ul>
+<h2>Шаги</h2>
+<h3>1. Замариновать · 10 мин + 4-12 ч</h3>
+<p>Чеснок для маринада натрите на мелкой тёрке. В миске смешайте все ингредиенты маринада. Курицу нарежьте кусками 3-4 см, сложите в маринад и хорошо перемешайте руками в перчатках, чтобы каждый кусочек был покрыт. Накройте плёнкой и уберите в холодильник минимум на 4 часа, а лучше на ночь. Дольше суток не держите.</p>
+<aside class="note">
+<p><strong>Почему так работает.</strong> Кислота йогурта и лимона мягко размягчает мясо. Даже куриная грудка после маринада остаётся сочной.</p>
+</aside>
+<aside class="note">
+<p>💡 <strong>Совет.</strong> Филе бедра лучше грудки: в нём больше жира, и в жаркой духовке оно не пересыхает. Если берёте грудку, сократите время запекания на 3-4 минуты.</p>
+</aside>
+<hr />
+<h3>2. Сделать чесночный соус · 5 мин</h3>
+<p>Чеснок натрите на мелкой тёрке. Смешайте с йогуртом, майонезом, лимонным соком и солью. Уберите в холодильник минимум на час: чеснок отдаст вкус. Соус можно сделать накануне.</p>
+<hr />
+<h3>3. Нанизать · 20 мин</h3>
+<p>Деревянные шпажки замочите в воде на 30 минут, чтобы они не сгорели. Нанизывайте курицу по 4-5 кусочков на шпажку, плотно, но не впритык. Если хотите, чередуйте с кусочками лука и перца. Остатки маринада не выбрасывайте.</p>
+<p>Нанизанные шпажки можно до 3 часов держать в холодильнике на противне под плёнкой.</p>
+<hr />
+<h3>4. Запечь · 18-20 мин</h3>
+<p>Разогрейте духовку до 230 °C. Противень застелите фольгой. Положите шпажки на решётку над противнем или прямо на фольгу. Запекайте 10 минут, переверните, смажьте остатками маринада и запекайте ещё 8-10 минут, до золотистых, местами подгоревших краёв.</p>
+<p>Проверьте самый толстый кусочек: разрежьте его, внутри мясо должно быть белым, без розового цвета, а сок прозрачным.</p>
+<aside class="note">
+<p>⚠️ <strong>Безопасность.</strong> Курицу нельзя есть недожаренной. Если сомневаетесь, лучше подержите в духовке ещё 3 минуты. С кулинарным термометром: 75 °C в центре кусочка.</p>
+</aside>
+<hr />
+<h2>Практический блок</h2>
+<p><strong>Подача по-бейрутски.</strong> Положите на большое блюдо пару лепёшек, на них шпажки, рядом миску чесночного соуса, маринованные огурцы и посыпьте всё щепоткой сумаха. Гости снимают курицу с шпажки кусочком лепёшки.</p>
+<p><strong>Настоящий тум.</strong> Если хочется попробовать ливанский соус без майонеза: в чаше измельчителя измельчите 1 головку чеснока (около 10 зубчиков, без ростков) с 1 ч. л. соли. Не выключая, очень тонкой струйкой влейте 1 ст. л. лимонного сока, потом 150 мл масла без запаха, потом ещё 1 ст. л. лимона и ещё 150 мл масла. Нужно 8-10 минут терпения: соус станет белым и густым, как майонез. Если «разошёлся» и стал жидким, начните заново с 1 ст. л. воды и вливайте в неё испорченный соус по ложке.</p>
+<p><strong>Замены.</strong> - <strong>Без молочного.</strong> Вместо йогурта в маринаде: ещё 2 ст. л. оливкового масла и 1 ст. л. лимонного сока. Соус - тум без майонеза. - <strong>На гриле.</strong> Летом на мангале шиш-таук жарят 10-12 минут, часто переворачивая.</p>
+<p><strong>Сколько нужно.</strong> На столе меззе с горячим 200 г курицы на человека с запасом.</p>
+<p><strong>Аллергены.</strong> Молочное (йогурт в маринаде и соусе), яйца и горчица (майонез в быстром соусе; в настоящем туме их нет).</p>
+</article><article class="recipe" id="fattush"><p class="eyebrow">Салат к горячему</p><h3>Фаттуш</h3><figure class="pic"><img src="img/fattush.jpg" alt="Фаттуш" loading="lazy"></figure><dl class="facts"><div><dt>Активно</dt><dd>30 мин</dd></div><div><dt>Всего</dt><dd>40 мин</dd></div><div><dt>Порции</dt><dd>6 (около 1,2 кг)</dd></div><div><dt>Духовка</dt><dd>200 °C (для лепёшек)</dd></div></dl>
+<p>Самый простой и самый весёлый салат вечера. Крупно порезанные овощи, хрустящие кусочки подсушенной лепёшки и кисловатая тёмно-красная специя сумах. Его подают к горячему, к курице шиш-таук: свежий и хрустящий, он отлично «освежает» после жареного мяса.</p>
+<hr />
+<h2>История</h2>
+<p>Фаттуш - крестьянский салат. Его придумали, чтобы не выбрасывать вчерашний хлеб: черствеющие лепёшки ломали на кусочки и смешивали с тем, что росло в огороде. Само название происходит от арабского «фатт» - «ломать, крошить».</p>
+<p>Сумах - это молотые ягоды кустарника, который растёт по всему Средиземноморью. У него кислый, почти лимонный вкус. Говорят, что задолго до того, как в эти края попали лимоны, кислоту в блюда добавляли именно сумахом.</p>
+<h2>Ингредиенты</h2>
+<ul>
+<li class="ing"><span class="n">пита или ливанская лепёшка (около 150 г)</span><span class="q">2&nbsp;шт</span></li>
+<li class="ing"><span class="n">салат ромэн (около 300 г)</span><span class="q">1&nbsp;кочан</span></li>
+<li class="ing"><span class="n">огурцы (около 300 г)</span><span class="q">2&nbsp;шт</span></li>
+<li class="ing"><span class="n">помидоры (около 350 г)</span><span class="q">3&nbsp;шт</span></li>
+<li class="ing"><span class="n">редис</span><span class="q">6-8&nbsp;шт</span></li>
+<li class="ing"><span class="n">перец сладкий (лучше зелёный или жёлтый)</span><span class="q">1&nbsp;шт</span></li>
+<li class="ing"><span class="n">лук зелёный (перья)</span><span class="q">3&nbsp;шт</span></li>
+<li class="ing"><span class="n">петрушка</span><span class="q">0,5&nbsp;пучка</span></li>
+<li class="ing"><span class="n">мята</span><span class="q">0,5&nbsp;пучка</span></li>
+<li class="ing"><span class="n">оливковое масло (для лепёшек)</span><span class="q">2&nbsp;ст. л.</span></li>
+</ul>
+<p><strong>Заправка</strong></p>
+<ul>
+<li class="ing"><span class="n">лимон (нужно 3 ст. л. сока)</span><span class="q">1&nbsp;шт</span></li>
+<li class="ing"><span class="n">гранатовый соус (наршараб или «гранатовая меласса»)</span><span class="q">1&nbsp;ст. л.</span></li>
+<li class="ing"><span class="n">чеснок</span><span class="q">1&nbsp;зубчик</span></li>
+<li class="ing"><span class="n">сумах (и ещё 1 ч. л. для посыпки)</span><span class="q">2&nbsp;ч. л.</span></li>
+<li class="ing"><span class="n">оливковое масло Extra Virgin</span><span class="q">80&nbsp;мл</span></li>
+<li class="ing"><span class="n">соль</span><span class="q">0,5&nbsp;ч. л.</span></li>
+</ul>
+<h2>Шаги</h2>
+<h3>1. Подсушить лепёшки · 12 мин</h3>
+<p>Разогрейте духовку до 200 °C. Разрежьте питу на две тонкие половинки (по краю она сама раскрывается, как карман), потом на квадратики 2-3 см. Разложите на противне, сбрызните оливковым маслом, перемешайте руками и подсушивайте 8-10 минут до золотистого цвета. Остудите: остывая, кусочки станут хрустящими, как чипсы.</p>
+<aside class="note">
+<p>💡 <strong>Совет.</strong> В Ливане лепёшки для фаттуша часто жарят в масле на сковороде. Получается ещё вкуснее, но жирнее. Духовка проще и чище.</p>
+</aside>
+<hr />
+<h3>2. Сделать заправку · 3 мин</h3>
+<p>В банку с крышкой выжмите лимонный сок, добавьте гранатовый соус, натёртый чеснок, сумах, соль и оливковое масло. Закройте и сильно потрясите 20 секунд: заправка станет густой и однородной.</p>
+<hr />
+<h3>3. Нарезать овощи · 15 мин</h3>
+<p>Салат ромэн нарвите или нарежьте полосками 2-3 см. Огурцы разрежьте вдоль на четвертинки и нарежьте кусочками. Помидоры - крупными дольками. Редис - тонкими кружками. Перец - квадратиками. Зелёный лук - колечками, петрушку и мяту - крупно.</p>
+<p>Сложите всё в большую миску. Если готовите заранее, накройте плёнкой и уберите в холодильник без заправки и без лепёшек.</p>
+<hr />
+<h3>4. Собрать перед подачей · 2 мин</h3>
+<p>Прямо перед тем, как нести салат на стол, полейте его заправкой и перемешайте. Сверху высыпьте хрустящие лепёшки, посыпьте ещё щепоткой сумаха и ещё раз легко перемешайте.</p>
+<aside class="note">
+<p>⚠️ <strong>Типичная ошибка.</strong> Смешать лепёшки с заправкой заранее. Через 15 минут они размокнут. Хорошо, если часть кусочков чуть пропиталась, а часть ещё хрустит, поэтому смешивайте прямо перед подачей.</p>
+</aside>
+<hr />
+<h2>Практический блок</h2>
+<p><strong>Заранее.</strong> Лепёшки можно подсушить утром и хранить в бумажном пакете. Овощи нарезать за 2-3 часа. Заправку сделать накануне, перед подачей встряхнуть.</p>
+<p><strong>Где купить сумах и гранатовый соус.</strong> Сумах продаётся в отделе специй больших супермаркетов, на рынках у продавцов специй и на маркетплейсах. Гранатовый соус - на полке с соусами (часто это азербайджанский «наршараб» или турецкая «гранатовая меласса»).</p>
+<p><strong>Замены.</strong> - <strong>Нет сумаха.</strong> Добавьте в заправку тёртую цедру половины лимона. Цвета не будет, но кислинка останется. - <strong>Нет гранатового соуса.</strong> Замените 1 ч. л. мёда с ещё 1 ст. л. лимонного сока. - <strong>Портулак.</strong> Если увидите на рынке портулак (его продают в сезон у кавказских продавцов зелени), добавьте горсть: в Ливане он обязателен в фаттуше.</p>
+<p><strong>Аллергены.</strong> Глютен (лепёшки). Без лепёшек салат без глютена.</p>
+</article><article class="recipe" id="muhallabiya"><p class="eyebrow">Сладкое</p><h3>Мухаллабия</h3><figure class="pic"><img src="img/muhallabiya.jpg" alt="Мухаллабия" loading="lazy"></figure><dl class="facts"><div><dt>Активно</dt><dd>20 мин</dd></div><div><dt>Всего</dt><dd>4 ч 30 мин (с охлаждением) или ночь</dd></div><div><dt>Порции</dt><dd>6 стаканчиков по 170-180 мл</dd></div><div><dt>Духовка</dt><dd>не используется</dd></div></dl>
+<p>Нежный молочный пудинг, который готовится за 15 минут и ждёт гостей в холодильнике. Тонкий цветочный аромат апельсиновой или розовой воды, сверху фисташки и капля мёда. Это не тяжёлый десерт: после обильного меззе он как раз то, что нужно. Пока гости едят мухаллабию, вы варите кофе с кардамоном.</p>
+<hr />
+<h2>История</h2>
+<p>По легенде, название идёт от имени арабского полководца аль-Мухаллаба, жившего в VII веке. Персидский повар приготовил для него новый сладкий пудинг, полководцу так понравилось, что он назвал блюдо в свою честь. Правда это или нет, проверить невозможно, но рецепт молочного пудинга с рисовой мукой и розовой водой есть в средневековых арабских кулинарных книгах.</p>
+<p>В Ливане мухаллабию часто ароматизируют водой из цветов горького апельсина (её называют «маа захр»), а розовую воду добавляют в другие сладости.</p>
+<h2>Ингредиенты</h2>
+<ul>
+<li class="ing"><span class="n">молоко 3,2%</span><span class="q">1&nbsp;л</span></li>
+<li class="ing"><span class="n">крахмал кукурузный (около 3 ст. л. с горкой)</span><span class="q">70&nbsp;г</span></li>
+<li class="ing"><span class="n">сахар</span><span class="q">100&nbsp;г</span></li>
+<li class="ing"><span class="n">апельсиновая цветочная вода (или розовая вода)</span><span class="q">1-2&nbsp;ст. л.</span></li>
+</ul>
+<p><strong>Для подачи</strong></p>
+<ul>
+<li class="ing"><span class="n">фисташки очищенные несолёные</span><span class="q">40&nbsp;г</span></li>
+<li class="ing"><span class="n">мёд жидкий (или сироп)</span><span class="q">2&nbsp;ст. л.</span></li>
+<li>лепестки роз пищевые или зёрна граната (по желанию)</li>
+</ul>
+<h2>Шаги</h2>
+<h3>1. Развести крахмал · 2 мин</h3>
+<p>В кастрюлю налейте 900 мл молока и добавьте сахар. В оставшихся 100 мл холодного молока размешайте крахмал до полного растворения, без комочков.</p>
+<hr />
+<h3>2. Сварить · 12 мин</h3>
+<p>Поставьте кастрюлю на средний огонь и доведите молоко с сахаром почти до кипения: по краям появятся пузырьки. Тонкой струйкой влейте крахмал, всё время помешивая венчиком. Продолжайте мешать, особенно по дну и углам, 6-8 минут, пока масса не станет густой, как жидкий кисель, и венчик не начнёт оставлять след.</p>
+<p>Снимите с огня и вмешайте цветочную воду. Начните с 1 ложки, попробуйте и добавьте вторую, если аромат слабый.</p>
+<aside class="note">
+<p>⚠️ <strong>Типичная ошибка.</strong> Отойти от плиты. Крахмал пригорает ко дну за минуту, и пудинг получает вкус горелого молока. Мешайте без остановки.</p>
+</aside>
+<aside class="note">
+<p><strong>Почему цветочную воду добавляют в конце.</strong> Аромат очень летучий. Если варить её с молоком, он почти весь уйдёт с паром.</p>
+</aside>
+<hr />
+<h3>3. Разлить и остудить · 4 ч (без вашего участия)</h3>
+<p>Разлейте горячий пудинг по стаканчикам. Сразу накройте каждый плёнкой прямо по поверхности пудинга, чтобы не образовалась плёнка. Остудите 30 минут на столе, потом уберите в холодильник минимум на 4 часа.</p>
+<hr />
+<h3>4. Украсить перед подачей · 5 мин</h3>
+<p>Фисташки крупно порубите ножом. Снимите плёнку, полейте каждый пудинг тонкой струйкой мёда и посыпьте фисташками. Если есть, добавьте пару лепестков роз или зёрен граната.</p>
+<hr />
+<h2>Практический блок</h2>
+<p><strong>Заранее.</strong> Мухаллабию лучше всего сделать накануне, она хранится в холодильнике 2 дня. Украшайте прямо перед подачей, иначе фисташки размокнут.</p>
+<p><strong>Где купить цветочную воду.</strong> Розовая и апельсиновая цветочная вода продаются на маркетплейсах, в магазинах восточных продуктов и иногда в больших супермаркетах в отделе для выпечки. Берите пищевую, а не косметическую. Флакона хватит на много десертов.</p>
+<p><strong>Замены.</strong> - <strong>Нет цветочной воды.</strong> Добавьте 1 пакетик ванильного сахара и тёртую цедру половины апельсина при варке. Получится уже не ливанский, но очень вкусный пудинг. - <strong>Без орехов.</strong> Посыпьте кокосовой стружкой или тёртым шоколадом. - <strong>Для детей.</strong> Вместо мёда и цветочной воды - ложка ягодного варенья сверху.</p>
+<p><strong>Если хочется ещё сладкого.</strong> Купите к кофе коробку пахлавы или печенья маамуль (с финиками) в магазине восточных сладостей.</p>
+<p><strong>Аллергены.</strong> Молочное, орехи (фисташки).</p>
+</article><article class="recipe" id="napitki"><p class="eyebrow">Напитки</p><h3>Напитки</h3><figure class="pic"><img src="img/napitki.jpg" alt="Напитки - лимонад с мятой, айран и кофе с кардамоном" loading="lazy"></figure><dl class="facts"><div><dt>Активно</dt><dd>25 мин</dd></div><div><dt>Всего</dt><dd>1 ч 30 мин (с охлаждением сиропа)</dd></div><div><dt>Порции</dt><dd>6 (лимонад около 2 л, айран около 1 л)</dd></div><div><dt>Духовка</dt><dd>не используется</dd></div></dl>
+<p>Ливанский стол не обходится без трёх напитков. Холодный лимонад с мятой, который подают в кувшине со льдом. Айран, солоноватый йогуртовый напиток, который отлично идёт к острому и жареному. И в конце вечера крепкий кофе с кардамоном в маленьких чашках. Все три подходят тем, кто не пьёт алкоголь, а лимонад - и детям. Вино и анисовая водка описаны в разделе «Вино и арак».</p>
+<hr />
+<h2>История</h2>
+<p><strong>Кофе.</strong> В Ливане кофе варят так же, как в Турции и Греции: в маленьком ковшике, мелкого помола, вместе с сахаром, но почти всегда с кардамоном. Чашку кофе предлагают гостю в первые минуты визита, и отказаться считается невежливым. А когда кофе выпит, гости часто переворачивают чашку на блюдце и «читают» по кофейной гуще: в Ливане это любимое домашнее развлечение, а не серьёзное гадание.</p>
+<p><strong>Лимонад.</strong> Ливанский лимонад отличается от привычного тем, что в него добавляют немного апельсиновой цветочной воды. Её запах ливанцы узнают так же, как мы - запах мандаринов под Новый год.</p>
+<h2>Ингредиенты</h2>
+<p><strong>Лимонад с мятой (около 2 л)</strong></p>
+<ul>
+<li class="ing"><span class="n">лимон</span><span class="q">4&nbsp;шт</span></li>
+<li class="ing"><span class="n">сахар</span><span class="q">150&nbsp;г</span></li>
+<li class="ing"><span class="n">мята свежая (около 30 г)</span><span class="q">1&nbsp;пучок</span></li>
+<li class="ing"><span class="n">вода холодная питьевая</span><span class="q">1,5&nbsp;л</span></li>
+<li class="ing"><span class="n">апельсиновая цветочная вода (по желанию)</span><span class="q">1&nbsp;ч. л.</span></li>
+<li>лёд</li>
+</ul>
+<p><strong>Айран (около 1 л)</strong></p>
+<ul>
+<li class="ing"><span class="n">йогурт натуральный без добавок (или кефир)</span><span class="q">500&nbsp;г</span></li>
+<li class="ing"><span class="n">вода холодная (можно газированную)</span><span class="q">500&nbsp;мл</span></li>
+<li class="ing"><span class="n">соль</span><span class="q">0,5&nbsp;ч. л.</span></li>
+<li class="ing"><span class="n">сушёная мята (по желанию)</span><span class="q">1&nbsp;щепотка</span></li>
+</ul>
+<p><strong>Кофе с кардамоном (6 чашек по 70 мл)</strong></p>
+<ul>
+<li class="ing"><span class="n">кофе молотый очень мелкого помола (для турки)</span><span class="q">6&nbsp;ч. л. с горкой</span></li>
+<li class="ing"><span class="n">кардамон в коробочках (или 0,5 ч. л. молотого)</span><span class="q">6&nbsp;шт</span></li>
+<li class="ing"><span class="n">сахар (по вкусу, можно без)</span><span class="q">6&nbsp;ч. л.</span></li>
+<li class="ing"><span class="n">вода холодная</span><span class="q">420&nbsp;мл</span></li>
+</ul>
+<h2>Шаги</h2>
+<h3>1. Лимонад: сироп · 10 мин + 1 ч остывания</h3>
+<p>Цедру с 2 лимонов срежьте овощечисткой тонкими полосками, без белой горькой части. В кастрюлю положите цедру, сахар и 300 мл воды, доведите до кипения и варите 2 минуты, пока сахар не растворится. Снимите с огня, бросьте в сироп половину мяты и оставьте остывать. Сироп можно сварить накануне и хранить в холодильнике.</p>
+<aside class="note">
+<p>💡 <strong>Быстрый способ в блендере.</strong> Нет времени ждать? Положите в блендер мякоть 2 лимонов без косточек, сахар, мяту и 500 мл холодной воды. Взбейте 30 секунд, процедите, долейте оставшуюся воду. Получится мутный, очень ароматный лимонад сразу.</p>
+</aside>
+<hr />
+<h3>2. Лимонад: собрать · 5 мин</h3>
+<p>Выжмите сок из всех 4 лимонов. Процедите сироп в кувшин, влейте лимонный сок и 1,2 л холодной воды. Добавьте цветочную воду, если она есть. Попробуйте: если кисло, добавьте сахар; если сладко - воды.</p>
+<p>Перед гостями положите в кувшин лёд, оставшиеся веточки мяты и кружочки лимона.</p>
+<hr />
+<h3>3. Айран · 3 мин</h3>
+<p>Положите йогурт, холодную воду и соль в кувшин или банку и взбейте венчиком, блендером или просто потрясите в закрытой банке, пока не появится пена. Добавьте щепотку сушёной мяты. Подавайте очень холодным, со льдом.</p>
+<aside class="note">
+<p><strong>Почему соль.</strong> Айран - солёный, а не сладкий напиток. Он утоляет жажду и смягчает острое и чесночное. Если гости не привыкли, сделайте половину без соли.</p>
+</aside>
+<hr />
+<h3>4. Кофе с кардамоном · 10 мин</h3>
+<p>Коробочки кардамона раздавите ножом плашмя и выньте чёрные зёрнышки, разотрите их в ступке или тяжёлой ложкой. В турку (лучше большую, на 3-4 чашки, или варите в два захода) налейте холодную воду, добавьте сахар и кофе с кардамоном. Размешайте один раз.</p>
+<p>Поставьте на самый слабый огонь. Когда кофе начнёт подниматься пенной шапкой, снимите турку с огня, подождите, пока пена осядет, и верните на огонь. Так 2-3 раза. Не давайте закипеть ключом.</p>
+<p>Разлейте по маленьким чашкам, ложечкой разложите пенку в каждую. Подождите минуту, пока гуща осядет на дно, и только потом пейте.</p>
+<aside class="note">
+<p>⚠️ <strong>Типичная ошибка.</strong> Варить кофе на сильном огне. Он закипит и убежит за секунду, а вкус станет горьким. Слабый огонь и терпение.</p>
+</aside>
+<hr />
+<h2>Практический блок</h2>
+<p><strong>Подача.</strong> Лимонад и айран - в кувшинах прямо на столе меззе, со льдом. Кофе - в самом конце, вместе с мухаллабией.</p>
+<p><strong>Чай.</strong> Если гости не пьют кофе, заварите чёрный чай с веточкой свежей мяты прямо в чайнике, как в Ливане: подают в маленьких стеклянных стаканчиках, сладким.</p>
+<p><strong>Замены.</strong> - <strong>Апельсиновая вода</strong> есть не у всех. Без неё лимонад всё равно хорош. - <strong>Айран.</strong> Подойдёт и магазинный айран или тан: их продают почти в каждом супермаркете.</p>
+<p><strong>Аллергены.</strong> Молочное (айран). Лимонад и кофе без аллергенов.</p>
+<aside class="didyou"><span class="dy">А вы знали?</span>В Ливане кофе предлагают гостю в первые минуты визита. А «белым кофе» называют кипяток с апельсиновой цветочной водой, в нём нет ни грамма кофе.</aside></article></section><section class="block" id="vino"><h2>Вино и арак</h2><figure class="pic"><img src="img/vino.jpg" alt="В стакан с араком наливают воду, и он становится молочно-белым" loading="lazy"></figure>
+<aside class="note">
+<p>18+. Чрезмерное употребление алкоголя вредит вашему здоровью.</p>
+</aside>
+<p>Ливан - одна из самых древних винных стран мира. Финикийцы, которые жили на этом берегу три тысячи лет назад, возили вино по всему Средиземному морю. А главный напиток ливанского застолья - не вино, а арак: анисовая водка, которая белеет, когда в неё наливают воду.</p>
+<p>Честно о главной сложности: <strong>ливанское вино в России есть, но найти его непросто.</strong> В ноябре 2026 года в российской рознице продавались вина двух ливанских виноделен: Domaine des Tourelles и Château Ksara. Обычно они бывают в крупных винных сетях и интернет-магазинах, а в супермаркете у дома их скорее всего не будет. Цены ниже указаны как ориентир на ноябрь 2026 года. К каждому вину есть замена, которая продаётся везде: грузинское или армянское вино подойдёт к меззе ничуть не хуже.</p>
+<hr />
+<h3>Белое или розовое - к меззе</h3>
+<p><strong>Почему подходит.</strong> На столе меззе много лимона, чеснока, зелени и кунжута. Нужно свежее сухое вино с яркой кислотностью: оно «смывает» тахини и масло и не спорит с лимоном. Тяжёлое дубовое белое или сладкое вино здесь не подойдут.</p>
+<p><strong>Что искать из Ливана.</strong> - <strong>Domaine des Tourelles, White, Vallée de la Bekaa</strong> - около 2 700 ₽. Белое сухое из долины Бекаа, в купаже вионье и мускат александрийский. Мускат даёт цветочный аромат, который перекликается с мятой и апельсиновой водой в лимонаде. Урожай 2023 или 2022 года: белое пьют молодым.</p>
+<p>Domaine des Tourelles - одна из старейших виноделен Ливана, её основали в 1868 году в городе Штора в долине Бекаа.</p>
+<p><strong>Чем заменить.</strong> - <strong>Грузинское сухое белое</strong> из сортов мцване или ркацители (Кахетия), обычное «европейское», а не янтарное квеври. - <strong>Армянское сухое белое</strong> из сорта воскеат. - <strong>Любое сухое розовое</strong>, например российское или грузинское.</p>
+<hr />
+<h3>Красное - к шиш-тауку</h3>
+<p><strong>Почему подходит.</strong> Курица в маринаде с паприкой и чесноком хорошо идёт с красным средней насыщенности, сочным и не слишком танинным. Ливанские красные часто делают из сортов сенсо, каберне и кариньян, они тёплые, с пряными нотами.</p>
+<p><strong>Что искать из Ливана.</strong> - <strong>Domaine des Tourelles, Cinsault Vieilles Vignes, Vallée de la Bekaa</strong> - около 4 700 ₽. Красное сухое из сорта сенсо со старых лоз («vieilles vignes» по-французски значит «старые лозы»). Сенсо даёт лёгкое, сочное вино с мягкими танинами, это лучшая пара к курице из всех трёх. - <strong>Château Ksara, «Château»</strong> (например, урожая 2019 года) - около 3 000 ₽. Красное сухое из каберне совиньон, мерло и пти вердо от самой старой винодельни Ливана. Оно плотнее и серьёзнее, чем сенсо: выбирайте его, если гости любят насыщенные красные.</p>
+<p>Если попадутся другие ливанские вина (Château Musar, Kefraya, Ixsir), они тоже подойдут.</p>
+<p><strong>Чем заменить.</strong> - <strong>Армянское красное из сорта арени.</strong> Арени растёт в горах, у вина мягкие танины и вишнёвый вкус. По характеру это самая близкая замена. - <strong>Грузинское сухое саперави</strong>, но лучше простое, без долгой выдержки в бочке.</p>
+<hr />
+<h3>Арак, узо или ракы - к меззе</h3>
+<p><strong>Что это.</strong> Крепкий (обычно около 50%) прозрачный напиток из винограда с анисом. Анисовые семена перегоняют вместе с виноградным спиртом, поэтому арак пахнет анисом, как лакричные конфеты. В Ливане его называют национальным напитком и пьют весь вечер, медленно, маленькими глотками, закусывая меззе.</p>
+<p><strong>Как подавать.</strong> Арак никогда не пьют чистым. В узкий стакан наливают 1 часть арака, потом 2 части холодной воды, и только потом лёд. Прямо на глазах прозрачный напиток становится молочно-белым. Это всегда производит впечатление на гостей.</p>
+<aside class="note">
+<p><strong>Почему он белеет.</strong> Вкус аниса даёт эфирное масло анетол. Оно растворяется в спирте, но не растворяется в воде. Когда наливают воду, крошечные капельки масла выпадают из раствора и рассеивают свет, как в молоке. Химики называют это «эффектом узо», по названию греческой анисовой водки.</p>
+</aside>
+<aside class="note">
+<p>💡 <strong>Совет.</strong> Лёд кладут после воды, а не до. Если положить лёд в чистый арак, масло застывает плёнкой на кубиках, и напиток выглядит неаккуратно.</p>
+</aside>
+<p><strong>Что купить.</strong> Ливанского арака в российских магазинах, похоже, нет. Возьмите его ближайших родственников: греческое <strong>узо</strong> или турецкую <strong>ракы</strong>. Это тоже анисовые напитки, они продаются в обычных винных магазинах и ведут себя точно так же: белеют от воды. Подавайте так же, 1 к 2. Гостям можно честно сказать: «В Ливане это был бы арак, а у нас его греческий брат».</p>
+<p>Если кто-то привёз ливанский арак из поездки (например, Ksarak от Château Ksara), это будет главное украшение вечера.</p>
+<hr />
+<h3>Без алкоголя</h3>
+<ul>
+<li><strong>Лимонад с мятой</strong> и <strong>айран</strong> - рецепты в разделе «Напитки».</li>
+<li><strong>Гранатовый сок</strong> пополам с газированной водой, в бокале для вина. По цвету похож на красное вино.</li>
+<li><strong>«Белый кофе».</strong> В Ливане так называют совсем не кофе, а кипяток с ложкой апельсиновой цветочной воды. Его пьют после ужина для пищеварения. Попробуйте предложить гостям, это всегда вызывает удивление.</li>
+</ul>
+<hr />
+<h3>Сколько покупать на 6 гостей</h3>
+<ul>
+<li>Белое (Domaine des Tourelles White или замена) - 2 бутылки: к меззе.</li>
+<li>Красное (сенсо от Domaine des Tourelles, Ksara «Château» или замена) - 1-2 бутылки: к шиш-тауку.</li>
+<li>Узо или ракы - 1 бутылка 0,5 л (по желанию): с водой одной бутылки хватит на весь вечер.</li>
+<li>Гранатовый сок - 1 л, газированная вода - 1 л.</li>
+</ul>
+<p>Это ориентир из расчёта примерно 1 бутылка вина на 2-3 гостей за вечер.</p>
+</section><section class="block" id="games"><h2>Игры вечера</h2>
+<p>Три простые игры и два ливанских развлечения. Они идут по ходу вечера: «Угадай специю», пока гости собираются, слова и викторина между горячим и сладким, кофейная гуща и танец в конце. Если вечер получается разговорным, оставьте одну-две любые.</p>
+<p>Ведущий вечера, скорее всего, вы. Очки считать не обязательно, но если хочется соревнования, разделите гостей на две команды и записывайте счёт на листе бумаги.</p>
+<hr />
+<h3>1. «Угадай специю» (за меззе, 15 минут)</h3>
+<p>Ливанская кухня держится на нескольких запахах. Эта игра знакомит с ними гостей ещё до того, как они попробуют блюда.</p>
+<p><strong>Что нужно.</strong> 8 одинаковых маленьких баночек или пиал, лучше непрозрачных, с номерами на дне или на крышке (наклейки есть в PDF). Карточка с ответами (тоже в PDF) лежит у ведущего лицом вниз.</p>
+<p><strong>Что положить в баночки</strong> (по 1 ч. л.):</p>
+<div class="tw"><table>
+
+<thead>
+<tr class="header">
+<th>№</th>
+<th>Специя</th>
+<th>Где она в нашем меню</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Зира (кумин)</td>
+<td>фалафель, хумус</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Корица</td>
+<td>маринад для шиш-таука</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Кардамон</td>
+<td>кофе</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Сумах</td>
+<td>фаттуш, посыпка для хумуса</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Заатар</td>
+<td>манакиш</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Душистый перец</td>
+<td>табуле, шиш-таук</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>Сушёная мята</td>
+<td>айран</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>Апельсиновая цветочная вода (несколько капель на ватном диске)</td>
+<td>лимонад, мухаллабия</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Как играть.</strong> 1. Баночки идут по кругу. Каждый гость нюхает (можно с закрытыми глазами) и пишет на бумажке номер и свою догадку. 2. Когда все баночки прошли круг, ведущий открывает ответы и рассказывает, в каком блюде эта специя. Кто угадал больше всех, тот получает первую порцию шиш-таука.</p>
+<aside class="note">
+<p>💡 <strong>Совет.</strong> Самые трудные - кардамон и душистый перец, их часто путают. Самая неожиданная - цветочная вода: почти никто не узнаёт её, но все узнают потом в лимонаде.</p>
+</aside>
+<hr />
+<h3>2. «Арабское слово или нет?» (после горячего, 15 минут)</h3>
+<p>В русском языке много слов, которые пришли из арабского, часто через турецкий, итальянский или французский. Некоторые очень неожиданные.</p>
+<p><strong>Что нужно.</strong> 16 карточек из PDF. На лицевой стороне слово, на обороте ответ.</p>
+<p><strong>Как играть.</strong> Ведущий показывает слово, гости спорят и голосуют: арабское или нет? Потом ведущий переворачивает карточку и читает, откуда слово. Можно играть командами.</p>
+<div class="tw"><table>
+
+<thead>
+<tr class="header">
+<th>Слово</th>
+<th>Арабское?</th>
+<th>Откуда</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Магазин</td>
+<td>Да</td>
+<td>От арабского «махазин», «склады». Пришло к нам через французский.</td>
+</tr>
+<tr class="even">
+<td>Алгебра</td>
+<td>Да</td>
+<td>От «аль-джабр», «восполнение»: так называлась книга математика аль-Хорезми в IX веке.</td>
+</tr>
+<tr class="odd">
+<td>Помидор</td>
+<td>Нет</td>
+<td>Итальянское «pomo d’oro», «золотое яблоко».</td>
+</tr>
+<tr class="even">
+<td>Цифра</td>
+<td>Да</td>
+<td>От «сифр», «пустой, ноль». Сначала так называли только ноль.</td>
+</tr>
+<tr class="odd">
+<td>Алкоголь</td>
+<td>Да</td>
+<td>От «аль-кухль»: так арабы называли тонкий порошок, а потом алхимики - любую «очищенную суть».</td>
+</tr>
+<tr class="even">
+<td>Шоколад</td>
+<td>Нет</td>
+<td>Из языка ацтеков, через испанский.</td>
+</tr>
+<tr class="odd">
+<td>Сироп</td>
+<td>Да</td>
+<td>От «шараб», «напиток».</td>
+</tr>
+<tr class="even">
+<td>Адмирал</td>
+<td>Да</td>
+<td>От «амир», «повелитель». «Амир аль-бахр» - «повелитель моря».</td>
+</tr>
+<tr class="odd">
+<td>Апельсин</td>
+<td>Нет</td>
+<td>Голландское «appelsien», «китайское яблоко».</td>
+</tr>
+<tr class="even">
+<td>Халва</td>
+<td>Да</td>
+<td>От «хальва», «сладость».</td>
+</tr>
+<tr class="odd">
+<td>Кофе</td>
+<td>Да</td>
+<td>От «кахва». К нам пришло через турецкий и голландский.</td>
+</tr>
+<tr class="even">
+<td>Тюльпан</td>
+<td>Нет</td>
+<td>От турецкого слова, которое значило «тюрбан»: цветок похож на чалму.</td>
+</tr>
+<tr class="odd">
+<td>Жираф</td>
+<td>Да</td>
+<td>От «зарафа». Пришло через итальянский и французский.</td>
+</tr>
+<tr class="even">
+<td>Матрас</td>
+<td>Да</td>
+<td>От «матрах», «то, что брошено на пол»: так называли подстилку для сна.</td>
+</tr>
+<tr class="odd">
+<td>Йогурт</td>
+<td>Нет</td>
+<td>Турецкое слово.</td>
+</tr>
+<tr class="even">
+<td>Азимут</td>
+<td>Да</td>
+<td>От «ас-сумут», «направления». Арабские астрономы дали Европе много таких слов, например «зенит».</td>
+</tr>
+</tbody>
+</table></div>
+<aside class="note">
+<p>💡 <strong>Совет.</strong> После игры спросите гостей, какие ещё слова они подозревают. Обычно вспоминают «султан», «эмир», «хна» - и все они правда арабские.</p>
+</aside>
+<hr />
+<h3>3. «Правда или миф?» (после горячего, 10-15 минут)</h3>
+<p><strong>Что нужно.</strong> Только этот лист. Ведущий читает утверждение, гости по очереди или командами говорят «правда» или «миф». Потом ведущий читает ответ.</p>
+<ol type="1">
+<li><strong>На флаге Ливана нарисован кедр.</strong> <em>Правда.</em> Ливанский кедр - символ страны. Кедровая роща в горах, «Кедры Господни», с 1998 года под охраной ЮНЕСКО.</li>
+<li><strong>Буквы, которыми мы пишем, идут от финикийцев, живших на месте Ливана.</strong> <em>Правда.</em> Финикийский алфавит из 22 букв переняли греки, от греков пошли и латиница, и кириллица. Одна из самых старых финикийских надписей найдена в ливанском городе Библ.</li>
+<li><strong>Слово «Библия» связано с ливанским городом.</strong> <em>Правда.</em> Греки называли город Библ «Библос». Через него в Грецию везли папирус, и «библос» стало значить «папирус, книга».</li>
+<li><strong>Настоящий табуле - это салат из булгура с небольшим количеством зелени.</strong> <em>Миф.</em> Наоборот: в Ливане в табуле зелени гораздо больше, чем крупы. Много булгура кладут в «европейском» варианте.</li>
+<li><strong>Киану Ривз родился в Бейруте.</strong> <em>Правда.</em> В 1964 году. Его семья прожила в Ливане недолго.</li>
+<li><strong>Ливанцев за границей больше, чем в самом Ливане.</strong> <em>Правда.</em> По разным оценкам, людей ливанского происхождения в мире в несколько раз больше, чем жителей страны. Больше всего их в Бразилии.</li>
+<li><strong>Арак белеет от воды, потому что портится.</strong> <em>Миф.</em> Анисовое масло растворяется в спирте, но не в воде. Когда наливают воду, оно выпадает мельчайшими капельками, и напиток становится белым. Арак при этом в полном порядке.</li>
+<li><strong>Вино в Ливане начали делать только при французах, в XX веке.</strong> <em>Миф.</em> Финикийцы торговали вином ещё три тысячи лет назад. А самую старую из нынешних виноделен, Château Ksara, основали монахи-иезуиты в 1857 году.</li>
+</ol>
+<hr />
+<h3>4. Гадание на кофейной гуще (за кофе)</h3>
+<p>Это не серьёзное гадание, а домашняя игра, которую в Ливане устраивают после кофе почти в каждой семье.</p>
+<ol type="1">
+<li>Допейте кофе так, чтобы на дне осталась только гуща.</li>
+<li>Накройте чашку блюдцем, загадайте вопрос и переверните чашку вместе с блюдцем «от себя». Подождите 3-5 минут, пока гуща стечёт и подсохнет.</li>
+<li>Поднимите чашку и передайте её соседу. Он рассматривает узоры на стенках и «читает» вашу судьбу: птица - хорошие новости, дорога - путешествие, кольцо - свадьба, рыба - деньги. Чем смешнее толкование, тем лучше.</li>
+</ol>
+<aside class="note">
+<p>💡 <strong>Совет.</strong> Договоритесь с гостями, что предсказывать можно только хорошее.</p>
+</aside>
+<hr />
+<h3>5. Дабке (в конце вечера, по желанию)</h3>
+<p>Дабке - народный танец Леванта, его танцуют на всех свадьбах и праздниках. Танцоры встают в линию или полукруг, держатся за руки или за плечи и вместе топают в ритм. Ведущий в начале линии машет платком и задаёт шаг.</p>
+<p><strong>Самый простой шаг.</strong> Все держатся за руки. Шаг правой ногой вправо, левая перекрещивается сзади, снова шаг правой вправо, потом лёгкий подскок и топ левой ногой. Повторять, двигаясь по кругу. Через пару минут получается у всех.</p>
+<p>Музыку для дабке найдите в любом музыкальном сервисе по запросу «dabke» или «дабке».</p>
+</section><section class="block" id="stories"><h2>Шпаргалка ведущего</h2><figure class="pic"><img src="img/kofe.jpg" alt="Кофе с кардамоном разливают из медного ковшика в маленькие чашки" loading="lazy"></figure>
+<p>Семь коротких историй для рассказа за столом. Их удобно рассказывать по ходу вечера, когда на столе появляется нужное блюдо или подходит время. Читать с листа не обязательно: перескажите своими словами.</p>
+<hr />
+<h4>1. Алфавит из Библа (в начале вечера)</h4>
+<p>Буквы, которыми мы пишем, родом отсюда. Около трёх тысяч лет назад на месте нынешнего Ливана жили финикийцы, мореходы и торговцы. Им нужна была простая запись для торговых сделок, и они придумали алфавит из 22 знаков: не тысячи иероглифов, а буквы для звуков. Одна из самых старых финикийских надписей высечена на каменном гробу царя Ахирама в городе Библ. От финикийцев алфавит переняли греки, от греков - римляне и славяне. Так что каждая буква в меню на вашем столе - дальняя родственница ливанской.</p>
+<h4>2. Город, который дал имя книге (к первому тосту)</h4>
+<p>Библ, или по-арабски Джбейль, - один из самых старых городов мира: люди живут там непрерывно около семи тысяч лет. Через его порт в Грецию везли египетский папирус, и греки стали называть папирус по имени города - «библос». От этого слова произошли «библиотека» и «Библия», то есть просто «книги». Можно поднять первый тост за книги и за тех, кто их пишет.</p>
+<h4>3. Кедры на флаге (к табуле или салатам)</h4>
+<p>В древности горы Ливана были покрыты кедровыми лесами. Из ливанского кедра финикийцы строили корабли, египтяне - гробницы фараонов, а в Библии рассказывается, что из него строили Иерусалимский храм царя Соломона. За тысячи лет почти все леса вырубили. Самая известная из уцелевших рощ называется «Кедры Господни», говорят, что некоторым деревьям в ней больше тысячи лет. С 1998 года она под охраной ЮНЕСКО. А кедр стал символом страны: он нарисован прямо в центре ливанского флага.</p>
+<h4>4. Хумусная война (к хумусу)</h4>
+<p>В 2008-2010 годах соседи по региону всерьёз соревновались, чья тарелка хумуса больше. Рекорды переходили из рук в руки, пока в мае 2010 года около 300 ливанских поваров не приготовили под Бейрутом 10 452 кг хумуса, больше десяти тонн. Тарелку внесли в Книгу рекордов Гиннесса. Самое забавное: площадь Ливана - тоже 10 452 квадратных километра. Нарочно так вышло или случайно, пусть гости решат сами.</p>
+<h4>5. Пещеры, которые нашли монахи (к вину или араку)</h4>
+<p>В 1857 году монахи-иезуиты в долине Бекаа посадили виноград и начали делать вино. Так появилась винодельня Château Ksara, сейчас самая старая и самая большая в Ливане. В 1898 году монахи нашли рядом с ней старинные подземные пещеры, вырытые ещё во времена римлян. Сейчас эти пещеры тянутся на два километра, и в них хранят вино. А меньше чем в часе езды от Ксары, в Баальбеке, стоят руины римских храмов, одних из самых больших в Римской империи.</p>
+<h4>6. Ливанцы по всему миру (к горячему)</h4>
+<p>Ливанцев за пределами Ливана в несколько раз больше, чем в самой стране. Больше всего в Бразилии: по оценкам, людей ливанского происхождения там больше, чем жителей всего Ливана. Многие известные люди - ливанцы по рождению или по семье. Киану Ривз родился в Бейруте в 1964 году. Поэт и художник Джебран Халиль Джебран родился в ливанской горной деревне Бшарри, а его книга «Пророк», написанная в Америке в 1923 году, переведена на десятки языков. Можно спросить гостей: а у кого из них родственники разъехались по миру и где они сейчас?</p>
+<h4>7. Чашка кофе (к кофе и сладкому)</h4>
+<p>В ливанском доме кофе гостю наливают в первые минуты, а отказаться невежливо. Его варят в маленьком ковшике с кардамоном, наливают в чашки размером с напёрсток и пьют медленно, маленькими глотками. А когда кофе допит, чашку переворачивают на блюдце и «читают» по гуще будущее. Это не всерьёз: просто повод ещё полчаса посидеть вместе. Расскажите об этом, а потом предложите гостям погадать друг другу (как это сделать, написано в разделе «Игры»).</p>
+<hr />
+<h3>Вопросы гостям, чтобы разговорить стол</h3>
+<ul>
+<li>Кто из вас пробовал ливанскую или ближневосточную кухню впервые и где?</li>
+<li>Какой запах напоминает вам о самой лучшей поездке?</li>
+<li>Какое блюдо из детства вы бы хотели, чтобы готовили в каждом доме, как хумус в Ливане?</li>
+<li>В какую страну вы бы поехали завтра, если бы не нужно было думать о билетах и визах?</li>
+</ul>
+</section><section class="block" id="atmosphere"><h2>Атмосфера вечера</h2><figure class="pic"><img src="img/kedr.jpg" alt="Старый ливанский кедр на склоне горы" loading="lazy"></figure>
+<p>Ливанский вечер узнают по свету, запаху и звуку. Тёплые огоньки, зелень и лимоны на столе, запах кофе с кардамоном и песни Фейруз. Почти ничего не нужно покупать специально: главное украшение - сама еда, расставленная по всему столу.</p>
+<h3>Приглашения</h3>
+<p>За неделю разошлите гостям приглашения. Шаблон открытки с ливанским кедром и надписью по-арабски «Ахлан ва сахлан» («Добро пожаловать») есть в PDF.</p>
+<ul>
+<li><strong>Бумажное.</strong> Распечатайте на плотной бумаге и подпишите от руки на обороте.</li>
+<li><strong>Онлайн.</strong> Сфотографируйте открытку и пришлите в мессенджер.</li>
+</ul>
+<p>В приглашении напишите дату, время, адрес и дресс-код. Хорошо добавить строчку: «Приходите голодными, будет меззе».</p>
+<h3>Дресс-код</h3>
+<p>Не обязательно, но весело. Предложите гостям «летний Бейрут»: - светлое и лёгкое: лён, белый, песочный, оливковый; - что-нибудь золотое: браслеты, серьги, пуговицы; - тёмные очки на макушке и лёгкий шарф; - для мужчин светлая рубашка с закатанными рукавами.</p>
+<p>Попросите обойтись без «костюмов шейха» и восточных маскарадных нарядов: Ливан - очень европейская по духу страна, и бейрутцы одеваются так же, как жители Марселя или Афин.</p>
+<h3>Стол</h3>
+<ul>
+<li><strong>Тесно и щедро.</strong> Главное правило меззе: все тарелки ставятся в центр стола сразу, близко друг к другу. Не бойтесь, что будет тесно, так и должно быть.</li>
+<li><strong>Посуда.</strong> Широкие плоские тарелки для хумуса и баба гануша, глубокие миски для салатов, маленькие пиалы для маслин, соусов и солёных огурцов. Подойдёт любая керамика, лучше белая, голубая или терракотовая.</li>
+<li><strong>Лепёшки.</strong> Сложите питу стопкой прямо на скатерть или в корзинку под салфеткой. Тарелки для гостей маленькие, закусочные.</li>
+<li><strong>Зелень и фрукты.</strong> Положите на стол целые лимоны, пучки мяты в стакане с водой, гранат, разрезанный пополам, миску маслин и огурцы с редисом целиком.</li>
+<li><strong>Скатерть.</strong> Белая льняная или простая однотонная. Под меззе хорошо смотрится и деревянный стол без скатерти.</li>
+<li><strong>Карточки.</strong> Меню и именные карточки есть в PDF.</li>
+</ul>
+<h3>Свет</h3>
+<p>Ливанский вечер проходит на террасе под открытым небом. Дома создайте похожее ощущение тёплым светом: - выключите верхний свет; - развесьте гирлянду с тёплыми лампочками или поставьте на стол несколько фонариков со свечами; - если есть марокканские или турецкие фонари с цветным стеклом, сейчас их время.</p>
+<aside class="note">
+<p>⚠️ <strong>Безопасность.</strong> Свечи ставьте в устойчивые подсвечники и подальше от салфеток. Если за столом дети, лучше светодиодные свечи.</p>
+</aside>
+<h3>Запах</h3>
+<p>Перед приходом гостей сварите одну турку кофе с кардамоном, даже если пить его будете позже. Через пять минут вся квартира пахнет как бейрутское кафе.</p>
+<h3>Музыка</h3>
+<p>Найдите песни по названию в любом музыкальном сервисе и соберите плейлист заранее. Пока гости собираются, музыку можно сделать погромче, за столом потише.</p>
+<h4>Встреча гостей: Фейруз</h4>
+<p>Фейруз - главная певица Ливана, её называют «голосом Ливана» и «ливанским кедром». Её песни звучат по утрам в каждом кафе и такси Бейрута.</p>
+<ul>
+<li><strong>Fairuz, «Li Beirut»</strong> («Бейруту»). Песня о любимом городе на музыку «Аранхуэсского концерта» испанского композитора Хоакина Родриго.</li>
+<li><strong>Fairuz, «Kifak Inta»</strong> («Как ты?»), музыка её сына Зияда Рахбани.</li>
+<li><strong>Fairuz, «Nassam Alayna El Hawa»</strong> («Подул на нас ветер»).</li>
+</ul>
+<h4>За столом: спокойная ливанская музыка</h4>
+<ul>
+<li><strong>Marcel Khalife, «Ummi»</strong> («Мама») - песня ливанского композитора и исполнителя на уде на стихи палестинского поэта Махмуда Дарвиша.</li>
+<li><strong>Ibrahim Maalouf</strong> - французский трубач ливанского происхождения. Поищите его альбом «Diagnostic» и композицию «Beirut».</li>
+<li><strong>Wadih El Safi</strong> - «голос ливанских гор», знаменитый исполнитель народных песен. Подойдёт любой сборник.</li>
+</ul>
+<h4>Танцы и дабке</h4>
+<ul>
+<li><strong>Nancy Ajram</strong> - ливанская поп-звезда, «Ah W Noss» и другие хиты.</li>
+<li>Любой плейлист по запросу «Lebanese dabke» для танца в конце вечера.</li>
+</ul>
+<h3>План вечера в одном списке</h3>
+<ol type="1">
+<li><strong>За неделю:</strong> разослать приглашения.</li>
+<li><strong>Накануне:</strong> распечатать карточки, подготовить баночки для «Угадай специю».</li>
+<li><strong>За час до гостей:</strong> накрыть стол, разложить лимоны и мяту, включить гирлянду и плейлист, сварить турку кофе «для запаха».</li>
+<li><strong>Гости пришли:</strong> меззе, лимонад, «Угадай специю».</li>
+<li><strong>За столом:</strong> фалафель и манакиш, истории из шпаргалки, узо или ракы.</li>
+<li><strong>После горячего:</strong> «Арабское слово или нет?» и «Правда или миф?».</li>
+<li><strong>За кофе:</strong> гадание на кофейной гуще, дабке и вопрос всем: «В какую страну вы бы хотели поехать, если бы можно было завтра?»</li>
+</ol>
+</section><section class="block" id="allergens"><h2>Аллергены</h2>
+<p>● - есть в блюде. ○ - только в одном из вариантов или по желанию.</p>
+<div class="tw"><table>
+
+<thead>
+<tr class="header">
+<th>Блюдо</th>
+<th>Глютен</th>
+<th>Кунжут</th>
+<th>Молочное</th>
+<th>Орехи</th>
+<th>Яйца и горчица</th>
+<th>Нут (бобовые)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Хумус</td>
+<td></td>
+<td>● (тахини)</td>
+<td></td>
+<td></td>
+<td></td>
+<td>●</td>
+</tr>
+<tr class="even">
+<td>Баба гануш</td>
+<td></td>
+<td>● (тахини)</td>
+<td>○ (если йогурт вместо тахини)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Табуле</td>
+<td>● (булгур)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Фаттуш</td>
+<td>● (лепёшки)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Фалафель с соусом тахини</td>
+<td>○ (если добавить муку)</td>
+<td>●</td>
+<td></td>
+<td></td>
+<td></td>
+<td>●</td>
+</tr>
+<tr class="even">
+<td>Манакиш с заатаром</td>
+<td>●</td>
+<td>● (в заатаре)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Манакиш с сыром</td>
+<td>●</td>
+<td>○ (если посыпать кунжутом)</td>
+<td>●</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Шиш-таук</td>
+<td></td>
+<td></td>
+<td>● (йогурт)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Чесночный соус</td>
+<td></td>
+<td></td>
+<td>● (йогурт)</td>
+<td></td>
+<td>● (майонез)</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Мухаллабия</td>
+<td></td>
+<td></td>
+<td>●</td>
+<td>● (фисташки)</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Лимонад, кофе</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Айран</td>
+<td></td>
+<td></td>
+<td>●</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Лепёшки пита</td>
+<td>●</td>
+<td>○ (смотрите состав)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Кунжут - главный аллерген этого стола.</strong> Он есть в тахини (хумус, баба гануш, соус к фалафелю) и в заатаре. Если у кого-то из гостей аллергия на кунжут, сделайте для него отдельную тарелку: табуле, фаттуш, шиш-таук, манакиш с сыром без кунжута и мухаллабию. Тарелки с тахини ставьте подальше от его места и не используйте одну ложку для разных блюд.</p>
+<p><strong>Без глютена.</strong> Хумус, баба гануш, фалафель (без муки), шиш-таук, мухаллабия, а табуле можно сделать с киноа вместо булгура. Лепёшки замените овощными палочками и листьями салата.</p>
+<p><strong>Готовые продукты.</strong> В покупном тесте, лепёшках, заатаре и пахлаве могут быть следы орехов, кунжута, молока и яиц. Смотрите состав на упаковке.</p>
+<p><strong>Алкоголь.</strong> Есть только в вине и араке. Все блюда без алкоголя.</p>
+</section>
+</main>
+</div>
+<footer class="foot">Есть тема · Ливанская вечеринка · ноябрь 2026</footer>
+<script>
+const D={"cats": ["Овощи, фрукты, зелень", "Мясо", "Молочное", "Бакалея", "Хлеб и тесто", "Напитки", "Хозяйственное"], "dishes": {"humus": [["Нут консервированный, банка 400 г", "банка", 2, 3], ["Тахини", "г", 120, 3], ["Лимоны", "шт", 2, 0], ["Оливковое масло Extra Virgin", "мл", 40, 3]], "baba": [["Баклажаны крупные", "шт", 3, 0], ["Тахини", "г", 60, 3], ["Лимоны", "шт", 1, 0], ["Гранат (для украшения)", "шт", 1, 0, 1], ["Оливковое масло Extra Virgin", "мл", 30, 3]], "tabule": [["Петрушка листовая", "пучок", 4, 0], ["Мята свежая", "пучок", 1, 0], ["Помидоры крепкие", "шт", 4, 0], ["Лук зелёный", "пучок", 0.5, 0], ["Булгур мелкий", "г", 50, 3], ["Лимоны", "шт", 2, 0], ["Оливковое масло Extra Virgin", "мл", 80, 3], ["Салат ромэн", "кочан", 1, 0]], "fattush": [["Пита или ливанские лепёшки", "шт", 2, 4], ["Салат ромэн", "кочан", 1, 0], ["Огурцы", "шт", 2, 0], ["Помидоры крепкие", "шт", 3, 0], ["Редис", "пучок", 1, 0, 1], ["Перец сладкий", "шт", 1, 0], ["Петрушка листовая", "пучок", 0.5, 0], ["Мята свежая", "пучок", 0.5, 0], ["Лук зелёный", "пучок", 0.5, 0], ["Лимоны", "шт", 1, 0], ["Гранатовый соус (наршараб)", "бутылка", 1, 3, 1], ["Сумах", "упаковка", 1, 3, 1], ["Оливковое масло Extra Virgin", "мл", 110, 3]], "falafel": [["Нут сухой", "г", 250, 3], ["Лук репчатый", "шт", 1, 0], ["Петрушка листовая", "пучок", 1, 0], ["Кинза", "пучок", 1, 0], ["Тахини", "г", 100, 3], ["Лимоны", "шт", 1, 0], ["Масло подсолнечное без запаха (для жарки)", "л", 1, 3, 1]], "manakish": [["Тесто дрожжевое готовое", "г", 500, 4], ["Заатар", "упаковка", 1, 3, 1], ["Оливковое масло Extra Virgin", "мл", 80, 3], ["Сулугуни или моцарелла", "г", 150, 2], ["Брынза или фета", "г", 100, 2], ["Помидоры крепкие", "шт", 1, 0]], "shish": [["Куриное филе бедра без кожи", "г", 1200, 1], ["Йогурт густой или греческий", "г", 400, 2], ["Лимоны", "шт", 1, 0], ["Лук репчатый", "шт", 1, 0], ["Перец сладкий", "шт", 1, 0], ["Майонез, небольшая упаковка", "упаковка", 1, 2, 1], ["Пита или ливанские лепёшки", "шт", 4, 4], ["Огурцы маринованные", "банка", 1, 3, 1], ["Томатная паста", "упаковка", 1, 3, 1], ["Деревянные шпажки", "упаковка", 1, 6, 1]], "muhallabiya": [["Молоко 3,2%", "л", 1, 2], ["Крахмал кукурузный", "г", 70, 3], ["Сахар", "г", 100, 3], ["Фисташки очищенные несолёные", "г", 40, 3], ["Мёд жидкий", "банка", 1, 3, 1], ["Апельсиновая цветочная вода", "флакон", 1, 3, 1]], "napitki": [["Лимоны", "шт", 4, 0], ["Мята свежая", "пучок", 1, 0], ["Сахар", "г", 150, 3], ["Йогурт натуральный без добавок (для айрана)", "г", 500, 2], ["Кофе молотый для турки", "пачка", 1, 3, 1], ["Кардамон в коробочках", "пакетик", 1, 3, 1], ["Вода питьевая", "л", 2, 5]], "obshchee": [["Пита или ливанские лепёшки", "шт", 6, 4], ["Чеснок", "головка", 2, 0], ["Огурцы", "шт", 1, 0], ["Морковь (палочками к хумусу)", "шт", 2, 0], ["Лимоны", "шт", 1, 0], ["Маслины", "банка", 1, 3, 1], ["Фольга", "рулон", 1, 6, 1], ["Пергамент", "рулон", 1, 6, 1], ["Пищевая плёнка", "рулон", 1, 6, 1], ["Маленькие баночки для «Угадай специю»", "шт", 8, 6, 1]]}};
+const forms={"пучок":["пучок","пучка","пучков"],"лист":["лист","листа","листов"],"бутылка":["бутылка","бутылки","бутылок"],"банка":["банка","банки","банок"],"головка":["головка","головки","головок"],"упаковка":["упаковка","упаковки","упаковок"],"рулон":["рулон","рулона","рулонов"],"пакетик":["пакетик","пакетика","пакетиков"],"пара":["пара","пары","пар"],"кочан":["кочан","кочана","кочанов"],"флакон":["флакон","флакона","флаконов"],"пачка":["пачка","пачки","пачек"]};
+function pl(n,u){const f=forms[u];if(!f)return u;const a=n%10,b=n%100;if(a==1&&b!=11)return f[0];if(a>=2&&a<=4&&(b<10||b>=20))return f[1];return f[2];}
+const st={g:6,w:6,k:0};
+function load(){try{return JSON.parse(localStorage.getItem('liv-done')||'{}')}catch(e){return{}}}
+function save(o){try{localStorage.setItem('liv-done',JSON.stringify(o))}catch(e){}}
+let done=load();
+function round(q,u){if(u=='г'||u=='мл'){return q>=100?Math.ceil(q/50)*50:Math.ceil(q/5)*5}if(u=='л'){return Math.ceil(q*2-1e-9)/2}if(u=='шт'||u=='пучок'||u=='кочан')return Math.max(1,Math.ceil(q-0.2));return Math.ceil(q-1e-9)}
+function fmt(q,u){if(u=='г'&&q>=1000)return (q/1000).toLocaleString('ru-RU',{maximumFractionDigits:2})+' кг';if(u=='мл'&&q>=1000)return (q/1000).toLocaleString('ru-RU',{maximumFractionDigits:2})+' л';if(u=='л')return q.toLocaleString('ru-RU')+' л';return q+' '+pl(q,u)}
+function build(){
+  const g=st.g,w=st.w,k=st.k;
+  const acc={};
+  function add(key,f){D.dishes[key].forEach(([n,u,q,c,fix])=>{if(!q)return;const id=n+'|'+u;acc[id]=acc[id]||{n,u,q:0,c};acc[id].q+=fix?Math.max(acc[id].q?0:q,0):q*f;});}
+  Object.keys(D.dishes).forEach(x=>add(x,g/6));
+  const ar=document.querySelector('input[name=arak]:checked').value;
+  if(w>0){acc['white']={n:'Белое сухое вино (Domaine des Tourelles White или замена)',u:'бутылка',q:Math.max(1,Math.ceil(w/3)),c:5};acc['red']={n:'Красное сухое вино (сенсо Domaine des Tourelles, Château Ksara или замена)',u:'бутылка',q:Math.max(1,Math.ceil(w/4)),c:5};if(ar=='yes')acc['arak']={n:'Узо или ракы (вместо ливанского арака), 0,5 л',u:'бутылка',q:1,c:5};}
+  if(document.querySelector('input[name=dough]:checked').value=='own'){const dk='Тесто дрожжевое готовое|г';const dq=acc[dk].q;delete acc[dk];acc['flour']={n:'Мука пшеничная (для своего теста)',u:'г',q:dq*0.6,c:3};acc['yeast']={n:'Дрожжи сухие быстрые',u:'пакетик',q:1,c:3};}
+  if(g-k-w>0)acc['grsok']={n:'Гранатовый сок',u:'л',q:Math.ceil((g-k-w)/3),c:5};
+  if(k>0){acc['Лимоны|шт'].q+=k;}
+  const el=document.getElementById('list');el.textContent='';
+  D.cats.forEach((cat,ci)=>{
+    const items=Object.values(acc).filter(x=>x.c==ci);if(!items.length)return;
+    const h=document.createElement('p');h.className='cat';h.textContent=cat;el.appendChild(h);
+    const ul=document.createElement('ul');ul.className='shop';
+    items.forEach(x=>{const q=round(x.q,x.u);x.txt=fmt(q,x.u);const li=document.createElement('li');const id='i'+btoa(unescape(encodeURIComponent(x.n))).replace(/[^a-z0-9]/gi,'').slice(0,24);
+      li.innerHTML='<label for="'+id+'"><input type="checkbox" id="'+id+'"><span class="nm"></span><span class="q"></span></label>';
+      li.querySelector('.nm').textContent=x.n;li.querySelector('.q').textContent=x.txt;
+      const cb=li.querySelector('input');cb.checked=!!done[x.n];li.classList.toggle('done',cb.checked);
+      cb.addEventListener('change',()=>{done[x.n]=cb.checked;save(done);li.classList.toggle('done',cb.checked)});
+      ul.appendChild(li);});
+    el.appendChild(ul);
+  });
+  build.text='Ливанская вечеринка, '+g+' гостей'+(k?' (из них детей: '+k+')':'')+'\n'+D.cats.map((cat,ci)=>{const it=Object.values(acc).filter(x=>x.c==ci);return it.length?('\n'+cat+':\n'+it.map(x=>'- '+x.n+' - '+x.txt).join('\n')):''}).join('\n');
+}
+function sync(){st.k=Math.min(st.k,st.g-1);st.w=Math.min(st.w,st.g-st.k);document.getElementById("kidsn").textContent=st.k;document.getElementById('guests').textContent=st.g;document.getElementById('wine').textContent=st.w;build()}
+document.getElementById('gminus').onclick=()=>{st.g=Math.max(2,st.g-1);st.w=Math.min(st.w,st.g);sync()};
+document.getElementById('gplus').onclick=()=>{const full=st.w==st.g-st.k;st.g=Math.min(24,st.g+1);if(full)st.w=st.g-st.k;sync()};
+document.getElementById('wminus').onclick=()=>{st.w=Math.max(0,st.w-1);sync()};
+document.getElementById('wplus').onclick=()=>{st.w=Math.min(st.g-st.k,st.w+1);sync()};
+document.getElementById('kminus').onclick=()=>{st.k=Math.max(0,st.k-1);sync()};
+document.getElementById('kplus').onclick=()=>{const full=st.w==st.g-st.k;st.k=Math.min(st.g-1,st.k+1);if(full)st.w=st.g-st.k;sync()};
+document.querySelectorAll('input[type=radio]').forEach(r=>r.addEventListener('change',build));
+document.getElementById('copy').onclick=async(e)=>{const b=e.currentTarget;try{await navigator.clipboard.writeText(build.text);b.textContent='Скопировано'}catch(err){const t=document.createElement('textarea');t.value=build.text;document.body.appendChild(t);t.select();try{document.execCommand('copy');b.textContent='Скопировано'}catch(x){b.textContent='Выделите список вручную'}t.remove()}setTimeout(()=>b.textContent='Скопировать список',2000)};
+sync();
+
+// ---- Навигация: на экране один раздел, внутри «Рецептов» - один рецепт ----
+const SECS=[...document.querySelectorAll('main>section')];
+const RECS=[...document.querySelectorAll('#recipes article.recipe')];
+const TITLES={"intro": "О празднике", "builder": "Список покупок", "menu": "Меню", "kids": "Если с детьми", "taiming": "Тайминг", "recipes": "Рецепты", "vino": "Вино и арак", "games": "Игры", "stories": "Истории", "atmosphere": "Атмосфера", "allergens": "Аллергены"};
+const PAGES=[];SECS.forEach(s=>{if(s.id=='recipes')RECS.forEach(r=>PAGES.push(r.id));else PAGES.push(s.id)});
+function pname(id){const r=RECS.find(x=>x.id==id);return r?r.querySelector('h3').textContent.split(' - ')[0]:TITLES[id]}
+function show(scroll){
+  let id=decodeURIComponent(location.hash.slice(1))||'intro';
+  if(id=='recipes')id=RECS[0].id;
+  if(!PAGES.includes(id)){const el=document.getElementById(id);const host=el&&el.closest('main>section');id=host?(host.id=='recipes'?el.closest('article').id:host.id):'intro'}
+  const isRec=RECS.some(r=>r.id==id);const sec=isRec?'recipes':id;
+  SECS.forEach(s=>s.hidden=s.id!=sec);
+  RECS.forEach(r=>r.hidden=r.id!=id);
+  document.querySelectorAll('.side a, .chips a').forEach(a=>{const h=a.getAttribute('href').slice(1);a.setAttribute('aria-current',String(h==id||(h==sec&&!a.closest('.chips')&&!a.closest('.sub'))))});
+  document.querySelectorAll('.side li[data-sec]').forEach(li=>li.classList.toggle('open',li.dataset.sec==sec));
+  const cur=document.querySelector('.side>ol>li>a[aria-current=true]');if(cur)cur.scrollIntoView({block:'nearest',inline:'center'});
+  document.querySelectorAll('.pager').forEach(p=>p.remove());
+  const i=PAGES.indexOf(id),pg=document.createElement('nav');pg.className='pager';pg.setAttribute('aria-label','Соседние разделы');
+  if(i>0)pg.innerHTML+='<a class="prev" href="#'+PAGES[i-1]+'"><small>Назад</small>'+pname(PAGES[i-1])+'</a>';
+  if(i<PAGES.length-1)pg.innerHTML+='<a class="next" href="#'+PAGES[i+1]+'"><small>Дальше</small>'+pname(PAGES[i+1])+'</a>';
+  document.getElementById(sec).appendChild(pg);
+  if(scroll)window.scrollTo({top:document.querySelector('.shell').offsetTop,behavior:'auto'});
+}
+addEventListener('hashchange',()=>show(true));
+show(false);
+</script>
+</body>
+</html>
