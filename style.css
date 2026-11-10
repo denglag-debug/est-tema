@@ -271,3 +271,14 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
 .more-sets img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 6px; border: 1px solid var(--line); background: #F6F1E7; }
 .more-sets span { font-family: var(--serif); font-weight: 700; font-size: 18px; }
 @media (max-width: 760px) { .more-sets { grid-template-columns: 1fr; } }
+
+/* ===== Документы: оферта, политика, согласие ===== */
+.doc { max-width: 760px; padding-block: 40px 72px; }
+.doc h1 { font-size: clamp(30px, 4vw, 40px); color: var(--olive); margin-bottom: 8px; }
+.doc h2 { font-size: 22px; margin: 32px 0 10px; }
+.doc p, .doc li { color: var(--ink-2); margin: 0 0 10px; }
+.doc ol, .doc ul { padding-left: 22px; margin: 0 0 10px; }
+.doc .meta { color: var(--muted); font-size: 14px; }
+.doc .draft { padding: 12px 16px; border: 1px dashed var(--terra); border-radius: 6px; color: var(--terra); font-size: 14px; margin: 16px 0; }
+.seller { font-size: 13px; color: var(--muted); }
+.seller a { color: inherit; }

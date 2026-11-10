@@ -15,6 +15,13 @@ const SITE = {
   price: "",
   // Как с вами связаться (почта, Telegram). Пока пусто: блок покажет заглушку.
   contact: "",
+  // Данные продавца. По закону они должны быть на сайте: в подвале и в документах.
+  // Пока пусто: на их месте видны заглушки в квадратных скобках.
+  sellerName: "",   // ФИО полностью
+  sellerInn: "",    // ИНН, 12 цифр
+  sellerEmail: "",  // почта для покупателей
+  // Сервис, через который принимаем оплату (появится в оферте и политике).
+  paymentService: "",
   // Полоса «Скоро Новый год» на главной. После праздников поставьте false, и она исчезнет.
   newYearBanner: true,
 };
@@ -25,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!SITE[key]) return;
     document.querySelectorAll('[data-site="' + key + '"]').forEach(el => { el.textContent = SITE[key]; });
   };
-  ["name", "slogan", "price", "contact"].forEach(fill);
+  ["name", "slogan", "price", "contact", "sellerName", "sellerInn", "sellerEmail", "paymentService"].forEach(fill);
 
   // 2. Полоса «Скоро Новый год»: прячем, если она выключена в настройках.
   const season = document.getElementById("season");
